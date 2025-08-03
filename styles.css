@@ -17,7 +17,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Container Spacing */
 .container {
   max-width: 1200px;
   margin: auto;
@@ -34,17 +33,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* Change sticky to fixed */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
-
 
 .sticky-cta .btn1 {
   background: white;
@@ -90,14 +85,10 @@ body {
   color: #f1f1f1;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .logo img {
-  height: 40px;
+  height: 70px;
+  width: auto;
+  border-radius: 10px;
 }
 
 .insta-link {
@@ -131,34 +122,19 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+/* HERO CONTENT FIX */
 .hero-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* ✅ Laptop view same rahega */
   gap: 2rem;
-  animation: fadeIn 1s ease-in-out forwards;
-  opacity: 0;
 }
 
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-.hero-text {
-  flex: 1;
-}
-
-.hero-text h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.hero-text p {
-  margin-bottom: 20px;
-}
-
+/* BUTTON OVERLAP FIX */
 .hero-text .btn {
+  display: inline-block;
+  margin-top: 1rem;          /* ✅ Button ke upar space */
   padding: 0.8rem 1.5rem;
   background-color: white;
   color: #10a37f;
@@ -172,14 +148,44 @@ body {
   background: #eaeaea;
 }
 
+/* MOBILE VIEW FIX */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;       /* ✅ Mobile me stack hoga */
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .hero-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-img img {
+    max-width: 90%;              /* ✅ Image screen ke andar aa jaye */
+    height: auto;
+  }
+}
+
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
 .hero-img {
   flex: 1;
-  transform: scale(1);
-  transition: transform 0.3s ease-in-out;
+  text-align: center;
 }
 
 .hero-img img {
-  max-width: 100%;
+  max-width: 90%;
   border-radius: 12px;
 }
 
@@ -188,13 +194,7 @@ body {
   font-size: 1.05rem;
   font-weight: 500;
   color: #fff;
-}
-
-@media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
+  text-align: left;
 }
 
 /* FOMO Bar */
@@ -239,10 +239,6 @@ body {
   transition: background 0.3s;
 }
 
-.tab-btn img {
-  vertical-align: middle;
-}
-
 .tab-btn.active {
   background: #10a37f;
   color: white;
@@ -273,8 +269,7 @@ body {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 380px;    /* FIXED HEIGHT */
+  min-height: 380px;
   position: relative;
 }
 
@@ -294,9 +289,6 @@ body {
   margin-bottom: 0.8rem;
   font-size: 1.2rem;
   color: #10a37f;
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
 .card ul {
@@ -313,16 +305,9 @@ body {
   background: #10a37f;
   color: #fff;
   padding: 0.8rem 1.2rem;
-  border: none;
   text-align: center;
-  text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.card .btn:hover {
-  background-color: #0a8a6b;
 }
 
 /* Payment Guide */
@@ -333,36 +318,6 @@ body {
   margin-top: 3rem;
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
-}
-
-.payment-guide h3 {
-  font-size: 1.8rem;
-  color: #222;
-  margin-bottom: 2rem;
-}
-
-.payment-guide p {
-  font-size: 1.1rem;
-  margin: 0.6rem 0;
-  color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.payment-guide p strong {
-  font-weight: bold;
-  color: #000;
-}
-
-.payment-guide code {
-  background: #eef2f5;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.95rem;
-  color: #000;
-  font-weight: 500;
 }
 
 /* Testimonials & FAQ */
@@ -383,41 +338,27 @@ body {
   margin-bottom: 1.2rem;
 }
 
+/* Telegram Button */
 .telegram-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #0088cc;   /* Telegram Blue */
+  background: #0088cc;
   color: #fff;
   padding: 15px;
   border-radius: 50%;
   text-align: center;
   font-size: 24px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  text-decoration: none;
 }
 
-.telegram-button:hover {
-  background: #007ab8;
-}
-
+/* Contact Support */
 .contact-support {
   background: #f4f4f4;
   padding: 20px;
   text-align: center;
   margin-top: 30px;
   border-top: 1px solid #ddd;
-}
-
-.contact-support h3 {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.contact-support p {
-  margin-bottom: 12px;
-  font-size: 15px;
-  color: #555;
 }
 
 .contact-links a {
@@ -428,16 +369,6 @@ body {
   text-decoration: none;
 }
 
-.contact-links a i {
-  margin-right: 6px;
-  font-size: 18px;
-}
-
-.contact-links a:hover {
-  text-decoration: underline;
-}
-
-
 /* Footer */
 footer {
   text-align: center;
@@ -445,4 +376,66 @@ footer {
   background-color: #eaeaea;
   font-size: 0.9rem;
   margin-top: 2rem;
+}
+
+/* =========================
+   MEDIA QUERIES
+========================= */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text .btn {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .trust-badge {
+    text-align: center;
+  }
+
+  .category-tabs {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sticky-cta span {
+    font-size: 0.8rem;
+  }
+
+  .sticky-cta .btn1 {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .tab-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .card {
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .testimonial, .faq-item p {
+    font-size: 0.9rem;
+  }
 }
