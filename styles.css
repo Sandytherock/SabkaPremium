@@ -134,7 +134,7 @@ body {
 /* BUTTON OVERLAP FIX */
 .hero-text .btn {
   display: inline-block;
-  margin-top: 1rem;          /* ✅ Button ke upar space */
+  margin-top: 1rem;          /* ✅ Button ke upar space*/
   padding: 0.8rem 1.5rem;
   background-color: white;
   color: #10a37f;
