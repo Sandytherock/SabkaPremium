@@ -222,6 +222,58 @@ body {
   color: #e74c3c;
 }
 
+.promo-discount {
+  background: linear-gradient(90deg, #fff6e0, #fceabb);
+  padding: 2rem 1rem;
+  text-align: center;
+  margin: 2rem 0;
+  border-top: 3px dashed #ff9800;
+  border-bottom: 3px dashed #ff9800;
+}
+
+.promo-box {
+  max-width: 800px;
+  margin: auto;
+  background: #fff8e1;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.promo-box h3 {
+  font-size: 1.8rem;
+  color: #e65100;
+  margin-bottom: 1rem;
+}
+
+.promo-box p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: #444;
+}
+
+.promo-box .steps {
+  font-weight: 600;
+  color: #d84315;
+}
+
+.promo-box .btn1 {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #ff9800;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.promo-box .btn1:hover {
+  background: #fb8c00;
+}
+
+
 /* Category Tabs */
 .categories {
   background: #fff;
