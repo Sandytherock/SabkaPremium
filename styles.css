@@ -147,6 +147,14 @@ body {
 .hero-text .btn:hover {
   background: #eaeaea;
 }
+.card.sold-out {
+  opacity: 0.6;
+}
+.card.sold-out .btn {
+  background-color: grey;
+  pointer-events: none;
+}
+
 
 /* MOBILE VIEW FIX */
 @media (max-width: 768px) {
