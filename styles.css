@@ -370,6 +370,10 @@ body {
   font-weight: bold;
 }
 
+
+
+
+
 .special-offers {
   background: #fff;
   padding: 3rem 1rem;
@@ -390,39 +394,54 @@ body {
   margin-bottom: 2rem;
 }
 
+/* ✅ Container fix */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* ✅ Grid fix */
 .offer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
+/* ✅ Card Styling */
 .offer-card {
   background: #f9f9f9;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .offer-card:hover {
   transform: translateY(-5px);
 }
 
+/* ✅ Image fix */
 .offer-card img {
-  width: 70%;
+  width: 100%;
+  max-width: 280px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
   display: block;
-  margin: 0 auto;
+  margin-top: 1rem;
   border-radius: 12px;
 }
 
-
+/* ✅ Content Styling */
 .offer-content {
   padding: 1.5rem;
   text-align: left;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .offer-content h4 {
@@ -450,7 +469,7 @@ body {
   text-align: center;
 }
 
-/* Mobile Responsiveness Enhancements */
+/* ✅ Mobile Responsive */
 @media (max-width: 480px) {
   .special-offers h2 {
     font-size: 1.5rem;
@@ -466,9 +485,18 @@ body {
 
   .offer-content .btn {
     width: 100%;
-    text-align: center;
+  }
+
+  .offer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
+
+
+
+
+
 
 
 /* Payment Guide */
