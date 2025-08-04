@@ -410,6 +410,63 @@ body {
   white-space: nowrap;  /* Prevent line-break */
 }
 
+/* Payment Proof */
+
+.payment-proofs {
+  padding: 3rem 1rem;
+  background: #f0fff8;
+  text-align: center;
+  border-top: 2px dashed #10a37f;
+  border-bottom: 2px dashed #10a37f;
+  margin: 3rem 0;
+}
+
+.payment-proofs h3 {
+  font-size: 1.8rem;
+  color: #0f8a6e;
+  margin-bottom: 1rem;
+}
+
+.payment-proofs p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.proof-grid img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.proof-grid img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .payment-proofs h3 {
+    font-size: 1.5rem;
+  }
+
+  .proof-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .proof-grid img {
+    max-width: 120px;
+  }
+}
+
+
 
 /* Testimonials & FAQ */
 .testimonials,
