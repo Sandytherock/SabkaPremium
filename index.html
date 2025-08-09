@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/favicon.png">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1281510500113019');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1281510500113019&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -150,7 +170,7 @@
                     </ul>
                     <a href="order.html?plan=ChatGPT-3M-399" class="btn">Order Now (₹399)</a>
                 </div>
-                <div class="card"> 
+                <div class="card">
                     <h4><img src="./assets/chatgpt-logo.png" width="20"> 6 Month Access</h4>
                     <ul>
                         <li>📆 180 Days Premium Access</li>
@@ -454,27 +474,31 @@
             <div class="offer-grid">
                 <!-- Bundle Card -->
                 <div class="offer-card">
-                <img src="assets/software-bundle.jpg" alt="All Preactivated Software Bundle">
-                <div class="offer-content">
-                    <h4>Premium Software Bundle – Lifetime Access</h4>
-                    <ul>
-                        <li>✅ 50+ Premium Software Tools (Adobe, MS Office, CapCut, etc.)</li>
-                        <li>✅ All Preactivated – No License Key Required</li>
-                        <li>✅ Lifetime Validity – One-Time Payment Only</li>
-                        <li>✅ Windows + macOS Supported</li>
-                        <li>✅ Instant Delivery After Payment</li>
-                        <li>🎨 <strong>Adobe 2025 Suite (Windows Only)</strong>: Photoshop, Illustrator, Premiere Pro, After Effects, XD, Lightroom, Acrobat Pro & more</li>
-                        <li>👨‍💻 <strong>Microsoft 365 2024</strong>: Word, Excel, PowerPoint, Outlook, Teams, OneDrive & more (Windows + Mac)</li>
-                        <li>✂ <strong>Video Editing Tools</strong>: Final Cut Pro (Mac), DaVinci Resolve 20, CapCut Premium (Win + Android)</li>
-                        <li>🖍 <strong>Graphic Tools</strong>: CorelDRAW 2024 (Win + Mac)</li>
-                        <li>📦 <strong>Bonus</strong>: 8000+ Lightroom Presets, 2TB+ LUTs & SFX, 20TB+ Plugins, Fonts, Templates, Shopify/WordPress Themes</li>
-                        <li>📚 100+ Paid Courses (Editing, Motion Graphics, VFX)</li>
-                        <li>🔐 Free India Business Database Included</li>
-                        <li>🚀 Only ₹599 – One-Time for Lifetime Access</li>
-                    </ul>
-                    <a href="order.html?plan=Software-Bundle-599" class="btn">Claim Offer Now</a>
+                    <img src="assets/software-bundle.jpg" alt="All Preactivated Software Bundle">
+                    <div class="offer-content">
+                        <h4>Premium Software Bundle – Lifetime Access</h4>
+                        <ul>
+                            <li>✅ 50+ Premium Software Tools (Adobe, MS Office, CapCut, etc.)</li>
+                            <li>✅ All Preactivated – No License Key Required</li>
+                            <li>✅ Lifetime Validity – One-Time Payment Only</li>
+                            <li>✅ Windows + macOS Supported</li>
+                            <li>✅ Instant Delivery After Payment</li>
+                            <li>🎨 <strong>Adobe 2025 Suite (Windows Only)</strong>: Photoshop, Illustrator, Premiere
+                                Pro, After Effects, XD, Lightroom, Acrobat Pro & more</li>
+                            <li>👨‍💻 <strong>Microsoft 365 2024</strong>: Word, Excel, PowerPoint, Outlook, Teams,
+                                OneDrive & more (Windows + Mac)</li>
+                            <li>✂ <strong>Video Editing Tools</strong>: Final Cut Pro (Mac), DaVinci Resolve 20, CapCut
+                                Premium (Win + Android)</li>
+                            <li>🖍 <strong>Graphic Tools</strong>: CorelDRAW 2024 (Win + Mac)</li>
+                            <li>📦 <strong>Bonus</strong>: 8000+ Lightroom Presets, 2TB+ LUTs & SFX, 20TB+ Plugins,
+                                Fonts, Templates, Shopify/WordPress Themes</li>
+                            <li>📚 100+ Paid Courses (Editing, Motion Graphics, VFX)</li>
+                            <li>🔐 Free India Business Database Included</li>
+                            <li>🚀 Only ₹599 – One-Time for Lifetime Access</li>
+                        </ul>
+                        <a href="order.html?plan=Software-Bundle-599" class="btn">Claim Offer Now</a>
+                    </div>
                 </div>
-            </div>
 
                 <!-- Add more bundles below this card -->
             </div>
@@ -613,47 +637,47 @@
     </section>
 
     <footer class="site-footer">
-    <div class="container footer-grid">
+        <div class="container footer-grid">
 
-        <div class="footer-brand">
-            <img src="./assets/logo.png" alt="SabkaPremium Logo" />
-            <p>India’s Most Trusted Affordable Premium Service Platform for Students & Creators.</p>
-        </div>
-
-        <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="#plans">Our Plans</a></li>
-                <li><a href="#how-to-order">How to Order</a></li>
-                <li><a href="#faq">FAQs</a></li>
-                <li><a href="mailto:sabkapremium01@gmail.com">Contact Support</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-trust">
-            <h4>We’re Trusted!</h4>
-            <p>✅ 1000+ Happy Customers</p>
-            <p>✅ Instant Delivery Guaranteed</p>
-            <p>✅ 100% Replacement Guarantee</p>
-            <p>🔒 Secure UPI Payments</p>
-        </div>
-
-        <div class="footer-social">
-            <h4>Follow Us</h4>
-            <div class="social-icons">
-                <a href="https://instagram.com/sabka_premium" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://t.me/Somya2208" target="_blank"><i class="fab fa-telegram"></i></a>
-                <a href="mailto:sabkapremium01@gmail.com"><i class="fas fa-envelope"></i></a>
+            <div class="footer-brand">
+                <img src="./assets/logo.png" alt="SabkaPremium Logo" />
+                <p>India’s Most Trusted Affordable Premium Service Platform for Students & Creators.</p>
             </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#plans">Our Plans</a></li>
+                    <li><a href="#how-to-order">How to Order</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="mailto:sabkapremium01@gmail.com">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-trust">
+                <h4>We’re Trusted!</h4>
+                <p>✅ 1000+ Happy Customers</p>
+                <p>✅ Instant Delivery Guaranteed</p>
+                <p>✅ 100% Replacement Guarantee</p>
+                <p>🔒 Secure UPI Payments</p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://instagram.com/sabka_premium" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/Somya2208" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="mailto:sabkapremium01@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
         </div>
 
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2025 SabkaPremium.com | All rights reserved.</p>
-        <p>Made with ❤️ for Indian Students</p>
-    </div>
-</footer>
+        <div class="footer-bottom">
+            <p>© 2025 SabkaPremium.com | All rights reserved.</p>
+            <p>Made with ❤️ for Indian Students</p>
+        </div>
+    </footer>
 
 
     <script src="script.js"></script>
