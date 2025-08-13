@@ -569,7 +569,7 @@ body {
   padding: 4rem 1rem;
   text-align: center;
   margin-top: 3rem;
-  border-top: 1px solid #e0e0e0;
+  border-top: 2px dashed #10a37f;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -666,6 +666,10 @@ body {
 .faq {
   background: #ffffff;
   padding: 3rem 1rem;
+  
+}
+.faq{
+  border-top: 2px dashed #10a37f;
 }
 
 .testimonial {
@@ -711,7 +715,7 @@ body {
   padding: 20px;
   text-align: center;
   margin-top: 30px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #10a37f;;
 }
 
 .contact-links a {
