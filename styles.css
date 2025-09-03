@@ -750,6 +750,35 @@ body {
   text-decoration: none;
 }
 
+.partner-clarification {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+
+.partner-clarification h4 {
+    font-size: 1.5em;
+    color: #d9534f;
+}
+
+.partner-clarification p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.partner-clarification ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.partner-clarification ul li {
+    font-weight: bold;
+}
+
+
+
 /* Footer */
 .site-footer {
   background: #0f766e;
