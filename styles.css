@@ -779,6 +779,74 @@ body {
 
 
 
+/* Scam Alert Section */
+.scam-alert {
+  background: #fff;
+  padding: 3rem 1rem;
+  border-top: 2px dashed #10a37f;
+  border-bottom: 1px solid #eaeaea;
+}
+.scam-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom right, #ffffff, #f6fbf9);
+  border: 1px solid #e6f3ef;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  padding: 1.5rem;
+}
+.scam-head {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: .75rem;
+}
+.scam-icon { font-size: 1.6rem; }
+.scam-card h3 { margin: 0; color: #10a37f; font-size: 1.6rem; }
+.scam-lead { color: #333; font-weight: 600; margin-bottom: 1.2rem; }
+.scam-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.scam-box {
+  background: #fff;
+  border: 1px solid #eaf4f1;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.scam-box h4 { margin-bottom: .6rem; color: #0f766e; font-size: 1.05rem; }
+.tick-list, .num-list, .dot-list {
+  margin: 0; padding-left: 1.1rem; color: #444; line-height: 1.6;
+}
+.tick-list li { list-style: none; position: relative; padding-left: 1.2rem; }
+.tick-list li::before { content: "✔"; color: #10a37f; position: absolute; left: 0; }
+.num-list { list-style: decimal; }
+.dot-list { list-style: disc; }
+.scam-box a { color: #10a37f; font-weight: 600; text-decoration: none; }
+.scam-box a:hover { text-decoration: underline; }
+.scam-box code {
+  background: #eef7f4;
+  color: #0f4a3f;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+.scam-foot {
+  margin-top: 1rem;
+  padding-top: .8rem;
+  border-top: 1px dashed #cdebe3;
+  color: #333;
+}
+.scam-foot a { color: #10a37f; font-weight: 700; }
+@media (max-width: 900px) {
+  .scam-grid { grid-template-columns: 1fr; }
+}
+
+
+
+
+
 /* Footer */
 .site-footer {
   background: #0f766e;
