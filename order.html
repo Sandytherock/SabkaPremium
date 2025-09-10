@@ -119,10 +119,18 @@
             <input type="text" name="plan" id="planInput" readonly required>
             <input type="text" name="amount" id="amountInput" readonly required>
 
+            <!-- Coupon Code Section -->
+            <input type="text" id="couponCode" placeholder="Enter Coupon Code">
+            <button type="button" id="applyCouponBtn">Apply Coupon</button>
+
+            <p id="discountMessage" style="color: green; display: none;">Coupon applied successfully!</p>
+            <p id="discountAmount" style="color: red; display: none;">Discount: ₹0</p>
+
             <input type="text" name="transactionId" placeholder="Transaction ID / UTR" required>
             <input type="file" name="screenshot" accept="image/*">
             <button type="submit">Submit Details</button>
         </form>
+
 
         <div class="support-info" style="margin-top:15px; text-align:center; font-size:14px; color:#444;">
             <p>If you face any issue, you can reach us:</p>
@@ -205,6 +213,41 @@
             },
 
         };
+
+
+        // Coupon code logic
+        const validCoupons = {
+            "BringsUsmile50": { discountedPrice: 1499, validFor: ["ChatGPT-3M-1999"] },  // Direct price change for ChatGPT 3M Personal plan
+        };
+
+        // Apply Coupon Button
+        document.getElementById("applyCouponBtn").addEventListener("click", () => {
+            const couponCode = document.getElementById("couponCode").value;
+            const planCode = new URLSearchParams(window.location.search).get("plan");
+
+            if (validCoupons[couponCode]) {
+                const coupon = validCoupons[couponCode];
+
+                if (coupon.validFor.includes(planCode)) {
+                    // Apply the direct discounted price
+                    const newAmount = coupon.discountedPrice;
+
+                    // Update the amount input
+                    document.getElementById("amountInput").value = "₹" + newAmount;
+
+                    // Show the discount message
+                    document.getElementById("discountMessage").style.display = "block";
+                    document.getElementById("discountAmount").style.display = "none";  // Hide the discount text
+                } else {
+                    alert("This coupon is not valid for your selected plan.");
+                }
+            } else {
+                alert("Invalid Coupon Code.");
+            }
+        });
+
+
+
 
         // Get plan from URL and auto-fill inputs
         const urlParams = new URLSearchParams(window.location.search);
