@@ -1,958 +1,706 @@
+<!-- =============================
+FILE: index.html (Redesigned)
+============================== -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SabkaPremium - ChatGPT | Netflix | Canva</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SabkaPremium – AI & OTT at Student-Friendly Prices</title>
+  <meta name="description" content="ChatGPT, Netflix 4K, Canva Pro, Gemini, YouTube Premium and more – instant delivery, replacement guarantee, trusted by 1000+ users." />
+  <link rel="icon" type="image/png" href="./assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    <!-- Meta Pixel Code -->
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1281510500113019');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1281510500113019&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1281510500113019');
+    fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1281510500113019&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
-
 <body>
-    <!-- Top sticky banner -->
-    <div class="sticky-cta">
-        <span>🔥 SabkaPremium – All Premium Services at the Lowest Price!</span>
-        <a href="#plans" class="btn1">View Plans</a>
+  <!-- Top sticky banner -->
+  <div class="sticky-cta" role="region" aria-label="site-wide offer">
+    <span>🔥 SabkaPremium – All Premium Services at the Lowest Price!</span>
+    <a href="#plans" class="btn-ghost">View Plans</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <img src="./assets/logo.png" alt="SabkaPremium" loading="eager" />
+        <span>SabkaPremium</span>
+      </a>
+
+      <button class="hamburger" aria-label="Open menu" aria-controls="mainnav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="mainnav" class="main-nav" aria-label="primary">
+        <a href="#plans">Plans</a>
+        <a href="#how-to-order">How to Order</a>
+        <a href="#faq">FAQs</a>
+        <a href="https://www.instagram.com/sabka_premium" target="_blank" class="social-link">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="https://wa.me/919511335264" target="_blank" class="social-link">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container nav">
-            <div class="logo">
-                <img src="./assets/logo.png" alt="Logo">
-            </div>
-            <nav class="main-nav">
-                <a href="#plans">Plans</a>
-                <a href="#how-to-order">How to Order</a>
-                <a href="#faq">FAQs</a>
-                <a href="https://www.instagram.com/sabka_premium" target="_blank" class="insta-link">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
-                        class="insta-icon" />
-                    Instagram
-                </a>
-                <a href="https://wa.me/919511335264" target="_blank" class="whatsapp-link">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
-                        class="whatsapp-icon" />
-                    WhatsApp
-                </a>
-            </nav>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="bg-blur"></div>
+    <div class="container hero-wrap">
+      <div class="hero-copy">
+        <h1>All Premium Accounts, One Place.</h1>
+        <p class="sub">ChatGPT 5 Pro • Netflix 4K • Canva Pro • Gemini • YouTube Premium</p>
+        <div class="cta-row">
+          <a href="#plans" class="btn-primary">Explore Plans</a>
+          <a href="#how-to-order" class="btn-ghost">How it works</a>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h2>All Premium Accounts in One Place</h2>
-                <p>ChatGPT 5 pro • Netflix • Canva – Student-Friendly Prices</p>
-                <a href="#plans" class="btn">Explore Plans</a>
-                <p class="trust-badge">
-                    <span>⭐ Trusted by 1000+ Students</span> &nbsp;|&nbsp;
-                    <span>⚡ Instant Delivery</span>
-                </p>
-                <div class="floating-guarantee">
-                    ✅ 100% Replacement Guarantee
-                </div>
-
-            </div>
-            <div class="hero-img">
-                <img src="./assets/ChatGPTAppIllustration.png" alt="Premium Services Illustration">
-            </div>
-        </div>
-    </section>
-
-    <!-- FOMO -->
-    <div class="countdown-wrapper">
-        ⏳ Offer ends in <span id="countdown">03:45:00</span>
+        <ul class="trust">
+          <li>⭐ 1000+ Students Trust Us</li>
+          <li>⚡ Instant Delivery</li>
+          <li>🔁 100% Replacement Guarantee</li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <img src="./assets/ChatGPTAppIllustration.png" alt="Premium services illustration" loading="lazy"/>
+        <div class="floating-badge" aria-hidden="true">✅ Replacement Guaranteed</div>
+      </div>
     </div>
-    <div class="stock-left">
-        🔥 Hurry! Only <span id="slots-left">5</span> slots left for today
+  </section>
+
+  <!-- FOMO bars -->
+  <section class="fomo">
+    <div class="container fomo-row">
+      <div class="fomo-item">⏳ Offer ends in <span id="countdown">03:45:00</span></div>
+      <div class="fomo-item">🔥 Hurry! Only <span id="slots-left">5</span> slots left today</div>
     </div>
+  </section>
 
-    <!-- Promo Discount Offer -->
-    <section class="promo-discount">
-        <div class="container">
-            <div class="promo-box">
-                <h3>📢 Want 10% Off Instantly?</h3>
-                <p>Just promote our <strong>Instagram page</strong> or <strong>website</strong> on your story or post!
-                </p>
-                <p>🎁 We'll give you <strong>10% extra discount</strong> on any order you place.</p>
-                <p class="steps">👉 Tag us on Instagram <strong>@sabka_premium</strong> and send a screenshot On
-                    Instagram.</p>
-                <a href="https://instagram.com/sabka_premium" class="btn1" target="_blank">Promote & Get Discount</a>
-            </div>
+  <!-- Promo Discount -->
+  <section class="promo">
+    <div class="container">
+      <div class="promo-card">
+        <div class="promo-text">
+          <h2>📢 Want 10% Off Instantly?</h2>
+          <p>Promote our <strong>Instagram page</strong> or <strong>website</strong> on your story or post and grab <strong>extra 10% off</strong> on any order.</p>
+          <p class="muted">Tag <strong>@sabka_premium</strong> and send a screenshot on Instagram.</p>
+          <a href="https://instagram.com/sabka_premium" target="_blank" class="btn-primary">Promote & Get Discount</a>
         </div>
-    </section>
-
-
-    <!-- Category Tabs -->
-    <section class="categories" id="plans">
-        <h2>🔥 Choose Your Service</h2>
-        <div class="category-tabs">
-            <button class="tab-btn active" data-tab="chatgpt">
-                <img src="./assets/chatgpt-logo.png" alt="ChatGPT" width="30"> ChatGPT 5 Pro
-            </button>
-            <button class="tab-btn" data-tab="netflix">
-                <img src="./assets/netflix-logo.png" alt="Netflix" width="50"> Netflix 4k
-            </button>
-            <button class="tab-btn" data-tab="prime">
-                <img src="./assets/prime-logo.png" alt="Prime" width="50"> Prime Video
-            </button>
-            <button class="tab-btn" data-tab="canva">
-                <img src="./assets/canva-logo.png" style="border-radius: 5px;" alt="Canva" width="50"> Canva Pro
-            </button>
-            <button class="tab-btn" data-tab="gemini">
-                <img src="./assets/gemini-logo.png" style="border-radius: 5px;" alt="Gemini" width="50"> Gemini Pro
-            </button>
-            <button class="tab-btn" data-tab="youtube">
-                <img src="./assets/youtube-logo.png" style="border-radius: 5px;" alt="Youtube Premium" width="50">
-                YouTube Premium
-            </button>
-            <button class="tab-btn" data-tab="elevenlabs">
-                <img src="./assets/elevenlabs-logo.png" style="border-radius: 5px;" alt="ElevenLabs" width="40">
-                ElevenLabs
-            </button>
-
-
+        <div class="promo-art" aria-hidden="true">
+          <i class="fa-solid fa-bolt"></i>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- ChatGPT Plans -->
-        <div id="chatgpt" class="tab-content active">
-            <div class="pricing-cards">
+  <!-- Category Tabs / Plans -->
+  <section class="plans" id="plans">
+    <div class="container">
+      <h2>🔥 Choose Your Service</h2>
 
-                <!-- <div class="card sold-out">
-                    <h4><img src="./assets/chatgpt-logo.png" width="20"> 1 Month Access <span style="color: red;">(Sold
-                            Out)</span></h4>
-                    <ul>
-                        <li>✨ Unlimited GPT-4 & GPT-4 Turbo</li>
-                        <li>🔐 Private & Secure Login</li>
-                        <li>🖼️ DALL·E Image Generation</li>
-                        <li>🧠 All Models + Advanced Tools</li>
-                        <li>🎧 Whisper (Speech-to-text)</li>
-                        <li>📱 Phone + Desktop Access</li>
-                        <li>💸 ₹199 Only</li>
-                    </ul>
-                    <button class="btn" style="background-color: grey; cursor: not-allowed;" disabled>Out of
-                        Stock</button>
-                </div> -->
+      <div class="tabbar" role="tablist" aria-label="Services">
+        <button class="tab active" data-tab="chatgpt" role="tab" aria-selected="true"><img src="./assets/chatgpt-logo.png" alt="ChatGPT"/> ChatGPT 5 Pro</button>
+        <button class="tab" data-tab="netflix" role="tab" aria-selected="false"><img src="./assets/netflix-logo.png" alt="Netflix"/> Netflix 4K</button>
+        <button class="tab" data-tab="prime" role="tab" aria-selected="false"><img src="./assets/prime-logo.png" alt="Prime Video"/> Prime Video</button>
+        <button class="tab" data-tab="canva" role="tab" aria-selected="false"><img src="./assets/canva-logo.png" alt="Canva"/> Canva Pro</button>
+        <button class="tab" data-tab="gemini" role="tab" aria-selected="false"><img src="./assets/gemini-logo.png" alt="Gemini"/> Gemini Pro</button>
+        <button class="tab" data-tab="youtube" role="tab" aria-selected="false"><img src="./assets/youtube-logo.png" alt="YouTube"/> YouTube Premium</button>
+        <button class="tab" data-tab="elevenlabs" role="tab" aria-selected="false"><img src="./assets/elevenlabs-logo.png" alt="ElevenLabs"/> ElevenLabs</button>
+      </div>
 
-
-                <!-- <div class="card">
-                    <h4><img src="./assets/chatgpt-logo.png" width="20"> 2 Month Access</h4>
-                    <ul>
-                        <li>⏳ Valid for 60 Days</li>
-                        <li>🔐 Private & Secure Login</li>
-                        <li>🖼️ DALL·E, Advanced Tools</li>
-                        <li>💸 ₹299 Only</li>
-                    </ul>
-                    <a href="order.html?plan=ChatGPT-2M-299" class="btn">Order Now (₹299)</a>
-                </div> -->
-                <div class="card ">
-                    <!-- <div class="tag">Most Popular</div> -->
-                    <h4><img src="./assets/chatgpt-logo.png" width="20"> 3 Month Access</h4>
-                    <ul>
-
-                        <li>⏳ Valid for 90 Days</li>
-                        <li>🔐 Private Login</li>
-                        <li>🎨 All Pro Tools Unlocked</li>
-                        <li>🖼️ DALL·E, GPT-5 Plus, Sora, Whisper</li>
-                        <li>📝 Shared Access Between 8-10 members</li>
-                        <li>📱 Phone + Desktop Access</li>
-                        <li>💸 ₹399 Only</li>
-                    </ul>
-                    <a href="order.html?plan=ChatGPT-3M-399" class="btn">Order Now (₹399)</a>
-                </div>
-                <div class="card popular">
-                    <div class="tag">Most Popular</div>
-                    <h4><img src="./assets/chatgpt-logo.png" width="20"> 6 Month Access</h4>
-                    <ul>
-                        <li>📆 180 Days Premium Access</li>
-                        <li>🔐 Private & Secure Login</li>
-                        <li>🖼️ DALL·E, GPT-5 Plus, Sora, Whisper</li>
-                        <li>📝 Shared Access Between 8-10 members</li>
-                        <li>📱 Phone + Desktop Access</li>
-                        <li>💸 ₹599 Only</li>
-                    </ul>
-                    <a href="order.html?plan=ChatGPT-6M-599" class="btn">Order Now (₹599)</a>
-                </div>
-                <div class="card">
-                    <h4><img src="./assets/chatgpt-logo.png" width="20"> 12 Month Access</h4>
-                    <ul>
-                        <li>📆 365 Days Premium Access</li>
-                        <li>🔐 Private & Secure Login</li>
-                        <li>🖼️ DALL·E, GPT-5 Plus, Sora, Whisper</li>
-                        <li>📝 Shared Access Between 8-10 members</li>
-                        <li>📱 Phone + Desktop Access</li>
-                        <li>💸 ₹999 Only</li>
-                    </ul>
-                    <a href="order.html?plan=ChatGPT-12M-999" class="btn">Order Now (₹999)</a>
-                </div>
-                <div class="card popular">
-                    <div class="tag">Most Popular</div>
-                    <h4><img src="./assets/chatgpt-logo.png" width="20"> 3 Month Access</h4>
-                    <ul>
-
-                        <li>⏳ Valid for 90 Days</li>
-                        <li>🔐 Private Login</li>
-                        <li>🎨 All Pro Tools Unlocked</li>
-                        <li>🖼️ DALL·E, GPT-5 Plus, Sora, Whisper</li>
-                        <li>📝 Shared Access Between 3-4 Members</li>
-                        <li>📱 Phone + Desktop Access</li>
-                        <li>💸 ₹549 Only</li>
-                    </ul>
-                    <a href="order.html?plan=ChatGPT-3M-549" class="btn">Order Now (₹549)</a>
-                </div>
-                <div class="card">
-                    <h4><img src="./assets/chatgpt-logo.png" width="20"> 6 Month Access</h4>
-                    <ul>
-                        <li>📆 180 Days Premium Access</li>
-                        <li>🔐 Private & Secure Login</li>
-                        <li>🖼️ DALL·E, GPT-5 Plus, Sora, Whisper</li>
-                        <li>📝 Shared Access Between 3-4 Members</li>
-                        <li>📱 Phone + Desktop Access</li>
-                        <li>💸 ₹899 Only</li>
-                    </ul>
-                    <a href="order.html?plan=ChatGPT-6M-899" class="btn">Order Now (₹899)</a>
-                </div>
-                <div class="card">
-                    <h4><img src="./assets/chatgpt-logo.png" width="20"> 12 Month Access</h4>
-                    <ul>
-                        <li>📆 365 Days Premium Access</li>
-                        <li>🔐 Private & Secure Login</li>
-                        <li>🖼️ DALL·E, GPT-5 Plus, Sora, Whisper</li>
-                        <li>📝 Shared Access Between 3-4 Members</li>
-                        <li>📱 Phone + Desktop Access</li>
-                        <li>💸 ₹1399 Only</li>
-                    </ul>
-                    <a href="order.html?plan=ChatGPT-12M-1399" class="btn">Order Now (₹1399)</a>
-                </div>
-
-                <!-- <div class="card popular">
-                    <div class="tag">Most Popular</div>
-                    <h4><img src="./assets/chatgpt-logo.png" width="20"> 1 Month Private Access</h4>
-                    <ul>
-                        <li>✨ Unlimited GPT-4 & Its a GPT Business Teams Account </li>
-                        <li>🔐 Activation On Your Email</li>
-                        <li>🖼️ DALL·E, GPT-5 pro, Sora, Whisper</li>
-                        <li>🧠 All Models + Advanced Tools</li>
-                        <li>🎧 Whisper (Speech-to-text)</li>
-                        <li>📱 Phone + Desktop Access</li>
-                        <li>📝 Private Access On Your Personal Email</li>
-                        <li>💸 ₹599 Only</li>
-                    </ul>
-                    <a href="order.html?plan=ChatGPT-1M-599" class="btn">Order Now (₹599)</a>
-                </div> -->
-                <div class="card">
-
-                    <h4><img src="./assets/chatgpt-logo.png" width="20"> 3 Month Private Access</h4>
-                    <ul>
-                        <li>✨ Unlimited GPT-5 & Its a GPT Business Teams Account </li>
-                        <li>🔐 Activation On Your Email</li>
-                        <li>🖼️ DALL·E, GPT-5 plus, Sora, Whisper</li>
-                        <li>🧠 All Models + Advanced Tools</li>
-                        <li>🎧 Whisper (Speech-to-text)</li>
-                        <li>📱 Phone + Desktop Access</li>
-                        <li>📝 Private Access On Your Personal Email</li>
-                        <li>💸 ₹1499 Only</li>
-                    </ul>
-                    <a href="order.html?plan=ChatGPT-3M-1499" class="btn">Order Now (₹1499)</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Netflix Plans -->
-        <div id="netflix" class="tab-content">
-            <div class="pricing-cards">
-                <div class="card popular">
-                    <div class="tag">Best Deal</div>
-                    <h4><img src="./assets/netflix-logo.png" width="40"> 1 Month Premium</h4>
-                    <ul>
-                        <li>Netflix Premium</li>
-                        <li>📺 Watch on Mobile, TV, Laptop</li>
-                        <li>🔐 Shared Premium Account</li>
-                        <li>🎥 HD + Ultra HD (4K) Support</li>
-                        <li>🌍 Unlimited Access Worldwide</li>
-                        <li>📱1 Device Allowed</li>
-                        <li><s>₹499</s> <b>₹149 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=Netflix-1M-149" class="btn">Order Now (₹149)</a>
-                </div>
-                <div class="card">
-                    <h4><img src="./assets/netflix-logo.png" width="40"> 3 Month Premium</h4>
-                    <ul>
-                        <li>Netflix Premium</li>
-                        <li>⏳ Valid for 90 Days</li>
-                        <li>🔐 Shared Premium Access</li>
-                        <li>🎥 HD + Ultra HD (4K)</li>
-                        <li>📱1 Device Allowed</li>
-                        <li><s>₹1,499</s> <b>₹399 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=Netflix-3M-399" class="btn">Order Now (₹399)</a>
-                </div>
-                <div class="card">
-                    <h4><img src="./assets/netflix-logo.png" width="40"> 6 Month Premium</h4>
-                    <ul>
-                        <li>Netflix Premium</li>
-                        <li>⏳ Valid for 180 Days</li>
-                        <li>🔐 Shared Premium Access</li>
-                        <li>🎥 HD + Ultra HD (4K)</li>
-                        <li>📱1 Device Allowed</li>
-                        <li><s>₹2,999</s> <b>₹599 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=Netflix-6M-599" class="btn">Order Now (₹599)</a>
-                </div>
-                <div class="card">
-                    <h4><img src="./assets/netflix-logo.png" width="40"> 12 Month Premium</h4>
-                    <ul>
-                        <li>Netflix Premium</li>
-                        <li>⏳ Valid for 365 Days</li>
-                        <li>🔐 Shared Premium Access</li>
-                        <li>🎥 HD + Ultra HD (4K)</li>
-                        <li>📱1 Devices Allowed</li>
-                        <li><s>₹7,999</s> <b>₹1,099 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=Netflix-12M-1099" class="btn">Order Now (₹1099)</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Prime Video Plans -->
-        <div id="prime" class="tab-content">
-            <div class="pricing-cards">
-                <div class="card popular">
-                    <div class="tag">Best Deal</div>
-                    <h4><img src="./assets/prime-logo.png" width="40"> 1 Month Premium</h4>
-                    <ul>
-                        <li>Prime Video Premium</li>
-                        <li>📺 Watch on Mobile, TV, Laptop</li>
-                        <li>🔐 Shared Premium Account</li>
-                        <li>🎥 HD + Ultra HD (4K) Support</li>
-                        <li>🌍 Unlimited Access Worldwide</li>
-                        <li>📱1 Device Allowed</li>
-                        <li><s>₹299</s> <b>₹99 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=Prime-1M-99" class="btn">Order Now (₹99)</a>
-                </div>
-                <div class="card">
-                    <h4><img src="./assets/prime-logo.png" width="40"> 3 Month Premium</h4>
-                    <ul>
-                        <li>Prime Video Premium</li>
-                        <li>⏳ Valid for 90 Days</li>
-                        <li>🔐 Shared Premium Account</li>
-                        <li>🎥 HD + Ultra HD (4K) Support</li>
-                        <li>🌍 Unlimited Access Worldwide</li>
-                        <li>📱1 Device Allowed</li>
-                        <li><s>₹899</s> <b>₹199 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=Prime-3M-199" class="btn">Order Now (₹199)</a>
-                </div>
-                <div class="card">
-                    <h4><img src="./assets/prime-logo.png" width="40"> 6 Month Premium</h4>
-                    <ul>
-                        <li>Prime Video Premium</li>
-                        <li>⏳ Valid for 180 Days</li>
-                        <li>🔐 Shared Premium Account</li>
-                        <li>🎥 HD + Ultra HD (4K) Support</li>
-                        <li>🌍 Unlimited Access Worldwide</li>
-                        <li>📱1 Device Allowed</li>
-                        <li><s>₹1,799</s> <b>₹299 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=Prime-6M-299" class="btn">Order Now (₹299)</a>
-                </div>
-                <div class="card">
-                    <h4><img src="./assets/prime-logo.png" width="40"> 12 Month Premium</h4>
-                    <ul>
-                        <li>Prime Video Premium</li>
-                        <li>⏳ Valid for 365 Days</li>
-                        <li>🔐 Shared Premium Account</li>
-                        <li>🎥 HD + Ultra HD (4K) Support</li>
-                        <li>🌍 Unlimited Access Worldwide</li>
-                        <li>📱1 Device Allowed</li>
-                        <li><s>₹1,499</s> <b>₹399 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=Prime-12M-399" class="btn">Order Now (₹399)</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Canva Plans -->
-        <div id="canva" class="tab-content">
-            <div class="pricing-cards">
-                <div class="card popular">
-                    <div class="tag">Most Loved</div>
-                    <h4><img src="./assets/canva-logo.png" width="40"> 1 Year Canva Pro</h4>
-                    <ul>
-                        <li>Canva Pro</li>
-                        <li>⏳ 365 Days Pro Access</li>
-                        <li>🎨 Full Canva Pro Access</li>
-                        <li>🔐 Private Premium Account</li>
-                        <li>📁 Access to Premium Templates</li>
-                        <li>📷 Stock Photos, Videos & Elements</li>
-                        <li><s>₹6,999</s> <b>₹399 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=Canva-12M-399" class="btn">Order Now (₹399)</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Gemini Plans -->
-        <div id="gemini" class="tab-content">
-            <div class="pricing-cards">
-                <!-- 1 Month Plan -->
-                <div class="card popular">
-                    <div class="tag">Top Value</div>
-                    <h4><img src="./assets/gemini-logo.png" width="25"> 1 Month Gemini Pro + 2TB Drive</h4>
-                    <ul>
-                        <li>Gemini Pro</li>
-                        <li>🤖 Gemini 2.5 Pro – Smartest AI</li>
-                        <li>🎬 Veo 3 – AI Video Generator</li>
-                        <li>🎥 Flow – Cinematic AI Filmmaker</li>
-                        <li>🖼️ Whisk – Image-to-Video AI</li>
-                        <li>📚 NotebookLM – Research Assistant</li>
-                        <li>✍️ Gemini in Gmail, Docs & More</li>
-                        <li>☁️ 2TB Google Cloud Storage</li>
-                        <li>📧 Activation on Your Gmail ID</li>
-                        <li>🗓 Validity: 1 Month</li>
-                        <li>📝 Personal Account</li>
-                        <li><s>₹2,299</s> <b>₹199 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=Gemini-1M-199" class="btn">Order Now (₹199)</a>
-                </div>
-
-                <!-- 1 Year Plan -->
-                <div class="card popular">
-                    <div class="tag">Top Value</div>
-                    <h4><img src="./assets/gemini-logo.png" width="25"> 1 Year Gemini Pro + 2TB Drive</h4>
-                    <ul>
-                        <li>Gemini Pro</li>
-                        <li>🤖 Gemini 2.5 Pro – Smartest AI</li>
-                        <li>🎬 Veo 3 – AI Video Generator</li>
-                        <li>🎥 Flow – Cinematic AI Filmmaker</li>
-                        <li>🖼️ Whisk – Image-to-Video AI</li>
-                        <li>📚 NotebookLM – Research Assistant</li>
-                        <li>✍️ Gemini in Gmail, Docs & More</li>
-                        <li>☁️ 2TB Google Cloud Storage</li>
-                        <li>📧 Activation on Your Gmail ID</li>
-                        <li>🗓 Validity: 1 Year</li>
-                        <li>📝 Personal Account</li>
-                        <li><s>₹22,999</s> <b>₹999 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=Gemini-1Y-999" class="btn">Order Now (₹999)</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- YouTube Premium Plans (70% OFF Pricing) -->
-        <div id="youtube" class="tab-content">
-            <div class="pricing-cards">
-
-                <!-- Individual Plans -->
-                <div class="card popular yt-individual">
-                    <div class="tag">Most Popular</div>
-                    <h4>
-                        <img src="./assets/youtube-logo.png" width="25" alt="YouTube"> Individual - 1 Month
-                    </h4>
-                    <ul>
-                        <li>📆 30 Days Premium Access</li>
-                        <li>🚫 Ad-Free YouTube & YouTube Music</li>
-                        <li>🎵 Background Play (Music & Videos)</li>
-                        <li>⬇️ Offline Downloads</li>
-                        <li>📱 Works on Mobile, Desktop, Smart TVs</li>
-                        <li><del>₹139</del> <b>₹89 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=YouTube-Individual-1M-89" class="btn">Order Now (₹89)</a>
-                </div>
-
-                <div class="card yt-individual">
-                    <h4>
-                        <img src="./assets/youtube-logo.png" width="25" alt="YouTube"> Individual - 3 Months
-                    </h4>
-                    <ul>
-                        <li>📆 90 Days Premium Access</li>
-                        <li>🚫 Ad-Free YouTube & YouTube Music</li>
-                        <li>🎵 Background Play</li>
-                        <li>⬇️ Unlimited Offline Downloads</li>
-                        <li>📱 Multi-Device Support</li>
-                        <li><del>₹399</del> <b>₹229 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=YouTube-Individual-3M-229" class="btn">Order Now (₹229)</a>
-                </div>
-
-                <div class="card yt-individual">
-                    <h4>
-                        <img src="./assets/youtube-logo.png" width="25" alt="YouTube"> Individual - 6 Months
-                    </h4>
-                    <ul>
-                        <li>📆 180 Days Premium Access</li>
-                        <li>🚫 100% Ad-Free Experience</li>
-                        <li>🎵 Music in Background</li>
-                        <li>⬇️ Unlimited Downloads</li>
-                        <li>📱 Works on all devices</li>
-                        <li><del>₹699</del> <b>₹399 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=YouTube-Individual-6M-399" class="btn">Order Now (₹399)</a>
-                </div>
-
-                <div class="card yt-individual">
-                    <h4>
-                        <img src="./assets/youtube-logo.png" width="25" alt="YouTube"> Individual - 12 Months
-                    </h4>
-                    <ul>
-                        <li>📆 365 Days Premium Access</li>
-                        <li>🚫 No Ads on YouTube & Music</li>
-                        <li>🎵 Background Play + Smart Recommendations</li>
-                        <li>⬇️ High-Quality Downloads</li>
-                        <li>📱 Cross-Platform Usage</li>
-                        <li><del>₹1390</del> <b>₹749 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=YouTube-Individual-12M-420" class="btn">Order Now (₹749)</a>
-                </div>
-
-                <!-- Family Plans -->
-                <div class="card popular yt-family">
-                    <div class="tag">Best Value</div>
-                    <h4>
-                        <img src="./assets/youtube-logo.png" width="25" alt="YouTube"> Family - 1 Month
-                    </h4>
-                    <ul>
-                        <li>👨‍👩‍👧 Up to 5 Family Members</li>
-                        <li>📆 30 Days Premium Access</li>
-                        <li>🚫 Ads-Free YouTube & Music</li>
-                        <li>🎵 Background Play</li>
-                        <li>⬇️ Unlimited Downloads</li>
-                        <li><del>₹299</del> <b>₹199 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=YouTube-Family-1M-199" class="btn">Order Now (₹199)</a>
-                </div>
-
-                <div class="card yt-family">
-                    <h4>
-                        <img src="./assets/youtube-logo.png" width="25" alt="YouTube"> Family - 3 Months
-                    </h4>
-                    <ul>
-                        <li>👨‍👩‍👧 Up to 5 Family Members</li>
-                        <li>📆 90 Days Premium Access</li>
-                        <li>🚫 Ad-Free Experience</li>
-                        <li>🎵 Background Music + Video</li>
-                        <li>⬇️ Unlimited Offline Content</li>
-                        <li><del>₹597</del> <b>₹349 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=YouTube-Family-3M-349" class="btn">Order Now (₹349)</a>
-                </div>
-
-                <div class="card yt-family">
-                    <h4>
-                        <img src="./assets/youtube-logo.png" width="25" alt="YouTube"> Family - 6 Months
-                    </h4>
-                    <ul>
-                        <li>👨‍👩‍👧 Up to 5 Family Members</li>
-                        <li>📆 180 Days Premium Access</li>
-                        <li>🚫 100% Ad-Free</li>
-                        <li>🎵 Background Play on All Devices</li>
-                        <li>⬇️ High-Quality Downloads</li>
-                        <li><del>₹1139</del> <b>₹649 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=YouTube-Family-6M-649" class="btn">Order Now (₹649)</a>
-                </div>
-
-                <div class="card yt-family">
-                    <h4>
-                        <img src="./assets/youtube-logo.png" width="25" alt="YouTube"> Family - 12 Months
-                    </h4>
-                    <ul>
-                        <li>👨‍👩‍👧 Up to 5 Family Members</li>
-                        <li>📆 365 Days Premium Access</li>
-                        <li>🚫 No Ads on YouTube & Music</li>
-                        <li>🎵 Background Play + Cross-Device Sync</li>
-                        <li>⬇️ Unlimited Downloads</li>
-                        <li><del>₹2270</del> <b>₹1199 Only</b></li>
-                    </ul>
-                    <a href="order.html?plan=YouTube-Family-12M-1199" class="btn">Order Now (₹1199)</a>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- ElevenLabs Plans -->
-        <div id="elevenlabs" class="tab-content">
-            <div class="pricing-cards">
-                <div class="card popular">
-                    <div class="tag">Creator Plan</div>
-                    <h4>
-                        <img src="./assets/elevenlabs-logo.png" width="35" alt="ElevenLabs"> 3-Month Creator Plan
-                    </h4>
-                    <ul>
-                        <li>⏳ Validity: 90 Days (3 Months)</li>
-                        <li>🔤 1,10,000 Characters / month</li>
-                        <li>📊 Total: 3,30,000 Characters over 3 Months</li>
-                        <li>🎙️ High-Quality AI Voices</li>
-                        <li>🌍 Use across Web & Mobile</li>
-                        <li>💸 ₹1499 Only</li>
-                    </ul>
-                    <a href="order.html?plan=ElevenLabs-3M-1499" class="btn">Order Now (₹1499)</a>
-                </div>
-            </div>
-        </div>
-
-
-
-    </section>
-
-    <!-- Special Offers Section -->
-    <section class="special-offers">
-        <div class="container">
-            <h2>🎁 Special Combo Offer: ChatGPT 5 Pro + Gemini AI Pro + 2TB Google Storage</h2>
-            <p class="offer-subtitle">Get premium AI tools and storage at an unbeatable price! Worth ₹50,000, yours for
-                just ₹1499. Limited-time offer!</p>
-
-            <div class="offer-grid">
-                <!-- Combo Card -->
-                <div class="offer-card">
-                    <img src="assets/software-bundle.jpg" alt="All Preactivated Software Bundle">
-                    <div class="offer-content">
-                        <h4>✨ Gemini AI Pro + 2TB Google Storage</h4>
-                        <ul>
-                            <li>🗓 <strong>Validity</strong>: 12 Months</li>
-                            <li>📧 <strong>Activation</strong>:Gemini And Drive Storage On Your Email || ChatGpt Shared
-                            </li>
-                            <li>❌ <strong>Original Price</strong>:More Than ₹50,000</li>
-                            <li>💰 <strong>Our Price</strong>: ₹1499 Only</li>
-                        </ul>
-                        <p><strong>What You'll Get:</strong></p>
-                        <ul>
-                            <li>🤖 Gemini 2.5 Pro – Smartest AI</li>
-                            <li>🎬 Veo 3 – AI Video Generator</li>
-                            <li>🎥 Flow – Cinematic AI Filmmaker</li>
-                            <li>🖼 Whisk – Image-to-Video AI</li>
-                            <li>📚 NotebookLM – Research Assistant</li>
-                            <li>✍ Gemini in Gmail, Docs & More</li>
-                            <li>☁ 2TB Google Storage</li>
-                        </ul>
-                        <p><strong>Plus, ChatGPT 5 Pro!</strong></p>
-                        <p>⏰ Limited-Time Offer – Grab Now</p>
-                        <a href="order.html?plan=Combo-1499" class="btn">Claim Offer Now (₹1499)</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- How to Order -->
-    <section id="how-to-order" class="payment-guide">
-        <div class="container">
-            <h3>How to Order</h3>
-            <p>✅ Step 1: Select your service and plan</p>
-            <p>✅ Step 2: Pay via UPI (Paytm / GPay / PhonePe)</p>
-            <p><strong>UPI ID:</strong><br><code>somyajain2208@okaxis</code></p>
-            <p>✅ Step 3: Fill Google Form with details & screenshot</p>
-            <p>⚡ Details will be delivered in 1–6 hours after payment confirmation.</p>
-        </div>
-    </section>
-
-    <!-- Payment Proof Section -->
-    <section class="payment-proofs">
-        <div class="container">
-            <h3>💳 Real Payment Proofs from Happy Customers</h3>
-            <p>We’ve already delivered to 1000+ students! Here's proof of successful payments:</p>
-
-            <div class="proof-grid">
-                <img src="./assets/Pay1.jpg" alt="Payment Proof 1">
-                <img src="./assets/Pay2.jpg" alt="Payment Proof 2">
-                <img src="./assets/Pay3.jpg" alt="Payment Proof 3">
-                <img src="./assets/Pay4.jpg" alt="Payment Proof 4">
-                <img src="./assets/Pay5.jpg" alt="Payment Proof 5">
-                <img src="./assets/Pay6.jpg" alt="Payment Proof 6">
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <h3>What Our Customers Say</h3>
-
-            <div class="testimonial">
-                “I got ChatGPT & Netflix both from SabkaPremium. Delivery was super fast!” -
-                <strong>Aayush K.</strong>
-            </div>
-
-            <div class="testimonial">
-                “Affordable and 100% working accounts. Highly recommended!” -
-                <strong>Priya R.</strong>
-            </div>
-
-            <div class="testimonial">
-                “Great service! I bought Canva Pro and it was activated within minutes.” -
-                <strong>Rohan S.</strong>
-            </div>
-
-            <div class="testimonial">
-                “SabkaPremium is my go-to for all OTT and AI tools. Super easy process!” -
-                <strong>Neha P.</strong>
-            </div>
-
-            <div class="testimonial">
-                “Very professional and trustworthy. I have purchased multiple plans!” -
-                <strong>Aditya M.</strong>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- FAQ -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <h3>Frequently Asked Questions</h3>
-
-            <div class="faq-item">
-                <strong>1. Are these official accounts?</strong>
-                <p>Yes, you will get premium accounts with all features unlocked. These are shared accounts but
-                    completely safe and working.</p>
-            </div>
-
-            <div class="faq-item">
-                <strong>2. When will I receive my login details?</strong>
-                <p>You will receive login details within <strong>1–6 hours</strong> after payment confirmation.</p>
-            </div>
-
-            <div class="faq-item">
-                <strong>3. Can multiple devices use it at the same time?</strong>
-                <p>Depends, you can use it on multiple devices if our team allows You. Each user gets their own profile
-                    wherever possible (e.g.,
-                    Netflix, Canva).</p>
-            </div>
-
-            <div class="faq-item">
-                <strong>4. What if the account stops working?</strong>
-                <p>We provide full support and will replace the account <strong>for free</strong> if it stops working
-                    during the validity period.</p>
-            </div>
-
-            <div class="faq-item">
-                <strong>5. Is it safe to purchase from SabkaPremium?</strong>
-                <p>Absolutely! We have hundreds of happy customers and 100% secure payment options. Your data is never
-                    shared.</p>
-            </div>
-
-            <div class="faq-item">
-                <strong>6. Can I upgrade or buy multiple accounts?</strong>
-                <p>Yes, you can upgrade your plan anytime or purchase multiple accounts for friends and family at
-                    discounted prices.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <a href="https://t.me/Somya2208" class="telegram-button" target="_blank">
-        <i class="fab fa-telegram-plane"></i>
-    </a>
-
-    <a href="https://wa.me/919511335264" class="whatsapp-button" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-
-
-
-
-    <section class="contact-support">
-        <div class="container">
-            <h3>Need Help?</h3>
-            <p>If you face any issue with payment or order, you can reach us through:</p>
-            <div class="contact-links">
-                <a href="https://t.me/Somya2208" target="_blank">
-                    <i class="fab fa-telegram-plane"></i> Telegram
-                </a>
-                <a href="https://instagram.com/sabka_premium" target="_blank">
-                    <i class="fab fa-instagram"></i> Instagram
-                </a>
-                <a href="mailto:sabkapremium01@gmail.com">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Disclaimer Section -->
-    <section class="disclaimer">
-        <div class="container">
-            <h4>Disclaimer</h4>
-            <p>
-                ⚠️ We are not the official sellers or service providers for the services listed on this website.
-                We are simply resellers and we purchase these services from other providers.
-                We offer these services to you at a margin for convenience and affordability.
-            </p>
-            <p>
-                ❌ Please note that we do not offer refunds under any circumstances.
-                If you face any issues with the service, we will provide a replacement, but a refund is not possible.
-                By purchasing from us, you agree to these terms.
-                We'll Provide you Support or Assistance in the best way that we can.
-            </p>
-        </div>
-    </section>
-
-    <section class="partner-clarification">
-        <div class="container">
-            <h4>Important Notice</h4>
-            <p>
-                ⚠️ We are not officially partnered with any individual or third-party seller.
-                If you are approached by someone claiming to be associated with SabkaPremium or asking for payments
-                outside of our official channels, please be cautious.
-                We do not have any official partners or resellers.
-            </p>
-            <p>
-                🛑 To make purchases or inquire about services, please use our official website or contact us through
-                the following Instagram handles:
-            </p>
+      <!-- ChatGPT -->
+      <div id="chatgpt" class="tabpane active" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Most Popular</div>
+            <h3><img src="./assets/chatgpt-logo.png" alt=""/> 6 Month Access</h3>
             <ul>
-                <li><strong>@Sabka_Premium</strong></li>
-                <li><strong>@brainboosttools_</strong></li>
+              <li>📆 180 Days Premium Access</li>
+              <li>🔐 Private & Secure Login</li>
+              <li>🖼️ DALL·E, GPT-5 Plus, Sora, Whisper</li>
+              <li>📝 Shared Access (8–10 members)</li>
+              <li>📝 You Will get Some Limitations And Downtime</li>
+              <li>📱 Phone + Desktop Access</li>
             </ul>
-            <p>
-                Any transaction outside these platforms is not authorized by us.
-                Stay safe and transact only through our official website or verified Instagram handles.
-            </p>
+            <div class="price">₹599</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-6M-599">Order Now</a>
+          </article>
+
+          <article class="card">
+            <h3><img src="./assets/chatgpt-logo.png" alt=""/> 3 Month Access</h3>
+            <ul>
+              <li>⏳ Valid for 90 Days</li>
+              <li>🔐 Private Login</li>
+              <li>🎨 All Pro Tools Unlocked</li>
+              <li>🖼️ DALL·E, GPT-5 Plus, Sora, Whisper</li>
+              <li>📝 Shared Access (8–10 members)</li>
+              <li>📝 You Will get Some Limitations And Downtime</li>
+              <li>📱 Phone + Desktop Access</li>
+            </ul>
+            <div class="price">₹399</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-3M-399">Order Now</a>
+          </article>
+
+          <article class="card">
+            <h3><img src="./assets/chatgpt-logo.png" alt=""/> 12 Month Access</h3>
+            <ul>
+              <li>📆 365 Days Premium Access</li>
+              <li>🔐 Private & Secure Login</li>
+              <li>🖼️ DALL·E, GPT-5 Plus, Sora, Whisper</li>
+              <li>📝 Shared Access (8–10 members)</li>
+              <li>📝 You Will get Some Limitations And Downtime</li>
+              <li>📱 Phone + Desktop Access</li>
+            </ul>
+            <div class="price">₹999</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-12M-999">Order Now</a>
+          </article>
+
+          <article class="card popular">
+            <div class="tag">Most Popular</div>
+            <h3><img src="./assets/chatgpt-logo.png" alt=""/> 3 Month (3–4 Members)</h3>
+            <ul>
+              <li>⏳ Valid for 90 Days</li>
+              <li>🔐 Private Login</li>
+              <li>🖼️ All Pro Tools + Sora</li>
+              <li>📝 Shared Access (3–4 members)</li>
+              <li>📝 No Limitations And NO Downtime</li>
+              <li>📱 Phone + Desktop Access</li>
+            </ul>
+            <div class="price">₹549</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-3M-549">Order Now</a>
+          </article>
+
+          <article class="card">
+            <h3><img src="./assets/chatgpt-logo.png" alt=""/> 6 Month (3–4 Members)</h3>
+            <ul>
+              <li>📆 180 Days Premium Access</li>
+              <li>🔐 Private & Secure Login</li>
+              <li>🖼️ DALL·E, GPT-5 Plus, Sora</li>
+              <li>📝 Shared Access(3–4 members)</li>
+              <li>📝 No Limitations And NO Downtime</li>
+              <li>📱 Phone + Desktop Access</li>
+            </ul>
+            <div class="price">₹899</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-6M-899">Order Now</a>
+          </article>
+
+          <article class="card">
+            <h3><img src="./assets/chatgpt-logo.png" alt=""/> 12 Month (3–4 Members)</h3>
+            <ul>
+              <li>📆 365 Days Premium Access</li>
+              <li>🔐 Private & Secure Login</li>
+              <li>🖼️ DALL·E, GPT-5 Plus, Sora</li>
+              <li>📝 Shared Access (3–4 members)</li>
+              <li>📝 No Limitations And NO Downtime</li>
+              <li>📱 Phone + Desktop Access</li>
+            </ul>
+            <div class="price">₹1399</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-12M-1399">Order Now</a>
+          </article>
+
+          <article class="card accent">
+            <h3><img src="./assets/chatgpt-logo.png" alt=""/> 3 Month Private Access</h3>
+            <ul>
+              <li>✨ Unlimited GPT-5 – Business Teams</li>
+              <li>🔐 Activation on Your Email</li>
+              <li>🖼️ DALL·E, Sora, Whisper</li>
+              <li>📝 No Limitations And NO Downtime</li>
+              <li>📱 No Device Limit</li>
+            </ul>
+            <div class="price">₹1499</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-3M-1499">Order Now</a>
+          </article>
         </div>
-    </section>
+      </div>
 
-    <!-- Scam Alert -->
-    <section class="scam-alert" id="scam-alert" aria-labelledby="scam-alert-title">
-        <div class="container">
-            <div class="scam-card">
-                <div class="scam-head">
-                    <span class="scam-icon" aria-hidden="true">⚠️</span>
-                    <h3 id="scam-alert-title">Scam Alert — Stay Safe</h3>
-                </div>
-
-                <p class="scam-lead">
-                    Some individuals may try to misuse our brand name to ask for payments.
-                    Please note: we only communicate through our official channels, and
-                    <strong>only the UPI/links listed on this website are valid.</strong>
-                </p>
-
-                <div class="scam-grid">
-                    <!-- Official Channels -->
-                    <div class="scam-box">
-                        <h4>✅ Our Official Channels</h4>
-                        <ul class="tick-list">
-                            <li>Website: <a href="#how-to-order">SabkaPremium.shop</a></li>
-                            <li>Instagram: <strong>@sabka_premium</strong>, <strong>@brainboosttools_</strong></li>
-                            <li>Telegram: <a href="https://t.me/Somya2208" target="_blank"
-                                    rel="noopener">t.me/Somya2208</a></li>
-                            <li>WhatsApp: <a href="https://wa.me/919511335264" target="_blank" rel="noopener">+91 95113
-                                    35264</a></li>
-                            <li>UPI: <code>somya2208jain2208@okaxis</code></li>
-                        </ul>
-                    </div>
-
-                    <!-- How to Verify -->
-                    <div class="scam-box">
-                        <h4>🔎 Quick Verification Checklist</h4>
-                        <ol class="num-list">
-                            <li>Is the person contacting you from an <strong>official handle</strong> listed above?</li>
-                            <li>Always pay only to the <strong>UPI ID shown on our website</strong>.</li>
-                            <li>Ask for <strong>proof of order</strong> and delivery timelines.</li>
-                            <li>Be cautious of suspicious links, spelling mistakes, or “urgent” payment pressure.</li>
-                        </ol>
-                    </div>
-
-                    <!-- Report Suspicious -->
-                    <div class="scam-box">
-                        <h4>🛑 Report Suspicious Activity</h4>
-                        <p>If someone asks for payment outside these official channels:</p>
-                        <ul class="dot-list">
-                            <li>Email: <a href="mailto:sabkapremium01@gmail.com">sabkapremium01@gmail.com</a></li>
-                            <li>Instagram DM: <strong>@sabka_premium</strong></li>
-                            <li>Telegram: <a href="https://t.me/Somya2208" target="_blank" rel="noopener">Message on
-                                    Telegram</a></li>
-                        </ul>
-                        <p class="minitext">Note: We do not publish personal numbers or names. Reports are reviewed
-                            internally for action.</p>
-                    </div>
-                </div>
-
-                <div class="scam-foot">
-                    <p>Always make payments via our <a href="#how-to-order"><strong>official “How to Order”</strong></a>
-                        steps only.
-                        Refunds are not provided; replacements/support will be offered if needed.</p>
-                </div>
-            </div>
+      <!-- Netflix -->
+      <div id="netflix" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Best Deal</div>
+            <h3><img src="./assets/netflix-logo.png" alt=""/> 1 Month Premium</h3>
+            <ul>
+              <li>HD + Ultra HD (4K)</li>
+              <li>Shared Premium Account</li>
+              <li>1 Device Allowed</li>
+            </ul>
+            <div class="price">₹149</div>
+            <a class="btn-primary" href="order.html?plan=Netflix-1M-149">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/netflix-logo.png" alt=""/> 3 Month Premium</h3>
+            <ul>
+              <li>HD + Ultra HD (4K)</li>
+              <li>Shared Premium Access</li>
+              <li>1 Device Allowed</li>
+            </ul>
+            <div class="price">₹399</div>
+            <a class="btn-primary" href="order.html?plan=Netflix-3M-399">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/netflix-logo.png" alt=""/> 6 Month Premium</h3>
+            <ul>
+              <li>HD + Ultra HD (4K)</li>
+              <li>Shared Premium Access</li>
+              <li>1 Device Allowed</li>
+            </ul>
+            <div class="price">₹599</div>
+            <a class="btn-primary" href="order.html?plan=Netflix-6M-599">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/netflix-logo.png" alt=""/> 12 Month Premium</h3>
+            <ul>
+              <li>HD + Ultra HD (4K)</li>
+              <li>Shared Premium Access</li>
+              <li>1 Device Allowed</li>
+            </ul>
+            <div class="price">₹1099</div>
+            <a class="btn-primary" href="order.html?plan=Netflix-12M-1099">Order Now</a>
+          </article>
         </div>
-    </section>
+      </div>
 
-
-    <footer class="site-footer">
-        <div class="container footer-grid">
-
-            <div class="footer-brand">
-                <img src="./assets/logo.png" alt="SabkaPremium Logo" />
-                <p>India’s Most Trusted Affordable Premium Service Platform for Students & Creators.</p>
-            </div>
-
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#plans">Our Plans</a></li>
-                    <li><a href="#how-to-order">How to Order</a></li>
-                    <li><a href="#faq">FAQs</a></li>
-                    <li><a href="mailto:sabkapremium01@gmail.com">Contact Support</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-trust">
-                <h4>We’re Trusted!</h4>
-                <p>✅ 1000+ Happy Customers</p>
-                <p>✅ Instant Delivery Guaranteed</p>
-                <p>✅ 100% Replacement Guarantee</p>
-                <p>🔒 Secure UPI Payments</p>
-            </div>
-
-            <div class="footer-social">
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                    <a href="https://instagram.com/sabka_premium" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://t.me/Somya2208" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="mailto:sabkapremium01@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-
+      <!-- Prime -->
+      <div id="prime" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Best Deal</div>
+            <h3><img src="./assets/prime-logo.png" alt=""/> 1 Month Premium</h3>
+            <ul>
+              <li>Watch on Mobile/TV/Laptop</li>
+              <li>Shared Premium Account</li>
+              <li>4K Support</li>
+            </ul>
+            <div class="price">₹99</div>
+            <a class="btn-primary" href="order.html?plan=Prime-1M-99">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/prime-logo.png" alt=""/> 3 Month Premium</h3>
+            <ul>
+              <li>Watch on All Devices</li>
+              <li>Shared Premium Account</li>
+              <li>4K Support</li>
+            </ul>
+            <div class="price">₹199</div>
+            <a class="btn-primary" href="order.html?plan=Prime-3M-199">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/prime-logo.png" alt=""/> 6 Month Premium</h3>
+            <ul>
+              <li>Watch on All Devices</li>
+              <li>Shared Premium Account</li>
+              <li>4K Support</li>
+            </ul>
+            <div class="price">₹299</div>
+            <a class="btn-primary" href="order.html?plan=Prime-6M-299">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/prime-logo.png" alt=""/> 12 Month Premium</h3>
+            <ul>
+              <li>Watch on All Devices</li>
+              <li>Shared Premium Account</li>
+              <li>4K Support</li>
+            </ul>
+            <div class="price">₹399</div>
+            <a class="btn-primary" href="order.html?plan=Prime-12M-399">Order Now</a>
+          </article>
         </div>
+      </div>
 
-        <div class="footer-bottom">
-            <p>© 2025 SabkaPremium.com | All rights reserved.</p>
-            <p>Made with ❤️ for Indian Students</p>
+      <!-- Canva -->
+      <div id="canva" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Most Loved</div>
+            <h3><img src="./assets/canva-logo.png" alt=""/> 1 Year Canva Pro</h3>
+            <ul>
+              <li>365 Days Pro Access</li>
+              <li>Private Premium Account</li>
+              <li>Premium Templates + Stock</li>
+            </ul>
+            <div class="price">₹399</div>
+            <a class="btn-primary" href="order.html?plan=Canva-12M-399">Order Now</a>
+          </article>
         </div>
-    </footer>
+      </div>
 
+      <!-- Gemini -->
+      <div id="gemini" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Top Value</div>
+            <h3><img src="./assets/gemini-logo.png" alt=""/> 1 Month Gemini Pro + 2TB</h3>
+            <ul>
+              <li>Gemini 2.5 Pro, Veo 3, Flow</li>
+              <li>Whisk, NotebookLM, Gmail & Docs</li>
+              <li>2TB Google Storage</li>
+            </ul>
+            <div class="price"><s>₹2299</s> ₹199</div>
+            <a class="btn-primary" href="order.html?plan=Gemini-1M-199">Order Now</a>
+          </article>
+          <article class="card popular">
+            <div class="tag">Top Value</div>
+            <h3><img src="./assets/gemini-logo.png" alt=""/> 1 Year Gemini Pro + 2TB</h3>
+            <ul>
+              <li>All Pro Tools</li>
+              <li>Activation on Your Gmail</li>
+              <li>2TB Google Storage</li>
+            </ul>
+            <div class="price">₹999</div>
+            <a class="btn-primary" href="order.html?plan=Gemini-1Y-999">Order Now</a>
+          </article>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <!-- YouTube -->
+      <div id="youtube" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Most Popular</div>
+            <h3><img src="./assets/youtube-logo.png" alt=""/> Individual – 1 Month</h3>
+            <ul>
+              <li>Ad-Free YouTube & Music</li>
+              <li>Background Play + Downloads</li>
+              <li>All Devices</li>
+            </ul>
+            <div class="price">₹89</div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Individual-1M-89">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/youtube-logo.png" alt=""/> Individual – 3 Months</h3>
+            <ul>
+              <li>Ad-Free YouTube & Music</li>
+              <li>Background Play</li>
+              <li>Offline Downloads</li>
+            </ul>
+            <div class="price">₹229</div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Individual-3M-229">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/youtube-logo.png" alt=""/> Individual – 6 Months</h3>
+            <ul>
+              <li>Ad-Free YouTube & Music</li>
+              <li>Background Play</li>
+              <li>Offline Downloads</li>
+            </ul>
+            <div class="price">₹399</div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Individual-6M-399">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/youtube-logo.png" alt=""/> Individual – 12 Months</h3>
+            <ul>
+              <li>Ad-Free YouTube & Music</li>
+              <li>Background Play + Smart Recos</li>
+              <li>Offline Downloads</li>
+            </ul>
+            <div class="price">₹749</div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Individual-12M-749">Order Now</a>
+          </article>
+
+          <article class="card popular">
+            <div class="tag">Best Value</div>
+            <h3><img src="./assets/youtube-logo.png" alt=""/> Family – 1 Month</h3>
+            <ul>
+              <li>Up to 5 Members</li>
+              <li>Ad-Free YouTube & Music</li>
+              <li>Background Play</li>
+            </ul>
+            <div class="price">₹199</div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Family-1M-199">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/youtube-logo.png" alt=""/> Family – 3 Months</h3>
+            <ul>
+              <li>Up to 5 Members</li>
+              <li>Ad-Free Experience</li>
+              <li>Background Play</li>
+            </ul>
+            <div class="price">₹349</div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Family-3M-349">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/youtube-logo.png" alt=""/> Family – 6 Months</h3>
+            <ul>
+              <li>Up to 5 Members</li>
+              <li>100% Ad-Free</li>
+              <li>Background Play</li>
+            </ul>
+            <div class="price">₹649</div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Family-6M-649">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/youtube-logo.png" alt=""/> Family – 12 Months</h3>
+            <ul>
+              <li>Up to 5 Members</li>
+              <li>No Ads, Smart Sync</li>
+              <li>Unlimited Downloads</li>
+            </ul>
+            <div class="price">₹1199</div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Family-12M-1199">Order Now</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- ElevenLabs -->
+      <div id="elevenlabs" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Creator Plan</div>
+            <h3><img src="./assets/elevenlabs-logo.png" alt=""/> 3-Month Creator Plan</h3>
+            <ul>
+              <li>1,10,000 chars / month</li>
+              <li>HQ AI Voices • Web & Mobile</li>
+              <li>Total 3,30,000 characters</li>
+            </ul>
+            <div class="price">₹1499</div>
+            <a class="btn-primary" href="order.html?plan=ElevenLabs-3M-1499">Order Now</a>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Combo Offer -->
+  <section class="combo">
+    <div class="container">
+      <h2>🎁 Combo: ChatGPT 5 Pro + Gemini AI Pro + 2TB Google Storage</h2>
+      <p class="muted">Worth ₹50,000 — yours for just ₹1499. Limited time.</p>
+      <div class="combo-wrap">
+        <img src="assets/software-bundle.jpg" alt="AI combo"/>
+        <div class="combo-copy">
+          <h3>What you’ll get</h3>
+          <ul>
+            <li>🤖 Gemini 2.5 Pro • Veo 3 • Flow</li>
+            <li>🖼️ Whisk • NotebookLM • Gmail & Docs Integration</li>
+            <li>☁️ 2TB Google Storage</li>
+            <li>💬 ChatGPT 5 Pro access</li>
+          </ul>
+          <a class="btn-primary" href="order.html?plan=Combo-1499">Claim Offer (₹1499)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Order -->
+  <section id="how-to-order" class="howto">
+    <div class="container narrow">
+      <h2>How to Order</h2>
+      <ol class="steps">
+        <li>Select your service and plan.</li>
+        <li>Pay via UPI (Paytm / GPay / PhonePe)<br><code>somyajain2208@okaxis</code></li>
+        <li>Fill the Google Form with details & screenshot.</li>
+      </ol>
+      <p class="muted">⚡ Delivery within <strong>1–6 hours</strong> after payment confirmation.</p>
+    </div>
+  </section>
+
+  <!-- Payment Proofs -->
+  <section class="proofs">
+    <div class="container">
+      <h2>💳 Real Payment Proofs</h2>
+      <p class="muted">1000+ orders delivered successfully</p>
+      <div class="proof-grid">
+        <img src="./assets/Pay1.jpg" alt="Payment proof 1"/>
+        <img src="./assets/Pay2.jpg" alt="Payment proof 2"/>
+        <img src="./assets/Pay3.jpg" alt="Payment proof 3"/>
+        <img src="./assets/Pay4.jpg" alt="Payment proof 4"/>
+        <img src="./assets/Pay5.jpg" alt="Payment proof 5"/>
+        <img src="./assets/Pay6.jpg" alt="Payment proof 6"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <div class="t-grid">
+        <blockquote>“I got ChatGPT & Netflix both from SabkaPremium. Delivery was super fast!” <cite>— Aayush K.</cite></blockquote>
+        <blockquote>“Affordable and 100% working accounts. Highly recommended!” <cite>— Priya R.</cite></blockquote>
+        <blockquote>“Great service! My Canva Pro was activated within minutes.” <cite>— Rohan S.</cite></blockquote>
+        <blockquote>“My go-to for all OTT and AI tools. Super easy process!” <cite>— Neha P.</cite></blockquote>
+        <blockquote>“Very professional and trustworthy. I’ve purchased multiple plans!” <cite>— Aditya M.</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="container narrow">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <details>
+          <summary>Are these official accounts?</summary>
+          <p>You’ll get premium accounts with features unlocked. These are shared accounts but completely safe and working.</p>
+        </details>
+        <details>
+          <summary>When will I receive my login details?</summary>
+          <p>Within <strong>1–6 hours</strong> after payment confirmation.</p>
+        </details>
+        <details>
+          <summary>Can multiple devices use it at the same time?</summary>
+          <p>Depends on the service. Wherever possible (e.g., Netflix, Canva), each user gets their own profile.</p>
+        </details>
+        <details>
+          <summary>What if the account stops working?</summary>
+          <p>We provide full support and free replacement during the validity period.</p>
+        </details>
+        <details>
+          <summary>Is it safe to purchase from SabkaPremium?</summary>
+          <p>Yes. We have hundreds of happy customers and secure UPI payments. Your data is never shared.</p>
+        </details>
+        <details>
+          <summary>Can I upgrade or buy multiple accounts?</summary>
+          <p>Absolutely. You can upgrade anytime or purchase multiple accounts for friends and family at a discount.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Contact Buttons -->
+  <a href="https://t.me/Somya2208" class="btn-float tg" target="_blank" aria-label="Telegram">
+    <i class="fa-brands fa-telegram"></i>
+  </a>
+  <a href="https://wa.me/919511335264" class="btn-float wa" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Contact Support -->
+  <section class="contact">
+    <div class="container">
+      <h2>Need Help?</h2>
+      <p>If you face any issue with payment or order, reach us through:</p>
+      <div class="contact-links">
+        <a href="https://t.me/Somya2208" target="_blank"><i class="fa-brands fa-telegram"></i> Telegram</a>
+        <a href="https://instagram.com/sabka_premium" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="mailto:sabkapremium01@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <section class="disclaimer">
+    <div class="container narrow">
+      <h3>Disclaimer</h3>
+      <p>⚠️ We are not the official sellers or service providers. We are resellers—purchasing from providers and offering at a margin for convenience and affordability.</p>
+      <p>❌ No refunds. If any service stops during validity, we’ll replace it free of cost. By purchasing, you agree to these terms.</p>
+    </div>
+  </section>
+
+  <!-- Partner Clarification -->
+  <section class="partner">
+    <div class="container narrow">
+      <h3>Important Notice</h3>
+      <p>⚠️ We are not officially partnered with any third-party seller. Transactions outside our official channels are not authorized.</p>
+      <ul>
+        <li><strong>@sabka_premium</strong></li>
+        <li><strong>@brainboosttools_</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Scam Alert -->
+  <section class="scam">
+    <div class="container">
+      <div class="scam-card">
+        <div class="scam-head">
+          <span>⚠️</span>
+          <h3>Scam Alert — Stay Safe</h3>
+        </div>
+        <p class="lead">We only communicate through our official channels. <strong>Only UPI/links listed on this website are valid.</strong></p>
+        <div class="scam-grid">
+          <div class="box">
+            <h4>✅ Official Channels</h4>
+            <ul>
+              <li>Website: <a href="#how-to-order">SabkaPremium.shop</a></li>
+              <li>Instagram: <strong>@sabka_premium</strong>, <strong>@brainboosttools_</strong></li>
+              <li>Telegram: <a href="https://t.me/Somya2208" target="_blank" rel="noopener">t.me/Somya2208</a></li>
+              <li>WhatsApp: <a href="https://wa.me/919511335264" target="_blank" rel="noopener">+91 95113 35264</a></li>
+              <li>UPI: <code>somya2208jain2208@okaxis</code></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h4>🔎 Quick Verification Checklist</h4>
+            <ol>
+              <li>Is the person from an <strong>official handle</strong> listed above?</li>
+              <li>Pay only to the <strong>UPI ID on our website</strong>.</li>
+              <li>Ask for <strong>proof of order</strong> and delivery timelines.</li>
+              <li>Watch out for suspicious links or urgent payment pressure.</li>
+            </ol>
+          </div>
+          <div class="box">
+            <h4>🛑 Report Suspicious Activity</h4>
+            <ul>
+              <li>Email: <a href="mailto:sabkapremium01@gmail.com">sabkapremium01@gmail.com</a></li>
+              <li>Instagram DM: <strong>@sabka_premium</strong></li>
+              <li>Telegram: <a href="https://t.me/Somya2208" target="_blank" rel="noopener">Message on Telegram</a></li>
+            </ul>
+            <p class="minitext">We do not publish personal numbers or names. Reports are reviewed internally.</p>
+          </div>
+        </div>
+        <p class="foot">Always follow our <a href="#how-to-order"><strong>How to Order</strong></a> steps. No refunds; replacements/support will be offered if needed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container grid-4">
+      <div>
+        <img src="./assets/logo.png" alt="SabkaPremium"/>
+        <p>India’s Most Trusted Affordable Premium Service Platform for Students & Creators.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="links">
+          <li><a href="#plans">Our Plans</a></li>
+          <li><a href="#how-to-order">How to Order</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="mailto:sabkapremium01@gmail.com">Contact Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>We’re Trusted!</h4>
+        <ul class="ticks">
+          <li>✅ 1000+ Happy Customers</li>
+          <li>✅ Instant Delivery Guaranteed</li>
+          <li>✅ 100% Replacement Guarantee</li>
+          <li>🔒 Secure UPI Payments</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="https://instagram.com/sabka_premium" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://t.me/Somya2208" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="mailto:sabkapremium01@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-copy">
+      <p>© 2025 SabkaPremium.com | All rights reserved.</p>
+      <p>Made with ❤️ for Indian Students</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
