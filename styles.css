@@ -64,7 +64,7 @@ code{background:#0e1c19;border:1px solid rgba(20,184,166,.25);padding:2px 6px;bo
 .nav{display:flex;align-items:center;justify-content:space-between;min-height:64px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
 /* ✅ logo size tidy */
-.brand img{width:40px;height:40px;object-fit:contain;border-radius:8px}
+.brand img{width:100px;height:100px;object-fit:contain;border-radius:8px}
 .main-nav{display:flex;align-items:center;gap:18px}
 .main-nav a{opacity:.9}
 .main-nav a:hover{opacity:1}
@@ -276,7 +276,7 @@ input:focus{border-color:var(--e2);box-shadow:0 0 0 6px rgba(20,184,166,.12)}
 
 @media (max-width:720px){
   /* logo a bit smaller on mobile */
-  .brand img{ width:34px; height:34px; }
+  .brand img{ width:75px; height:75px; }
 
   /* tabbar safe horizontal scroll (no page scroll) */
   .tabbar{justify-content:flex-start; overflow-x:auto; overflow-y:hidden; padding-bottom:6px; -webkit-overflow-scrolling:touch;}
@@ -300,3 +300,26 @@ input:focus{border-color:var(--e2);box-shadow:0 0 0 6px rgba(20,184,166,.12)}
   .card, .promo-card, .combo-wrap, .scam-card{transition:transform .2s, box-shadow .2s}
   .card:hover{transform:translateY(-3px)}
 }
+
+/* ==== MOBILE FIX: Scam Alert -> vertical stack ==== */
+@media (max-width: 900px) {
+  .scam-grid{
+    display: flex !important;          /* override grid if any */
+    flex-direction: column !important; /* stack vertically */
+    gap: 12px !important;
+  }
+  .scam .box{
+    width: 100% !important;
+  }
+  /* long strings should wrap so width na badhe */
+  .scam code,
+  .scam a{
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
+  /* thoda compact spacing */
+  .scam-card{ padding: 18px !important; }
+  .scam .lead{ font-size: 14px !important; }
+  .scam .box h4{ font-size: 16px !important; }
+}
+
