@@ -193,7 +193,13 @@ blockquote cite{display:block;margin-top:6px;color:var(--muted);font-style:norma
 .btn-float{position:fixed;right:14px;z-index:55;width:46px;height:46px;border-radius:50%;
   display:grid;place-items:center;color:#fff;box-shadow:var(--shadow)}
 .btn-float.tg{bottom:18px;background:#229ED9}
-.btn-float.wa{bottom:72px;background:#25D366}
+.btn-float.wa{bottom:72px;background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );}
+
+   
 
 /* Contact */
 .contact{padding:34px 0}
