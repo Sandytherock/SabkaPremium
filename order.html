@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,15 +13,19 @@
 
   <!-- Meta Pixel Code -->
   <script>
-    !function (f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init','1281510500113019'); fbq('track','PageView');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      }; if (!f._fbq) f._fbq = n;
+      n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1281510500113019'); fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1281510500113019&ev=PageView&noscript=1"/></noscript>
+      src="https://www.facebook.com/tr?id=1281510500113019&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
 </head>
 
@@ -30,7 +35,7 @@
       <h1>Complete Your Payment</h1>
 
       <div class="qr">
-        <img id="qrImage" src="./assets/upi-qr.png.jpg" alt="UPI QR Code"/>
+        <img id="qrImage" src="./assets/upi-qr.png.jpg" alt="UPI QR Code" />
         <div class="upi-line">
           <span>UPI ID:</span> <code>somyajain2208@okaxis</code>
         </div>
@@ -116,6 +121,10 @@
       "Gemini-1M-199": { name: "Gemini Pro + 2TB - 1 Month", amount: "199" },
       "Gemini-1Y-999": { name: "Gemini Pro + 2TB - 1 Year", amount: "999" },
 
+      "Perplexity-1M-299": { name: "Perplexity Pro - 1 Month", amount: "299" },
+      "Perplexity-1Y-1999": { name: "Perplexity Pro - 1 Year", amount: "1999" },
+
+
       "YouTube-Individual-1M-89": { name: "YouTube Premium Individual - 1 Month", amount: "89" },
       "YouTube-Individual-3M-229": { name: "YouTube Premium Individual - 3 Months", amount: "229" },
       "YouTube-Individual-6M-399": { name: "YouTube Premium Individual - 6 Months", amount: "399" },
@@ -194,9 +203,9 @@
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(payload)
       })
-      .then(() => { alert("Your details have been submitted! We will verify and deliver shortly."); form.reset(); })
-      .catch(err => alert("Error: " + err))
-      .finally(() => { submitBtn.disabled = false; submitBtn.textContent = "Submit Details"; });
+        .then(() => { alert("Your details have been submitted! We will verify and deliver shortly."); form.reset(); })
+        .catch(err => alert("Error: " + err))
+        .finally(() => { submitBtn.disabled = false; submitBtn.textContent = "Submit Details"; });
     });
 
     function fileToBase64(file) {
@@ -209,4 +218,5 @@
     }
   </script>
 </body>
+
 </html>
