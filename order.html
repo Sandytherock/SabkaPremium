@@ -155,7 +155,7 @@
       document.getElementById("amountInput").value = "₹" + planMap[planCode].amount;
 
       // Generate QR from UPI deeplink
-      const upiId = "somya2208jain2208@okaxis";
+      const upiId = "somyajain2208@okaxis";
       const name = "Soumya Jain";
       const amount = planMap[planCode].amount;
       const data = `upi://pay?pa=${upiId}&pn=${encodeURIComponent(name)}&am=${amount}&cu=INR`;
@@ -218,6 +218,18 @@
         reader.onerror = (err) => reject(err);
       });
     }
+
+        // ✅ Track Lead event for Strategy Call
+    try {
+      const urlParams2 = new URLSearchParams(window.location.search);
+      const planFromUrl = urlParams2.get("plan");
+      if (planFromUrl === "Call-1On1-99" && typeof fbq === "function") {
+        fbq("track", "Lead", { content_name: "1-on-1 Strategy Call ₹99" });
+      }
+    } catch (e) {
+      console.log("Pixel Lead tracking error:", e);
+    }
+
   </script>
 </body>
 
