@@ -329,3 +329,135 @@ input:focus{border-color:var(--e2);box-shadow:0 0 0 6px rgba(20,184,166,.12)}
   .scam .box h4{ font-size: 16px !important; }
 }
 
+/* =============================
+   ₹99 Strategy Call Section
+============================= */
+.coach{
+  padding:40px 0;
+  border-top:1px dashed rgba(20,184,166,.35);
+}
+.coach-head{
+  text-align:center;
+  max-width:760px;
+  margin:0 auto 24px;
+}
+.coach-head h2{
+  font-size:clamp(22px,4vw,30px);
+  margin-top:10px;
+  margin-bottom:8px;
+}
+.coach-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 12px;
+  border-radius:999px;
+  border:1px solid var(--ring);
+  background:rgba(15,30,27,.9);
+  color:var(--e3);
+  font-size:13px;
+  font-weight:600;
+}
+.coach-pill i{
+  font-size:14px;
+}
+
+.coach-grid{
+  display:grid;
+  grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr);
+  gap:20px;
+  align-items:flex-start;
+}
+.coach-card{
+  background:linear-gradient(180deg,#0f1d1a,#0c1614);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:16px;
+  padding:18px;
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.coach-card h3{
+  font-size:18px;
+  margin-bottom:4px;
+}
+.coach-card ul{
+  list-style:none;
+  padding-left:0;
+  display:grid;
+  gap:6px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.coach-note{
+  background:#0f1e1b;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.06);
+  padding:10px 12px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.coach-cta{
+  margin-top:6px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.coach-price{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:10px;
+}
+.coach-price .old{
+  font-size:14px;
+  color:#8abbb0;
+  text-decoration:line-through;
+}
+.coach-price .new{
+  font-size:22px;
+  font-weight:800;
+  background:linear-gradient(90deg,#aff7e8,#32d9b9);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.coach-price .tagline{
+  font-size:12px;
+  color:var(--muted);
+}
+.tiny-text{
+  font-size:11px;
+}
+
+.coach-side{
+  display:grid;
+  gap:12px;
+}
+.coach-box{
+  background:#0f1d1a;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.06);
+  padding:12px 14px;
+}
+.coach-box h4{
+  margin-bottom:6px;
+  font-size:15px;
+}
+.coach-box ul,
+.coach-box ol{
+  margin-left:16px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px){
+  .coach-grid{
+    grid-template-columns:1fr;
+  }
+}
