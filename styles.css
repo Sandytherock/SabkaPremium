@@ -498,3 +498,7 @@ input:focus{border-color:var(--e2);box-shadow:0 0 0 6px rgba(20,184,166,.12)}
     grid-template-columns:1fr;
   }
 }
+.coach-left{
+  display: grid;
+  gap: 12px;
+}
