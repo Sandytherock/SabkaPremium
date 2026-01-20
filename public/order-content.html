@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Complete Your Order – SabkaPremium</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .plan-head { 
+      display:flex; 
+      align-items:center; 
+      gap:10px; 
+      margin:6px 0 14px; 
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 12px 16px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    }
+    .plan-head img { 
+      width:32px; 
+      height:32px; 
+      border-radius:8px; 
+      object-fit:cover;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+    .plan-head .pname { 
+      font-weight:600; 
+      font-size:15px; 
+      color:#ffffff;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+  </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      }; if (!f._fbq) f._fbq = n;
+      n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1281510500113019'); fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1281510500113019&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body class="order-body">
+  <main class="order-wrap">
+    <section class="order-card">
+      <h1>Complete Your Payment</h1>
+      <div class="plan-head" id="planHead" style="display:none;">
+        <img id="planLogo" src="" alt="Plan"/>
+        <span class="pname" id="planNameVis"></span>
+      </div>
+
+      <div class="qr">
+        <img id="qrImage" src="./assets/upi-qr.png.jpg" alt="UPI QR Code" />
+        <div class="upi-line">
+          <span>UPI ID:</span> <code>somya2208jain2208@okhdfcbank</code>
+        </div>
+      </div>
+
+      <form id="orderForm" class="form">
+        <div class="two">
+          <label>
+            <span>Your Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Your Email</span>
+            <input type="email" name="email" required />
+          </label>
+        </div>
+
+        <label>
+          <span>Your Phone</span>
+          <input type="tel" name="phone" required />
+        </label>
+
+        <div class="two">
+          <label>
+            <span>Selected Plan</span>
+            <input type="text" name="plan" id="planInput" readonly required />
+          </label>
+          <label>
+            <span>Amount</span>
+            <input type="text" name="amount" id="amountInput" readonly required />
+          </label>
+        </div>
+
+        <div class="coupon-row">
+          <input type="text" id="couponCode" placeholder="Enter Coupon Code" aria-label="Coupon Code" />
+          <button type="button" class="btn-ghost" id="applyCouponBtn">Apply</button>
+        </div>
+        <p id="discountMessage" class="ok hide">Coupon applied successfully!</p>
+        <p id="discountAmount" class="warn hide">Discount: ₹0</p>
+
+        <label>
+          <span>Transaction ID / UTR</span>
+          <input type="text" name="transactionId" required />
+        </label>
+
+        <label class="file">
+          <span>Upload Payment Screenshot (optional)</span>
+          <input type="file" name="screenshot" accept="image/*" />
+        </label>
+
+        <button type="submit" class="btn-primary wfull">Submit Details</button>
+
+        <p class="tiny">Facing issues? Reach us on <a href="https://t.me/Somya2208" target="_blank">Telegram</a> or
+          <a href="https://instagram.com/sabka_premium" target="_blank">Instagram</a>.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    // --- Plan mapping ---
+    const planMap = {
+      "ChatGPT-1M-799": { name: "ChatGPT - 1 Month", amount: "799" },
+      "ChatGPT-3M-399": { name: "ChatGPT - 3 Months", amount: "399" },
+      "ChatGPT-3M-649": { name: "ChatGPT - 3 Months", amount: "649" },
+      "ChatGPT-12M-1999": { name: "ChatGPT - 12 Months", amount: "1999" },
+      "ChatGPT-3M-1499": { name: "ChatGPT Private - 3 Months", amount: "1499" },
+      "ChatGPT-6M-899": { name: "ChatGPT - 6 Months (3–4 Members)", amount: "899" },
+      "ChatGPT-12M-1399": { name: "ChatGPT - 12 Months (3–4 Members)", amount: "1399" },
+
+      "CursorAI-1M-1499": {
+        name: "Cursor AI Pro – 1 Month",
+        amount: "1499"
+      },
+      "CursorAI-Plus-1M-2999": {
+        name: "Cursor AI Pro Plus – 1 Month",
+        amount: "2999"
+      },
+      "LovableAI-2M-999": {
+        name: "Lovable AI Pro – 2 Months",
+        amount: "999"
+      },
+      "Netflix-1M-179": { name: "Netflix - 1 Month", amount: "179" },
+      "Netflix-3M-499": { name: "Netflix - 3 Months", amount: "499" },
+      "Netflix-6M-999": { name: "Netflix - 6 Months", amount: "999" },
+      "Netflix-12M-1899": { name: "Netflix - 12 Months", amount: "1899" },
+
+      "Prime-1M-99": { name: "Prime Video - 1 Month", amount: "99" },
+      "Prime-3M-199": { name: "Prime Video - 3 Months", amount: "199" },
+      "Prime-6M-299": { name: "Prime Video - 6 Months", amount: "299" },
+      "Prime-12M-399": { name: "Prime Video - 12 Months", amount: "399" },
+
+      "Canva-12M-399": { name: "Canva Pro - 1 Year", amount: "399" },
+
+      "Gemini-1M-199": { name: "Gemini Pro + 2TB - 1 Month", amount: "199" },
+      "Gemini-1Y-999": { name: "Gemini Pro + 2TB - 1 Year", amount: "999" },
+      "Gemini-Ultra-1M-999": { name: "Gemini Ultra (Veo 3) - 1 Month", amount: "999" },
+      "Gemini-Ultra-on-mail-1M-1499": { name: "Gemini Ultra (Veo 3) ON MAIL - 1 Month", amount: "1499" },
+
+      "Claude-Pro-1M-1499": { name: "Claude Pro – 1 Month", amount: "1499" },
+      "Claude-Pro-Max5-1M-6500": { name: "Claude Pro Max 5 – 1 Month", amount: "6500" },
+      "Claude-Pro-Max20-1M-9000": { name: "Claude Pro Max 20 – 1 Month", amount: "9000" },
+
+      "Perplexity-1M-299": { name: "Perplexity Pro - 1 Month", amount: "299" },
+      "Perplexity-1Y-1999": { name: "Perplexity Pro - 1 Year", amount: "1999" },
+
+
+      "YouTube-Individual-1M-49": { name: "YouTube Premium Individual - 1 Month", amount: "49" },
+      "YouTube-Individual-3M-129": { name: "YouTube Premium Individual - 3 Months", amount: "129" },
+      "YouTube-Individual-6M-249": { name: "YouTube Premium Individual - 6 Months", amount: "249" },
+      "YouTube-Individual-12M-449": { name: "YouTube Premium Individual - 12 Months", amount: "449" },
+
+      "YouTube-Family-1M-149": { name: "YouTube Premium Family - 1 Month", amount: "149" },
+      "YouTube-Family-3M-299": { name: "YouTube Premium Family - 3 Months", amount: "299" },
+      "YouTube-Family-6M-549": { name: "YouTube Premium Family - 6 Months", amount: "549" },
+      "YouTube-Family-12M-999": { name: "YouTube Premium Family - 12 Months", amount: "999" },
+      "Spotify-Premium-2M-99": { name: "Spotify Premium – 2 Months", amount: "99" },
+      "Spotify-Premium-3M-149": { name: "Spotify Premium – 3 Months", amount: "149" },
+
+      // "ChatGLM-3M-2499": { name: "ChatGLM Pro Suite – 3 Months", amount: "2499" },
+      "ChatGLM-3M-999": { name: "ChatGLM Pro Suite – 3 Month", amount: "999" },
+      "ElevenLabs-3M-1499": { name: "ElevenLabs – Creator (3 Months)", amount: "1499" },
+      "CapCut-Pro-1M-499": { name: "CapCut Pro - 1 Month", amount: "499" },
+      "CapCut-Pro-3M-1299": { name: "CapCut Pro - 3 Months", amount: "1299" },
+      "CapCut-Pro-6M-2399": { name: "CapCut Pro - 6 Months", amount: "2399" },
+      "CapCut-Pro-12M-4499": { name: "CapCut Pro - 12 Months", amount: "4499" },
+      "Call-1On1-99": { name: "1-on-1 Software Dropshipping Strategy Call (20 min)", amount: "99" },
+      "Software-A2Z-999": { name: "₹999 – Learn Software Dropshipping A to Z (Complete System)", amount: "999" }
+
+    };
+
+    // Optional coupons (example structures)
+    const validCoupons = {
+      // "SAVE50": { discountedPrice: 1499, validFor: ["ChatGPT-3M-1999"] },
+    };
+
+    // Read plan from URL and set fields + dynamic QR
+    const urlParams = new URLSearchParams(window.location.search);
+    const planCode = urlParams.get("plan");
+
+    // Map plan code prefix to logo
+    const logoMap = {
+      ChatGPT: './assets/chatgpt-logo.png',
+      Gemini: './assets/gemini-logo.png',
+      Perplexity: './assets/perplexity-logo.png',
+      CursorAI: './assets/cursor-logo.png',
+      LovableAI: './assets/lovable-logo.jpg',
+      Netflix: './assets/netflix-logo.png',
+      Prime: './assets/prime-logo.png',
+      Canva: './assets/canva-logo.png',
+      YouTube: './assets/youtube-logo.png',
+      ElevenLabs: './assets/elevenlabs-logo.png',
+      Claude: './assets/claude-logo.png',
+      Call: './assets/logo.png',
+      'Software-A2Z': './assets/logo.png'
+    };
+
+    if (planCode && planMap[planCode]) {
+      const planObj = planMap[planCode];
+      document.getElementById("planInput").value = planObj.name;
+      document.getElementById("amountInput").value = "₹" + planObj.amount;
+
+      // visible plan header with logo
+      const prefix = planCode.split('-')[0];
+      const logo = logoMap[prefix] || './assets/logo.png';
+      const planHead = document.getElementById('planHead');
+      const planLogoEl = document.getElementById('planLogo');
+      const planNameVis = document.getElementById('planNameVis');
+      planLogoEl.src = logo; planLogoEl.alt = prefix + ' logo';
+      planNameVis.textContent = planObj.name;
+      planHead.style.display = 'flex';
+
+      // Generate QR from UPI deeplink
+      const upiId = "somya2208jain2208@okhdfcbank";
+      const name = "Soumya Jain";
+      const amount = planObj.amount;
+      const data = `upi://pay?pa=${upiId}&pn=${encodeURIComponent(name)}&am=${amount}&cu=INR`;
+      const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(data)}`;
+      document.getElementById("qrImage").src = qrUrl;
+    }
+
+    // Coupon application
+    document.getElementById("applyCouponBtn").addEventListener("click", () => {
+      const code = document.getElementById("couponCode").value.trim();
+      const msg = document.getElementById("discountMessage");
+      const disc = document.getElementById("discountAmount");
+
+      if (!validCoupons[code]) { alert("Invalid Coupon Code."); return; }
+      const coupon = validCoupons[code];
+      if (!coupon.validFor.includes(planCode)) { alert("This coupon is not valid for your selected plan."); return; }
+
+      document.getElementById("amountInput").value = "₹" + coupon.discountedPrice;
+      msg.classList.remove("hide");
+      disc.classList.add("hide");
+    });
+
+    // Submit to Google Apps Script
+    const form = document.getElementById("orderForm");
+    const submitBtn = form.querySelector("button[type=submit]");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      submitBtn.disabled = true; submitBtn.textContent = "Submitting...";
+
+      const fd = new FormData(form);
+      const file = fd.get("screenshot");
+      let base64 = ""; let mime = "";
+      if (file && file.size > 0) {
+        base64 = await fileToBase64(file);
+        base64 = base64.split(",")[1] || ""; // only data part
+        mime = file.type;
+      }
+
+      const payload = {};
+      fd.forEach((v, k) => payload[k] = v);
+      payload.screenshotBase64 = base64;
+      payload.screenshotType = mime;
+
+      fetch("https://script.google.com/macros/s/AKfycbz4O6KY0iVgy4XtFmg9NI0fLKWmb3iqISkZReo62UltYcYeyBjsOxWYfE4QtHXOKxky6g/exec", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(payload)
+      })
+        .then(() => { alert("Your details have been submitted! We will verify and deliver shortly."); form.reset(); })
+        .catch(err => alert("Error: " + err))
+        .finally(() => { submitBtn.disabled = false; submitBtn.textContent = "Submit Details"; });
+    });
+
+    function fileToBase64(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = (err) => reject(err);
+      });
+    }
+
+    // ✅ Track Lead event for Strategy Call
+    try {
+      const urlParams2 = new URLSearchParams(window.location.search);
+      const planFromUrl = urlParams2.get("plan");
+      if (planFromUrl === "Call-1On1-99" && typeof fbq === "function") {
+        fbq("track", "Lead", { content_name: "1-on-1 Strategy Call ₹99" });
+      }
+    } catch (e) {
+      console.log("Pixel Lead tracking error:", e);
+    }
+
+  </script>
+</body>
+
+</html>

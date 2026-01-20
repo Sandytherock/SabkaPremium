@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews - SabkaPremium</title>
+  <link rel="icon" href="./assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="top-bar">
+    <div class="container row" style="justify-content:space-between;align-items:center;">
+      <a href="index.html" class="logo-link">
+        <img src="./assets/logo.png" alt="SabkaPremium" class="logo" />
+      </a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav id="mainnav" class="main-nav" aria-label="primary">
+        <a href="index.html">Home</a>
+        <a href="index.html#plans">Plans</a>
+        <a href="index.html#how-to-order">How to Order</a>
+        <a href="reviews.html" class="reviews-link active">
+          <i class="fa-solid fa-star"></i> Customer Reviews
+        </a>
+        <a href="https://wa.me/919511335264" target="_blank" class="social-link">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://www.instagram.com/sabka_premium" target="_blank" class="social-link">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="https://t.me/Somya2208" target="_blank" class="social-link">
+          <i class="fa-brands fa-telegram"></i> Telegram
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Reviews Hero Section -->
+  <section class="reviews-hero">
+    <div class="container">
+      <h1>⭐ What Our Customers Say</h1>
+      <p class="hero-subtitle">Real reviews from real customers who trust SabkaPremium</p>
+      
+      <!-- Stats Bar -->
+      <div class="reviews-stats">
+        <div class="stat-item">
+          <div class="stat-number" id="total-reviews">5</div>
+          <div class="stat-label">Total Reviews</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4.9</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter & Sort Section -->
+  <section class="reviews-filter">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label for="rating-filter">Filter by Rating:</label>
+          <select id="rating-filter">
+            <option value="all">All Ratings</option>
+            <option value="5">5 Stars ⭐⭐⭐⭐⭐</option>
+            <option value="4">4 Stars ⭐⭐⭐⭐</option>
+            <option value="3">3 Stars ⭐⭐⭐</option>
+            <option value="2">2 Stars ⭐⭐</option>
+            <option value="1">1 Star ⭐</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="sort-filter">Sort by:</label>
+          <select id="sort-filter">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+            <option value="highest">Highest Rating</option>
+            <option value="lowest">Lowest Rating</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Reviews Display -->
+  <section class="all-reviews-section">
+    <div class="container">
+      <h2>📝 Customer Reviews</h2>
+      
+      <!-- Reviews Container -->
+      <div id="all-reviews-container" class="reviews-grid">
+        <!-- Default reviews will be loaded here -->
+        <!-- Dynamic reviews from localStorage will be added -->
+      </div>
+      
+      <div id="no-reviews" class="no-reviews" style="display:none;">
+        <i class="fa-solid fa-inbox"></i>
+        <p>No reviews match your filter criteria</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Submit Review Section -->
+  <section class="submit-review-section">
+    <div class="container">
+      <div class="review-submit-box">
+        <h2>✍️ Share Your Experience</h2>
+        <p class="muted">Help others by sharing your honest review! Your feedback matters.</p>
+        
+        <form id="review-form" class="review-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="review-name">Your Name *</label>
+              <input type="text" id="review-name" placeholder="e.g., Rahul K." required maxlength="50">
+            </div>
+            
+            <div class="form-group">
+              <label>Your Rating *</label>
+              <div class="star-rating-input">
+                <input type="radio" name="rating" id="star5" value="5" required>
+                <label for="star5" title="5 stars">⭐</label>
+                <input type="radio" name="rating" id="star4" value="4">
+                <label for="star4" title="4 stars">⭐</label>
+                <input type="radio" name="rating" id="star3" value="3">
+                <label for="star3" title="3 stars">⭐</label>
+                <input type="radio" name="rating" id="star2" value="2">
+                <label for="star2" title="2 stars">⭐</label>
+                <input type="radio" name="rating" id="star1" value="1">
+                <label for="star1" title="1 star">⭐</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="review-text">Your Review *</label>
+            <textarea id="review-text" placeholder="Share your experience with SabkaPremium... What did you purchase? How was the service?" required maxlength="500" rows="5"></textarea>
+            <small class="char-count"><span id="char-counter">0</span>/500 characters</small>
+          </div>
+          
+          <button type="submit" class="btn-primary btn-large">
+            <i class="fa-solid fa-paper-plane"></i> Submit Review
+          </button>
+        </form>
+        
+        <p class="review-note">
+          <i class="fa-solid fa-info-circle"></i> Your review will be displayed instantly on this page and visible to all visitors
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container grid-4">
+      <div>
+        <img src="./assets/logo.png" alt="SabkaPremium" />
+        <p>India's Most Trusted Affordable Premium Service Platform for Students & Creators.</p>
+        
+        <!-- Security Trust Badges -->
+        <div class="footer-security-badges">
+          <div class="security-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Secure Payment</span>
+          </div>
+          <div class="security-badge">
+            <i class="fa-solid fa-lock"></i>
+            <span>SSL Encrypted</span>
+          </div>
+          <div class="security-badge">
+            <i class="fa-solid fa-check-circle"></i>
+            <span>Verified Seller</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#plans">Our Plans</a></li>
+          <li><a href="index.html#how-to-order">How to Order</a></li>
+          <li><a href="reviews.html">Customer Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>We're Trusted!</h4>
+        <ul class="ticks">
+          <li>✅ 1000+ Happy Customers</li>
+          <li>✅ Instant Delivery Guaranteed</li>
+          <li>✅ 100% Replacement Guarantee</li>
+          <li>🔒 Secure UPI Payments</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="https://instagram.com/sabka_premium" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://t.me/Somya2208" target="_blank" aria-label="Telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+          <a href="mailto:sabkapremium01@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-copy">
+      <p>© 2025 SabkaPremium.com | All rights reserved.</p>
+      <p>Made with ❤️ for Indian Students</p>
+    </div>
+  </footer>
+
+  <!-- Floating Contact Buttons -->
+  <a href="https://t.me/Somya2208" class="btn-float tg" target="_blank" aria-label="Telegram">
+    <i class="fa-brands fa-telegram"></i>
+  </a>
+  <a href="https://instagram.com/sabka_premium" class="btn-float wa" target="_blank" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://wa.me/919511335264" class="btn-float wa-green" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="reviews.js"></script>
+</body>
+</html>

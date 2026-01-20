@@ -1,0 +1,125 @@
+/* WhatsApp Order Button */
+.whatsapp-order-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.whatsapp-order-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.whatsapp-order-btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.whatsapp-order-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-order-btn:active {
+  transform: translateY(0);
+}
+
+.whatsapp-order-btn svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Alternative style for secondary button */
+.whatsapp-order-btn-secondary {
+  background: transparent;
+  border: 2px solid #25D366;
+  color: #25D366;
+  padding: 12px 24px;
+  box-shadow: none;
+}
+
+.whatsapp-order-btn-secondary:hover {
+  background: #25D366;
+  color: white;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Floating WhatsApp Order Badge */
+.whatsapp-order-badge {
+  position: relative;
+  display: inline-block;
+}
+
+.whatsapp-order-badge::after {
+  content: 'Fastest! ⚡';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #FFD700;
+  color: #128C7E;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .whatsapp-order-btn {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+  }
+  
+  .whatsapp-order-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-order-btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+  
+  .whatsapp-order-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+}

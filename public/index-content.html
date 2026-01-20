@@ -1,0 +1,1749 @@
+﻿<!-- =============================
+FILE: index.html (Redesigned)
+============================== -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SabkaPremium – AI & OTT at Student-Friendly Prices</title>
+  <meta name="description"
+    content="ChatGPT, Netflix 4K, Canva Pro, Gemini, YouTube Premium and more – instant delivery, replacement guarantee, trusted by 1000+ users." />
+  <link rel="icon" type="image/png" href="./assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      }; if (!f._fbq) f._fbq = n;
+      n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1281510500113019');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1281510500113019&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <!-- Top sticky banner -->
+  <div class="sticky-cta" role="region" aria-label="site-wide offer">
+    <span>🔥 SabkaPremium – All Premium Services at the Lowest Price!</span>
+    <a href="#plans" class="btn-ghost">View Plans</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <img src="./assets/logo.png" alt="SabkaPremium" loading="eager" />
+        <span>SabkaPremium</span>
+      </a>
+
+      <button class="hamburger" aria-label="Open menu" aria-controls="mainnav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="mainnav" class="main-nav" aria-label="primary">
+        <a href="#plans">Plans</a>
+        <a href="#how-to-order">How to Order</a>
+        <a href="reviews.html" class="reviews-link">
+          <i class="fa-solid fa-star"></i> Customer Reviews
+        </a>
+        <a href="https://wa.me/919511335264" target="_blank" class="social-link">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://www.instagram.com/sabka_premium" target="_blank" class="social-link">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="https://t.me/Somya2208" target="_blank" class="social-link">
+          <i class="fa-brands fa-telegram"></i> Telegram
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="bg-blur"></div>
+    <div class="container hero-wrap">
+      <div class="hero-copy">
+        <h1>All Premium Accounts, One Place.</h1>
+        <p class="sub">ChatGPT 5 Plus • Gemini Ai Pro • ElevenLabs • Prime Video • Netflix 4K • Canva Pro • YouTube
+          Premium</p>
+        <div class="cta-row">
+          <a href="#plans" class="btn-primary">Explore Plans</a>
+          <a href="#how-to-order" class="btn-ghost">How it works</a>
+        </div>
+        <!-- Enhanced Trust Badges -->
+        <div class="trust-badges">
+          <div class="trust-badge">
+            <div class="trust-badge-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="trust-badge-text">
+              <div class="trust-badge-number">1000+</div>
+              <div class="trust-badge-label">Happy Customers</div>
+            </div>
+          </div>
+          
+          <div class="trust-badge">
+            <div class="trust-badge-icon">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div class="trust-badge-text">
+              <div class="trust-badge-number">1-6 Hours</div>
+              <div class="trust-badge-label">Instant Delivery</div>
+            </div>
+          </div>
+          
+          <div class="trust-badge">
+            <div class="trust-badge-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="trust-badge-text">
+              <div class="trust-badge-number">100%</div>
+              <div class="trust-badge-label">Replacement Guarantee</div>
+            </div>
+          </div>
+          
+          <div class="trust-badge">
+            <div class="trust-badge-icon">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="trust-badge-text">
+              <div class="trust-badge-number">Secure</div>
+              <div class="trust-badge-label">UPI Payment</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="./assets/ChatGPTAppIllustration.png" alt="Premium services illustration" loading="lazy" />
+        <div class="floating-badge" aria-hidden="true">✅ Replacement Guaranteed</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOMO bars -->
+  <section class="fomo">
+    <div class="container fomo-row">
+      <div class="fomo-item">⏳ Offer ends in <span id="countdown">03:45:00</span></div>
+      <div class="fomo-item">🔥 Hurry! Only <span id="slots-left">5</span> slots left today</div>
+    </div>
+  </section>
+
+  <!-- Promo Discount -->
+  <section class="promo">
+    <div class="container">
+      <div class="promo-card">
+        <div class="promo-text">
+          <h2>📢 Want 10% Off Instantly?</h2>
+          <p>Promote our <strong>Instagram page</strong> or <strong>website</strong> on your story or post and grab
+            <strong>extra 10% off</strong> on any order.
+          </p>
+          <p class="muted">Tag <strong>@sabka_premium</strong> and send a screenshot on Instagram.</p>
+          <a href="https://instagram.com/sabka_premium" target="_blank" class="btn-primary">Promote & Get Discount</a>
+        </div>
+        <div class="promo-art" aria-hidden="true">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ NEW: ₹99 + ₹999 Software Dropshipping Coaching -->
+  <section class="coach" id="strategy-call">
+    <div class="container">
+      <div class="coach-head">
+        <span class="coach-pill">
+          <i class="fa-solid fa-bolt"></i>
+          1-on-1 Software Dropshipping Coaching
+        </span>
+        <h2>Start Software Dropshipping in 2025 – 1:1 Coaching from ₹99</h2>
+        <p class="muted">
+          Learn the exact system I used to generate <strong>₹3,00,000+ in 5 months</strong>
+          through software dropshipping. No inventory, no shipping, no big capital – just digital products.
+        </p>
+      </div>
+
+      <div class="coach-grid">
+        <!-- LEFT: 99 + 999 plans stacked -->
+        <div class="coach-left">
+          <!-- ₹99 Strategy Call -->
+          <div class="coach-card">
+            <h3>₹99 – 1-on-1 Strategy Call (15–20 min)</h3>
+            <ul>
+              <li>✅ <strong>15–20 minute 1-on-1</strong> audio or video call</li>
+              <li>✅ Clear explanation of the <strong>software dropshipping business model</strong></li>
+              <li>✅ Quick roadmap to earn your first <strong>₹10,000–₹50,000</strong></li>
+              <li>✅ Basic list of software tools to resell + ideal pricing for the Indian market</li>
+              <li>✅ Basics of ads, Reels and DM strategy to get your first clients</li>
+              <li>✅ Q&A – ask anything about tools, methods or systems I personally use</li>
+            </ul>
+
+            <div class="coach-note">
+              <p>
+                This is <strong>not a webinar</strong>. It is a personalised call where
+                we build a plan based on <strong>your background, time and income goals</strong>.
+              </p>
+            </div>
+
+            <div class="coach-cta">
+              <div class="coach-price">
+                <span class="old">₹999</span>
+                <span class="new">₹99</span>
+                <span class="tagline">Introductory offer – limited slots per day</span>
+              </div>
+              <a class="btn-primary" href="order.html?plan=Call-1On1-99">
+                Book 1-on-1 Strategy Call (₹99)
+              </a>
+              <p class="muted tiny-text">
+                After payment, you will receive a form + Telegram/WhatsApp instructions
+                to schedule your call.
+              </p>
+            </div>
+          </div>
+
+          <!-- 🔥 NEW: ₹999 Full A–Z Plan -->
+          <div class="coach-card">
+            <h3>₹999 – Learn Software Dropshipping A to Z (Complete System)</h3>
+            <ul>
+              <li>📚 <strong>Complete step-by-step training</strong> – from idea to first sales</li>
+              <li>🧩 Exactly which <strong>software tools to resell</strong> and proven Indian pricing</li>
+              <li>📲 <strong>Instagram, Reels and DM system</strong> to get consistent leads</li>
+              <li>📋 Ready-made <strong>scripts, replies and templates</strong> for DMs, stories and highlights</li>
+              <li>⚙️ Delivery system – how to deliver accounts fast and safely to clients</li>
+              <li>🧠 Avoid common mistakes like bans, refunds and angry customers</li>
+              <li>🤝 <strong>3 months chat support</strong> to implement everything step by step</li>
+            </ul>
+
+            <div class="coach-note">
+              <p>
+                This plan is for people who don’t just want an idea, but a
+                <strong>ready-to-use system they can plug in and start executing</strong>.
+              </p>
+            </div>
+
+            <div class="coach-cta">
+              <div class="coach-price">
+                <span class="old">₹4,999</span>
+                <span class="new">₹999</span>
+                <span class="tagline">Launch offer – limited seats per month</span>
+              </div>
+              <a class="btn-primary" href="order.html?plan=Software-A2Z-999">
+                Enrol in A–Z Software Dropshipping (₹999)
+              </a>
+              <p class="muted tiny-text">
+                After payment, you will receive detailed onboarding: where to access content,
+                support channel links and exact implementation steps.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Info boxes -->
+        <div class="coach-side">
+          <div class="coach-box">
+            <h4>Who Is This For?</h4>
+            <ul>
+              <li>• Students and job seekers</li>
+              <li>• Freelancers and agency owners</li>
+              <li>• People looking for side income</li>
+              <li>• Anyone who wants a beginner-friendly online business</li>
+            </ul>
+          </div>
+
+          <div class="coach-box">
+            <h4>Why Is It Paid?</h4>
+            <p class="muted">
+              Free calls attract people who are not serious.
+              A small fee like <strong>₹99 / ₹999</strong> ensures that only
+              <strong>serious learners</strong> join.
+              If you are serious, I will give you <strong>full value</strong> during the call and program. 🔥
+            </p>
+          </div>
+
+          <div class="coach-box">
+            <h4>What Happens After Booking?</h4>
+            <ol>
+              <li>1️⃣ Choose your plan – ₹99 Strategy Call or ₹999 A–Z Program</li>
+              <li>2️⃣ Go to the order page and complete payment via UPI</li>
+              <li>3️⃣ Fill the form with your details and payment screenshot</li>
+              <li>4️⃣ You will receive contact details & instructions on Telegram/WhatsApp</li>
+              <li>5️⃣ Get your call + full access, follow the roadmap and start executing</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ✅ END Strategy Call Section -->
+
+
+  <!-- ✅ NEW: FAQ for Strategy Call -->
+  <section class="coach-faq">
+    <div class="container narrow">
+      <h2>₹99 Strategy Call – Common Questions</h2>
+      <div class="accordion">
+        <details>
+          <summary>Will the call be on video or audio?</summary>
+          <p>
+            Whatever you prefer. We can do the call on <strong>WhatsApp, Telegram, or Google Meet</strong> –
+            audio or video as per your comfort.
+          </p>
+        </details>
+
+        <details>
+          <summary>How long will the call be?</summary>
+          <p>
+            The call usually lasts <strong>15–20 minutes</strong>, but if you have valid questions,
+            it can extend slightly.
+          </p>
+        </details>
+
+        <details>
+          <summary>What will I get after the call?</summary>
+          <p>
+            You will receive a <strong>personal roadmap</strong>, basic tools list, earning strategy,
+            and <strong>24-hour chat support</strong> to help you start immediately.
+          </p>
+        </details>
+
+        <details>
+          <summary>Will you sell a course after the call?</summary>
+          <p>
+            The call is mainly for <strong>clarity and direction</strong>.
+            Only if you feel you want the complete system, I may share my course or tool bundles —
+            but it is <strong>never forced</strong>.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is there a refund if I can’t attend?</summary>
+          <p>
+            Normally, <strong>no refunds</strong>.
+            But if you inform me in advance, we will <strong>reschedule your slot</strong>.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Category Tabs / Plans -->
+  <section class="plans" id="plans">
+    <div class="container">
+      <h2>🔥 Choose Your Service</h2>
+
+      <div class="tabbar" role="tablist" aria-label="Services">
+        <button class="tab active" data-tab="chatgpt" role="tab" aria-selected="true"><img
+            src="./assets/chatgpt-logo.png" alt="ChatGPT" /> ChatGPT 5 Pro</button>
+       <button class="tab" data-tab="claude" role="tab" aria-selected="false"><img src="./assets/claude-logo.png" alt="Claude" /> Claude Max</button>
+        <button class="tab" data-tab="gemini" role="tab" aria-selected="false"><img src="./assets/gemini-logo.png"
+            alt="Gemini" /> Gemini Ultra</button>
+        <button class="tab" data-tab="perplexity" role="tab" aria-selected="false"><img
+            src="./assets/perplexity-logo.png" alt="Gemini" /> Perplexity Pro</button>
+        <button class="tab" data-tab="cursor" role="tab" aria-selected="false">
+          <img src="./assets/cursor-logo.png" alt="Cursor AI" /> Cursor AI
+        </button>
+        <button class="tab" data-tab="lovable" role="tab" aria-selected="false">
+          <img src="./assets/lovable-logo.jpg" alt="Lovable AI" /> Lovable AI
+        </button>
+
+
+        <button class="tab" data-tab="elevenlabs" role="tab" aria-selected="false"><img src="./assets/elevenlabs-logo.png"
+            alt="ElevenLabs" /> ElevenLabs</button>
+        <button class="tab" data-tab="capcut" role="tab" aria-selected="false"><img src="./assets/capcut-logo.png"
+            alt="CapCut" /> CapCut Pro</button>
+        <button class="tab" data-tab="prime" role="tab" aria-selected="false"><img src="./assets/prime-logo.png"
+            alt="Prime Video" /> Prime Video</button>
+        <button class="tab" data-tab="netflix" role="tab" aria-selected="false"><img src="./assets/netflix-logo.png"
+            alt="Netflix" /> Netflix 4K</button>
+        <button class="tab" data-tab="canva" role="tab" aria-selected="false"><img src="./assets/canva-logo.png"
+            alt="Canva" /> Canva Pro</button>
+        <button class="tab" data-tab="youtube" role="tab" aria-selected="false"><img src="./assets/youtube-logo.png"
+            alt="YouTube" /> YouTube Premium</button>
+        <button class="tab" data-tab="spotify" role="tab" aria-selected="false"><img src="./assets/spotify-logo.png"
+            alt="Spotify" /> Spotify Premium</button>
+      </div>
+
+      <!-- ChatGPT -->
+      <div id="chatgpt" class="tabpane active" role="tabpanel">
+        <div class="grid">
+          <!-- <article class="card popular">
+            <div class="tag">Most Popular</div>
+            <h3><img src="./assets/chatgpt-logo.png" alt="" /> 6 Month Access</h3>
+            <ul>
+              <li>📆 180 Days Premium Access</li>
+              <li>🔐 Private & Secure Login</li>
+              <li>🖼️ DALL·E, GPT-5 Plus, Sora, Whisper</li>
+              <li>📝 Shared Access (8–10 members)</li>
+              <li>📝 You Will get Some Limitations And Downtime</li>
+              <li>📱 Phone + Desktop Access</li>
+            </ul>
+            <div class="price">₹599</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-6M-599">Order Now</a>
+          </article> -->
+
+          <article class="card">
+            <h3><img src="./assets/chatgpt-logo.png" alt="" /> 3 Month (8-10 Members)</h3>
+            <ul>
+              <li>⏳ Valid for 90 Days</li>
+              <li>🔐 Private Login</li>
+              <li>🎨 All Pro Tools Unlocked</li>
+              <li>🖼️ DALL·E, GPT-5 Pro, Sora, Whisper</li>
+              <li>📝 Shared Access (8–10 members)</li>
+              <li>📝 You Will get Some Limitations And Downtime</li>
+              <li>📱 Phone + Desktop Access</li>
+            </ul>
+            <div class="price">₹399</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-3M-399">Order Now</a>
+          </article>
+
+          <article class="card">
+            <h3><img src="./assets/chatgpt-logo.png" alt="" /> 12 Month (8-10 Members)</h3>
+            <ul>
+              <li>📆 365 Days Premium Access</li>
+              <li>🔐 Private & Secure Login</li>
+              <li>🖼️ DALL·E, GPT-5 Pro, Sora, Whisper</li>
+              <li>📝 Shared Access (8–10 members)</li>
+              <li>📝 You Will get Some Limitations And Downtime</li>
+              <li>📱 Phone + Desktop Access</li>
+            </ul>
+            <div class="price">₹1399</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-12M-1399">Order Now</a>
+          </article>
+
+          <article class="card popular">
+            <div class="tag">Most Popular</div>
+            <h3><img src="./assets/chatgpt-logo.png" alt="" /> 3 Month (3–4 Members)</h3>
+            <ul>
+              <li>⏳ Valid for 90 Days</li>
+              <li>🔐 Private Login</li>
+              <li>🖼️ DALL·E, GPT-5 Pro, Sora</li>
+              <li>📝 Shared Access (3–4 members)</li>
+              <li>📝 No Limitations And NO Downtime</li>
+              <li>📱 Phone + Desktop Access</li>
+            </ul>
+            <div class="price">₹649</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-3M-649">Order Now</a>
+          </article>
+
+          <!-- <article class="card">
+            <h3><img src="./assets/chatgpt-logo.png" alt="" /> 6 Month (3–4 Members)</h3>
+            <ul>
+              <li>📆 180 Days Premium Access</li>
+              <li>🔐 Private & Secure Login</li>
+              <li>🖼️ DALL·E, GPT-5 Plus, Sora</li>
+              <li>📝 Shared Access(3–4 members)</li>
+              <li>📝 No Limitations And NO Downtime</li>
+              <li>📱 Phone + Desktop Access</li>
+            </ul>
+            <div class="price">₹899</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-6M-899">Order Now</a>
+          </article> -->
+
+          <article class="card">
+            <h3><img src="./assets/chatgpt-logo.png" alt="" /> 12 Month (3–4 Members)</h3>
+            <ul>
+              <li>📆 365 Days Premium Access</li>
+              <li>🔐 Private & Secure Login</li>
+              <li>🖼️ DALL·E, GPT-5 Pro, Sora</li>
+              <li>📝 Shared Access (3–4 members)</li>
+              <li>📝 No Limitations And NO Downtime</li>
+              <li>📱 Phone + Desktop Access</li>
+            </ul>
+            <div class="price">₹1999</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-12M-1999">Order Now</a>
+          </article>
+
+          <article class="card accent">
+            <h3><img src="./assets/chatgpt-logo.png" alt="" /> 1 Month Private Access</h3>
+            <ul>
+              <li>✨ Unlimited GPT-5 Pro – Business Teams</li>
+              <li>🔐 Activation on Your Email</li>
+              <li>🖼️ DALL·E, Sora, Whisper</li>
+              <li>📝 No Limitations And NO Downtime</li>
+              <li>📱 No Device Limit</li>
+            </ul>
+            <div class="price">₹799</div>
+            <a class="btn-primary" href="order.html?plan=ChatGPT-1M-799">Order Now</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- Cursor AI -->
+      <div id="cursor" class="tabpane" role="tabpanel">
+        <div class="grid">
+
+          <!-- Cursor AI PRO -->
+          <article class="card popular">
+            <div class="tag">Best Seller</div>
+
+            <h3>
+              <img src="./assets/cursor-logo.png" alt="Cursor AI" />
+              Cursor AI Pro – 1 Month
+            </h3>
+
+            <ul>
+              <li>🧠 <strong>GPT-4 / Claude / Latest AI Models</strong></li>
+              <li>💻 AI-powered code editor (VS Code based)</li>
+              <li>⚡ Fast code generation & refactoring</li>
+              <li>🧩 Explain, fix & optimize code instantly</li>
+              <li>📂 Large codebase understanding</li>
+              <li>🔐 Private account access</li>
+              <li>📱 Windows, Mac & Linux</li>
+              <li>🚀 Perfect for developers & startups</li>
+            </ul>
+
+            <div class="price">₹1499</div>
+
+            <a class="btn-primary" href="order.html?plan=CursorAI-1M-1499">
+              Order Cursor AI Pro
+            </a>
+
+            <p class="muted tiny-text">
+              ⏳ Valid for 30 days • Email activation • Limited slots
+            </p>
+          </article>
+
+          <!-- Cursor AI PRO PLUS -->
+          <article class="card">
+            <div class="tag premium">Premium Plan</div>
+
+            <h3>
+              <img src="./assets/cursor-logo.png" alt="Cursor AI" />
+              Cursor AI Pro Plus – 1 Month
+            </h3>
+
+            <ul>
+              <li>🔥 <strong>Everything in Pro</strong></li>
+              <li>🚀 Higher usage limits</li>
+              <li>⚡ Priority access to latest models</li>
+              <li>🧠 Better long-context code understanding</li>
+              <li>📈 Faster responses under heavy load</li>
+              <li>🔐 Private & dedicated account</li>
+              <li>🛠 Priority support</li>
+              <li>👑 Built for power users & agencies</li>
+            </ul>
+
+            <div class="price">₹2999</div>
+
+            <a class="btn-primary" href="order.html?plan=CursorAI-Plus-1M-2999">
+              Order Cursor AI Pro Plus
+            </a>
+
+            <p class="muted tiny-text">
+              ⏳ Valid for 30 days • Priority delivery • Limited availability
+            </p>
+          </article>
+
+        </div>
+      </div>
+
+
+      <!-- Lovable AI -->
+      <div id="lovable" class="tabpane" role="tabpanel">
+        <div class="grid">
+
+          <!-- Lovable AI PRO -->
+          <article class="card popular">
+            <div class="tag">Best for UI Builders</div>
+
+            <h3>
+              <img src="./assets/lovable-logo.jpg" alt="Lovable AI" />
+              Lovable AI Pro – 2 Months
+            </h3>
+
+            <ul>
+              <li>🎨 <strong>AI-powered app & UI builder</strong></li>
+              <li>⚡ Build full apps from plain English</li>
+              <li>🧩 Frontend + backend generation</li>
+              <li>📦 Ready-to-deploy projects</li>
+              <li>🛠 Edit & iterate visually</li>
+              <li>🔐 Private workspace access</li>
+              <li>🚀 Ideal for founders & indie hackers</li>
+            </ul>
+
+            <div class="price">₹999</div>
+
+            <a class="btn-primary" href="order.html?plan=LovableAI-2M-999">
+              Order Lovable AI Pro
+            </a>
+
+            <p class="muted tiny-text">
+              ⏳ Valid for 2 months • Email activation • Limited slots
+            </p>
+          </article>
+
+        </div>
+      </div>
+
+
+
+      <!-- Netflix -->
+      <div id="netflix" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Best Deal</div>
+            <h3><img src="./assets/netflix-logo.png" alt="" /> 1 Month Premium</h3>
+            <ul>
+              <li>HD + Ultra HD (4K)</li>
+              <li>Shared Premium Account</li>
+              <li>1 Device Allowed</li>
+            </ul>
+            <div class="price">₹179</div>
+            <a class="btn-primary" href="order.html?plan=Netflix-1M-179">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/netflix-logo.png" alt="" /> 3 Month Premium</h3>
+            <ul>
+              <li>HD + Ultra HD (4K)</li>
+              <li>Shared Premium Access</li>
+              <li>1 Device Allowed</li>
+            </ul>
+            <div class="price">₹499</div>
+            <a class="btn-primary" href="order.html?plan=Netflix-3M-499">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/netflix-logo.png" alt="" /> 6 Month Premium</h3>
+            <ul>
+              <li>HD + Ultra HD (4K)</li>
+              <li>Shared Premium Access</li>
+              <li>1 Device Allowed</li>
+            </ul>
+            <div class="price">₹999</div>
+            <a class="btn-primary" href="order.html?plan=Netflix-6M-999">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/netflix-logo.png" alt="" /> 12 Month Premium</h3>
+            <ul>
+              <li>HD + Ultra HD (4K)</li>
+              <li>Shared Premium Access</li>
+              <li>1 Device Allowed</li>
+            </ul>
+            <div class="price">₹1899</div>
+            <a class="btn-primary" href="order.html?plan=Netflix-12M-1899">Order Now</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- Prime -->
+      <div id="prime" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Best Deal</div>
+            <h3><img src="./assets/prime-logo.png" alt="" /> 1 Month Premium</h3>
+            <ul>
+              <li>Watch on Mobile/TV/Laptop</li>
+              <li>Shared Premium Account</li>
+              <li>4K Support</li>
+            </ul>
+            <div class="price">₹99</div>
+            <a class="btn-primary" href="order.html?plan=Prime-1M-99">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/prime-logo.png" alt="" /> 3 Month Premium</h3>
+            <ul>
+              <li>Watch on All Devices</li>
+              <li>Shared Premium Account</li>
+              <li>4K Support</li>
+            </ul>
+            <div class="price">₹199</div>
+            <a class="btn-primary" href="order.html?plan=Prime-3M-199">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/prime-logo.png" alt="" /> 6 Month Premium</h3>
+            <ul>
+              <li>Watch on All Devices</li>
+              <li>Shared Premium Account</li>
+              <li>4K Support</li>
+            </ul>
+            <div class="price">₹299</div>
+            <a class="btn-primary" href="order.html?plan=Prime-6M-299">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/prime-logo.png" alt="" /> 12 Month Premium</h3>
+            <ul>
+              <li>Watch on All Devices</li>
+              <li>Shared Premium Account</li>
+              <li>4K Support</li>
+            </ul>
+            <div class="price">₹399</div>
+            <a class="btn-primary" href="order.html?plan=Prime-12M-399">Order Now</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- Canva -->
+      <div id="canva" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Most Loved</div>
+            <h3><img src="./assets/canva-logo.png" alt="" /> LifeTime Canva Pro</h3>
+            <ul>
+              <li>LifeTime Pro Access</li>
+              <li>Private Premium Account</li>
+              <li>Premium Templates + Stock</li>
+              <li>3 Years Complete Warranty</li>
+            </ul>
+            <div class="price">₹399</div>
+            <a class="btn-primary" href="order.html?plan=Canva-12M-399">Order Now</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- Gemini -->
+      <div id="gemini" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <!-- ⭐ NEW: Gemini Ultra / Veo 3 Plan -->
+          <article class="card popular">
+            <div class="tag">New • Ultra Plan</div>
+            <h3><img src="./assets/gemini-logo.png" alt="" /> 1 Month Gemini Ultra (Veo 3)</h3>
+            <ul>
+              <li>🤖 Gemini 2.5 Pro + Veo 3 access</li>
+              <li>🎬 Flow with Veo 3 – 1200+ videos/month</li>
+              <li>🧠 45,000 monthly AI credits (Veo 3)</li>
+              <li>📚 NotebookLM Max limits unlocked</li>
+              <li>📄 Gemini in Gmail & Docs integration</li>
+              <li>☁ 30TB Google Cloud Storage</li>
+              <li>🔐 Private account • Best price in market</li>
+            </ul>
+            <div class="price">
+              <s>₹19,999</s>
+              <span class="now">₹999</span>
+            </div>
+            <a class="btn-primary" href="order.html?plan=Gemini-Ultra-1M-999">
+              Get Gemini Ultra (Veo 3) – ₹999 / 1M
+            </a>
+            <p class="muted tiny-text">
+              ⏰ Limited Offer – Only 9 slots. Special discount price for our community 🔥
+            </p>
+          </article>
+          <article class="card popular">
+            <div class="tag">New • Ultra Plan</div>
+            <h3><img src="./assets/gemini-logo.png" alt="" /> 1 Month Gemini Ultra (Veo 3) ON MAIL</h3>
+            <ul>
+              <li>🤖 Gemini 2.5 Pro + Veo 3 access</li>
+              <li>🤖 Antigravity will be there</li>
+              <li>🎬 Flow with Veo 3 – 1200+ videos/month</li>
+              <li>🧠 45,000 monthly AI credits (Veo 3)</li>
+              <li>📚 NotebookLM Max limits unlocked</li>
+              <li>📄 Gemini in Gmail & Docs integration</li>
+              <li>☁ 30TB Google Cloud Storage</li>
+              <li>🔐 ON Mail Activation • Best price in market</li>
+            </ul>
+            <div class="price">
+              <s>₹19,999</s>
+              <span class="now">₹1499</span>
+            </div>
+            <a class="btn-primary" href="order.html?plan=Gemini-Ultra-on-mail-1M-1499">
+              Get Gemini Ultra (Veo 3) ON Mail – ₹1499 / 1M
+            </a>
+            <p class="muted tiny-text">
+              ⏰ Limited Offer – Only 9 slots. Special discount price for our community 🔥
+            </p>
+          </article>
+
+          <!-- Existing: 1 Month Gemini Pro + 2TB -->
+          <article class="card popular">
+            <div class="tag">⭐ Best Value</div>
+            <h3><img src="./assets/gemini-logo.png" alt="" /> Gemini AI Pro + 2TB Google Storage</h3>
+            <ul>
+              <li>🤖 <strong>Gemini 2.5 Pro</strong> – Smartest AI</li>
+              <li>🎬 <strong>Veo 3</strong> – AI Video Generator</li>
+              <li>🎥 <strong>Flow</strong> – Cinematic AI Filmmaker (1000 Flow Credits)</li>
+              <li>🖼️ <strong>Whisk</strong> – Image-to-Video AI</li>
+              <li>📚 <strong>NotebookLM</strong> – Research Assistant</li>
+              <li>📧 <strong>Gemini in Gmail, Docs & More</strong></li>
+              <li>☁️ <strong>2TB Google Storage</strong></li>
+              <li>🔐 <strong>Activation on Your Email</strong></li>
+            </ul>
+            <div class="price">
+              <s>₹1,199</s>
+              <span class="now">₹199</span>
+            </div>
+            <a class="btn-primary" href="order.html?plan=Gemini-1M-199">Get Gemini Pro – ₹199 / 1M</a>
+            <p class="muted tiny-text">⏳ Validity: 1 Month • 1000 Flow credits included • Best deal 🔥</p>
+          </article>
+
+          <!-- Existing: 1 Year Gemini Pro + 2TB -->
+          <article class="card popular">
+            <div class="tag">⭐ Limited-Time Offer</div>
+            <h3><img src="./assets/gemini-logo.png" alt="" /> Gemini AI Pro + 2TB Google Storage</h3>
+            <ul>
+              <li>🤖 <strong>Gemini 2.5 Pro</strong> – Smartest AI</li>
+              <li>🎬 <strong>Veo 3</strong> – AI Video Generator</li>
+              <li>🎥 <strong>Flow</strong> – Cinematic AI Filmmaker (1000 Flow Credits Per Month)</li>
+              <li>🖼️ <strong>Whisk</strong> – Image-to-Video AI</li>
+              <li>📚 <strong>NotebookLM</strong> – Research Assistant</li>
+              <li>📧 <strong>Gemini in Gmail, Docs & More</strong></li>
+              <li>☁️ <strong>2TB Google Storage</strong></li>
+              <li>🔐 <strong>Activation on Your Email</strong></li>
+            </ul>
+            <div class="price">
+              <s>₹19,500</s>
+              <span class="now">Contact for Price</span>
+            </div>
+            <a class="btn-primary" href="order.html?plan=Gemini-Pro-12M-DM">DM for Best Price</a>
+            <p class="muted tiny-text">⏳ Validity: 12 Months • 1000 Flow credits/month • Limited slots 🔥</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Claude AI -->
+      <div id="claude" class="tabpane" role="tabpanel">
+        
+        <!-- Not Official Plans Section -->
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; margin-bottom: 35px; border: 3px solid #5a67d8; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);">
+          <h2 style="color: #fff; margin: 0 0 10px 0; font-size: 1.9rem; text-align: center; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">🚀 Multi-AI Access Plans (Not Official Claude)</h2>
+          <p style="color: #fff; text-align: center; margin: 0 0 25px 0; font-size: 1rem; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; font-weight: 500;">⚠️ Alternative access method • Access multiple AI models including Claude & GPT</p>
+          
+          <div class="grid">
+            <article class="card popular" style="background: #ffffff; border: 3px solid #667eea; box-shadow: 0 8px 20px rgba(102, 126, 234, 0.25);">
+              <div class="tag" style="background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; font-weight: 600;">Most Popular</div>
+              <h3 style="color: #333;">Claude Sonnet 4.5 – 1 Month Unlimited</h3>
+              <ul style="color: #333;">
+                <li>🤖 <strong>Multiple AI Models</strong> with Unlimited Usage</li>
+                <li>🧠 <strong>Claude Sonnet 4.5</strong> • Sonnet 4 • Haiku 4.5</li>
+                <li>🚀 <strong>GPT-5</strong> • GPT-5.2 • GPT-5.1</li>
+                <li>🔄 <strong>Auto Model</strong> (Recommended – Smart Switching)</li>
+                <li>⚡ Fast & Stable Performance — No Rate Limits</li>
+                <li>💻 Best for Coding, Content, Analysis & Automation</li>
+                <li>🧑‍💻 CLI / Dev-Friendly Environment</li>
+                <li>🗂 Agent & Workspace Support</li>
+                <li>🔄 Easy Model Switching between All Models</li>
+              </ul>
+              <div class="price">
+                <s>₹4,999</s>
+                <span class="now">₹1999</span>
+              </div>
+              <a class="btn-primary" href="order.html?plan=Claude-Sonnet-4.5-1M-1999" style="background: linear-gradient(135deg, #667eea, #764ba2); box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);">Get Multi-AI Access – ₹1999 / 1M</a>
+              <p class="muted tiny-text">⏳ Valid for 30 days • Unlimited usage • Instant to 24h delivery</p>
+              <p style="color: #fff; background: linear-gradient(135deg, #667eea, #764ba2); font-size: 0.85rem; margin-top: 15px; font-weight: 600; padding: 8px; border-radius: 6px; text-align: center;">⚠️ Not an official Claude or OpenAI subscription</p>
+            </article>
+
+            <article class="card accent" style="background: #ffffff; border: 3px solid #764ba2; box-shadow: 0 8px 20px rgba(118, 75, 162, 0.25);">
+              <div class="tag" style="background: linear-gradient(135deg, #764ba2, #667eea); color: #fff; font-weight: 600;">Best Value</div>
+              <h3 style="color: #333;">Claude Sonnet 4.5 – 3 Months Unlimited</h3>
+              <ul style="color: #333;">
+                <li>🤖 <strong>Multiple AI Models</strong> with Unlimited Usage</li>
+                <li>🧠 <strong>Claude Sonnet 4.5</strong> • Sonnet 4 • Haiku 4.5</li>
+                <li>🚀 <strong>GPT-5</strong> • GPT-5.2 • GPT-5.1</li>
+                <li>🔄 <strong>Auto Model</strong> (Recommended – Smart Switching)</li>
+                <li>⚡ Fast & Stable Performance — No Rate Limits</li>
+                <li>💻 Best for Coding, Content, Analysis & Automation</li>
+                <li>🧑‍💻 CLI / Dev-Friendly Environment</li>
+                <li>🗂 Agent & Workspace Support</li>
+                <li>🔄 Easy Model Switching between All Models</li>
+              </ul>
+              <div class="price">
+                <s>₹9,999</s>
+                <span class="now">₹2999</span>
+              </div>
+              <a class="btn-primary" href="order.html?plan=Claude-Sonnet-4.5-3M-2999" style="background: linear-gradient(135deg, #764ba2, #667eea); box-shadow: 0 4px 15px rgba(118, 75, 162, 0.4);">Get Multi-AI Access – ₹2999 / 3M</a>
+              <p class="muted tiny-text">⏳ Valid for 90 days • Unlimited usage • Best value for money</p>
+              <p style="color: #fff; background: linear-gradient(135deg, #764ba2, #667eea); font-size: 0.85rem; margin-top: 15px; font-weight: 600; padding: 8px; border-radius: 6px; text-align: center;">⚠️ Not an official Claude or OpenAI subscription</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Official Claude Plans -->
+        <h2 style="color: #333; margin: 30px 0 20px 0; font-size: 1.8rem; text-align: center;">🏆 Official Claude Pro Plans</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Claude Pro – 1 Month</h3>
+            <ul>
+              <li>🚀 Standard usage limits — Claude Pro access</li>
+              <li>🏆 Priority access to Claude 4.5 Opus for complex reasoning</li>
+              <li>🧑‍💻 Claude Code Integration — agentic coding tools + CLI</li>
+              <li>🧠 Extended context window for massive docs/codebases</li>
+              <li>🗂 Advanced Projects — custom instructions & knowledge bases</li>
+              <li>🎯 Personalized styles for your brand voice or coding style</li>
+              <li>⚡ Priority processing — skip queues at peak hours</li>
+              <li>🧪 Early access to new Anthropic features</li>
+              <li>🔐 Private activation | DTS Trusted</li>
+            </ul>
+            <div class="price">
+              <s>₹3,000+</s>
+              <span class="now">₹1499</span>
+            </div>
+            <a class="btn-primary" href="order.html?plan=Claude-Pro-1M-1499">Get Claude Pro – ₹1499 / 1M</a>
+            <p class="muted tiny-text">Delivery: Instant to 12–24 hours • Validity: 1 Month • Unlimited usage</p>
+          </article>
+
+          <article class="card">
+            <div class="tag premium">5x Power</div>
+            <h3>Claude Pro Max 5 – 1 Month</h3>
+            <ul>
+              <li>🚀 Maximum usage limits — up to 5x more than Pro</li>
+              <li>🏆 Priority access to Claude 4.5 Opus for complex reasoning</li>
+              <li>🧑‍💻 Claude Code Integration — agentic coding tools + CLI</li>
+              <li>🧠 Extended context window for massive docs/codebases</li>
+              <li>🗂 Advanced Projects — custom instructions & knowledge bases</li>
+              <li>🎯 Personalized styles for your brand voice or coding style</li>
+              <li>⚡ Priority processing — skip queues at peak hours</li>
+              <li>🧪 Early access to new Anthropic features</li>
+              <li>🔐 Private activation | DTS Trusted</li>
+            </ul>
+            <div class="price">₹6500</div>
+            <a class="btn-primary" href="order.html?plan=Claude-Pro-Max5-1M-6500">Get Claude Pro Max 5 – ₹6500 / 1M</a>
+            <p class="muted tiny-text">Delivery: Instant to 12–24 hours • Validity: 1 Month • Unlimited usage</p>
+          </article>
+
+          <article class="card">
+            <div class="tag premium">20x Power</div>
+            <h3>Claude Pro Max 20 – 1 Month</h3>
+            <ul>
+              <li>🚀 Maximum usage limits — up to 20x more than Pro</li>
+              <li>🏆 Priority access to Claude 4.5 Opus for complex reasoning</li>
+              <li>🧑‍💻 Claude Code Integration — agentic coding tools + CLI</li>
+              <li>🧠 Extended context window for massive docs/codebases</li>
+              <li>🗂 Advanced Projects — custom instructions & knowledge bases</li>
+              <li>🎯 Personalized styles for your brand voice or coding style</li>
+              <li>⚡ Priority processing — skip queues at peak hours</li>
+              <li>🧪 Early access to new Anthropic features</li>
+              <li>🔐 Private activation | DTS Trusted</li>
+            </ul>
+            <div class="price">₹9000</div>
+            <a class="btn-primary" href="order.html?plan=Claude-Pro-Max20-1M-9000">Get Claude Pro Max 20 – ₹9000 / 1M</a>
+            <p class="muted tiny-text">Delivery: Instant to 12–24 hours • Validity: 1 Month • Unlimited usage</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Perplexity -->
+      <div id="perplexity" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Top Value</div>
+            <h3><img src="./assets/perplexity-logo.png" alt="" /> 1 Month Perplexity Pro</h3>
+            <ul>
+              <li>⏳ Valid for 30 Days</li>
+              <li>🔐 Private Login (single user)</li>
+              <li>🧠 Pro Models: GPT-4o, Claude, etc.</li>
+              <li>🔎 300 Pro searches/day + file & image uploads</li>
+              <li>📄 Citations, follow-ups, threads & collections</li>
+              <li>📱 Phone + Desktop Access</li>
+              <li>⚠️ Service subject to Perplexity T&Cs</li>
+            </ul>
+            <div class="price">₹299</div>
+            <a class="btn-primary" href="order.html?plan=Perplexity-1M-299">Order Now</a>
+          </article>
+
+          <article class="card popular">
+            <div class="tag">Top Value</div>
+            <h3><img src="./assets/perplexity-logo.png" alt="" /> 1 Year Perplexity Pro</h3>
+            <ul>
+              <li>⏳ Valid for 365 Days</li>
+              <li>🔐 Private Login (single user)</li>
+              <li>🧠 Pro Models + Labs access</li>
+              <li>🔎 High daily Pro searches, files & images</li>
+              <li>📚 Saved threads/collections & workspace tools</li>
+              <li>📱 Phone + Desktop Access</li>
+              <li>⚠️ Service subject to Perplexity T&Cs</li>
+            </ul>
+            <div class="price">₹1999</div>
+            <a class="btn-primary" href="order.html?plan=Perplexity-1Y-1999">Order Now</a>
+          </article>
+        </div>
+      </div>
+
+
+      <!-- Spotify -->
+      <div id="spotify" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Most Popular</div>
+            <h3><img src="./assets/spotify-logo.png" alt="" /> Spotify Premium – 2 Months</h3>
+            <ul>
+              <li>🎵 Ad-Free Music Streaming</li>
+              <li>📥 Offline Downloads</li>
+              <li>🔐 Private Account on Client Email</li>
+              <li>📱 All Devices Supported</li>
+              <li>🎧 High Quality Audio</li>
+              <li>⏭️ Unlimited Skips</li>
+            </ul>
+            <div class="price">₹99</div>
+            <a class="btn-primary" href="order.html?plan=Spotify-Premium-2M-99">Order Now</a>
+          </article>
+
+          <article class="card">
+            <div class="tag">Best Value</div>
+            <h3><img src="./assets/spotify-logo.png" alt="" /> Spotify Premium – 3 Months</h3>
+            <ul>
+              <li>🎵 Ad-Free Music Streaming</li>
+              <li>📥 Offline Downloads</li>
+              <li>🔐 Private Account on Client Email</li>
+              <li>📱 All Devices Supported</li>
+              <li>🎧 High Quality Audio</li>
+              <li>⏭️ Unlimited Skips</li>
+              <li>💎 Best Value for Money</li>
+            </ul>
+            <div class="price">₹149</div>
+            <a class="btn-primary" href="order.html?plan=Spotify-Premium-3M-149">Order Now</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- YouTube -->
+      <div id="youtube" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Most Popular</div>
+            <h3><img src="./assets/youtube-logo.png" alt="" /> Individual – 1 Month</h3>
+            <ul>
+              <li>Ad-Free YouTube & Music</li>
+              <li>Background Play + Downloads</li>
+              <li>All Devices</li>
+            </ul>
+            <div class="price"><s>₹89</s> <span class="now">₹49</span></div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Individual-1M-49">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/youtube-logo.png" alt="" /> Individual – 3 Months</h3>
+            <ul>
+              <li>Ad-Free YouTube & Music</li>
+              <li>Background Play</li>
+              <li>Offline Downloads</li>
+            </ul>
+            <div class="price"><s>₹229</s> <span class="now">₹129</span></div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Individual-3M-129">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/youtube-logo.png" alt="" /> Individual – 6 Months</h3>
+            <ul>
+              <li>Ad-Free YouTube & Music</li>
+              <li>Background Play</li>
+              <li>Offline Downloads</li>
+            </ul>
+            <div class="price"><s>₹399</s> <span class="now">₹249</span></div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Individual-6M-249">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/youtube-logo.png" alt="" /> Individual – 12 Months</h3>
+            <ul>
+              <li>Ad-Free YouTube & Music</li>
+              <li>Background Play + Smart Recos</li>
+              <li>Offline Downloads</li>
+            </ul>
+            <div class="price"><s>₹749</s> <span class="now">₹449</span></div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Individual-12M-449">Order Now</a>
+          </article>
+
+          <article class="card popular">
+            <div class="tag">Best Value</div>
+            <h3><img src="./assets/youtube-logo.png" alt="" /> Family – 1 Month</h3>
+            <ul>
+              <li>Up to 5 Members</li>
+              <li>Ad-Free YouTube & Music</li>
+              <li>Background Play</li>
+            </ul>
+            <div class="price"><s>₹199</s> <span class="now">₹149</span></div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Family-1M-149">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/youtube-logo.png" alt="" /> Family – 3 Months</h3>
+            <ul>
+              <li>Up to 5 Members</li>
+              <li>Ad-Free Experience</li>
+              <li>Background Play</li>
+            </ul>
+            <div class="price"><s>₹349</s> <span class="now">₹299</span></div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Family-3M-299">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/youtube-logo.png" alt="" /> Family – 6 Months</h3>
+            <ul>
+              <li>Up to 5 Members</li>
+              <li>100% Ad-Free</li>
+              <li>Background Play</li>
+            </ul>
+            <div class="price"><s>₹649</s> <span class="now">₹549</span></div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Family-6M-549">Order Now</a>
+          </article>
+          <article class="card">
+            <h3><img src="./assets/youtube-logo.png" alt="" /> Family – 12 Months</h3>
+            <ul>
+              <li>Up to 5 Members</li>
+              <li>No Ads, Smart Sync</li>
+              <li>Unlimited Downloads</li>
+            </ul>
+            <div class="price"><s>₹1199</s> <span class="now">₹999</span></div>
+            <a class="btn-primary" href="order.html?plan=YouTube-Family-12M-999">Order Now</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- ElevenLabs -->
+      <div id="elevenlabs" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular" style="opacity: 0.7; position: relative;">
+            <div class="tag" style="background: #dc2626;">❌ Out of Stock</div>
+            <h3><img src="./assets/elevenlabs-logo.png" alt="" /> ElevenLabs Creator - 3 Months</h3>
+            <ul>
+              <li>🎤 <strong>1,10,000 Characters Per Month</strong></li>
+              <li>🔊 <strong>High-Quality AI Voices</strong> (30+ languages)</li>
+              <li>🎬 <strong>Voice Cloning</strong> - Create custom voices</li>
+              <li>📱 <strong>Web & Mobile Access</strong></li>
+              <li>🎵 <strong>Professional Audio Quality</strong></li>
+              <li>⚡ <strong>Fast Processing</strong> - No waiting</li>
+              <li>📊 <strong>Total: 3,30,000 Characters</strong> (3 months)</li>
+              <li>🔐 <strong>Private Account Activation</strong></li>
+            </ul>
+            <div class="price">
+              <s>₹2,499</s>
+              <span class="now">₹1499</span>
+            </div>
+            <button class="btn-primary" disabled style="background: #9ca3af; cursor: not-allowed; opacity: 0.6;">Out of Stock - Coming Soon</button>
+            <p class="muted tiny-text" style="color: #dc2626; font-weight: 600;">❌ Currently Unavailable • Will restock soon</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- CapCut Pro -->
+      <div id="capcut" class="tabpane" role="tabpanel">
+        <div class="grid">
+          <article class="card popular">
+            <div class="tag">Most Popular</div>
+            <h3><img src="./assets/capcut-logo.png" alt="" /> CapCut Pro - 1 Month</h3>
+            <ul>
+              <li>🎥 <strong>Advanced Video Editing</strong> - Professional tools</li>
+              <li>🎨 <strong>Premium Effects & Filters</strong> - 1000+ templates</li>
+              <li>✂️ <strong>AI Auto-Caption</strong> - Multi-language support</li>
+              <li>🎭 <strong>Background Removal</strong> - AI-powered</li>
+              <li>📱 <strong>4K Export</strong> - Ultra HD quality</li>
+              <li>🎵 <strong>Premium Music Library</strong> - Copyright-free</li>
+              <li>⚡ <strong>Cloud Storage</strong> - 100GB included</li>
+              <li>🚫 <strong>No Watermark</strong> - Professional output</li>
+            </ul>
+            <div class="price">
+              <s>₹999</s>
+              <span class="now">₹499</span>
+            </div>
+            <a class="btn-primary" href="order.html?plan=CapCut-Pro-1M-499">Get CapCut Pro – ₹499 / 1M</a>
+            <p class="muted tiny-text">⏳ Validity: 1 Month • Full Pro features • Best for content creators 🎬</p>
+          </article>
+
+          <article class="card">
+            <div class="tag">Best Value</div>
+            <h3><img src="./assets/capcut-logo.png" alt="" /> CapCut Pro - 3 Months</h3>
+            <ul>
+              <li>🎥 <strong>Advanced Video Editing</strong> - Professional tools</li>
+              <li>🎨 <strong>Premium Effects & Filters</strong> - 1000+ templates</li>
+              <li>✂️ <strong>AI Auto-Caption</strong> - Multi-language support</li>
+              <li>🎭 <strong>Background Removal</strong> - AI-powered</li>
+              <li>📱 <strong>4K Export</strong> - Ultra HD quality</li>
+              <li>🎵 <strong>Premium Music Library</strong> - Copyright-free</li>
+              <li>⚡ <strong>Cloud Storage</strong> - 100GB included</li>
+              <li>🚫 <strong>No Watermark</strong> - Professional output</li>
+            </ul>
+            <div class="price">
+              <s>₹2,499</s>
+              <span class="now">₹1299</span>
+            </div>
+            <a class="btn-primary" href="order.html?plan=CapCut-Pro-3M-1299">Get CapCut Pro – ₹1299 / 3M</a>
+            <p class="muted tiny-text">⏳ Validity: 3 Months • Save ₹1200 • ₹433/month only 💰</p>
+          </article>
+
+          <article class="card">
+            <h3><img src="./assets/capcut-logo.png" alt="" /> CapCut Pro - 6 Months</h3>
+            <ul>
+              <li>🎥 <strong>Advanced Video Editing</strong> - Professional tools</li>
+              <li>🎨 <strong>Premium Effects & Filters</strong> - 1000+ templates</li>
+              <li>✂️ <strong>AI Auto-Caption</strong> - Multi-language support</li>
+              <li>🎭 <strong>Background Removal</strong> - AI-powered</li>
+              <li>📱 <strong>4K Export</strong> - Ultra HD quality</li>
+              <li>🎵 <strong>Premium Music Library</strong> - Copyright-free</li>
+              <li>⚡ <strong>Cloud Storage</strong> - 100GB included</li>
+              <li>🚫 <strong>No Watermark</strong> - Professional output</li>
+            </ul>
+            <div class="price">
+              <s>₹4,499</s>
+              <span class="now">₹2399</span>
+            </div>
+            <a class="btn-primary" href="order.html?plan=CapCut-Pro-6M-2399">Get CapCut Pro – ₹2399 / 6M</a>
+            <p class="muted tiny-text">⏳ Validity: 6 Months • Save ₹2100 • ₹400/month only 🔥</p>
+          </article>
+
+          <article class="card accent">
+            <div class="tag">Maximum Savings</div>
+            <h3><img src="./assets/capcut-logo.png" alt="" /> CapCut Pro - 12 Months</h3>
+            <ul>
+              <li>🎥 <strong>Advanced Video Editing</strong> - Professional tools</li>
+              <li>🎨 <strong>Premium Effects & Filters</strong> - 1000+ templates</li>
+              <li>✂️ <strong>AI Auto-Caption</strong> - Multi-language support</li>
+              <li>🎭 <strong>Background Removal</strong> - AI-powered</li>
+              <li>📱 <strong>4K Export</strong> - Ultra HD quality</li>
+              <li>🎵 <strong>Premium Music Library</strong> - Copyright-free</li>
+              <li>⚡ <strong>Cloud Storage</strong> - 100GB included</li>
+              <li>🚫 <strong>No Watermark</strong> - Professional output</li>
+            </ul>
+            <div class="price">
+              <s>₹7,999</s>
+              <span class="now">₹4499</span>
+            </div>
+            <a class="btn-primary" href="order.html?plan=CapCut-Pro-12M-4499">Get CapCut Pro – ₹4499 / 12M</a>
+            <p class="muted tiny-text">⏳ Validity: 12 Months • Save ₹3500 • Only ₹375/month! Best deal 💎</p>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Combo Offer -->
+  <!-- ChatGLM Pro Suite -->
+  <section class="combo" id="chatglm">
+    <div class="container">
+      <h2>🎬 ChatGLM Pro Suite — 4K 60 FPS Video & Unlimited Images</h2>
+      <p class="muted">VIP access • Watermark-free outputs • Priority rendering</p>
+
+      <!-- ⭐ New 1-Month + Existing 3-Month -->
+      <div class="combo-wrap">
+        <img src="assets/chatglm-cover.jpg" alt="ChatGLM Pro Suite" />
+
+        <div class="combo-copy">
+          <h3>What you’ll get</h3>
+          <ul>
+            <li>🎞️ <strong>Unlimited video generation</strong> up to <strong>4K 60 FPS</strong></li>
+            <li>⏱️ Per render length: <strong>10 sec</strong> per generation</li>
+            <li>🖼️ <strong>Unlimited image generation</strong> (VIP)</li>
+            <li>🚫 No watermark on videos & images</li>
+            <li>⚡ Priority queue for faster renders</li>
+            <li>📦 Latest model updates included</li>
+            <li>🔐 Shared access (mobile + desktop)</li>
+          </ul>
+
+          <!-- ⭐ NEW 1-Month Option
+          <div class="price" style="margin-bottom:16px;">
+            <s>₹1,499</s>
+            <span class="now">₹999</span>
+            <span class="muted" style="font-weight:600;">/ 1 month</span>
+          </div>
+          <a class="btn-primary" href="order.html?plan=ChatGLM-1M-999">Get 1-Month ChatGLM Pro (₹999)</a>
+
+          <br><br> -->
+
+          <!-- Existing 3-Month Option -->
+          <div class="price">
+            <s>₹2,999</s>
+            <span class="now">₹999</span>
+            <span class="muted" style="font-weight:600;">/ 3 months</span>
+          </div>
+          <a class="btn-primary" href="order.html?plan=ChatGLM-3M-2499">Get ChatGLM Pro (₹999 / 3M)</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Order -->
+  <section id="how-to-order" class="howto">
+    <div class="container narrow">
+      <h2>How to Order</h2>
+      <ol class="steps">
+        <li>Select your service and plan.</li>
+        <li>Pay via UPI (Paytm / GPay / PhonePe)<br><code>somya2208jain2208@okhdfcbank</code></li>
+        <li>Fill the Google Form with details & screenshot.</li>
+        <li>Drop One Msg On Our Instagram Handle.</li>
+      </ol>
+      <p class="muted">⚡ Delivery within <strong>1–6 hours</strong> after payment confirmation.</p>
+    </div>
+  </section>
+
+  <!-- Payment Proofs -->
+  <section class="proofs">
+    <div class="container">
+      <h2>💳 Real Payment Proofs</h2>
+      <p class="muted">1000+ orders delivered successfully</p>
+      <div class="proof-grid">
+        <img src="./assets/Pay1.jpg" alt="Payment proof 1" />
+        <img src="./assets/Pay2.jpg" alt="Payment proof 2" />
+        <img src="./assets/Pay3.jpg" alt="Payment proof 3" />
+        <img src="./assets/Pay4.jpg" alt="Payment proof 4" />
+        <img src="./assets/Pay5.jpg" alt="Payment proof 5" />
+        <img src="./assets/Pay6.jpg" alt="Payment proof 6" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ NEW: About the Coach -->
+  <section class="coach-about">
+    <div class="container narrow">
+      <h2>About Your Coach</h2>
+      <div class="coach-about-wrap">
+        <div class="coach-about-text">
+          <p>
+            Hi! 👋 My name is <strong>Soumya Jain</strong>, and I’m an active
+            practitioner of <strong>software dropshipping</strong>. Over the last
+            <strong>5 months</strong>, I’ve generated more than
+            <strong>₹3,00,000 in revenue</strong> using this exact business model —
+            including <strong>₹1,00,000+</strong> in just the last month.
+          </p>
+          <p>
+            I don’t teach theory. I teach the exact systems, methods, and processes
+            I personally use in my business — including tools, pricing strategies,
+            client acquisition, ads, and delivery systems.
+          </p>
+          <p class="muted">
+            My goal is simple: to help <strong>students, freelancers, and
+              beginners</strong> start a profitable online income with a business
+            model that requires almost zero investment and has massive earning
+            potential.
+          </p>
+        </div>
+
+        <div class="coach-about-card">
+          <h3>Quick Stats</h3>
+          <ul>
+            <li>💰 ₹3,00,000+ revenue in 5 months</li>
+            <li>🧠 Experience with 50+ software tools</li>
+            <li>🎓 Helped 1000+ customers with premium tools</li>
+            <li>📍 India-based strategies designed for the Indian market</li>
+          </ul>
+          <a href="#strategy-call" class="btn-primary wfull" style="margin-top:10px;">
+            Start with the ₹99 Call
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <div class="t-grid">
+        <blockquote>“I got ChatGPT & Netflix both from SabkaPremium. Delivery was super fast!” <cite>— Aayush K.</cite>
+        </blockquote>
+        <blockquote>“Affordable and 100% working accounts. Highly recommended!” <cite>— Priya R.</cite></blockquote>
+        <blockquote>“Great service! My Canva Pro was activated within minutes.” <cite>— Rohan S.</cite></blockquote>
+        <blockquote>“My go-to for all OTT and AI tools. Super easy process!” <cite>— Neha P.</cite></blockquote>
+        <blockquote>“Very professional and trustworthy. I’ve purchased multiple plans!” <cite>— Aditya M.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="container narrow">
+      <h2>📋 Frequently Asked Questions (FAQ)</h2>
+      <p class="muted" style="text-align:center;margin-bottom:30px;">Common questions about our premium services</p>
+      
+      <div class="accordion">
+        <details>
+          <summary>🔄 What if the account doesn't work?</summary>
+          <p>
+            We offer a <strong>100% Replacement Guarantee</strong>. If you face any login issues or service problems, 
+            we'll provide an instant replacement. Simply message us on Instagram, Telegram, or WhatsApp 
+            and we'll resolve the issue within <strong>24-48 hours</strong>.
+          </p>
+        </details>
+
+        <details>
+          <summary>⏰ How long does delivery take exactly?</summary>
+          <p>
+            After payment confirmation, delivery typically takes <strong>1 to 6 hours</strong>. Usually 
+            you'll receive your account within <strong>2-3 hours</strong>. During peak hours (evening), 
+            there might be slight delays, but maximum delivery time is 6 hours. Instant delivery is available 
+            for priority orders.
+          </p>
+        </details>
+
+        <details>
+          <summary>🔒 Are shared accounts safe? Will I get banned?</summary>
+          <p>
+            Shared accounts are <strong>100% safe</strong>. We've served 1000+ customers without any 
+            major issues. We carefully manage the number of members per account. 
+            Your <strong>privacy is protected</strong> - no one gets access to your personal details. 
+            If you need complete privacy, private account options are available in premium plans.
+          </p>
+        </details>
+
+        <details>
+          <summary>💰 What is your refund policy?</summary>
+          <p>
+            Our policy is: <strong>No Refunds, Only Replacements</strong>. If an account stops working, 
+            we provide a replacement. Refunds are only issued in extreme cases when we cannot deliver 
+            the service. Please carefully select your plan, and if you have doubts, DM us on Instagram first.
+          </p>
+        </details>
+
+        <details>
+          <summary>🆚 What's the difference between Private and Shared accounts?</summary>
+          <p>
+            <strong>Shared Account:</strong> Multiple users (3-10 members) share the same account. 
+            Budget-friendly but may have minor limitations (like simultaneous usage limits).<br><br>
+            <strong>Private Account:</strong> Exclusively for you - no sharing. Full control, zero downtime, 
+            no limitations. Best for agencies and heavy users.
+          </p>
+        </details>
+
+        <details>
+          <summary>📱 What's the process after payment?</summary>
+          <p>
+            <strong>Step 1:</strong> Make payment via UPI - <code>somya2208jain2208@okhdfcbank</code><br>
+            <strong>Step 2:</strong> Fill the Google Form with screenshot<br>
+            <strong>Step 3:</strong> Send a DM on Instagram for confirmation<br>
+            <strong>Step 4:</strong> Receive account details within 1-6 hours (login, password, instructions)<br>
+            <strong>Step 5:</strong> Login and enjoy premium access! 🎉
+          </p>
+        </details>
+
+        <details>
+          <summary>🛡️ How long will the account remain valid?</summary>
+          <p>
+            The validity matches your selected plan. For example:
+            <strong>1 Month = 30 days</strong>, <strong>3 Months = 90 days</strong>, etc. 
+            If any issues arise during this period, you'll get a replacement, but validity doesn't extend. 
+            You'll receive a renewal reminder before expiry.
+          </p>
+        </details>
+
+        <details>
+          <summary>📞 How do I get support if I face problems?</summary>
+          <p>
+            We're available 24/7 (response time 2-12 hours):<br>
+            • <strong>Instagram:</strong> @sabka_premium (fastest)<br>
+            • <strong>Telegram:</strong> t.me/Somya2208<br>
+            • <strong>WhatsApp:</strong> +91 95113 35264<br>
+            • <strong>Email:</strong> sabkapremium01@gmail.com<br>
+            Report any issues instantly and we'll help you out!
+          </p>
+        </details>
+
+        <details>
+          <summary>🎯 Can I order multiple services together?</summary>
+          <p>
+            <strong>Absolutely!</strong> You can order multiple services in a single order. 
+            For example: ChatGPT + Netflix + Canva together. We also offer 
+            <strong>special discounts</strong> on bulk orders. DM us on Instagram to discuss.
+          </p>
+        </details>
+
+        <details>
+          <summary>⚠️ Is this legal? Is it safe?</summary>
+          <p>
+            We <strong>resell premium accounts</strong> - this is a <strong>grey market practice</strong> 
+            (not illegal, but not officially endorsed by service providers). Thousands of people use such services safely. 
+            We provide responsible service with a replacement guarantee. 
+            Your payment is secure via UPI.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>⭐ What Our Customers Say</h2>
+      <p class="muted" style="text-align:center;margin-bottom:30px;">Real reviews from real customers</p>
+      
+      <!-- Default Reviews with Star Ratings -->
+      <div class="t-grid" id="reviews-container">
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"I got ChatGPT & Netflix both from SabkaPremium. Delivery was super fast!"</blockquote>
+          <cite>— Aayush K.</cite>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"Affordable and 100% working accounts. Highly recommended!"</blockquote>
+          <cite>— Priya R.</cite>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"Great service! My Canva Pro was activated within minutes."</blockquote>
+          <cite>— Rohan S.</cite>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"My go-to for all OTT and AI tools. Super easy process!"</blockquote>
+          <cite>— Neha P.</cite>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"Very professional and trustworthy. I've purchased multiple plans!"</blockquote>
+          <cite>— Aditya M.</cite>
+        </div>
+      </div>
+      
+      <!-- Live Review Submission Form -->
+      <div class="review-submit-section">
+        <h3>📝 Share Your Experience</h3>
+        <p class="muted">Help others by sharing your honest review!</p>
+        
+        <form id="review-form" class="review-form">
+          <div class="form-group">
+            <label for="review-name">Your Name</label>
+            <input type="text" id="review-name" placeholder="e.g., Rahul K." required maxlength="50">
+          </div>
+          
+          <div class="form-group">
+            <label for="review-rating">Rating</label>
+            <div class="star-rating-input">
+              <input type="radio" name="rating" id="star5" value="5" required>
+              <label for="star5">⭐</label>
+              <input type="radio" name="rating" id="star4" value="4">
+              <label for="star4">⭐</label>
+              <input type="radio" name="rating" id="star3" value="3">
+              <label for="star3">⭐</label>
+              <input type="radio" name="rating" id="star2" value="2">
+              <label for="star2">⭐</label>
+              <input type="radio" name="rating" id="star1" value="1">
+              <label for="star1">⭐</label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="review-text">Your Review</label>
+            <textarea id="review-text" placeholder="Share your experience with SabkaPremium..." required maxlength="300" rows="4"></textarea>
+            <small class="char-count"><span id="char-counter">0</span>/300 characters</small>
+          </div>
+          
+          <button type="submit" class="btn-primary">Submit Review</button>
+        </form>
+        
+        <p class="review-note">💡 Your review will be displayed instantly on this page</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Old FAQ section starts here - need to check what comes after -->
+  <section class="faq-old-placeholder">
+    <div class="container narrow">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <details>
+          <summary>Are these official accounts?</summary>
+          <p>You’ll get premium accounts with features unlocked. These are shared accounts but completely safe and
+            working.</p>
+        </details>
+        <details>
+          <summary>When will I receive my login details?</summary>
+          <p>Within <strong>1–6 hours</strong> after payment confirmation.</p>
+        </details>
+        <details>
+          <summary>Can multiple devices use it at the same time?</summary>
+          <p>Depends on the service. Wherever possible (e.g., Netflix, Canva), each user gets their own profile.</p>
+        </details>
+        <details>
+          <summary>What if the account stops working?</summary>
+          <p>We provide full support and free replacement during the validity period.</p>
+        </details>
+        <details>
+          <summary>Is it safe to purchase from SabkaPremium?</summary>
+          <p>Yes. We have hundreds of happy customers and secure UPI payments. Your data is never shared.</p>
+        </details>
+        <details>
+          <summary>Can I upgrade or buy multiple accounts?</summary>
+          <p>Absolutely. You can upgrade anytime or purchase multiple accounts for friends and family at a discount.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Contact Buttons -->
+  <!-- Real-Time Order Notification Popup -->
+  <div id="order-notification" class="order-popup">
+    <div class="order-popup-content">
+      <div class="order-popup-icon">
+        <i class="fa-solid fa-check-circle"></i>
+      </div>
+      <div class="order-popup-text">
+        <div class="order-popup-name"></div>
+        <div class="order-popup-product"></div>
+        <div class="order-popup-time"></div>
+      </div>
+    </div>
+    <button class="order-popup-close" aria-label="Close notification">
+      <i class="fa-solid fa-times"></i>
+    </button>
+  </div>
+
+  <a href="https://t.me/Somya2208" class="btn-float tg" target="_blank" aria-label="Telegram">
+    <i class="fa-brands fa-telegram"></i>
+  </a>
+  <a href="https://instagram.com/sabka_premium" class="btn-float wa" target="_blank" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://wa.me/919511335264" class="btn-float wa-green" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Contact Support -->
+  <section class="contact">
+    <div class="container">
+      <h2>Need Help?</h2>
+      <p>If you face any issue with payment or order, reach us through:</p>
+      <div class="contact-links">
+        <a href="https://t.me/Somya2208" target="_blank"><i class="fa-brands fa-telegram"></i> Telegram</a>
+        <a href="https://instagram.com/sabka_premium" target="_blank"><i class="fa-brands fa-instagram"></i>
+          Instagram</a>
+        <a href="mailto:sabkapremium01@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+        <a href="https://t.me/Somya2208?text=Hi%2C%20I%20want%20to%20book%20the%20%E2%82%B999%20software%20dropshipping%20strategy%20call."
+          target="_blank">
+          💬 Book ₹99 Strategy Call
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <section class="disclaimer">
+    <div class="container narrow">
+      <h3>Disclaimer</h3>
+      <p>⚠️ We are not the official sellers or service providers. We are resellers—purchasing from providers and
+        offering at a margin for convenience and affordability.</p>
+      <p>❌ No refunds. If any service stops during validity, we’ll replace it free of cost. By purchasing, you agree to
+        these terms.</p>
+    </div>
+  </section>
+
+  <!-- Partner Clarification -->
+  <section class="partner">
+    <div class="container narrow">
+      <h3>Important Notice</h3>
+      <p>⚠️ We are not officially partnered with any third-party seller. Transactions outside our official channels are
+        not authorized.</p>
+      <ul>
+        <strong>@sabka_premium</strong>
+        <strong>@brainboosttools_</strong>
+        <strong>@softottdeals</strong>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Scam Alert -->
+  <section class="scam">
+    <div class="container">
+      <div class="scam-card">
+        <div class="scam-head">
+          <span>⚠️</span>
+          <h3>Scam Alert — Stay Safe</h3>
+        </div>
+        <p class="lead">We only communicate through our official channels. <strong>Only UPI/links listed on this website
+            are valid.</strong></p>
+        <div class="scam-grid">
+          <div class="box">
+            <h4>✅ Official Channels</h4>
+            <ul>
+              <li>Website: <a href="#how-to-order">SabkaPremium.shop</a></li>
+              <li>Instagram: <strong>@sabka_premium</strong>, <strong>@brainboosttools_</strong>,
+                <strong>@softottdeals</strong>
+              </li>
+              <li>Telegram: <a href="https://t.me/Somya2208" target="_blank" rel="noopener">t.me/Somya2208</a></li>
+              <!-- <li>WhatsApp: <a href="https://wa.me/919511335264" target="_blank" rel="noopener">+91 95113 35264</a></li> -->
+              <li>UPI: <code>somya2208jain2208@okhdfcbank</code></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h4>🔎 Quick Verification Checklist</h4>
+            <ol>
+              <li>Is the person from an <strong>official handle</strong> listed above?</li>
+              <li>Pay only to the <strong>UPI ID on our website</strong>.</li>
+              <li>Ask for <strong>proof of order</strong> and delivery timelines.</li>
+              <li>Watch out for suspicious links or urgent payment pressure.</li>
+            </ol>
+          </div>
+          <div class="box">
+            <h4>🛑 Report Suspicious Activity</h4>
+            <ul>
+              <li>Email: <a href="mailto:sabkapremium01@gmail.com">sabkapremium01@gmail.com</a></li>
+              <li>Instagram DM: <strong>@sabka_premium</strong></li>
+              <li>Telegram: <a href="https://t.me/Somya2208" target="_blank" rel="noopener">Message on Telegram</a></li>
+            </ul>
+            <p class="minitext">We do not publish personal numbers or names. Reports are reviewed internally.</p>
+          </div>
+        </div>
+        <p class="foot">Always follow our <a href="#how-to-order"><strong>How to Order</strong></a> steps. No refunds;
+          replacements/support will be offered if needed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container grid-4">
+      <div>
+        <img src="./assets/logo.png" alt="SabkaPremium" />
+        <p>India's Most Trusted Affordable Premium Service Platform for Students & Creators.</p>
+        
+        <!-- Security Trust Badges -->
+        <div class="footer-security-badges">
+          <div class="security-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Secure Payment</span>
+          </div>
+          <div class="security-badge">
+            <i class="fa-solid fa-lock"></i>
+            <span>SSL Encrypted</span>
+          </div>
+          <div class="security-badge">
+            <i class="fa-solid fa-check-circle"></i>
+            <span>Verified Seller</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="links">
+          <li><a href="#plans">Our Plans</a></li>
+          <li><a href="#how-to-order">How to Order</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="mailto:sabkapremium01@gmail.com">Contact Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>We're Trusted!</h4>
+        <ul class="ticks">
+          <li>✅ 1000+ Happy Customers</li>
+          <li>✅ Instant Delivery Guaranteed</li>
+          <li>✅ 100% Replacement Guarantee</li>
+          <li>🔒 Secure UPI Payments</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="https://instagram.com/sabka_premium" target="_blank" aria-label="Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://t.me/Somya2208" target="_blank" aria-label="Telegram"><i
+              class="fa-brands fa-telegram"></i></a>
+          <a href="mailto:sabkapremium01@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-copy">
+      <p>© 2025 SabkaPremium.com | All rights reserved.</p>
+      <p>Made with ❤️ for Indian Students</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

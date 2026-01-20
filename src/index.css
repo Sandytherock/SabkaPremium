@@ -1,0 +1,124 @@
+/* Import main styles */
+@import './App.css';
+@import './product-cards.css';
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Override default Vite/React styles */
+#root {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(20,184,166,.18), transparent 60%),
+    linear-gradient(180deg,#0b1513,#0b1513 40%,#08100e) !important;
+  color: #e7f7f3 !important;
+  margin: 0 !important;
+  min-width: 320px !important;
+  min-height: 100vh !important;
+  display: block !important;
+  place-items: initial !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Order page wrapper styling - Override body styles for .order-body div */
+.order-body {
+  min-height: 100vh;
+  background: radial-gradient(900px 400px at 20% -10%, rgba(20,184,166,.18), transparent 60%),
+    linear-gradient(180deg,#0b1513,#0b1513 40%,#08100e) !important;
+  color: #e7f7f3 !important;
+}
+
+/* Plan head styling for order page */
+.plan-head { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  margin: 6px 0 14px; 
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 12px 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+.plan-head img { 
+  width: 32px; 
+  height: 32px; 
+  border-radius: 8px; 
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+.plan-head .pname { 
+  font-weight: 600; 
+  font-size: 15px; 
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.order-body * {
+  box-sizing: border-box;
+}
+
+.order-body .site-header {
+  background: rgba(10, 21, 18, 0.95) !important;
+}
+
+.order-body .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo fixes */
+.order-body img[src*="logo"] {
+  max-width: 120px !important;
+  height: auto !important;
+}
+
+/* Plan image/logo in order page - specific fix */
+.order-body .plan-visual img,
+.order-body .plan-image img,
+.order-body img[class*="plan"],
+.order-body .product-logo {
+  max-width: 120px !important;
+  max-height: 120px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+/* Order page specific sections background */
+.order-body section,
+.order-body .order-section,
+.order-body main {
+  background: transparent !important;
+}
+
+.order-body .card,
+.order-body .box,
+.order-body .payment-card,
+.order-body .form-card {
+  background: rgba(15, 29, 26, 0.6) !important;
+  border: 1px solid rgba(20, 184, 166, 0.2) !important;
+}
+
+.order-content-wrapper {
+  flex: 1;
+  width: 100%;
+  background: linear-gradient(135deg, #0f1d1a, #0c1916) !important;
+}

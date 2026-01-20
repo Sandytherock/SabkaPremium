@@ -1,0 +1,79 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="container grid-4">
+        <div>
+          <img src="/assets/logo.png" alt="SabkaPremium" />
+          <p>India's Most Trusted Affordable Premium Service Platform for Students & Creators.</p>
+          
+          {/* Security Trust Badges */}
+          <div className="footer-security-badges">
+            <div className="security-badge">
+              <i className="fa-solid fa-shield-halved"></i>
+              <span>Secure Payment</span>
+            </div>
+            <div className="security-badge">
+              <i className="fa-solid fa-lock"></i>
+              <span>SSL Encrypted</span>
+            </div>
+            <div className="security-badge">
+              <i className="fa-solid fa-check-circle"></i>
+              <span>Verified Seller</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul className="links">
+            <li><Link to="/">Home</Link></li>
+            <li><a href="/#plans" onClick={(e) => {
+              if (window.location.pathname !== '/') {
+                e.preventDefault();
+                window.location.href = '/#plans';
+              }
+            }}>Our Plans</a></li>
+            <li><a href="/#how-to-order" onClick={(e) => {
+              if (window.location.pathname !== '/') {
+                e.preventDefault();
+                window.location.href = '/#how-to-order';
+              }
+            }}>How to Order</a></li>
+            <li><Link to="/reviews">Customer Reviews</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h4>We're Trusted!</h4>
+          <ul className="ticks">
+            <li>✅ 1000+ Happy Customers</li>
+            <li>✅ Instant Delivery Guaranteed</li>
+            <li>✅ 100% Replacement Guarantee</li>
+            <li>🔒 Secure UPI Payments</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <div className="socials">
+            <a href="https://instagram.com/sabka_premium" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://t.me/Somya2208" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <i className="fa-brands fa-telegram"></i>
+            </a>
+            <a href="mailto:sabkapremium01@gmail.com" aria-label="Email">
+              <i className="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="foot-copy">
+        <p>© 2025 SabkaPremium.com | All rights reserved.</p>
+        <p>Made with ❤️ for Indian Students</p>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer

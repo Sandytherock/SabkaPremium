@@ -1,0 +1,205 @@
+/* Top Announcement Banner - Above Header */
+.top-announcement-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+  overflow: hidden;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  animation: slideDownTop 0.5s ease;
+}
+
+@keyframes slideDownTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Marquee Container */
+.banner-marquee {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  padding: 0 10px;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: marqueeScroll 30s linear infinite;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.banner-marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* Banner Items */
+.banner-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.banner-item .icon {
+  font-size: 1.1rem;
+  animation: bounceIcon 2s infinite;
+}
+
+@keyframes bounceIcon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.banner-item strong {
+  font-weight: 700;
+  color: #FFF;
+}
+
+.banner-divider {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+/* WhatsApp Quick Join Button */
+.whatsapp-quick-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #FFD700;
+  color: #128C7E;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.whatsapp-quick-btn:hover {
+  background: #FFC107;
+  color: #0A5F4E;
+  transform: scale(1.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.whatsapp-quick-btn svg {
+  flex-shrink: 0;
+}
+
+/* Adjust header position to account for banner */
+.site-header {
+  top: 44px !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top-announcement-banner {
+    height: 40px;
+  }
+
+  .banner-item {
+    font-size: 0.8rem;
+    padding: 0 12px;
+  }
+
+  .banner-item .icon {
+    font-size: 1rem;
+  }
+
+  .whatsapp-quick-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    gap: 4px;
+  }
+
+  .whatsapp-quick-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .site-header {
+    top: 40px !important;
+  }
+
+  .marquee-content {
+    animation-duration: 25s;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-announcement-banner {
+    height: 36px;
+  }
+
+  .banner-item {
+    font-size: 0.75rem;
+    padding: 0 10px;
+  }
+
+  .banner-divider {
+    font-size: 1rem;
+    margin: 0 8px;
+  }
+
+  .whatsapp-quick-btn {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    margin-right: 5px;
+  }
+
+  .site-header {
+    top: 36px !important;
+  }
+
+  .marquee-content {
+    animation-duration: 20s;
+  }
+}
+
+/* Make sure body content starts below the banner */
+body {
+  padding-top: 44px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 36px;
+  }
+}

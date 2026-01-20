@@ -1,0 +1,306 @@
+/* WhatsApp Community Section */
+.whatsapp-community-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.whatsapp-community-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 20s infinite;
+}
+
+.whatsapp-community-section::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  animation: float 25s infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(180deg); }
+}
+
+.whatsapp-community-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero Section */
+.community-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.community-icon {
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.community-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.community-subtitle {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0;
+}
+
+.community-subtitle strong {
+  color: #FFD700;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Benefits Grid */
+.community-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.benefit-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.benefit-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #128C7E;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+}
+
+/* CTA Section */
+.community-cta {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.whatsapp-join-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  color: #128C7E;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.whatsapp-join-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #25D366;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+  z-index: -1;
+}
+
+.whatsapp-join-btn:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.whatsapp-join-btn:hover {
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-join-btn svg {
+  flex-shrink: 0;
+}
+
+.community-members {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.community-members strong {
+  color: #FFD700;
+  font-weight: 700;
+}
+
+.trust-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.trust-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Social Proof */
+.community-proof {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.proof-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.proof-text strong {
+  color: #FFD700;
+  font-weight: 700;
+}
+
+.proof-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.stat {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #FFD700;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .whatsapp-community-section {
+    padding: 60px 15px;
+  }
+
+  .community-title {
+    font-size: 2rem;
+  }
+
+  .community-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .whatsapp-join-btn {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+  }
+
+  .community-benefits {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .proof-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .community-title {
+    font-size: 1.7rem;
+  }
+
+  .whatsapp-join-btn {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}

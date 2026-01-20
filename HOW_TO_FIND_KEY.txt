@@ -1,0 +1,74 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║         🔑 SUPABASE KEY KAISE DHUNDHE - STEP BY STEP        ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+✅ STEP 1: Ye link kholo
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+https://supabase.com/dashboard/project/tywgidwvmvbinpzhnjlx/settings/api
+                                                            ^^^^
+                                                   Dhyan do - "api" likha hai
+
+
+✅ STEP 2: Page scroll karo niche
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+"Project API keys" section dhundho
+
+
+✅ STEP 3: "anon public" key copy karo
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Tumhe 2 keys dikhenge:
+
+┌─────────────────────────────────────────────┐
+│  anon public                      [Copy]    │  ← YE WALI CHAHIYE ✅
+│  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...    │
+└─────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────┐
+│  service_role                     [Copy]    │  ← YE MAT USE KARO ❌
+│  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...    │
+└─────────────────────────────────────────────┘
+
+"anon public" wali key ko copy karo!
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📝 FINAL .env.local FILE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Tumhare .env.local file me ye likho:
+
+VITE_SUPABASE_URL=https://tywgidwvmvbinpzhnjlx.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhbGc...tumhari_lambi_key_yaha_paste_karo...
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ SAHI KEY KAISE PEHCHANE?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ "eyJ" se start hoti hai
+✅ Bahut LAMBI hai (300+ characters)
+✅ Dots (.) hai isme
+✅ "anon public" label ke niche hai
+
+❌ "sb_" se start hoti hai       ← YE GALAT HAI
+❌ Chhoti hai (40 characters)    ← YE GALAT HAI
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 QUICK SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+URL (CORRECT):     https://tywgidwvmvbinpzhnjlx.supabase.co
+
+KEY (GALAT):       sb_publishable_iimXfZ1dirO8aFgMTdk5Dg_T8DEtypt
+                   ☝️ Ye mat use karo!
+
+KEY (SAHI):        Settings → API → "anon public" wali copy karo
+                   ☝️ Ye bahut lambi hogi aur "eyJ" se start hogi
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Baad me npm run dev restart karna mat bhulna! 🚀
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
