@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
+import { supabase, isSupabaseConfigured } from '../lib/supabase'
 
 function OrderNotification() {
   const [isVisible, setIsVisible] = useState(false)
-  const [notification, setNotification] = useState({ name: '', product: '', time: '' })
+  const [notification, setNotification] = useState({ name: '', product: '', time: '', isReal: false })
 
   const names = [
     "Rahul", "Priya", "Amit", "Neha", "Rohan", "Anjali", "Arjun", "Sneha",
@@ -37,7 +38,63 @@ function OrderNotification() {
     "Just now"
   ]
 
-  const showNotification = () => {
+  // Fetch real orders from Supabase
+  const fetchRealOrders = async () => {
+    if (!isSupabaseConfigured()) return []
+    
+    try {
+      const { data, error } = await supabase
+        .from('orders')
+        .select('name, plan_name, created_at')
+        .order('created_at', { ascending: false })
+        .limit(10)
+      
+      if (error) throw error
+      return data || []
+    } catch (error) {
+      console.log('Could not fetch real orders:', error.message)
+      return []
+    }
+  }
+
+  const getTimeAgo = (timestamp) => {
+    const now = new Date()
+    const orderTime = new Date(timestamp)
+    const diffMinutes = Math.floor((now - orderTime) / (1000 * 60))
+    
+    if (diffMinutes < 1) return 'Just now'
+    if (diffMinutes < 60) return `${diffMinutes} minutes ago`
+    
+    const diffHours = Math.floor(diffMinutes / 60)
+    if (diffHours < 24) return `${diffHours} hours ago`
+    
+    const diffDays = Math.floor(diffHours / 24)
+    return `${diffDays} days ago`
+  }
+
+  const showNotification = async () => {
+    // Try to show real order 40% of the time
+    const showRealOrder = Math.random() < 0.4
+    
+    if (showRealOrder) {
+      const realOrders = await fetchRealOrders()
+      if (realOrders.length > 0) {
+        const randomOrder = realOrders[Math.floor(Math.random() * realOrders.length)]
+        
+        setNotification({
+          name: randomOrder.name,
+          product: `just purchased ${randomOrder.plan_name}`,
+          time: getTimeAgo(randomOrder.created_at),
+          isReal: true
+        })
+
+        setIsVisible(true)
+        setTimeout(() => setIsVisible(false), 6000)
+        return
+      }
+    }
+    
+    // Fallback to fake notification
     const randomName = names[Math.floor(Math.random() * names.length)]
     const randomCity = cities[Math.floor(Math.random() * cities.length)]
     const randomProduct = products[Math.floor(Math.random() * products.length)]
@@ -46,14 +103,12 @@ function OrderNotification() {
     setNotification({
       name: `${randomName} from ${randomCity}`,
       product: `just purchased ${randomProduct}`,
-      time: randomTime
+      time: randomTime,
+      isReal: false
     })
 
     setIsVisible(true)
-
-    setTimeout(() => {
-      setIsVisible(false)
-    }, 6000)
+    setTimeout(() => setIsVisible(false), 6000)
   }
 
   useEffect(() => {
@@ -85,7 +140,17 @@ function OrderNotification() {
           <i className="fa-solid fa-check-circle"></i>
         </div>
         <div className="order-popup-text">
-          <div className="order-popup-name">{notification.name}</div>
+          <div className="order-popup-name">
+            {notification.name}
+            {notification.isReal && <span style={{ 
+              fontSize: '10px', 
+              background: '#10a37f', 
+              padding: '2px 6px', 
+              borderRadius: '4px', 
+              marginLeft: '6px',
+              fontWeight: '600'
+            }}>LIVE</span>}
+          </div>
           <div className="order-popup-product">{notification.product}</div>
           <div className="order-popup-time">{notification.time}</div>
         </div>

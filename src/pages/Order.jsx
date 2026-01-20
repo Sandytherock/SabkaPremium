@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import FloatingButtons from '../components/FloatingButtons'
 import WhatsAppCommunityBanner from '../components/WhatsAppCommunityBanner'
 import { planMap, coupons } from '../data/orderPlansMap'
+import { supabase, isSupabaseConfigured } from '../lib/supabase'
 import '../components/WhatsAppCommunityBanner.css'
 
 function Order() {
@@ -73,27 +74,39 @@ function Order() {
       const screenshotFile = formData.get('screenshot')
       let base64 = ''
       let mime = ''
+      let screenshotUrl = ''
       
       if (screenshotFile && screenshotFile.size > 0) {
         const result = await fileToBase64(screenshotFile)
         base64 = result.split(',')[1] || result // Get base64 part only
         mime = screenshotFile.type
+        screenshotUrl = result // Full data URL for display
       }
       
+      // Extract form data
+      const name = formData.get('name')
+      const email = formData.get('email')
+      const phone = formData.get('phone')
+      const plan = formData.get('plan')
+      const amount = formData.get('amount')
+      const transactionId = formData.get('transactionId')
+      
       // Prepare payload for Google Sheets
-      const payload = {}
-      formData.forEach((value, key) => {
-        if (key !== 'screenshot') { // Skip file field
-          payload[key] = value
-        }
-      })
+      const payload = {
+        name,
+        email,
+        phone,
+        plan,
+        amount,
+        transactionId,
+        screenshotBase64: base64,
+        screenshotType: mime,
+        discountCode: couponCode || 'None',
+        finalAmount: calculateFinalAmount().toString()
+      }
       
-      // Add screenshot data
-      payload.screenshotBase64 = base64
-      payload.screenshotType = mime
-      
-      // Send to Google Sheets
-      const response = await fetch(
+      // 1. Send to Google Sheets (primary backup)
+      const sheetsResponse = await fetch(
         'https://script.google.com/macros/s/AKfycbz4O6KY0iVgy4XtFmg9NI0fLKWmb3iqISkZReo62UltYcYeyBjsOxWYfE4QtHXOKxky6g/exec',
         {
           method: 'POST',
@@ -102,13 +115,44 @@ function Order() {
         }
       )
       
-      if (response.ok) {
-        alert('Your details have been submitted! We will verify and deliver shortly.')
-        form.reset()
-        navigate('/')
-      } else {
-        throw new Error('Failed to submit')
+      if (!sheetsResponse.ok) {
+        throw new Error('Failed to submit to Google Sheets')
       }
+      
+      // 2. Save to Supabase (for live notifications)
+      if (isSupabaseConfigured()) {
+        try {
+          const { error } = await supabase
+            .from('orders')
+            .insert([{
+              name: name,
+              email: email,
+              phone: phone,
+              plan_name: plan,
+              plan_amount: selectedPlan ? selectedPlan.amount : amount.replace('₹', ''),
+              discount_code: couponCode || null,
+              final_amount: calculateFinalAmount().toString(),
+              screenshot_url: screenshotUrl || null
+            }])
+          
+          if (error) {
+            console.warn('Failed to save to Supabase:', error.message)
+            // Don't throw - Google Sheets saved successfully, Supabase is optional
+          } else {
+            console.log('✅ Order saved to Supabase for live notifications!')
+          }
+        } catch (supabaseErr) {
+          console.warn('Supabase error (non-critical):', supabaseErr)
+        }
+      }
+      
+      alert('Your details have been submitted! We will verify and deliver shortly.')
+      form.reset()
+      setCouponCode('')
+      setDiscount(0)
+      setCouponApplied(false)
+      navigate('/')
+      
     } catch (err) {
       console.error('Submission error:', err)
       alert('Error submitting order. Please try again or contact us on Telegram/Instagram.')
