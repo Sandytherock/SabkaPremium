@@ -56,19 +56,44 @@
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
+.comparison-table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.comparison-table-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.comparison-table-container::-webkit-scrollbar-track {
+  background: rgba(20, 184, 166, 0.1);
+  border-radius: 10px;
+}
+
+.comparison-table-container::-webkit-scrollbar-thumb {
+  background: rgba(16, 163, 127, 0.5);
+  border-radius: 10px;
+}
+
+.comparison-table-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 163, 127, 0.7);
+}
+
 /* Table Styles */
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
+  min-width: 600px; /* Minimum width to prevent squishing */
 }
 
 .comparison-table thead {
   background: linear-gradient(135deg, #0f766e 0%, #10a37f 100%);
   color: #e7f7f3;
+  position: relative;
 }
 
 .comparison-table th {
-  padding: 20px 15px;
+  padding: 22px 15px 18px 15px;
   font-size: 1rem;
   font-weight: 700;
   text-align: left;
@@ -83,7 +108,7 @@
 .comparison-table th.highlight-col::before {
   content: '⭐ BEST VALUE';
   position: absolute;
-  top: -10px;
+  top: -8px;
   left: 50%;
   transform: translateX(-50%);
   background: #FFD700;
@@ -93,6 +118,7 @@
   font-size: 0.7rem;
   font-weight: 800;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
 }
 
 .comparison-table tbody tr {
@@ -314,6 +340,11 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
+  .comparison-table th.highlight-col::before {
+    font-size: 0.65rem;
+    padding: 3px 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -335,10 +366,21 @@
     font-size: 0.85rem;
   }
 
+  .comparison-table th.highlight-col::before {
+    font-size: 0.6rem;
+    padding: 3px 8px;
+  }
+
   .service-name {
-    flex-direction: column;
-    gap: 5px;
-    text-align: center;
+    gap: 8px;
+  }
+
+  .service-icon {
+    font-size: 1.3rem;
+  }
+
+  .price-big {
+    font-size: 1.2rem;
   }
 
   .savings-amount {
@@ -355,10 +397,24 @@
     font-size: 1.5rem;
   }
 
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .comparison-table {
+    min-width: 550px; /* Horizontal scroll for small screens */
+  }
+
   .comparison-table th,
   .comparison-table td {
     padding: 10px 5px;
     font-size: 0.75rem;
+  }
+
+  .comparison-table th.highlight-col::before {
+    content: '⭐ BEST';
+    font-size: 0.55rem;
+    padding: 2px 6px;
   }
 
   .service-icon {

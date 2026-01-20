@@ -63,6 +63,7 @@ function PriceComparisonTable() {
         </div>
 
         <div className="comparison-table-wrapper">
+          <div className="comparison-table-container">
           <table className="comparison-table">
             <thead>
               <tr>
@@ -109,6 +110,7 @@ function PriceComparisonTable() {
               </tr>
             </tfoot>
           </table>
+          </div>
         </div>
 
         <div className="savings-highlight">

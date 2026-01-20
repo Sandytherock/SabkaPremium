@@ -195,9 +195,31 @@ code{background:#0e1c19;border:1px solid rgba(20,184,166,.25);padding:2px 6px;bo
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
 
+/* Tags Container - Flexbox layout for multiple tags */
+.tags-container{
+  position:absolute;
+  top:12px;
+  right:12px;
+  left:12px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  justify-content:flex-end;
+  align-items:flex-start;
+  pointer-events:none;
+  z-index:10;
+}
+
 .card .tag{
-  position:absolute;top:12px;right:12px;background:rgba(20,184,166,.18);
-  border:1px solid var(--ring);color:#aef2e5;font-weight:700;padding:4px 8px;border-radius:10px;font-size:11px
+  background:rgba(20,184,166,.18);
+  border:1px solid var(--ring);
+  color:#aef2e5;
+  font-weight:700;
+  padding:4px 8px;
+  border-radius:10px;
+  font-size:11px;
+  white-space:nowrap;
+  pointer-events:auto;
 }
 
 .popular-tag{
@@ -212,9 +234,6 @@ code{background:#0e1c19;border:1px solid rgba(20,184,166,.25);padding:2px 6px;bo
   background:linear-gradient(135deg,#10b981 0%,#059669 100%)!important;
   color:white!important;
   border:none!important;
-  top:12px;
-  left:12px;
-  right:auto;
 }
 
 .value-tag{
@@ -970,6 +989,18 @@ input:focus{border-color:var(--e2);box-shadow:0 0 0 6px rgba(20,184,166,.12)}
   .fomo-row{grid-template-columns:1fr}
   .two{grid-template-columns:1fr}
   .coupon-row{flex-direction:column}
+
+  /* Tags responsive - smaller font and padding on mobile */
+  .tags-container{
+    gap:6px;
+    top:8px;
+    right:8px;
+    left:8px;
+  }
+  .card .tag{
+    font-size:10px;
+    padding:3px 6px;
+  }
 }
 
 /* Subtle Animations */

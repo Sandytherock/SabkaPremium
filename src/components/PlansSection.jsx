@@ -73,10 +73,12 @@ function PlansSection() {
                   <article
                     className={`card ${plan.popular ? 'popular' : ''} ${plan.accent ? 'accent' : ''}`}
                   >
-                    {plan.popular && <div className="tag popular-tag">🔥 Most Popular</div>}
-                    {plan.tag && <div className="tag">{plan.tag}</div>}
-                  {plan.trending && <div className="tag trending-tag">📈 Trending</div>}
-                  {plan.bestValue && <div className="tag value-tag">⭐ Best Value</div>}
+                    <div className="tags-container">
+                      {plan.popular && <div className="tag popular-tag">🔥 Most Popular</div>}
+                      {plan.trending && <div className="tag trending-tag">📈 Trending</div>}
+                      {plan.bestValue && <div className="tag value-tag">⭐ Best Value</div>}
+                      {plan.tag && !plan.popular && !plan.trending && !plan.bestValue && <div className="tag">{plan.tag}</div>}
+                    </div>
                   
                   <h3>
                     <img src={plan.logo || `/assets/${category}-logo.png`} alt="" /> {plan.title}
