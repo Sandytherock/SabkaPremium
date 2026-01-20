@@ -10,11 +10,18 @@ if (!supabaseUrl || !supabaseAnonKey) {
 }
 
 // Create and export Supabase client (with fallback values to prevent crashes)
+// Note: New Supabase projects use sb_publishable_ keys (they work the same as anon keys)
 export const supabase = supabaseUrl && supabaseAnonKey 
   ? createClient(supabaseUrl, supabaseAnonKey)
   : createClient('https://placeholder.supabase.co', 'placeholder-key')
 
 // Helper function to check if Supabase is configured
 export const isSupabaseConfigured = () => {
-  return Boolean(supabaseUrl && supabaseAnonKey && supabaseUrl !== 'your_supabase_project_url_here')
+  return Boolean(
+    supabaseUrl && 
+    supabaseAnonKey && 
+    supabaseUrl !== 'your_supabase_project_url_here' &&
+    supabaseAnonKey !== 'placeholder-key' &&
+    (supabaseAnonKey.startsWith('eyJ') || supabaseAnonKey.startsWith('sb_publishable_'))
+  )
 }
