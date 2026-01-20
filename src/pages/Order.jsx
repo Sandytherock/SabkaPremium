@@ -3,7 +3,9 @@ import { useSearchParams, useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import FloatingButtons from '../components/FloatingButtons'
+import WhatsAppCommunityBanner from '../components/WhatsAppCommunityBanner'
 import { planMap, coupons } from '../data/orderPlansMap'
+import '../components/WhatsAppCommunityBanner.css'
 
 function Order() {
   const [searchParams] = useSearchParams()
@@ -128,6 +130,7 @@ function Order() {
 
   return (
     <div className="order-body">
+      <WhatsAppCommunityBanner />
       <Header />
       <main className="order-wrap">
         <section className="order-card">

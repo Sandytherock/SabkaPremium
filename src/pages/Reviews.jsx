@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import FloatingButtons from '../components/FloatingButtons'
+import WhatsAppCommunityBanner from '../components/WhatsAppCommunityBanner'
 import { defaultReviews, getStarDisplay, formatDate, formatDateTime } from '../data/reviewsData'
 import { supabase, isSupabaseConfigured } from '../lib/supabase'
+import '../components/WhatsAppCommunityBanner.css'
 
 function Reviews() {
   const [reviews, setReviews] = useState(defaultReviews)
@@ -182,6 +184,7 @@ function Reviews() {
 
   return (
     <>
+      <WhatsAppCommunityBanner />
       <Header />
       
       {/* Reviews Hero Section */}
