@@ -9,8 +9,10 @@ if (!supabaseUrl || !supabaseAnonKey) {
   console.warn('⚠️ Supabase credentials not found. Please set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in .env.local')
 }
 
-// Create and export Supabase client
-export const supabase = createClient(supabaseUrl || '', supabaseAnonKey || '')
+// Create and export Supabase client (with fallback values to prevent crashes)
+export const supabase = supabaseUrl && supabaseAnonKey 
+  ? createClient(supabaseUrl, supabaseAnonKey)
+  : createClient('https://placeholder.supabase.co', 'placeholder-key')
 
 // Helper function to check if Supabase is configured
 export const isSupabaseConfigured = () => {
