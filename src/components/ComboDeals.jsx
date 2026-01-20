@@ -82,6 +82,9 @@ function ComboDeals() {
   ]
 
   const handleOrderClick = (combo) => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual'
+    }
     navigate(`/order?plan=${encodeURIComponent(combo.title)}`)
   }
 

@@ -33,8 +33,10 @@ function ChatGLMSection() {
             <button 
               className="btn-primary" 
               onClick={() => {
+                if ('scrollRestoration' in window.history) {
+                  window.history.scrollRestoration = 'manual'
+                }
                 navigate('/order?plan=ChatGLM-3M-2499')
-                window.scrollTo(0, 0)
               }}
             >
               Get ChatGLM Pro (₹999 / 3M)

@@ -26,8 +26,11 @@ function PlansSection() {
   }, [])
 
   const handleOrderClick = (plan) => {
+    // Disable scroll restoration before navigating
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual'
+    }
     navigate(`/order?plan=${plan}`)
-    window.scrollTo(0, 0)
   }
 
   return (

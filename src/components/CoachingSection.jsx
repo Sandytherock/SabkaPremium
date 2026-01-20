@@ -5,8 +5,10 @@ function CoachingSection() {
   const navigate = useNavigate()
 
   const handleOrderClick = (plan) => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual'
+    }
     navigate(`/order?plan=${plan}`)
-    window.scrollTo(0, 0)
   }
 
   return (

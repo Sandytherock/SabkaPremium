@@ -13,6 +13,7 @@
   z-index: 99999;
   animation: fadeIn 0.3s ease;
   padding: 20px;
+  overflow-y: auto;
 }
 
 @keyframes fadeIn {
@@ -27,10 +28,12 @@
 .exit-popup-content {
   background: linear-gradient(135deg, #101c19 0%, #0e1c19 100%);
   border: 2px solid rgba(20, 184, 166, 0.3);
-  border-radius: 25px;
-  padding: 40px 30px;
-  max-width: 500px;
+  border-radius: 20px;
+  padding: 25px 20px;
+  max-width: 450px;
   width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
   animation: slideUp 0.4s ease;
@@ -72,8 +75,8 @@
 }
 
 .exit-popup-icon {
-  font-size: 4rem;
-  margin-bottom: 15px;
+  font-size: 3rem;
+  margin-bottom: 10px;
   animation: shake 0.5s ease;
 }
 
@@ -84,17 +87,17 @@
 }
 
 .exit-popup-title {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 800;
   color: #e7f7f3;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   line-height: 1.2;
 }
 
 .exit-popup-subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #a4ccc2;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .exit-popup-subtitle strong {
@@ -105,9 +108,9 @@
 /* Offer Section */
 .exit-popup-offer {
   background: linear-gradient(135deg, #0f766e 0%, #10a37f 100%);
-  padding: 30px 20px;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  padding: 20px 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(20, 184, 166, 0.4);
@@ -145,7 +148,7 @@
 }
 
 .discount-number {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   color: white;
   line-height: 1;
@@ -153,7 +156,7 @@
 }
 
 .discount-text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #FFD700;
   text-transform: uppercase;
@@ -161,7 +164,7 @@
 
 .offer-description {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0;
   font-weight: 600;
 }
@@ -169,14 +172,14 @@
 /* Code Section */
 .exit-popup-code {
   background: rgba(20, 184, 166, 0.08);
-  padding: 15px 20px;
-  border-radius: 15px;
-  margin-bottom: 20px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
   border: 2px dashed rgba(20, 184, 166, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
 }
 
 .code-label {
@@ -186,7 +189,7 @@
 }
 
 .code-value {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 800;
   color: #14b8a6;
   font-family: 'Courier New', monospace;
@@ -197,17 +200,17 @@
 .exit-popup-benefits {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 25px;
+  gap: 8px;
+  margin-bottom: 15px;
   text-align: left;
 }
 
 .benefit-item {
-  padding: 10px 15px;
+  padding: 8px 12px;
   background: rgba(20, 184, 166, 0.08);
   border: 1px solid rgba(20, 184, 166, 0.2);
-  border-radius: 10px;
-  font-size: 0.95rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
   color: #e7f7f3;
   font-weight: 500;
 }
@@ -216,17 +219,17 @@
 .exit-popup-actions {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 15px;
 }
 
 .claim-button {
   background: linear-gradient(135deg, #10a37f 0%, #128C7E 100%);
   color: white;
-  padding: 16px 30px;
+  padding: 14px 25px;
   border: none;
   border-radius: 50px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -257,9 +260,9 @@
 .exit-popup-urgency {
   background: rgba(229, 62, 62, 0.1);
   color: #e53e3e;
-  padding: 12px 20px;
-  border-radius: 10px;
-  font-size: 0.9rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.85rem;
   font-weight: 600;
   border: 2px solid rgba(229, 62, 62, 0.2);
   animation: pulse 2s infinite;
