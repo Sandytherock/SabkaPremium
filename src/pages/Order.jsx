@@ -54,7 +54,7 @@ function Order() {
     if (!selectedPlan) return 0
     const baseAmount = parseInt(selectedPlan.amount)
     const discountAmount = (baseAmount * discount) / 100
-    return baseAmount - discountAmount
+    return Math.round(baseAmount - discountAmount)
   }
 
   const handleSubmit = async (e) => {
@@ -208,7 +208,7 @@ function Order() {
               <p className="warn">❌ {couponError}</p>
             )}
             {discount > 0 && selectedPlan && (
-              <p className="ok">Discount: ₹{(parseInt(selectedPlan.amount) * discount) / 100}</p>
+              <p className="ok">Discount: ₹{Math.round((parseInt(selectedPlan.amount) * discount) / 100)}</p>
             )}
 
             <label>
