@@ -978,7 +978,7 @@ input:focus{border-color:var(--e2);box-shadow:0 0 0 6px rgba(20,184,166,.12)}
   .tabbar{justify-content:flex-start; overflow-x:auto; overflow-y:hidden; padding-bottom:6px; -webkit-overflow-scrolling:touch;}
   .tabbar::-webkit-scrollbar{display:none;}
 
-  .site-header{top:44px}
+  .site-header{top:40px}
   .hamburger{display:flex}
   .main-nav{
     position:fixed;inset:88px 12px auto 12px;background:#0f1e1b;border:1px solid rgba(255,255,255,.06);
