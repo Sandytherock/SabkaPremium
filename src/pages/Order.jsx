@@ -6,6 +6,7 @@ import FloatingButtons from '../components/FloatingButtons'
 import WhatsAppCommunityBanner from '../components/WhatsAppCommunityBanner'
 import { planMap, coupons } from '../data/orderPlansMap'
 import { supabase, isSupabaseConfigured } from '../lib/supabase'
+import { trackViewContent } from '../lib/metaPixel'
 import '../components/WhatsAppCommunityBanner.css'
 
 function Order() {
@@ -20,7 +21,18 @@ function Order() {
   useEffect(() => {
     const plan = searchParams.get('plan')
     if (plan && planMap[plan]) {
-      setSelectedPlan(planMap[plan])
+      const planData = planMap[plan]
+      setSelectedPlan(planData)
+      
+      // Track ViewContent event when user views a product/plan
+      trackViewContent({
+        content_name: planData.name,
+        content_category: planData.category || 'subscription',
+        content_ids: [plan],
+        content_type: 'product',
+        value: planData.price,
+        currency: 'INR'
+      })
     }
     
     // Force scroll to top with multiple methods

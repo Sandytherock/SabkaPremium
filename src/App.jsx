@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import StickyCTA from './components/StickyCTA'
+import PixelTracker from './components/PixelTracker'
 import Home from './pages/Home'
 import Order from './pages/Order'
 import Reviews from './pages/Reviews'
@@ -32,6 +33,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <PixelTracker />
       <StickyCTA />
       <Routes>
         <Route path="/" element={<Home />} />
