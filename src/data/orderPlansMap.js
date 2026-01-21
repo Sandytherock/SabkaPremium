@@ -92,6 +92,11 @@ export const planMap = {
   "Prime-6M-299": { name: "Prime Video - 6 Months", amount: "299", logo: "/assets/prime-logo.png" },
   "Prime-12M-399": { name: "Prime Video - 12 Months", amount: "399", logo: "/assets/prime-logo.png" },
   
+  // LinkedIn Plans
+  "LinkedIn-Career-3M-499": { name: "LinkedIn Career - 3 Months", amount: "499", logo: "/assets/linkedin-logo.png" },
+  "LinkedIn-Business-3M-799": { name: "LinkedIn Business - 3 Months", amount: "799", logo: "/assets/linkedin-logo.png" },
+  "LinkedIn-Sales-Navigator-2M-799": { name: "LinkedIn Sales Navigator - 2 Months", amount: "799", logo: "/assets/linkedin-logo.png" },
+  
   // Combo Deals
   "Student Pack": { name: "Student Pack (ChatGPT + YouTube)", amount: "249", logo: "/assets/chatgpt-logo.png" },
   "Entertainment Bundle": { name: "Entertainment Bundle (Netflix + Prime + Spotify)", amount: "349", logo: "/assets/netflix-logo.png" },

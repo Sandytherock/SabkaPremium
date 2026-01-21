@@ -614,6 +614,63 @@ export const plansData = {
       price: '₹149',
       plan: 'Spotify-Premium-3M-149'
     }
+  ],
+  linkedin: [
+    {
+      title: 'LinkedIn Career - 3 Months',
+      tag: 'Best for Job Seekers',
+      popular: true,
+      features: [
+        '💼 Premium Career Access - 3 Months',
+        '👀 See Who Viewed Your Profile',
+        '📧 Direct InMail Messages (5/month)',
+        '🎓 LinkedIn Learning Access',
+        '💡 Career Insights & Salary Data',
+        '🔍 Featured Applicant Status',
+        '📊 Applicant Insights & Competitor Analysis',
+        '🔐 Private Account Activation'
+      ],
+      price: '₹499',
+      originalPrice: '₹1,499',
+      plan: 'LinkedIn-Career-3M-499',
+      note: '⏳ Valid for 3 Months • Best for job hunting & networking'
+    },
+    {
+      title: 'LinkedIn Business - 3 Months',
+      tag: 'Best for Entrepreneurs',
+      features: [
+        '🚀 Premium Business Access - 3 Months',
+        '👀 Unlimited Profile Views',
+        '📧 15 InMail Credits/Month',
+        '🎓 Full LinkedIn Learning Access',
+        '💼 Business Insights & Analytics',
+        '🔍 Advanced Search Filters',
+        '📊 Company & Competitor Research',
+        '🔐 Private Account Activation'
+      ],
+      price: '₹799',
+      originalPrice: '₹2,499',
+      plan: 'LinkedIn-Business-3M-799',
+      note: '⏳ Valid for 3 Months • Perfect for business growth & leads'
+    },
+    {
+      title: 'LinkedIn Sales Navigator - 2 Months',
+      tag: 'Best for Sales',
+      features: [
+        '🎯 Sales Navigator Core - 2 Months',
+        '🔍 Advanced Lead & Company Search',
+        '📧 20 InMail Credits/Month',
+        '💡 Lead Recommendations & Alerts',
+        '📊 CRM Integration Support',
+        '👥 50 Lead & Account Saves',
+        '🎓 LinkedIn Learning Access',
+        '🔐 Private Account Activation'
+      ],
+      price: '₹799',
+      originalPrice: '₹3,999',
+      plan: 'LinkedIn-Sales-Navigator-2M-799',
+      note: '⏳ Valid for 2 Months • Best for B2B sales & prospecting'
+    }
   ]
 }
 
@@ -626,6 +683,7 @@ export const tabs = [
   { id: 'lovable', label: 'Lovable AI', logo: '/assets/lovable-logo.jpg' },
   { id: 'elevenlabs', label: 'ElevenLabs', logo: '/assets/elevenlabs-logo.png' },
   { id: 'capcut', label: 'CapCut Pro', logo: '/assets/capcut-logo.png' },
+  { id: 'linkedin', label: 'LinkedIn Premium', logo: '/assets/linkedin-logo.png' },
   { id: 'prime', label: 'Prime Video', logo: '/assets/prime-logo.png' },
   { id: 'netflix', label: 'Netflix 4K', logo: '/assets/netflix-logo.png' },
   { id: 'canva', label: 'Canva Pro', logo: '/assets/canva-logo.png' },
