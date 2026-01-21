@@ -4,7 +4,7 @@ import './PriceComparisonTable.css'
 function PriceComparisonTable() {
   const comparisons = [
     {
-      service: 'ChatGPT Plus',
+      service: 'ChatGPT 5 Pro',
       icon: '🤖',
       official: '₹1,999',
       ours: '₹149',
@@ -12,7 +12,39 @@ function PriceComparisonTable() {
       savePercent: '92%'
     },
     {
-      service: 'Netflix Premium',
+      service: 'Claude Max',
+      icon: '🧠',
+      official: '₹1,799',
+      ours: '₹299',
+      save: '₹1,500',
+      savePercent: '83%'
+    },
+    {
+      service: 'Cursor AI Pro',
+      icon: '💻',
+      official: '₹1,699',
+      ours: '₹499',
+      save: '₹1,200',
+      savePercent: '71%'
+    },
+    {
+      service: 'LinkedIn Premium',
+      icon: '💼',
+      official: '₹1,299',
+      ours: '₹499',
+      save: '₹800',
+      savePercent: '62%'
+    },
+    {
+      service: 'Replit Core',
+      icon: '⚡',
+      official: '₹999',
+      ours: '₹499',
+      save: '₹500',
+      savePercent: '50%'
+    },
+    {
+      service: 'Netflix 4K',
       icon: '🎬',
       official: '₹649',
       ours: '₹149',
@@ -45,9 +77,9 @@ function PriceComparisonTable() {
     }
   ]
 
-  const totalOfficial = 3915
-  const totalOurs = 535
-  const totalSave = 3380
+  const totalOfficial = 9711
+  const totalOurs = 2322
+  const totalSave = 7389
   const yearlySavings = totalSave * 12
 
   return (
