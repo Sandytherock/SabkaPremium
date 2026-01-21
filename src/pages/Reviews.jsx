@@ -5,6 +5,7 @@ import FloatingButtons from '../components/FloatingButtons'
 import WhatsAppCommunityBanner from '../components/WhatsAppCommunityBanner'
 import { defaultReviews, getStarDisplay, formatDate, formatDateTime } from '../data/reviewsData'
 import { supabase, isSupabaseConfigured } from '../lib/supabase'
+import { trackViewContent } from '../lib/metaPixel'
 import '../components/WhatsAppCommunityBanner.css'
 
 function Reviews() {
@@ -68,6 +69,13 @@ function Reviews() {
 
   useEffect(() => {
     fetchReviews()
+    
+    // Track ViewContent when Reviews page is viewed
+    trackViewContent({
+      content_name: 'Customer Reviews',
+      content_category: 'reviews',
+      content_type: 'page'
+    })
     
     // Set up real-time subscription for live updates
     if (isSupabaseConfigured()) {
