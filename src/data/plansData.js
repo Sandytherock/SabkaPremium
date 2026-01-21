@@ -195,9 +195,9 @@ export const plansData = {
         '☁️ 2TB Google Storage',
         '🔐 Activation on Your Email'
       ],
-      price: 'Contact for Price',
+      price: '₹1999',
       originalPrice: '₹19,500',
-      plan: 'Gemini-Pro-12M-DM',
+      plan: 'Gemini-1Y-1999',
       note: '⏳ Validity: 12 Months • 1000 Flow credits/month • Limited slots 🔥'
     }
   ],
@@ -438,9 +438,9 @@ export const plansData = {
         '📊 Total: 3,30,000 Characters (3 months)',
         '🔐 Private Account Activation'
       ],
-      price: '₹1499',
-      originalPrice: '₹2,499',
-      plan: 'ElevenLabs-Creator-3M-1499',
+      price: '₹2999',
+      originalPrice: '₹4,999',
+      plan: 'ElevenLabs-Creator-3M-2999',
       popular: true,
       disabled: true,
       note: '❌ Currently Unavailable • Will restock soon'
