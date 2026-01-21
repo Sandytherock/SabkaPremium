@@ -14,12 +14,12 @@ function ComboDeals() {
       title: 'Student Pack',
       subtitle: 'Perfect for Students & Learners',
       icon: '🎓',
-      services: ['ChatGPT Plus', 'YouTube Premium'],
+      services: ['ChatGPT 5 Pro (Business Teams)', 'YouTube Premium'],
       originalPrice: 2148,
       comboPrice: 249,
       savings: 1899,
       features: [
-        'AI-powered learning',
+        'AI-powered learning (Business Teams)',
         'Ad-free video tutorials',
         'Background playback',
         'Save ₹1,899/month'
@@ -27,6 +27,42 @@ function ComboDeals() {
     },
     {
       id: 2,
+      badge: '💻 DEVELOPER PRO',
+      badgeColor: '#0891b2',
+      title: 'Full Stack Developer Pack',
+      subtitle: 'Complete Developer Toolkit',
+      icon: '👨‍💻',
+      services: ['ChatGPT 5 Pro (Business Teams)', 'Cursor AI Pro', 'Replit Core'],
+      originalPrice: 2297,
+      comboPrice: 1199,
+      savings: 1098,
+      features: [
+        'AI coding assistants',
+        'Cloud development',
+        'Business Teams access',
+        'Save ₹1,098/month'
+      ]
+    },
+    {
+      id: 3,
+      badge: '🚀 JOB SEEKER',
+      badgeColor: '#0e76a8',
+      title: 'Career Growth Pack',
+      subtitle: 'Land Your Dream Job',
+      icon: '💼',
+      services: ['LinkedIn Career', 'ChatGPT 5 Pro (Business Teams)', 'Canva Pro'],
+      originalPrice: 1497,
+      comboPrice: 899,
+      savings: 598,
+      features: [
+        'Professional networking',
+        'AI-powered resume (Business Teams)',
+        'Design portfolio',
+        'Save ₹598/month'
+      ]
+    },
+    {
+      id: 4,
       badge: '⭐ BEST VALUE',
       badgeColor: '#d69e2e',
       title: 'Entertainment Bundle',
@@ -44,39 +80,75 @@ function ComboDeals() {
       ]
     },
     {
-      id: 3,
-      badge: '💼 PROFESSIONAL',
-      badgeColor: '#805ad5',
-      title: 'Designer Pack',
-      subtitle: 'For Creators & Professionals',
-      icon: '🎨',
-      services: ['Canva Pro', 'ChatGPT Plus', 'CapCut Pro'],
-      originalPrice: 3298,
-      comboPrice: 449,
-      savings: 2849,
+      id: 5,
+      badge: '💼 ENTREPRENEUR',
+      badgeColor: '#059669',
+      title: 'Business Starter Pack',
+      subtitle: 'Start & Grow Your Business',
+      icon: '🚀',
+      services: ['LinkedIn Business', 'ChatGPT 5 Pro (Business Teams)', 'Canva Pro', 'Gemini Pro'],
+      originalPrice: 1796,
+      comboPrice: 1199,
+      savings: 597,
       features: [
-        'Professional designs',
-        'AI content creation',
-        'Video editing tools',
-        'Save ₹2,849/month'
+        'Lead generation',
+        'AI business tools (Business Teams)',
+        'Professional branding',
+        'Save ₹597/month'
       ]
     },
     {
-      id: 4,
-      badge: '🚀 ULTIMATE',
+      id: 6,
+      badge: '🎨 CREATOR PRO',
+      badgeColor: '#805ad5',
+      title: 'Content Creator Pack',
+      subtitle: 'For YouTubers & Influencers',
+      icon: '🎥',
+      services: ['CapCut Pro', 'Canva Pro', 'ChatGPT 5 Pro (Business Teams)', 'YouTube Premium'],
+      originalPrice: 1347,
+      comboPrice: 749,
+      savings: 598,
+      features: [
+        'Professional video editing',
+        'AI content ideas (Business Teams)',
+        'Thumbnail design',
+        'Save ₹598/month'
+      ]
+    },
+    {
+      id: 7,
+      badge: '🎯 SALES PRO',
+      badgeColor: '#dc2626',
+      title: 'Sales Powerhouse Pack',
+      subtitle: 'Close More Deals',
+      icon: '📈',
+      services: ['LinkedIn Sales Navigator', 'ChatGPT 5 Pro (Business Teams)', 'Perplexity Pro'],
+      originalPrice: 1897,
+      comboPrice: 1299,
+      savings: 598,
+      features: [
+        'B2B lead generation',
+        'AI prospecting (Business Teams)',
+        'Research tools',
+        'Save ₹598/month'
+      ]
+    },
+    {
+      id: 8,
+      badge: '👑 ULTIMATE',
       badgeColor: '#10a37f',
       title: 'All-in-One Pack',
       subtitle: 'Everything You Need',
-      icon: '👑',
-      services: ['ChatGPT', 'Netflix', 'Prime', 'Spotify', 'YouTube', 'Canva'],
-      originalPrice: 4134,
-      comboPrice: 699,
-      savings: 3435,
+      icon: '🌟',
+      services: ['ChatGPT 5 Pro (Business Teams)', 'Netflix', 'Prime', 'Spotify', 'YouTube', 'Canva', 'LinkedIn'],
+      originalPrice: 4633,
+      comboPrice: 999,
+      savings: 3634,
       features: [
         'All premium services',
-        'Maximum savings',
-        'Complete entertainment',
-        'Save ₹3,435/month'
+        'Maximum savings (Business Teams)',
+        'Complete toolkit',
+        'Save ₹3,634/month'
       ]
     }
   ]

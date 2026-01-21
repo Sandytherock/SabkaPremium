@@ -97,6 +97,10 @@ export const planMap = {
   "LinkedIn-Business-3M-799": { name: "LinkedIn Business - 3 Months", amount: "799", logo: "/assets/linkedin-logo.png" },
   "LinkedIn-Sales-Navigator-2M-799": { name: "LinkedIn Sales Navigator - 2 Months", amount: "799", logo: "/assets/linkedin-logo.png" },
   
+  // Replit Plans
+  "Replit-Core-1M-499": { name: "Replit Core - 1 Month", amount: "499", logo: "/assets/replit-logo.png" },
+  "Replit-Core-12M-2499": { name: "Replit Core - 1 Year", amount: "2499", logo: "/assets/replit-logo.png" },
+  
   // Combo Deals
   "Student Pack": { name: "Student Pack (ChatGPT + YouTube)", amount: "249", logo: "/assets/chatgpt-logo.png" },
   "Entertainment Bundle": { name: "Entertainment Bundle (Netflix + Prime + Spotify)", amount: "349", logo: "/assets/netflix-logo.png" },

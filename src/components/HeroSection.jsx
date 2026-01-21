@@ -7,7 +7,7 @@ function HeroSection() {
       <div className="container hero-wrap">
         <div className="hero-copy">
           <h1>All Premium Accounts, One Place.</h1>
-          <p className="sub">ChatGPT 5 Plus • Gemini Ai Pro • ElevenLabs • Prime Video • Netflix 4K • Canva Pro • YouTube Premium</p>
+          <p className="sub">ChatGPT 5 Pro • Claude Max • Gemini AI Pro • Cursor AI • Replit Core • LinkedIn Premium • Netflix 4K • Prime Video • Canva Pro • YouTube Premium • Spotify Premium</p>
           <div className="cta-row">
             <a href="#plans" className="btn-primary">Explore Plans</a>
             <a href="#how-to-order" className="btn-ghost">How it works</a>

@@ -671,6 +671,46 @@ export const plansData = {
       plan: 'LinkedIn-Sales-Navigator-2M-799',
       note: '⏳ Valid for 2 Months • Best for B2B sales & prospecting'
     }
+  ],
+  replit: [
+    {
+      title: 'Replit Core - 1 Month',
+      tag: 'Perfect for Developers',
+      popular: true,
+      features: [
+        '💻 Replit Core Access - 1 Month',
+        '⚡ 4x Faster Performance',
+        '🔋 4GB RAM & 8GB Storage',
+        '🤖 AI Code Assistant (Ghostwriter)',
+        '🚀 Always-On Deployments',
+        '🔐 Private Repls (Unlimited)',
+        '👥 Real-time Collaboration',
+        '📧 Private Account on Your Email'
+      ],
+      price: '₹499',
+      originalPrice: '₹999',
+      plan: 'Replit-Core-1M-499',
+      note: '⏳ Valid for 1 Month • Perfect for coding & development 💻'
+    },
+    {
+      title: 'Replit Core - 1 Year',
+      tag: '⭐ Best Value',
+      features: [
+        '💻 Replit Core Access - 12 Months',
+        '⚡ 4x Faster Performance',
+        '🔋 4GB RAM & 8GB Storage',
+        '🤖 AI Code Assistant (Ghostwriter)',
+        '🚀 Always-On Deployments',
+        '🔐 Private Repls (Unlimited)',
+        '👥 Real-time Collaboration',
+        '📧 Private Account on Your Email',
+        '💎 Save ₹3,500+ compared to monthly'
+      ],
+      price: '₹2499',
+      originalPrice: '₹5,999',
+      plan: 'Replit-Core-12M-2499',
+      note: '⏳ Valid for 12 Months • Only ₹208/month • Best deal for developers 🔥'
+    }
   ]
 }
 
@@ -683,6 +723,7 @@ export const tabs = [
   { id: 'lovable', label: 'Lovable AI', logo: '/assets/lovable-logo.jpg' },
   { id: 'elevenlabs', label: 'ElevenLabs', logo: '/assets/elevenlabs-logo.png' },
   { id: 'capcut', label: 'CapCut Pro', logo: '/assets/capcut-logo.png' },
+  { id: 'replit', label: 'Replit Core', logo: '/assets/replit-logo.png' },
   { id: 'linkedin', label: 'LinkedIn Premium', logo: '/assets/linkedin-logo.png' },
   { id: 'prime', label: 'Prime Video', logo: '/assets/prime-logo.png' },
   { id: 'netflix', label: 'Netflix 4K', logo: '/assets/netflix-logo.png' },
