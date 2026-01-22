@@ -6,7 +6,7 @@ import Order from './pages/Order'
 import Reviews from './pages/Reviews'
 
 function ScrollToTop() {
-  const { pathname, search } = useLocation()
+  const { pathname, search, hash } = useLocation()
 
   useEffect(() => {
     // Disable browser's automatic scroll restoration
@@ -14,16 +14,27 @@ function ScrollToTop() {
       window.history.scrollRestoration = 'manual'
     }
 
-    // Force scroll to top immediately
-    window.scrollTo(0, 0)
-    document.documentElement.scrollTop = 0
-    document.body.scrollTop = 0
-    
-    // Also try with requestAnimationFrame for better timing
-    window.requestAnimationFrame(() => {
+    // If there's a hash, scroll to that element instead of top
+    if (hash) {
+      // Wait for DOM to be ready
+      setTimeout(() => {
+        const element = document.querySelector(hash)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 100)
+    } else {
+      // No hash, scroll to top
       window.scrollTo(0, 0)
-    })
-  }, [pathname, search])
+      document.documentElement.scrollTop = 0
+      document.body.scrollTop = 0
+      
+      // Also try with requestAnimationFrame for better timing
+      window.requestAnimationFrame(() => {
+        window.scrollTo(0, 0)
+      })
+    }
+  }, [pathname, search, hash])
 
   return null
 }

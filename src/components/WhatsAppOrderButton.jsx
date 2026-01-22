@@ -1,4 +1,5 @@
 import React from 'react'
+import { trackCustomEvent } from '../lib/metaPixel'
 
 function WhatsAppOrderButton({ plan, price, discount }) {
   const handleWhatsAppOrder = () => {
@@ -16,6 +17,13 @@ Thank you! 🙏`
     
     const encodedMessage = encodeURIComponent(message)
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    
+    // Track WhatsApp button click as custom event
+    trackCustomEvent('WhatsAppButtonClick', {
+      content_name: plan,
+      value: price,
+      button_location: 'plan_card'
+    })
     
     window.open(whatsappURL, '_blank')
   }

@@ -78,3 +78,29 @@ export const trackInitiateCheckout = (checkoutData = {}) => {
 export const trackPurchase = (purchaseData) => {
   trackPixelEvent('Purchase', purchaseData)
 }
+
+/**
+ * Track Lead event
+ * Used when user submits a form or shows purchase intent
+ * @param {object} leadData - Lead details
+ */
+export const trackLead = (leadData = {}) => {
+  trackPixelEvent('Lead', leadData)
+}
+
+/**
+ * Track custom event
+ * Used for tracking button clicks, actions, etc.
+ * @param {string} eventName - Custom event name
+ * @param {object} eventData - Event data
+ */
+export const trackCustomEvent = (eventName, eventData = {}) => {
+  if (isPixelAvailable()) {
+    try {
+      window.fbq('trackCustom', eventName, eventData)
+      console.log(`[Meta Pixel] Custom Tracked: ${eventName}`, eventData)
+    } catch (error) {
+      console.error('[Meta Pixel] Custom tracking error:', error)
+    }
+  }
+}

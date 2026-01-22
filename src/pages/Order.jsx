@@ -6,7 +6,7 @@ import FloatingButtons from '../components/FloatingButtons'
 import WhatsAppCommunityBanner from '../components/WhatsAppCommunityBanner'
 import { planMap, coupons } from '../data/orderPlansMap'
 import { supabase, isSupabaseConfigured } from '../lib/supabase'
-import { trackViewContent } from '../lib/metaPixel'
+import { trackViewContent, trackInitiateCheckout, trackLead } from '../lib/metaPixel'
 import '../components/WhatsAppCommunityBanner.css'
 
 function Order() {
@@ -32,6 +32,17 @@ function Order() {
         content_type: 'product',
         value: planData.price,
         currency: 'INR'
+      })
+      
+      // Track InitiateCheckout - User has landed on payment page
+      trackInitiateCheckout({
+        content_name: planData.name,
+        content_category: planData.category || 'subscription',
+        content_ids: [plan],
+        content_type: 'product',
+        value: planData.price,
+        currency: 'INR',
+        num_items: 1
       })
     }
     
@@ -157,6 +168,14 @@ function Order() {
           console.warn('Supabase error (non-critical):', supabaseErr)
         }
       }
+      
+      // Track Lead event - User has submitted payment details
+      trackLead({
+        content_name: plan,
+        content_category: selectedPlan ? selectedPlan.category : 'subscription',
+        value: calculateFinalAmount(),
+        currency: 'INR'
+      })
       
       alert('Your details have been submitted! We will verify and deliver shortly.')
       form.reset()

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { plansData, tabs } from '../data/plansData'
 import WhatsAppOrderButton from './WhatsAppOrderButton'
+import { trackViewContent, trackCustomEvent } from '../lib/metaPixel'
 import './WhatsAppOrderButton.css'
 
 function PlansSection() {
@@ -25,7 +26,43 @@ function PlansSection() {
     return () => document.removeEventListener('click', handleAnchorClick)
   }, [])
 
+  // Track when user views plans section
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Track ViewContent when plans section becomes visible
+            trackViewContent({
+              content_name: 'Plans Section',
+              content_category: activeTab,
+              content_type: 'product_group'
+            })
+          }
+        })
+      },
+      { threshold: 0.3 }
+    )
+
+    const plansSection = document.getElementById('plans')
+    if (plansSection) {
+      observer.observe(plansSection)
+    }
+
+    return () => {
+      if (plansSection) {
+        observer.unobserve(plansSection)
+      }
+    }
+  }, [activeTab])
+
   const handleOrderClick = (plan) => {
+    // Track Order Now button click
+    trackCustomEvent('OrderNowButtonClick', {
+      content_name: plan,
+      button_location: 'plan_card'
+    })
+    
     // Disable scroll restoration before navigating
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual'
