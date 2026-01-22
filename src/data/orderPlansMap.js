@@ -101,6 +101,10 @@ export const planMap = {
   "Replit-Core-1M-499": { name: "Replit Core - 1 Month", amount: "499", logo: "/assets/replit-logo.png" },
   "Replit-Core-12M-2499": { name: "Replit Core - 1 Year", amount: "2499", logo: "/assets/replit-logo.png" },
   
+  // Higgsfield AI Plans
+  "Higgsfield-Ultimate-2299": { name: "Higgsfield AI Ultimate Plan", amount: "2299", logo: "/assets/higgsfield-ai-logo.png" },
+  "Higgsfield-Creator-3499": { name: "Higgsfield AI Creator Plan", amount: "3499", logo: "/assets/higgsfield-ai-logo.png" },
+  
   // Combo Deals
   "Student Pack": { name: "Student Pack (ChatGPT + YouTube)", amount: "249", logo: "/assets/chatgpt-logo.png" },
   "Entertainment Bundle": { name: "Entertainment Bundle (Netflix + Prime + Spotify)", amount: "349", logo: "/assets/netflix-logo.png" },
@@ -111,4 +115,13 @@ export const planMap = {
 // Coupon codes
 export const coupons = {
   "WELCOME5": 5
+}
+
+// Plan-specific coupons
+export const planSpecificCoupons = {
+  "FIRST": {
+    discount: 50,
+    applicablePlans: ["Gemini-Ultra-1M-999"],
+    description: "50% off on Gemini Ultra (₹999 → ₹499)"
+  }
 }

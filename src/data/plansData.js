@@ -711,6 +711,47 @@ export const plansData = {
       plan: 'Replit-Core-12M-2499',
       note: '⏳ Valid for 12 Months • Only ₹208/month • Best deal for developers 🔥'
     }
+  ],
+  higgsfield: [
+    {
+      title: 'Higgsfield AI Ultimate Plan',
+      tag: 'Best for Creators',
+      popular: true,
+      logo: '/assets/higgsfield-ai-logo.png',
+      features: [
+        '🎬 AI Video Generation & Editing',
+        '✨ Text-to-Video AI Models',
+        '🎨 Advanced Creative Tools',
+        '⚡ Fast Rendering & Processing',
+        '🔐 Private Account Access',
+        '📱 Multi-Device Support',
+        '🚀 Perfect for Content Creators',
+        '💎 Professional Features Unlocked'
+      ],
+      price: '₹2299',
+      plan: 'Higgsfield-Ultimate-2299',
+      note: '⏳ Ultimate Plan • Best for professional creators 🎥'
+    },
+    {
+      title: 'Higgsfield AI Creator Plan',
+      tag: '⭐ Premium',
+      accent: true,
+      logo: '/assets/higgsfield-ai-logo.png',
+      features: [
+        '🎬 All Ultimate Features',
+        '✨ Advanced AI Video Models',
+        '🎨 Premium Creative Suite',
+        '⚡ Priority Rendering',
+        '🔐 Private Dedicated Account',
+        '📱 Unlimited Device Access',
+        '🚀 Enterprise-Level Features',
+        '💎 Maximum Usage Limits',
+        '🎯 Priority Support'
+      ],
+      price: '₹3499',
+      plan: 'Higgsfield-Creator-3499',
+      note: '⏳ Creator Plan • Maximum features & limits 🔥'
+    }
   ]
 }
 
@@ -723,6 +764,7 @@ export const tabs = [
   { id: 'lovable', label: 'Lovable AI', logo: '/assets/lovable-logo.jpg' },
   { id: 'elevenlabs', label: 'ElevenLabs', logo: '/assets/elevenlabs-logo.png' },
   { id: 'capcut', label: 'CapCut Pro', logo: '/assets/capcut-logo.png' },
+  { id: 'higgsfield', label: 'Higgsfield AI', logo: '/assets/higgsfield-ai-logo.png' },
   { id: 'replit', label: 'Replit Core', logo: '/assets/replit-logo.png' },
   { id: 'linkedin', label: 'LinkedIn Premium', logo: '/assets/linkedin-logo.png' },
   { id: 'prime', label: 'Prime Video', logo: '/assets/prime-logo.png' },

@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import FloatingButtons from '../components/FloatingButtons'
 import WhatsAppCommunityBanner from '../components/WhatsAppCommunityBanner'
-import { planMap, coupons } from '../data/orderPlansMap'
+import { planMap, coupons, planSpecificCoupons } from '../data/orderPlansMap'
 import { supabase, isSupabaseConfigured } from '../lib/supabase'
 import { trackViewContent, trackInitiateCheckout, trackLead } from '../lib/metaPixel'
 import '../components/WhatsAppCommunityBanner.css'
@@ -63,7 +63,24 @@ function Order() {
 
   const applyCoupon = () => {
     const code = couponCode.toUpperCase()
-    if (coupons[code]) {
+    const currentPlan = searchParams.get('plan')
+    
+    // Check plan-specific coupons first
+    if (planSpecificCoupons[code]) {
+      const couponData = planSpecificCoupons[code]
+      // Check if current plan is in applicable plans
+      if (couponData.applicablePlans.includes(currentPlan)) {
+        setDiscount(couponData.discount)
+        setCouponApplied(true)
+        setCouponError('')
+      } else {
+        setCouponError(`This coupon is only valid for: ${couponData.description}`)
+        setDiscount(0)
+        setCouponApplied(false)
+      }
+    }
+    // Check general coupons
+    else if (coupons[code]) {
       setDiscount(coupons[code])
       setCouponApplied(true)
       setCouponError('')

@@ -5,7 +5,6 @@ import FloatingButtons from '../components/FloatingButtons'
 import OrderNotification from '../components/OrderNotification'
 import HeroSection from '../components/HeroSection'
 import FOMOSection from '../components/FOMOSection'
-import PromoSection from '../components/PromoSection'
 import CoachingSection from '../components/CoachingSection'
 import PlansSection from '../components/PlansSection'
 import ChatGLMSection from '../components/ChatGLMSection'
@@ -32,7 +31,6 @@ function Home() {
       <Header />
       <HeroSection />
       <FOMOSection />
-      <PromoSection />
       {/* Main Services - User sabse pehle yahi dekhna chahta hai */}
       <PlansSection />
       <ComboDeals />
