@@ -302,6 +302,7 @@ export const plansData = {
       title: 'Lovable AI Pro – 2 Months',
       tag: 'Best for UI Builders',
       popular: true,
+      logo: '/assets/lovable-logo.jpg',
       features: [
         '🎨 AI-powered app & UI builder',
         '⚡ Build full apps from plain English',
@@ -314,6 +315,25 @@ export const plansData = {
       price: '₹999',
       plan: 'LovableAI-2M-999',
       note: '⏳ Valid for 2 months • Email activation • Limited slots'
+    },
+    {
+      title: 'Lovable AI Pro – 1 Year',
+      tag: '⭐ Best Value',
+      logo: '/assets/lovable-logo.jpg',
+      features: [
+        '🎨 AI-powered app & UI builder',
+        '⚡ Build full apps from plain English',
+        '🧩 Frontend + backend generation',
+        '📦 Ready-to-deploy projects',
+        '🛠 Edit & iterate visually',
+        '🔐 Private workspace access',
+        '🚀 Ideal for founders & indie hackers',
+        '💎 12 months unlimited access',
+        '🎯 Save ₹2500+ vs monthly plans'
+      ],
+      price: '₹3499',
+      plan: 'LovableAI-12M-3499',
+      note: '⏳ Valid for 12 months • Email activation • Best deal for long-term projects'
     }
   ],
   claude: [
@@ -426,6 +446,25 @@ export const plansData = {
   ],
   elevenlabs: [
     {
+      title: 'ElevenLabs Creator - 1 Year',
+      tag: '🔥 Best Value',
+      features: [
+        '🎤 1,10,000 Credits Per Month',
+        '🔊 High-Quality AI Voices (30+ languages)',
+        '🎬 Voice Cloning - Create custom voices',
+        '📱 Web & Mobile Access',
+        '🎵 Professional Audio Quality',
+        '⚡ Fast Processing - No waiting',
+        '📊 Total: 13,20,000 Credits (12 months)',
+        '🔐 Private Account Activation',
+        '💎 Best Price for Long-Term Users'
+      ],
+      price: '₹5999',
+      originalPrice: '₹35,988',
+      plan: 'ElevenLabs-Creator-1Y-5999',
+      popular: true,
+    },
+    {
       title: 'ElevenLabs Creator - 3 Months',
       tag: '❌ Out of Stock',
       features: [
@@ -441,7 +480,7 @@ export const plansData = {
       price: '₹2999',
       originalPrice: '₹4,999',
       plan: 'ElevenLabs-Creator-3M-2999',
-      popular: true,
+      popular: false,
       disabled: true,
       note: '❌ Currently Unavailable • Will restock soon'
     }

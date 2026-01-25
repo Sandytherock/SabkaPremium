@@ -70,6 +70,7 @@ export const planMap = {
   
   // Lovable AI Plans
   "LovableAI-2M-999": { name: "Lovable AI Pro - 2 Months", amount: "999", logo: "/assets/lovable-logo.jpg" },
+  "LovableAI-12M-3499": { name: "Lovable AI Pro - 1 Year", amount: "3499", logo: "/assets/lovable-logo.jpg" },
   
   // Perplexity Plans
   "Perplexity-1M-499": { name: "Perplexity Pro - 1 Month", amount: "499", logo: "/assets/perplexity-logo.png" },
@@ -79,6 +80,7 @@ export const planMap = {
   "ElevenLabs-1M-399": { name: "ElevenLabs Pro - 1 Month", amount: "399", logo: "/assets/elevenlabs-logo.png" },
   "ElevenLabs-3M-999": { name: "ElevenLabs Pro - 3 Months", amount: "999", logo: "/assets/elevenlabs-logo.png" },
   "ElevenLabs-Creator-3M-2999": { name: "ElevenLabs Creator - 3 Months", amount: "2999", logo: "/assets/elevenlabs-logo.png" },
+  "ElevenLabs-Creator-1Y-5999": { name: "ElevenLabs Creator - 1 Year", amount: "5999", logo: "/assets/elevenlabs-logo.png" },
   
   // Gemini Plans
   "Gemini-Ultra-1M-999": { name: "Gemini Ultra (Veo 3) - 1 Month", amount: "999", logo: "/assets/gemini-logo.png" },
