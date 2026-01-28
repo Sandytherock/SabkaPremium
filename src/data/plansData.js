@@ -351,8 +351,10 @@ export const plansData = {
         '🎨 Best for creative + research work',
         '🔐 Private access • Instant delivery'
       ],
-      price: '₹1999',
-      plan: 'Claude-Sonnet-4.5-1M-1999',
+      price: '₹999',
+      originalPrice: '₹1999',
+      tag: '🔥 Special Offer',
+      plan: 'Claude-Sonnet-4.5-1M-999',
       note: '⚠️ NOT official Claude Pro. Access via alternative platforms with Claude models.',
       accent: true
     },
@@ -377,6 +379,8 @@ export const plansData = {
       title: 'Claude Pro – 1 Month',
       sectionHeader: '🏆 Official Claude Pro Plans',
       popular: true,
+      tag: '❌ Out of Stock',
+      disabled: true,
       features: [
         '🚀 Standard usage limits — Claude Pro access',
         '🏆 Priority access to Claude 4.5 Opus for complex reasoning',
@@ -387,10 +391,13 @@ export const plansData = {
         '📱 Web + Mobile apps'
       ],
       price: '₹1499',
-      plan: 'Claude-Pro-1M-1499'
+      plan: 'Claude-Pro-1M-1499',
+      note: '❌ Currently Unavailable • Will restock soon'
     },
     {
       title: 'Claude Pro Max 5 – 1 Month',
+      tag: '❌ Out of Stock',
+      disabled: true,
       features: [
         '🚀 5x usage limits vs standard Claude Pro',
         '🏆 Priority access to Claude 4.5 Opus for complex reasoning',
@@ -401,10 +408,13 @@ export const plansData = {
         '👑 Best for heavy users'
       ],
       price: '₹6500',
-      plan: 'Claude-Pro-Max5-1M-6500'
+      plan: 'Claude-Pro-Max5-1M-6500',
+      note: '❌ Currently Unavailable • Will restock soon'
     },
     {
       title: 'Claude Pro Max 20 – 1 Month',
+      tag: '❌ Out of Stock',
+      disabled: true,
       features: [
         '🚀 20x usage limits vs standard Claude Pro',
         '🏆 Priority access to Claude 4.5 Opus for complex reasoning',
@@ -415,7 +425,8 @@ export const plansData = {
         '👨‍💼 Enterprise-level capacity'
       ],
       price: '₹9000',
-      plan: 'Claude-Pro-Max20-1M-9000'
+      plan: 'Claude-Pro-Max20-1M-9000',
+      note: '❌ Currently Unavailable • Will restock soon'
     }
   ],
   perplexity: [
@@ -751,6 +762,31 @@ export const plansData = {
       note: '⏳ Valid for 12 Months • Only ₹208/month • Best deal for developers 🔥'
     }
   ],
+  heygen: [
+    {
+      title: 'HeyGen AI Creator Plan – 1 Month',
+      sectionHeader: '🎥 HeyGen AI Plans',
+      tag: '✅ Available',
+      popular: true,
+      logo: '/assets/heygen-logo.png',
+      features: [
+        '🎬 Unlimited videos',
+        '⏱ Videos up to 30-mins',
+        '🎞 1080p video export',
+        '🧑‍🎤 700+ Stock Video Avatars',
+        '🗣 Voice cloning',
+        '✨ Generate Looks',
+        '📦 Look Packs',
+        '',
+        '✅ Best for: Video Avatars • Lip-Syncing • Content Creation • AI Projects',
+        '⚡ Instant Activation',
+        '🔐 Verified Access'
+      ],
+      price: '₹1250',
+      plan: 'HeyGen-Creator-1M-1250',
+      note: 'Unlimited Stock • Instant activation • Verified access'
+    }
+  ],
   higgsfield: [
     {
       title: 'Higgsfield AI Ultimate Plan',
@@ -803,6 +839,7 @@ export const tabs = [
   { id: 'lovable', label: 'Lovable AI', logo: '/assets/lovable-logo.jpg' },
   { id: 'elevenlabs', label: 'ElevenLabs', logo: '/assets/elevenlabs-logo.png' },
   { id: 'capcut', label: 'CapCut Pro', logo: '/assets/capcut-logo.png' },
+  { id: 'heygen', label: 'HeyGen AI', logo: '/assets/heygen-logo.png' },
   { id: 'higgsfield', label: 'Higgsfield AI', logo: '/assets/higgsfield-ai-logo.png' },
   { id: 'replit', label: 'Replit Core', logo: '/assets/replit-logo.png' },
   { id: 'linkedin', label: 'LinkedIn Premium', logo: '/assets/linkedin-logo.png' },

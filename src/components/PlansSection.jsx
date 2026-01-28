@@ -91,64 +91,87 @@ function PlansSection() {
         </div>
 
         {/* Render plans for active tab */}
-        {Object.keys(plansData).map(category => (
-          <div
-            key={category}
-            id={category}
-            className={`tabpane ${activeTab === category ? 'active' : ''}`}
-            role="tabpanel"
-          >
-            <div className="grid">
-              {plansData[category].map((plan, index) => (
-                <React.Fragment key={index}>
-                  {plan.sectionHeader && (
+        {Object.keys(plansData).map(category => {
+          const sections = plansData[category].reduce((acc, plan) => {
+            const isNewSection = !!plan.sectionHeader || acc.length === 0
+            if (isNewSection) {
+              acc.push({
+                header: plan.sectionHeader || null,
+                note: plan.sectionNote || null,
+                plans: [plan]
+              })
+            } else {
+              acc[acc.length - 1].plans.push(plan)
+            }
+            return acc
+          }, [])
+
+          return (
+            <div
+              key={category}
+              id={category}
+              className={`tabpane ${activeTab === category ? 'active' : ''}`}
+              role="tabpanel"
+            >
+              {sections.map((section, sIndex) => (
+                <div key={sIndex}>
+                  {section.header && (
                     <div className="section-header-divider">
-                      <h2 className="plans-section-header">{plan.sectionHeader}</h2>
-                      {plan.sectionNote && <p className="plans-section-note">{plan.sectionNote}</p>}
+                      <h2 className="plans-section-header">{section.header}</h2>
+                      {section.note && <p className="plans-section-note">{section.note}</p>}
                     </div>
                   )}
-                  <article
-                    className={`card ${plan.popular ? 'popular' : ''} ${plan.accent ? 'accent' : ''}`}
-                  >
-                    <div className="tags-container">
-                      {plan.popular && <div className="tag popular-tag">🔥 Most Popular</div>}
-                      {plan.trending && <div className="tag trending-tag">📈 Trending</div>}
-                      {plan.bestValue && <div className="tag value-tag">⭐ Best Value</div>}
-                      {plan.tag && !plan.popular && !plan.trending && !plan.bestValue && <div className="tag">{plan.tag}</div>}
-                    </div>
-                  
-                  <h3>
-                    <img src={plan.logo || `/assets/${category}-logo.png`} alt="" /> {plan.title}
-                  </h3>
-                  
-                  <ul>
-                    {plan.features.map((feature, fIndex) => (
-                      <li key={fIndex}>{feature}</li>
+
+                  <div className={`grid grid-cols-${Math.min(section.plans.length || 1, 4)}`}>
+                    {section.plans.map((plan, index) => (
+                      <article
+                        key={`${sIndex}-${index}`}
+                        className={`card ${plan.popular ? 'popular' : ''} ${plan.accent ? 'accent' : ''}`}
+                      >
+                        <div className="tags-container">
+                          {plan.popular && <div className="tag popular-tag">🔥 Most Popular</div>}
+                          {plan.trending && <div className="tag trending-tag">📈 Trending</div>}
+                          {plan.bestValue && <div className="tag value-tag">⭐ Best Value</div>}
+                          {plan.tag && !plan.popular && !plan.trending && !plan.bestValue && <div className="tag">{plan.tag}</div>}
+                        </div>
+
+                        <h3>
+                          <img src={plan.logo || `/assets/${category}-logo.png`} alt="" /> {plan.title}
+                        </h3>
+
+                        <ul>
+                          {plan.features.map((feature, fIndex) => (
+                            <li key={fIndex}>{feature}</li>
+                          ))}
+                        </ul>
+
+                        <div className="price">{plan.price}</div>
+
+                        <button
+                          className="btn-primary"
+                          onClick={() => handleOrderClick(plan.plan)}
+                          disabled={!!plan.disabled}
+                          title={plan.disabled ? 'Currently unavailable' : undefined}
+                        >
+                          {plan.disabled ? 'Out of Stock' : 'Order Now'}
+                        </button>
+
+                        <WhatsAppOrderButton 
+                          plan={plan.title}
+                          price={plan.price}
+                          discount={plan.discount}
+                          disabled={!!plan.disabled}
+                        />
+
+                        {plan.note && <p className="muted tiny-text">{plan.note}</p>}
+                      </article>
                     ))}
-                  </ul>
-                  
-                  <div className="price">{plan.price}</div>
-                  
-                  <button
-                    className="btn-primary"
-                    onClick={() => handleOrderClick(plan.plan)}
-                  >
-                    Order Now
-                  </button>
-                  
-                  <WhatsAppOrderButton 
-                    plan={plan.title}
-                    price={plan.price}
-                    discount={plan.discount}
-                  />
-                  
-                  {plan.note && <p className="muted tiny-text">{plan.note}</p>}
-                </article>
-                </React.Fragment>
+                  </div>
+                </div>
               ))}
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
     </section>
   )

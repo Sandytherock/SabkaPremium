@@ -30,7 +30,7 @@ function Order() {
         content_category: planData.category || 'subscription',
         content_ids: [plan],
         content_type: 'product',
-        value: planData.price,
+        value: Number(planData.amount || 0),
         currency: 'INR'
       })
       
@@ -40,7 +40,7 @@ function Order() {
         content_category: planData.category || 'subscription',
         content_ids: [plan],
         content_type: 'product',
-        value: planData.price,
+        value: Number(planData.amount || 0),
         currency: 'INR',
         num_items: 1
       })

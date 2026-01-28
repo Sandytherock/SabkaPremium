@@ -58,7 +58,7 @@ export const planMap = {
   "ChatGLM-3M-2499": { name: "ChatGLM Pro Suite - 3 Months", amount: "999", logo: "/assets/chatglm-cover.jpg" },
   
   // Claude Plans
-  "Claude-Sonnet-4.5-1M-1999": { name: "Claude Sonnet 4.5 - 1 Month Unlimited", amount: "1999", logo: "/assets/claude-logo.png" },
+  "Claude-Sonnet-4.5-1M-999": { name: "Claude Sonnet 4.5 - 1 Month Unlimited", amount: "999", logo: "/assets/claude-logo.png" },
   "Claude-Sonnet-4.5-3M-2999": { name: "Claude Sonnet 4.5 - 3 Months Unlimited", amount: "2999", logo: "/assets/claude-logo.png" },
   "Claude-Pro-1M-1499": { name: "Claude Pro - 1 Month", amount: "1499", logo: "/assets/claude-logo.png" },
   "Claude-Pro-Max5-1M-6500": { name: "Claude Pro Max 5 - 1 Month", amount: "6500", logo: "/assets/claude-logo.png" },
@@ -103,6 +103,9 @@ export const planMap = {
   "Replit-Core-1M-499": { name: "Replit Core - 1 Month", amount: "499", logo: "/assets/replit-logo.png" },
   "Replit-Core-12M-2499": { name: "Replit Core - 1 Year", amount: "2499", logo: "/assets/replit-logo.png" },
   
+  // HeyGen AI Plans
+  "HeyGen-Creator-1M-1250": { name: "HeyGen AI Creator Plan - 1 Month", amount: "1250", logo: "/assets/heygen-logo.png" },
+
   // Higgsfield AI Plans
   "Higgsfield-Ultimate-2299": { name: "Higgsfield AI Ultimate Plan", amount: "2299", logo: "/assets/higgsfield-ai-logo.png" },
   "Higgsfield-Creator-3499": { name: "Higgsfield AI Creator Plan", amount: "3499", logo: "/assets/higgsfield-ai-logo.png" },

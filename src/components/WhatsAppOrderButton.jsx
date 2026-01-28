@@ -1,8 +1,9 @@
 import React from 'react'
 import { trackCustomEvent } from '../lib/metaPixel'
 
-function WhatsAppOrderButton({ plan, price, discount }) {
+function WhatsAppOrderButton({ plan, price, discount, disabled = false }) {
   const handleWhatsAppOrder = () => {
+    if (disabled) return
     const phoneNumber = '919511335264' // Your WhatsApp Business Number
     
     const message = `Hi! 👋
@@ -32,7 +33,9 @@ Thank you! 🙏`
     <button 
       onClick={handleWhatsAppOrder}
       className="whatsapp-order-btn"
-      title="Order instantly via WhatsApp"
+      disabled={disabled}
+      aria-disabled={disabled}
+      title={disabled ? 'Currently unavailable' : 'Order instantly via WhatsApp'}
     >
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
         <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.552 4.17 1.605 6L.058 23.942l6.134-1.534A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.758-.543-5.358-1.57l-.384-.243-3.98 1.01 1.02-3.914-.257-.4A9.96 9.96 0 012 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10z"/>
