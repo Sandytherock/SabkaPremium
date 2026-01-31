@@ -96,8 +96,11 @@ export const planMap = {
   
   // LinkedIn Plans
   "LinkedIn-Career-3M-499": { name: "LinkedIn Career - 3 Months", amount: "499", logo: "/assets/linkedin-logo.png" },
+  "LinkedIn-Career-1Y-3499": { name: "LinkedIn Career - 1 Year", amount: "3499", logo: "/assets/linkedin-logo.png" },
   "LinkedIn-Business-3M-799": { name: "LinkedIn Business - 3 Months", amount: "799", logo: "/assets/linkedin-logo.png" },
+  "LinkedIn-Business-1Y-3999": { name: "LinkedIn Business - 1 Year", amount: "3999", logo: "/assets/linkedin-logo.png" },
   "LinkedIn-Sales-Navigator-2M-799": { name: "LinkedIn Sales Navigator - 2 Months", amount: "799", logo: "/assets/linkedin-logo.png" },
+  "LinkedIn-Sales-Navigator-1Y-4499": { name: "LinkedIn Sales Navigator - 1 Year", amount: "4499", logo: "/assets/linkedin-logo.png" },
   
   // Replit Plans
   "Replit-Core-1M-499": { name: "Replit Core - 1 Month", amount: "499", logo: "/assets/replit-logo.png" },
