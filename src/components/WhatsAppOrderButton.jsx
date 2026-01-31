@@ -1,7 +1,7 @@
 import React from 'react'
 import { trackCustomEvent } from '../lib/metaPixel'
 
-function WhatsAppOrderButton({ plan, price, discount, disabled = false }) {
+function WhatsAppOrderButton({ productName, plan, price, discount, disabled = false }) {
   const handleWhatsAppOrder = () => {
     if (disabled) return
     const phoneNumber = '919511335264' // Your WhatsApp Business Number
@@ -9,8 +9,9 @@ function WhatsAppOrderButton({ plan, price, discount, disabled = false }) {
     const message = `Hi! 👋
 
 I want to order:
-📦 *${plan}*
-💰 Price: ₹${price}${discount ? ` (${discount}% OFF)` : ''}
+📦 *Product:* ${productName}
+📋 *Plan:* ${plan}
+💰 *Price:* ₹${price}${discount ? ` (${discount}% OFF)` : ''}
 
 Please confirm availability and payment details.
 

@@ -140,7 +140,7 @@ function PlansSection() {
                         </h3>
 
                         <ul>
-                          {plan.features.map((feature, fIndex) => (
+                          {plan.features && plan.features.map((feature, fIndex) => (
                             <li key={fIndex}>{feature}</li>
                           ))}
                         </ul>
@@ -157,6 +157,7 @@ function PlansSection() {
                         </button>
 
                         <WhatsAppOrderButton 
+                          productName={tabs.find(tab => tab.id === category)?.label || category}
                           plan={plan.title}
                           price={plan.price}
                           discount={plan.discount}

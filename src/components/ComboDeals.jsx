@@ -217,6 +217,7 @@ function ComboDeals() {
                   Order Now
                 </button>
                 <WhatsAppOrderButton
+                  productName="Combo Deal"
                   plan={combo.title}
                   price={`₹${combo.comboPrice}`}
                 />
