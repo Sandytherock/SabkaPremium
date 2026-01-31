@@ -66,16 +66,16 @@ function ComboDeals() {
       badge: '⭐ BEST VALUE',
       badgeColor: '#d69e2e',
       title: 'Entertainment Bundle',
-      subtitle: 'For Movie & Music Lovers',
+      subtitle: 'For Movie & Video Lovers',
       icon: '🎬',
-      services: ['Netflix 4K', 'Prime Video', 'Spotify Premium'],
+      services: ['Netflix 4K', 'Prime Video', 'YouTube Premium'],
       originalPrice: 887,
       comboPrice: 349,
       savings: 538,
       features: [
         'Unlimited streaming',
         '4K quality content',
-        'Ad-free music',
+        'Ad-free videos',
         'Save ₹538/month'
       ]
     },

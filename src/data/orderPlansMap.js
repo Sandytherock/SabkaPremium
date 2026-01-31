@@ -112,7 +112,7 @@ export const planMap = {
   
   // Combo Deals
   "Student Pack": { name: "Student Pack (ChatGPT + YouTube)", amount: "249", logo: "/assets/chatgpt-logo.png" },
-  "Entertainment Bundle": { name: "Entertainment Bundle (Netflix + Prime + Spotify)", amount: "349", logo: "/assets/netflix-logo.png" },
+  "Entertainment Bundle": { name: "Entertainment Bundle (Netflix + Prime + YouTube)", amount: "349", logo: "/assets/netflix-logo.png" },
   "Designer Pack": { name: "Designer Pack (Canva + ChatGPT + CapCut)", amount: "449", logo: "/assets/canva-logo.png" },
   "All-in-One Pack": { name: "All-in-One Pack (6 Services)", amount: "699", logo: "/assets/logo.png" }
 }
