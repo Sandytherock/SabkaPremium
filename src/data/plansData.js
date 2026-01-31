@@ -667,6 +667,10 @@ export const plansData = {
   ],
   linkedin: [
     {
+      sectionHeader: 'Monthly Plans',
+      sectionNote: 'Pick a short-term plan to get started'
+    },
+    {
       title: 'LinkedIn Career - 3 Months',
       tag: 'Best for Job Seekers',
       popular: true,
@@ -684,24 +688,6 @@ export const plansData = {
       originalPrice: '₹1,499',
       plan: 'LinkedIn-Career-3M-499',
       note: '⏳ Valid for 3 Months • Best for job hunting & networking'
-    },
-    {
-      title: 'LinkedIn Career - 1 Year',
-      tag: 'Best for Long-Term Job Seekers',
-      features: [
-        '💼 Premium Career Access - 1 Year',
-        '👀 See Who Viewed Your Profile',
-        '📧 Direct InMail Messages (5/month)',
-        '🎓 LinkedIn Learning Access',
-        '💡 Career Insights & Salary Data',
-        '🔍 Featured Applicant Status',
-        '📊 Applicant Insights & Competitor Analysis',
-        '🔐 Private Account Activation'
-      ],
-      price: '₹3,499',
-      originalPrice: '₹5,999',
-      plan: 'LinkedIn-Career-1Y-3499',
-      note: '⏳ Valid for 1 Year • Save more on yearly access'
     },
     {
       title: 'LinkedIn Business - 3 Months',
@@ -722,24 +708,6 @@ export const plansData = {
       note: '⏳ Valid for 3 Months • Perfect for business growth & leads'
     },
     {
-      title: 'LinkedIn Business - 1 Year',
-      tag: 'Best for Growing Businesses',
-      features: [
-        '🚀 Premium Business Access - 1 Year',
-        '👀 Unlimited Profile Views',
-        '📧 15 InMail Credits/Month',
-        '🎓 Full LinkedIn Learning Access',
-        '💼 Business Insights & Analytics',
-        '🔍 Advanced Search Filters',
-        '📊 Company & Competitor Research',
-        '🔐 Private Account Activation'
-      ],
-      price: '₹3,999',
-      originalPrice: '₹7,999',
-      plan: 'LinkedIn-Business-1Y-3999',
-      note: '⏳ Valid for 1 Year • Ideal for consistent lead generation'
-    },
-    {
       title: 'LinkedIn Sales Navigator - 2 Months',
       tag: 'Best for Sales',
       features: [
@@ -756,6 +724,46 @@ export const plansData = {
       originalPrice: '₹3,999',
       plan: 'LinkedIn-Sales-Navigator-2M-799',
       note: '⏳ Valid for 2 Months • Best for B2B sales & prospecting'
+    },
+    {
+      sectionHeader: 'Yearly Plans',
+      sectionNote: 'Save more with annual access'
+    },
+    {
+      title: 'LinkedIn Career - 1 Year',
+      tag: 'Best for Long-Term Job Seekers',
+      features: [
+        '💼 Premium Career Access - 1 Year',
+        '👀 See Who Viewed Your Profile',
+        '📧 Direct InMail Messages (5/month)',
+        '🎓 LinkedIn Learning Access',
+        '💡 Career Insights & Salary Data',
+        '🔍 Featured Applicant Status',
+        '📊 Applicant Insights & Competitor Analysis',
+        '🔐 Private Account Activation'
+      ],
+      price: '₹3,499',
+      originalPrice: '₹5,999',
+      plan: 'LinkedIn-Career-1Y-3499',
+      note: '⏳ Valid for 1 Year • Save more on yearly access'
+    },
+    {
+      title: 'LinkedIn Business - 1 Year',
+      tag: 'Best for Growing Businesses',
+      features: [
+        '🚀 Premium Business Access - 1 Year',
+        '👀 Unlimited Profile Views',
+        '📧 15 InMail Credits/Month',
+        '🎓 Full LinkedIn Learning Access',
+        '💼 Business Insights & Analytics',
+        '🔍 Advanced Search Filters',
+        '📊 Company & Competitor Research',
+        '🔐 Private Account Activation'
+      ],
+      price: '₹3,999',
+      originalPrice: '₹7,999',
+      plan: 'LinkedIn-Business-1Y-3999',
+      note: '⏳ Valid for 1 Year • Ideal for consistent lead generation'
     },
     {
       title: 'LinkedIn Sales Navigator - 1 Year',
