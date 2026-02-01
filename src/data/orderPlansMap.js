@@ -42,10 +42,14 @@ export const planMap = {
   "Prime-6M-449": { name: "Prime Video - 6 Months", amount: "449", logo: "/assets/prime-logo.png" },
   "Prime-12M-799": { name: "Prime Video - 12 Months", amount: "799", logo: "/assets/prime-logo.png" },
   
-  "YouTube-1M-129": { name: "YouTube Premium - 1 Month", amount: "129", logo: "/assets/youtube-logo.png" },
-  "YouTube-3M-349": { name: "YouTube Premium - 3 Months", amount: "349", logo: "/assets/youtube-logo.png" },
-  "YouTube-6M-649": { name: "YouTube Premium - 6 Months", amount: "649", logo: "/assets/youtube-logo.png" },
-  "YouTube-12M-1199": { name: "YouTube Premium - 12 Months", amount: "1199", logo: "/assets/youtube-logo.png" },
+  "YouTube-Individual-1M-69": { name: "YouTube Premium Individual - 1 Month", amount: "69", logo: "/assets/youtube-logo.png" },
+  "YouTube-Individual-3M-179": { name: "YouTube Premium Individual - 3 Months", amount: "179", logo: "/assets/youtube-logo.png" },
+  "YouTube-Individual-6M-349": { name: "YouTube Premium Individual - 6 Months", amount: "349", logo: "/assets/youtube-logo.png" },
+  "YouTube-Individual-12M-629": { name: "YouTube Premium Individual - 12 Months", amount: "629", logo: "/assets/youtube-logo.png" },
+  "YouTube-Family-1M-99": { name: "YouTube Premium Family - 1 Month", amount: "99", logo: "/assets/youtube-logo.png" },
+  "YouTube-Family-3M-199": { name: "YouTube Premium Family - 3 Months", amount: "199", logo: "/assets/youtube-logo.png" },
+  "YouTube-Family-6M-369": { name: "YouTube Premium Family - 6 Months", amount: "369", logo: "/assets/youtube-logo.png" },
+  "YouTube-Family-12M-669": { name: "YouTube Premium Family - 12 Months", amount: "669", logo: "/assets/youtube-logo.png" },
   
   "Spotify-1M-99": { name: "Spotify Premium - 1 Month", amount: "99", logo: "/assets/spotify-logo.png" },
   "Spotify-3M-249": { name: "Spotify Premium - 3 Months", amount: "249", logo: "/assets/spotify-logo.png" },

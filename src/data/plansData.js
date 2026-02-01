@@ -549,8 +549,8 @@ export const plansData = {
         '🔐 Shared Premium Account',
         '📱 Mobile + Desktop Access'
       ],
-      price: '₹49',
-      plan: 'YouTube-Individual-1M-49',
+      price: '₹69',
+      plan: 'YouTube-Individual-1M-69',
       popular: true,
       tag: 'Best Value'
     },
@@ -562,8 +562,8 @@ export const plansData = {
         '🔐 Shared Premium Account',
         '📱 Mobile + Desktop Access'
       ],
-      price: '₹129',
-      plan: 'YouTube-Individual-3M-129'
+      price: '₹179',
+      plan: 'YouTube-Individual-3M-179'
     },
     {
       title: 'Individual – 6 Months',
@@ -573,8 +573,8 @@ export const plansData = {
         '🔐 Shared Premium Account',
         '📱 Mobile + Desktop Access'
       ],
-      price: '₹249',
-      plan: 'YouTube-Individual-6M-249'
+      price: '₹349',
+      plan: 'YouTube-Individual-6M-349'
     },
     {
       title: 'Individual – 12 Months',
@@ -584,8 +584,8 @@ export const plansData = {
         '🔐 Shared Premium Account',
         '📱 Mobile + Desktop Access'
       ],
-      price: '₹449',
-      plan: 'YouTube-Individual-12M-449'
+      price: '₹629',
+      plan: 'YouTube-Individual-12M-629'
     },
     {
       title: 'Family – 1 Month',
@@ -596,8 +596,8 @@ export const plansData = {
         '📥 Background Play + Downloads',
         '🔐 Premium Family Account'
       ],
-      price: '₹149',
-      plan: 'YouTube-Family-1M-149',
+      price: '₹99',
+      plan: 'YouTube-Family-1M-99',
       popular: true
     },
     {
@@ -608,8 +608,8 @@ export const plansData = {
         '📥 Background Play + Downloads',
         '🔐 Premium Family Account'
       ],
-      price: '₹299',
-      plan: 'YouTube-Family-3M-299'
+      price: '₹199',
+      plan: 'YouTube-Family-3M-199'
     },
     {
       title: 'Family – 6 Months',
@@ -619,8 +619,8 @@ export const plansData = {
         '📥 Background Play + Downloads',
         '🔐 Premium Family Account'
       ],
-      price: '₹549',
-      plan: 'YouTube-Family-6M-549'
+      price: '₹369',
+      plan: 'YouTube-Family-6M-369'
     },
     {
       title: 'Family – 12 Months',
@@ -630,8 +630,8 @@ export const plansData = {
         '📥 Background Play + Downloads',
         '🔐 Premium Family Account'
       ],
-      price: '₹999',
-      plan: 'YouTube-Family-12M-999'
+      price: '₹669',
+      plan: 'YouTube-Family-12M-669'
     }
   ],
   spotify: [

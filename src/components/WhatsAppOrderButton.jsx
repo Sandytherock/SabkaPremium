@@ -11,7 +11,7 @@ function WhatsAppOrderButton({ productName, plan, price, discount, disabled = fa
 I want to order:
 📦 *Product:* ${productName}
 📋 *Plan:* ${plan}
-💰 *Price:* ₹${price}${discount ? ` (${discount}% OFF)` : ''}
+💰 *Price:* ${price}${discount ? ` (${discount}% OFF)` : ''}
 
 Please confirm availability and payment details.
 
