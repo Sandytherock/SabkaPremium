@@ -85,7 +85,7 @@ function PlansSection() {
               aria-selected={activeTab === tab.id}
               onClick={() => setActiveTab(tab.id)}
             >
-              <img src={tab.logo} alt={tab.label} /> {tab.label}
+              <img src={tab.logo} alt={`${tab.label} subscription plans - affordable prices`} loading="lazy" /> {tab.label}
             </button>
           ))}
         </div>
@@ -136,7 +136,7 @@ function PlansSection() {
                         </div>
 
                         <h3>
-                          <img src={plan.logo || `/assets/${category}-logo.png`} alt="" /> {plan.title}
+                          <img src={plan.logo || `/assets/${category}-logo.png`} alt={`${plan.title} - Buy cheap subscription India`} loading="lazy" /> {plan.title}
                         </h3>
 
                         <ul>

@@ -1,0 +1,29 @@
+# robots.txt for SabkaPremium
+# Allow all crawlers
+
+User-agent: *
+Allow: /
+Disallow: /order
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://sabkapremium.com/sitemap.xml
+
+# Crawl-delay for nice behavior
+Crawl-delay: 1
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Disallow: /order
+
+User-agent: Bingbot
+Allow: /
+Disallow: /order
+
+# Block bad bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

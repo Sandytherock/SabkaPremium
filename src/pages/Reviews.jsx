@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import SEO from '../components/SEO'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import FloatingButtons from '../components/FloatingButtons'
@@ -192,8 +194,14 @@ function Reviews() {
 
   return (
     <>
+      <SEO 
+        title="Customer Reviews & Testimonials - SabkaPremium | 5000+ Happy Users"
+        description="Read genuine reviews from 5000+ satisfied customers who bought ChatGPT Plus, Netflix, Canva Pro and other premium services from SabkaPremium. Trusted and verified."
+        keywords="SabkaPremium reviews, ChatGPT Plus reviews India, Netflix cheap reviews, customer testimonials, trusted premium accounts"
+      />
       <WhatsAppCommunityBanner />
       <Header />
+      <Breadcrumbs />
       
       {/* Reviews Hero Section */}
       <section className="reviews-hero">

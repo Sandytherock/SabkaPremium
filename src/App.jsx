@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import PixelTracker from './components/PixelTracker'
+import GoogleAnalytics from './components/GoogleAnalytics'
 import Home from './pages/Home'
 import Order from './pages/Order'
 import Reviews from './pages/Reviews'
@@ -44,6 +45,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <PixelTracker />
+      <GoogleAnalytics measurementId="G-XXXXXXXXXX" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/order" element={<Order />} />

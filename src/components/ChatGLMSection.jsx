@@ -11,7 +11,7 @@ function ChatGLMSection() {
         <p className="muted">VIP access • Watermark-free outputs • Priority rendering</p>
 
         <div className="combo-wrap">
-          <img src="/assets/chatglm-cover.jpg" alt="ChatGLM Pro Suite" />
+          <img src="/assets/chatglm-cover.jpg" alt="ChatGLM Pro Suite - AI tools bundle with ChatGPT, Claude, Gemini" loading="lazy" />
 
           <div className="combo-copy">
             <h3>What you'll get</h3>

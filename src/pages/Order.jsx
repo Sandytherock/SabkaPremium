@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useSearchParams, useNavigate } from 'react-router-dom'
+import SEO from '../components/SEO'
+import Breadcrumbs from '../components/Breadcrumbs'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import FloatingButtons from '../components/FloatingButtons'
@@ -222,21 +224,28 @@ function Order() {
 
   return (
     <div className="order-body">
+      <SEO 
+        title="Order Your Plan - SabkaPremium | ChatGPT, Netflix, AI Tools"
+        description="Complete your order for ChatGPT Plus, Netflix 4K, Canva Pro and other premium services. Instant delivery, secure payment, 24/7 support."
+        keywords="order ChatGPT India, buy Netflix cheap, order Canva Pro, AI tools purchase India, premium accounts India"
+        robots="noindex, follow"
+      />
       <WhatsAppCommunityBanner />
       <Header />
+      <Breadcrumbs />
       <main className="order-wrap">
         <section className="order-card">
           <h1>Complete Your Payment</h1>
           
           {selectedPlan && (
             <div className="plan-head" style={{ display: 'flex' }}>
-              <img src={selectedPlan.logo} alt="Plan" />
+              <img src={selectedPlan.logo} alt={`${selectedPlan.name} - Order now`} loading="eager" />
               <span className="pname">{selectedPlan.name}</span>
             </div>
           )}
 
           <div className="qr">
-            <img src="/assets/upi-qr.png.jpg" alt="UPI QR Code" />
+            <img src="/assets/upi-qr.png.jpg" alt="UPI payment QR code - Scan to pay with Google Pay, PhonePe, Paytm" loading="lazy" />
             <div className="upi-line">
               <span>UPI ID:</span> <code>somya2208jain2208@okhdfcbank</code>
             </div>

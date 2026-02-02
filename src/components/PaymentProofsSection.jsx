@@ -17,7 +17,7 @@ function PaymentProofsSection() {
         <p className="muted">1000+ orders delivered successfully</p>
         <div className="proof-grid">
           {proofs.map((proof, index) => (
-            <img key={index} src={proof} alt={`Payment proof ${index + 1}`} />
+            <img key={index} src={proof} alt={`Real payment proof ${index + 1} - Verified customer transaction`} loading="lazy" />
           ))}
         </div>
       </div>
