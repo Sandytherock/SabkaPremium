@@ -37,11 +37,6 @@ function WhatsAppCommunity() {
             <h3>Price Updates</h3>
             <p>Instant notifications on price changes & deals</p>
           </div>
-          <div className="benefit-card">
-            <div className="benefit-icon">💬</div>
-            <h3>Live Support</h3>
-            <p>Direct chat with us & community members</p>
-          </div>
         </div>
 
         {/* CTA Button */}

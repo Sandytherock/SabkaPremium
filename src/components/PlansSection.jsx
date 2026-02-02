@@ -98,7 +98,7 @@ function PlansSection() {
               acc.push({
                 header: plan.sectionHeader || null,
                 note: plan.sectionNote || null,
-                plans: [plan]
+                plans: plan.sectionHeader ? [] : [plan]
               })
             } else {
               acc[acc.length - 1].plans.push(plan)
