@@ -901,8 +901,9 @@ export const plansData = {
   replit: [
     {
       title: 'Replit Core - 1 Month',
-      tag: 'Perfect for Developers',
-      popular: true,
+      tag: '❌ Out of Stock',
+      popular: false,
+      outOfStock: true,
       features: [
         '💻 Replit Core Access - 1 Month',
         '⚡ 4x Faster Performance',
@@ -930,12 +931,12 @@ export const plansData = {
         '🔐 Private Repls (Unlimited)',
         '👥 Real-time Collaboration',
         '📧 Private Account on Your Email',
-        '💎 Save ₹3,500+ compared to monthly'
+        '💎 Save ₹2,500+ compared to monthly'
       ],
-      price: '₹2499',
+      price: '₹3499',
       originalPrice: '₹5,999',
-      plan: 'Replit-Core-12M-2499',
-      note: '⏳ Valid for 12 Months • Only ₹208/month • Best deal for developers 🔥'
+      plan: 'Replit-Core-12M-3499',
+      note: '⏳ Valid for 12 Months • Only ₹291/month • Best deal for developers 🔥'
     }
   ],
   heygen: [
