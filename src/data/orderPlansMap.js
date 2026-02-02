@@ -143,6 +143,9 @@ export const planMap = {
   // Notion AI Plans
   "Notion-Business-AI-6M-2999": { name: "Notion Business Plan + AI - 6 Months", amount: "2999", logo: "/assets/notion-logo.png" },
   
+  // Emergent Analytics Plans
+  "Emergent-Standard-1Y-3999": { name: "Emergent Standard Plan - 1 Year", amount: "3999", logo: "/assets/emergent-logo.png" },
+  
   // Combo Deals
   "Student Pack": { name: "Student Pack (ChatGPT + YouTube)", amount: "249", logo: "/assets/chatgpt-logo.png" },
   "Entertainment Bundle": { name: "Entertainment Bundle (Netflix + Prime + YouTube)", amount: "349", logo: "/assets/netflix-logo.png" },

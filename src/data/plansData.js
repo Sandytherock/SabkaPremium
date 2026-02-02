@@ -1100,6 +1100,32 @@ export const plansData = {
       plan: 'Notion-Business-AI-6M-2999',
       note: '⏳ 6 Months Access • Full Business Plan + AI • 100 Seats • Fast Delivery 🚀'
     }
+  ],
+  emergent: [
+    {
+      title: 'Emergent Standard Plan - 1 Year',
+      tag: '🚀 Analytics Pro',
+      popular: true,
+      logo: '/assets/emergent-logo.png',
+      features: [
+        '🔐 Activated on Your Own Email',
+        '🤖 AI-Powered Product & User Analytics',
+        '📊 Full 1-Year Standard Plan Access',
+        '🎯 AI Insights for Funnels, Retention & User Behavior',
+        '📈 Event Tracking + Custom Dashboards',
+        '👥 Cohorts, Segments & KPI Monitoring',
+        '⚡ Real-Time Reports & Product Metrics',
+        '🔗 Team Collaboration & Unlimited Projects (as per plan)',
+        '💎 Perfect for SaaS Teams | Founders | Agencies',
+        '🎨 Ideal for Product Managers',
+        '⏰ 12-Month Warranty Included',
+        '💰 Official Price: $300 | Our Offer: ₹3999'
+      ],
+      price: '₹3999',
+      originalPrice: '₹25,000',
+      plan: 'Emergent-Standard-1Y-3999',
+      note: '⏳ 1 Year Access • AI Product Analytics (Emergent.sh) • Private Email Activation • Instant Delivery 🚀'
+    }
   ]
 }
 
@@ -1112,6 +1138,7 @@ export const tabs = [
   { id: 'lovable', label: 'Lovable AI', logo: '/assets/lovable-logo.jpg' },
   { id: 'bolt', label: 'Bolt.new AI', logo: '/assets/bolt.png' },
   { id: 'notion', label: 'Notion AI', logo: '/assets/notion-logo.png' },
+  { id: 'emergent', label: 'Emergent', logo: '/assets/emergent-logo.png' },
   { id: 'elevenlabs', label: 'ElevenLabs', logo: '/assets/elevenlabs-logo.png' },
   { id: 'capcut', label: 'CapCut Pro', logo: '/assets/capcut-logo.png' },
   { id: 'descript', label: 'Descript AI', logo: '/assets/Descript-logo.png' },
