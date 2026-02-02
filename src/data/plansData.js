@@ -299,8 +299,8 @@ export const plansData = {
   ],
   lovable: [
     {
-      title: 'Lovable AI Pro – 2 Months',
-      tag: 'Best for UI Builders',
+      title: 'Lovable AI Pro – 1 Month',
+      tag: 'Quick Start',
       popular: true,
       logo: '/assets/lovable-logo.jpg',
       features: [
@@ -310,10 +310,30 @@ export const plansData = {
         '📦 Ready-to-deploy projects',
         '🛠 Edit & iterate visually',
         '🔐 Private workspace access',
-        '🚀 Ideal for founders & indie hackers'
+        '🚀 Ideal for founders & indie hackers',
+        '💻 Supabase, React & TypeScript support',
+        '🎯 Perfect for testing & quick projects'
       ],
-      price: '₹999',
-      plan: 'LovableAI-2M-999',
+      price: '₹499',
+      plan: 'LovableAI-1M-499',
+      note: '⏳ Valid for 1 month • Email activation • Try before committing long-term'
+    },
+    {
+      title: 'Lovable AI Pro – 2 Months',
+      tag: 'Best for UI Builders',
+      logo: '/assets/lovable-logo.jpg',
+      features: [
+        '🎨 AI-powered app & UI builder',
+        '⚡ Build full apps from plain English',
+        '🧩 Frontend + backend generation',
+        '📦 Ready-to-deploy projects',
+        '🛠 Edit & iterate visually',
+        '🔐 Private workspace access',
+        '🚀 Ideal for founders & indie hackers',
+        '💻 Supabase, React & TypeScript support'
+      ],
+      price: '₹799',
+      plan: 'LovableAI-2M-799',
       note: '⏳ Valid for 2 months • Email activation • Limited slots'
     },
     {
@@ -328,6 +348,7 @@ export const plansData = {
         '🛠 Edit & iterate visually',
         '🔐 Private workspace access',
         '🚀 Ideal for founders & indie hackers',
+        '💻 Supabase, React & TypeScript support',
         '💎 12 months unlimited access',
         '🎯 Save ₹2500+ vs monthly plans'
       ],
@@ -665,6 +686,99 @@ export const plansData = {
       plan: 'Spotify-Premium-3M-149'
     }
   ],
+  sonyliv: [
+    {
+      title: 'SonyLIV Premium - 1 Year',
+      tag: '🔥 Best Deal',
+      popular: true,
+      logo: '/assets/sony-liv-logo.png',
+      features: [
+        '📺 Watch on Mobile/TV/Laptop/Tablet',
+        '🎬 Ad-Free Streaming',
+        '🏏 Live Sports (Cricket, Football & More)',
+        '🎭 Premium Shows & Movies',
+        '🌍 International Content Library',
+        '📱 Multi-Device Support (2 Devices)',
+        '💎 HD & Full HD Quality',
+        '🔐 Shared Premium Account',
+        '⏰ 12 Months Full Access'
+      ],
+      price: '₹399',
+      plan: 'SonyLIV-Premium-1Y-399',
+      note: '⏳ 1 Year Access • Live Sports + Premium Content • Best Value 🎯'
+    }
+  ],
+  hotstar: [
+    {
+      title: 'Hotstar Super - 1 Month',
+      tag: '⚡ Quick Access',
+      popular: true,
+      logo: '/assets/jio-hotstar-logo.png',
+      features: [
+        '📺 Watch on Mobile & Tablet',
+        '🎬 Ad-Free Movies & Shows',
+        '🏏 Live Sports (Cricket, Football, Kabaddi)',
+        '🎭 Disney+ Hotstar Originals',
+        '🎥 Star Plus, Colors & More',
+        '📱 Single Device at a Time',
+        '💎 HD Quality Streaming',
+        '🔐 Shared Premium Account'
+      ],
+      price: '₹69',
+      plan: 'Hotstar-Super-1M-69',
+      note: '⏳ 1 Month Access • Sports + Entertainment • Budget Friendly 🎯'
+    }
+  ],
+  descript: [
+    {
+      title: 'Descript Creator Plan - 1 Year',
+      tag: '🔥 Best Alternative',
+      popular: true,
+      logo: '/assets/Descript-logo.png',
+      features: [
+        '✂️ Edit Videos & Podcasts Like a Text Doc',
+        '👁️ AI Eye Contact & Remove Filler Words',
+        '🤖 20+ Smart AI Features',
+        '📝 30 Transcription Hours/Month',
+        '🎬 4K Exports — No Watermark',
+        '🗣️ 2 Hours/Month AI Speech Generation',
+        '🌍 30 Mins/Month AI Dubbing (20+ Languages)',
+        '🎭 10 Mins/Month AI Avatars',
+        '📚 Unlimited Royalty-Free Stock Library',
+        '🔐 Private Activation on Your Email',
+        '💎 Best Alternative to HeyGen & Higgsfield',
+        '⚡ Perfect for YouTubers, Podcasters & Creators'
+      ],
+      price: '₹1999',
+      plan: 'Descript-Creator-1Y-1999',
+      note: '⏳ 1 Year Access • All-in-One Video/Audio/Podcast Editor • Instant Activation 🚀'
+    }
+  ],
+  adobe: [
+    {
+      title: 'Adobe Creative Cloud All Apps - 1 Year',
+      tag: '🔥 Professional Suite',
+      popular: true,
+      logo: '/assets/adobe-creative-cloud-logo.png',
+      features: [
+        '🎨 Photoshop, Illustrator, Premiere Pro',
+        '🎬 After Effects, Lightroom, InDesign',
+        '✨ Adobe Firefly (Generative AI)',
+        '📱 20+ Desktop & Mobile Apps',
+        '☁️ 100GB Cloud Storage',
+        '🤖 AI-Powered Creative Tools',
+        '🖼️ Adobe Stock Access (Limited)',
+        '📚 Adobe Fonts Library',
+        '🔗 Portfolio Website (Adobe Express)',
+        '🔐 Private Account Access',
+        '💎 Best for Designers & Creators',
+        '⚡ Desktop + Mobile Sync'
+      ],
+      price: '₹2499',
+      plan: 'Adobe-Creative-Cloud-1Y-2499',
+      note: '⏳ 1 Year Access • All 20+ Adobe Apps • AI Tools Included • Professional Grade 🎨'
+    }
+  ],
   linkedin: [
     {
       sectionHeader: 'Monthly Plans',
@@ -889,6 +1003,103 @@ export const plansData = {
       plan: 'Higgsfield-Creator-3499',
       note: '⏳ Creator Plan • Maximum features & limits 🔥'
     }
+  ],
+  openart: [
+    {
+      title: 'OpenArt Infinite - 1 Month',
+      tag: '🔥 Unlimited AI Art',
+      popular: true,
+      logo: '/assets/openart-logo.png',
+      features: [
+        '💎 24,000 Credits/Month (Add More Anytime)',
+        '🎨 Up to 24,000 AI Images',
+        '🎬 Up to 300 AI Videos',
+        '👤 80 Consistent Characters',
+        '✨ 80 Personalized AI Models',
+        '📖 Up to 34 One-Click Stories',
+        '⚡ 32 Parallel Generations',
+        '🖼️ 100+ Premium Models (Image, Video, Audio)',
+        '🎯 One-Click Story Creation',
+        '🔐 Private Account Access',
+        '🚀 Priority Support'
+      ],
+      price: '₹1799',
+      plan: 'OpenArt-Infinite-1M-1799',
+      note: '⏳ 1 Month Access • 24K credits with premium features 🎨'
+    }
+  ],
+  n8n: [
+    {
+      title: 'n8n Starter - 1 Year',
+      tag: '⚡ Workflow Automation',
+      popular: true,
+      logo: '/assets/n8n-logo.png',
+      features: [
+        '🔄 2,500 Workflow Executions/Month',
+        '⚙️ Unlimited Active Workflows',
+        '🔗 400+ App Integrations',
+        '📊 Advanced Workflow Editor',
+        '🤖 AI Nodes & Custom Functions',
+        '⏰ Schedule & Trigger Automation',
+        '📧 Email Support',
+        '🔐 Secure Cloud Hosting',
+        '💾 Execution History & Logs',
+        '🚀 Perfect for Automation & Integration',
+        '📱 Mobile-Friendly Dashboard'
+      ],
+      price: '₹2999',
+      plan: 'n8n-Starter-1Y-2999',
+      note: '⏳ 1 Year Access • 2.5K executions/month with 400+ integrations 🔄'
+    }
+  ],
+  bolt: [
+    {
+      title: 'Bolt.new Pro - 1 Year',
+      tag: '⚡ AI Full-Stack Builder',
+      popular: true,
+      logo: '/assets/bolt.png',
+      features: [
+        '🚀 AI-Powered Full-Stack Development',
+        '⚡ Build, Run, Edit & Deploy Apps',
+        '🤖 Advanced AI Code Generation',
+        '💻 Prompt-Based Development',
+        '🔗 GitHub Integration',
+        '🔐 Private Projects & Workspaces',
+        '📦 Ready-to-Deploy Applications',
+        '🛠️ PromptBox for Better AI Control',
+        '⚙️ Increased Usage Limits',
+        '🎨 Full-Stack Web Apps in Minutes',
+        '💎 Perfect for Rapid Prototyping'
+      ],
+      price: '₹2499',
+      plan: 'Bolt-Pro-1Y-2499',
+      note: '⏳ 1 Year Access • Build full-stack apps with AI assistance 🚀'
+    }
+  ],
+  notion: [
+    {
+      title: 'Notion Business Plan + AI - 6 Months',
+      tag: '🔥 Most Demanded',
+      popular: true,
+      logo: '/assets/notion-logo.png',
+      features: [
+        '💼 Notion Business Plan Access (100 Seats)',
+        '🤖 Built-in Notion AI (Full Features)',
+        '📝 Unlimited Pages, Blocks & Members',
+        '🔐 Advanced Permissions & Sharing',
+        '👨‍💼 Admin Controls & Analytics',
+        '⚡ Priority Support',
+        '🎯 Perfect for Teams & Startups',
+        '✨ Ideal for Creators & Professionals',
+        '📚 Great for Students & Organizers',
+        '🔒 Secure & Private Setup',
+        '💎 Save 80%+ vs Retail Price',
+        '⏰ 6 Months Warranty Included'
+      ],
+      price: '₹2999',
+      plan: 'Notion-Business-AI-6M-2999',
+      note: '⏳ 6 Months Access • Full Business Plan + AI • 100 Seats • Fast Delivery 🚀'
+    }
   ]
 }
 
@@ -899,15 +1110,23 @@ export const tabs = [
   { id: 'perplexity', label: 'Perplexity Pro', logo: '/assets/perplexity-logo.png' },
   { id: 'cursor', label: 'Cursor AI', logo: '/assets/cursor-logo.png' },
   { id: 'lovable', label: 'Lovable AI', logo: '/assets/lovable-logo.jpg' },
+  { id: 'bolt', label: 'Bolt.new AI', logo: '/assets/bolt.png' },
+  { id: 'notion', label: 'Notion AI', logo: '/assets/notion-logo.png' },
   { id: 'elevenlabs', label: 'ElevenLabs', logo: '/assets/elevenlabs-logo.png' },
   { id: 'capcut', label: 'CapCut Pro', logo: '/assets/capcut-logo.png' },
+  { id: 'descript', label: 'Descript AI', logo: '/assets/Descript-logo.png' },
   { id: 'heygen', label: 'HeyGen AI', logo: '/assets/heygen-logo.png' },
   { id: 'higgsfield', label: 'Higgsfield AI', logo: '/assets/higgsfield-ai-logo.png' },
+  { id: 'openart', label: 'OpenArt AI', logo: '/assets/openart-logo.png' },
+  { id: 'n8n', label: 'n8n Automation', logo: '/assets/n8n-logo.png' },
   { id: 'replit', label: 'Replit Core', logo: '/assets/replit-logo.png' },
   { id: 'linkedin', label: 'LinkedIn Premium', logo: '/assets/linkedin-logo.png' },
   { id: 'prime', label: 'Prime Video', logo: '/assets/prime-logo.png' },
   { id: 'netflix', label: 'Netflix 4K', logo: '/assets/netflix-logo.png' },
   { id: 'canva', label: 'Canva Pro', logo: '/assets/canva-logo.png' },
+  { id: 'adobe', label: 'Adobe Creative Cloud', logo: '/assets/adobe-creative-cloud-logo.png' },
   { id: 'youtube', label: 'YouTube Premium', logo: '/assets/youtube-logo.png' },
-  { id: 'spotify', label: 'Spotify Premium', logo: '/assets/spotify-logo.png' }
+  { id: 'spotify', label: 'Spotify Premium', logo: '/assets/spotify-logo.png' },
+  { id: 'sonyliv', label: 'SonyLIV', logo: '/assets/sony-liv-logo.png' },
+  { id: 'hotstar', label: 'Hotstar', logo: '/assets/jio-hotstar-logo.png' }
 ]

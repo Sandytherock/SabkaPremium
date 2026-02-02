@@ -22,6 +22,9 @@ export const planMap = {
   "Canva-6M-349": { name: "Canva Pro - 6 Months", amount: "349", logo: "/assets/canva-logo.png" },
   "Canva-12M-599": { name: "Canva Pro - 12 Months", amount: "599", logo: "/assets/canva-logo.png" },
   
+  // Adobe Creative Cloud Plans
+  "Adobe-Creative-Cloud-1Y-2499": { name: "Adobe Creative Cloud All Apps - 1 Year", amount: "2499", logo: "/assets/adobe-creative-cloud-logo.png" },
+  
   "Claude-1M-499": { name: "Claude Max - 1 Month", amount: "499", logo: "/assets/claude-logo.png" },
   "Claude-3M-1299": { name: "Claude Max - 3 Months", amount: "1299", logo: "/assets/claude-logo.png" },
   
@@ -36,6 +39,9 @@ export const planMap = {
   
   "CapCut-1M-399": { name: "CapCut Pro - 1 Month", amount: "399", logo: "/assets/capcut-logo.png" },
   "CapCut-3M-999": { name: "CapCut Pro - 3 Months", amount: "999", logo: "/assets/capcut-logo.png" },
+  
+  // Descript AI Plans
+  "Descript-Creator-1Y-1999": { name: "Descript Creator Plan - 1 Year", amount: "1999", logo: "/assets/Descript-logo.png" },
   
   "Prime-1M-99": { name: "Prime Video - 1 Month", amount: "99", logo: "/assets/prime-logo.png" },
   "Prime-3M-249": { name: "Prime Video - 3 Months", amount: "249", logo: "/assets/prime-logo.png" },
@@ -56,6 +62,12 @@ export const planMap = {
   "Spotify-6M-449": { name: "Spotify Premium - 6 Months", amount: "449", logo: "/assets/spotify-logo.png" },
   "Spotify-12M-799": { name: "Spotify Premium - 12 Months", amount: "799", logo: "/assets/spotify-logo.png" },
   
+  // SonyLIV Plans
+  "SonyLIV-Premium-1Y-399": { name: "SonyLIV Premium - 1 Year", amount: "399", logo: "/assets/sony-liv-logo.png" },
+  
+  // Hotstar Plans
+  "Hotstar-Super-1M-69": { name: "Hotstar Super - 1 Month", amount: "69", logo: "/assets/jio-hotstar-logo.png" },
+  
   "Call-1On1-99": { name: "1-on-1 Strategy Call (15–20 min)", amount: "99", logo: "/assets/logo.png" },
   "Software-A2Z-999": { name: "Software Dropshipping A to Z", amount: "999", logo: "/assets/logo.png" },
   
@@ -73,6 +85,8 @@ export const planMap = {
   "CursorAI-Plus-1M-2999": { name: "Cursor AI Pro Plus - 1 Month", amount: "2999", logo: "/assets/cursor-logo.png" },
   
   // Lovable AI Plans
+  "LovableAI-1M-499": { name: "Lovable AI Pro - 1 Month", amount: "499", logo: "/assets/lovable-logo.jpg" },
+  "LovableAI-2M-799": { name: "Lovable AI Pro - 2 Months", amount: "799", logo: "/assets/lovable-logo.jpg" },
   "LovableAI-2M-999": { name: "Lovable AI Pro - 2 Months", amount: "999", logo: "/assets/lovable-logo.jpg" },
   "LovableAI-12M-3499": { name: "Lovable AI Pro - 1 Year", amount: "3499", logo: "/assets/lovable-logo.jpg" },
   
@@ -116,6 +130,18 @@ export const planMap = {
   // Higgsfield AI Plans
   "Higgsfield-Ultimate-2299": { name: "Higgsfield AI Ultimate Plan", amount: "2299", logo: "/assets/higgsfield-ai-logo.png" },
   "Higgsfield-Creator-3499": { name: "Higgsfield AI Creator Plan", amount: "3499", logo: "/assets/higgsfield-ai-logo.png" },
+  
+  // OpenArt AI Plans
+  "OpenArt-Infinite-1M-1799": { name: "OpenArt Infinite - 1 Month", amount: "1799", logo: "/assets/openart-logo.png" },
+  
+  // n8n Automation Plans
+  "n8n-Starter-1Y-2999": { name: "n8n Starter - 1 Year", amount: "2999", logo: "/assets/n8n-logo.png" },
+  
+  // Bolt.new AI Plans
+  "Bolt-Pro-1Y-2499": { name: "Bolt.new Pro - 1 Year", amount: "2499", logo: "/assets/bolt.png" },
+  
+  // Notion AI Plans
+  "Notion-Business-AI-6M-2999": { name: "Notion Business Plan + AI - 6 Months", amount: "2999", logo: "/assets/notion-logo.png" },
   
   // Combo Deals
   "Student Pack": { name: "Student Pack (ChatGPT + YouTube)", amount: "249", logo: "/assets/chatgpt-logo.png" },
