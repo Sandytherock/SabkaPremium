@@ -265,6 +265,8 @@ export const plansData = {
   cursor: [
     {
       title: 'Cursor AI Pro – 1 Month',
+      tag: '❌ Out of Stock',
+      outOfStock: true,
       features: [
         '🧠 GPT-4 / Claude / Latest AI Models',
         '💻 AI-powered code editor (VS Code based)',
@@ -281,7 +283,8 @@ export const plansData = {
     },
     {
       title: 'Cursor AI Pro Plus – 1 Month',
-      tag: 'Premium Plan',
+      tag: '❌ Out of Stock',
+      outOfStock: true,
       features: [
         '🔥 Everything in Pro',
         '🚀 Higher usage limits',
@@ -967,8 +970,9 @@ export const plansData = {
   higgsfield: [
     {
       title: 'Higgsfield AI Ultimate Plan',
-      tag: 'Best for Creators',
-      popular: true,
+      tag: '❌ Out of Stock',
+      popular: false,
+      outOfStock: true,
       logo: '/assets/higgsfield-ai-logo.png',
       features: [
         '🎬 AI Video Generation & Editing',
@@ -986,8 +990,9 @@ export const plansData = {
     },
     {
       title: 'Higgsfield AI Creator Plan',
-      tag: '⭐ Premium',
-      accent: true,
+      tag: '❌ Out of Stock',
+      accent: false,
+      outOfStock: true,
       logo: '/assets/higgsfield-ai-logo.png',
       features: [
         '🎬 All Ultimate Features',
