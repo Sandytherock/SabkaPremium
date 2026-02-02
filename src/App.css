@@ -983,8 +983,19 @@ input:focus{border-color:var(--e2);box-shadow:0 0 0 6px rgba(20,184,166,.12)}
   .brand img{ width:75px; height:75px; }
 
   /* tabbar safe horizontal scroll (no page scroll) */
-  .tabbar{justify-content:flex-start; overflow-x:auto; overflow-y:hidden; padding-bottom:6px; -webkit-overflow-scrolling:touch;}
+  .tabbar{justify-content:flex-start; overflow-x:auto; overflow-y:hidden; padding-bottom:6px; -webkit-overflow-scrolling:touch; gap:6px;}
   .tabbar::-webkit-scrollbar{display:none;}
+  
+  /* tabs smaller on mobile */
+  .tab{
+    padding:8px 12px;
+    font-size:13px;
+    gap:6px;
+  }
+  .tab img{
+    width:18px;
+    height:18px;
+  }
 
   .site-header{top:40px}
   .hamburger{display:flex}
