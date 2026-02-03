@@ -23,7 +23,8 @@ export const planMap = {
   "Canva-12M-599": { name: "Canva Pro - 12 Months", amount: "599", logo: "/assets/canva-logo.png" },
   
   // Adobe Creative Cloud Plans
-  "Adobe-Creative-Cloud-1Y-2499": { name: "Adobe Creative Cloud All Apps - 1 Year", amount: "2499", logo: "/assets/adobe-creative-cloud-logo.png" },
+  "Adobe-Creative-Cloud-1M-499": { name: "Adobe Creative Cloud All Apps - 1 Month", amount: "499", logo: "/assets/adobe-creative-cloud-logo.png" },
+  "Adobe-Creative-Cloud-1Y-2999": { name: "Adobe Creative Cloud All Apps - 1 Year", amount: "2999", logo: "/assets/adobe-creative-cloud-logo.png" },
   
   "Claude-1M-499": { name: "Claude Max - 1 Month", amount: "499", logo: "/assets/claude-logo.png" },
   "Claude-3M-1299": { name: "Claude Max - 3 Months", amount: "1299", logo: "/assets/claude-logo.png" },

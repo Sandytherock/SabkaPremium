@@ -759,6 +759,28 @@ export const plansData = {
   ],
   adobe: [
     {
+      title: 'Adobe Creative Cloud All Apps - 1 Month',
+      tag: '🎨 Try it First',
+      logo: '/assets/adobe-creative-cloud-logo.png',
+      features: [
+        '🎨 Photoshop, Illustrator, Premiere Pro',
+        '🎬 After Effects, Lightroom, InDesign',
+        '✨ Adobe Firefly (Generative AI)',
+        '📱 20+ Desktop & Mobile Apps',
+        '☁️ 100GB Cloud Storage',
+        '🤖 AI-Powered Creative Tools',
+        '🖼️ Adobe Stock Access (Limited)',
+        '📚 Adobe Fonts Library',
+        '🔗 Portfolio Website (Adobe Express)',
+        '🔐 Private Account Access',
+        '💎 Perfect for Short Projects',
+        '⚡ Desktop + Mobile Sync'
+      ],
+      price: '₹499',
+      plan: 'Adobe-Creative-Cloud-1M-499',
+      note: '⏳ 1 Month Access • All 20+ Adobe Apps • AI Tools Included • Professional Grade 🎨'
+    },
+    {
       title: 'Adobe Creative Cloud All Apps - 1 Year',
       tag: '🔥 Professional Suite',
       popular: true,
@@ -777,8 +799,8 @@ export const plansData = {
         '💎 Best for Designers & Creators',
         '⚡ Desktop + Mobile Sync'
       ],
-      price: '₹2499',
-      plan: 'Adobe-Creative-Cloud-1Y-2499',
+      price: '₹2999',
+      plan: 'Adobe-Creative-Cloud-1Y-2999',
       note: '⏳ 1 Year Access • All 20+ Adobe Apps • AI Tools Included • Professional Grade 🎨'
     }
   ],
