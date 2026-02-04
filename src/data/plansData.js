@@ -732,6 +732,80 @@ export const plansData = {
       note: '⏳ 1 Month Access • Sports + Entertainment • Budget Friendly 🎯'
     }
   ],
+  zee5: [
+    {
+      title: 'ZEE5 Premium - 1 Month',
+      tag: '⚡ Best Value',
+      popular: true,
+      logo: '/assets/zee5-logo.png',
+      features: [
+        '📺 4K Ultra HD Streaming',
+        '🎬 1 Screen - Ad-Free Content',
+        '🎭 ZEE5 Originals & Exclusives',
+        '🎥 Movies, Shows & Live TV',
+        '🌍 Regional Content Library',
+        '📱 Mobile, TV, Laptop Support',
+        '💎 Premium Quality Playback',
+        '🔐 Shared Premium Account'
+      ],
+      price: '₹89',
+      plan: 'ZEE5-Premium-1M-89',
+      note: '⏳ 1 Month Access • 4K Ultra HD • Ad-Free Experience 🎯'
+    },
+    {
+      title: 'ZEE5 Premium - 3 Months',
+      logo: '/assets/zee5-logo.png',
+      features: [
+        '📺 4K Ultra HD Streaming',
+        '🎬 1 Screen - Ad-Free Content',
+        '🎭 ZEE5 Originals & Exclusives',
+        '🎥 Movies, Shows & Live TV',
+        '🌍 Regional Content Library',
+        '📱 Mobile, TV, Laptop Support',
+        '💎 Premium Quality Playback',
+        '🔐 Shared Premium Account'
+      ],
+      price: '₹249',
+      plan: 'ZEE5-Premium-3M-249',
+      note: '⏳ 3 Months Access • 4K Ultra HD • Save More 🎯'
+    },
+    {
+      title: 'ZEE5 Premium - 6 Months',
+      logo: '/assets/zee5-logo.png',
+      features: [
+        '📺 4K Ultra HD Streaming',
+        '🎬 1 Screen - Ad-Free Content',
+        '🎭 ZEE5 Originals & Exclusives',
+        '🎥 Movies, Shows & Live TV',
+        '🌍 Regional Content Library',
+        '📱 Mobile, TV, Laptop Support',
+        '💎 Premium Quality Playback',
+        '🔐 Shared Premium Account'
+      ],
+      price: '₹499',
+      plan: 'ZEE5-Premium-6M-499',
+      note: '⏳ 6 Months Access • 4K Ultra HD • Great Value 🎯'
+    },
+    {
+      title: 'ZEE5 Premium - 12 Months',
+      tag: '🔥 Best Deal',
+      logo: '/assets/zee5-logo.png',
+      features: [
+        '📺 4K Ultra HD Streaming',
+        '🎬 1 Screen - Ad-Free Content',
+        '🎭 ZEE5 Originals & Exclusives',
+        '🎥 Movies, Shows & Live TV',
+        '🌍 Regional Content Library',
+        '📱 Mobile, TV, Laptop Support',
+        '💎 Premium Quality Playback',
+        '🔐 Shared Premium Account',
+        '💰 Maximum Savings'
+      ],
+      price: '₹999',
+      plan: 'ZEE5-Premium-12M-999',
+      note: '⏳ 12 Months Access • 4K Ultra HD • Best Value for Money 🔥'
+    }
+  ],
   descript: [
     {
       title: 'Descript Creator Plan - 1 Year',
@@ -1183,5 +1257,6 @@ export const tabs = [
   { id: 'youtube', label: 'YouTube Premium', logo: '/assets/youtube-logo.png' },
   { id: 'spotify', label: 'Spotify Premium', logo: '/assets/spotify-logo.png' },
   { id: 'sonyliv', label: 'SonyLIV', logo: '/assets/sony-liv-logo.png' },
-  { id: 'hotstar', label: 'Hotstar', logo: '/assets/jio-hotstar-logo.png' }
+  { id: 'hotstar', label: 'Hotstar', logo: '/assets/jio-hotstar-logo.png' },
+  { id: 'zee5', label: 'ZEE5', logo: '/assets/zee5-logo.png' }
 ]

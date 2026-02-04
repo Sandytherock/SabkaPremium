@@ -69,6 +69,12 @@ export const planMap = {
   // Hotstar Plans
   "Hotstar-Super-1M-69": { name: "Hotstar Super - 1 Month", amount: "69", logo: "/assets/jio-hotstar-logo.png" },
   
+  // ZEE5 Plans
+  "ZEE5-Premium-1M-89": { name: "ZEE5 Premium - 1 Month", amount: "89", logo: "/assets/zee5-logo.png" },
+  "ZEE5-Premium-3M-249": { name: "ZEE5 Premium - 3 Months", amount: "249", logo: "/assets/zee5-logo.png" },
+  "ZEE5-Premium-6M-499": { name: "ZEE5 Premium - 6 Months", amount: "499", logo: "/assets/zee5-logo.png" },
+  "ZEE5-Premium-12M-999": { name: "ZEE5 Premium - 12 Months", amount: "999", logo: "/assets/zee5-logo.png" },
+  
   "Call-1On1-99": { name: "1-on-1 Strategy Call (15–20 min)", amount: "99", logo: "/assets/logo.png" },
   "Software-A2Z-999": { name: "Software Dropshipping A to Z", amount: "999", logo: "/assets/logo.png" },
   
