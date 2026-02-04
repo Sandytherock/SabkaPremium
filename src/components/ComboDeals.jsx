@@ -68,15 +68,16 @@ function ComboDeals() {
       title: 'Entertainment Bundle',
       subtitle: 'For Movie & Video Lovers',
       icon: '🎬',
-      services: ['Netflix 4K', 'Prime Video', 'YouTube Premium'],
-      originalPrice: 887,
-      comboPrice: 349,
-      savings: 538,
+      services: ['Netflix 4K', 'Prime Video', 'YouTube Premium', 'Zee5 Premium', 'Sony LIV Premium'],
+      originalPrice: 1215,
+      comboPrice: 449,
+      savings: 766,
       features: [
         'Unlimited streaming',
         '4K quality content',
         'Ad-free videos',
-        'Save ₹538/month'
+        'All Indian & International content',
+        'Save ₹766/month'
       ]
     },
     {
@@ -140,15 +141,16 @@ function ComboDeals() {
       title: 'All-in-One Pack',
       subtitle: 'Everything You Need',
       icon: '🌟',
-      services: ['ChatGPT 5 Pro (Business Teams)', 'Netflix', 'Prime', 'Spotify', 'YouTube', 'Canva', 'LinkedIn'],
-      originalPrice: 4633,
-      comboPrice: 999,
-      savings: 3634,
+      services: ['ChatGPT 5 Pro (Business Teams)', 'Netflix', 'Prime', 'Spotify', 'YouTube', 'Canva', 'LinkedIn', 'Zee5 Premium', 'Sony LIV Premium'],
+      originalPrice: 4961,
+      comboPrice: 1099,
+      savings: 3862,
       features: [
         'All premium services',
         'Maximum savings (Business Teams)',
         'Complete toolkit',
-        'Save ₹3,634/month'
+        '9 Premium Services',
+        'Save ₹3,862/month'
       ]
     }
   ]
