@@ -1,4 +1,4 @@
-// All product plans data
+﻿// All product plans data
 export const plansData = {
   chatgpt: [
     {
@@ -926,7 +926,7 @@ export const plansData = {
       features: [
         '🎯 Sales Navigator Core - 2 Months',
         '🔍 Advanced Lead & Company Search',
-        '📧 20 InMail Credits/Month',
+        '📧 50 InMail Credits/Month',
         '💡 Lead Recommendations & Alerts',
         '📊 CRM Integration Support',
         '👥 50 Lead & Account Saves',
@@ -984,7 +984,7 @@ export const plansData = {
       features: [
         '🎯 Sales Navigator Core - 1 Year',
         '🔍 Advanced Lead & Company Search',
-        '📧 20 InMail Credits/Month',
+        '📧 50 InMail Credits/Month',
         '💡 Lead Recommendations & Alerts',
         '📊 CRM Integration Support',
         '👥 50 Lead & Account Saves',
