@@ -81,7 +81,7 @@ export const planMap = {
   "ChatGLM-3M-2499": { name: "ChatGLM Pro Suite - 3 Months", amount: "999", logo: "/assets/chatglm-cover.jpg" },
   
   // Claude Plans
-  "Claude-Sonnet-4.5-1M-999": { name: "Claude Sonnet 4.5 - 1 Month Unlimited", amount: "999", logo: "/assets/claude-logo.png" },
+  "Claude-Sonnet-4.5-1M-999": { name: "Claude Code 20x MAX - 1 Month Access", amount: "999", logo: "/assets/claude-logo.png" },
   "Claude-Sonnet-4.5-3M-2999": { name: "Claude Sonnet 4.5 - 3 Months Unlimited", amount: "2999", logo: "/assets/claude-logo.png" },
   "Claude-Pro-1M-1499": { name: "Claude Pro - 1 Month", amount: "1499", logo: "/assets/claude-logo.png" },
   "Claude-Pro-Max5-1M-6500": { name: "Claude Pro Max 5 - 1 Month", amount: "6500", logo: "/assets/claude-logo.png" },

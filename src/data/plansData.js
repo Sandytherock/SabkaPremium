@@ -362,41 +362,42 @@ export const plansData = {
   ],
   claude: [
     {
-      title: 'Claude Sonnet 4.5 – 1 Month Unlimited',
+      title: 'Claude Code 20x MAX – 1 Month Access',
       sectionHeader: '🚀 Multi-AI Access Plans (Not Official Claude)',
       sectionNote: '⚠️ Alternative access methods - we provide API/third-party access to Claude models',
       features: [
-        '🧠 Claude Sonnet 4.5 • Sonnet 4 • Haiku 4.5',
-        '🤖 GPT-4 • Gemini 2.5 • Perplexity access',
-        '🔓 Unlimited usage & requests',
-        '💬 Access via web interface or API',
-        '📝 Context length: 200,000+ tokens',
-        '🧑‍💻 Coding, writing, reasoning tasks',
-        '🎨 Best for creative + research work',
-        '🔐 Private access • Instant delivery'
+        '🚀 20x more usage for 30 days',
+        '🤖 Available Models: Claude Sonnet 4.5, Sonnet 4, Haiku 4.5, GPT-5, GPT-5.2, GPT-5.1',
+        '🔄 Auto Model (Recommended – Smart Switching)',
+        '⚡ Fast & stable performance',
+        '🧠 Best for coding, content, analysis & automation',
+        '🧑‍💻 CLI / Dev-friendly environment',
+        '🤖 Agent & workspace support',
+        '🔁 Easy model switching'
       ],
       price: '₹999',
       originalPrice: '₹1999',
-      tag: '🔥 Special Offer',
+      tag: '🔥 Special Discount',
       plan: 'Claude-Sonnet-4.5-1M-999',
-      note: '⚠️ NOT official Claude Pro. Access via alternative platforms with Claude models.',
+      note: '⚠️ Not an official Claude or OpenAI subscription. Access provided via alternative method. 3rd party provider: Rovodev (Atlassian). Special first-time purchase offer: ₹1999 → ₹999.',
       accent: true
     },
     {
       title: 'Claude Sonnet 4.5 – 3 Months Unlimited',
       features: [
-        '🧠 Claude Sonnet 4.5 • Sonnet 4 • Haiku 4.5',
-        '🤖 GPT-4 • Gemini 2.5 • Perplexity access',
-        '🔓 Unlimited usage & requests',
-        '💬 Access via web interface or API',
-        '📝 Context length: 200,000+ tokens',
-        '🧑‍💻 Coding, writing, reasoning tasks',
-        '🎨 Best for creative + research work',
-        '🔐 Private access • Instant delivery'
+        '🚀 20x more usage for 30 days',
+        '🤖 Available Models: Claude Sonnet 4.5, Sonnet 4, Haiku 4.5, GPT-5, GPT-5.2, GPT-5.1',
+        '🔄 Auto Model (Recommended – Smart Switching)',
+        '⚡ Fast & stable performance',
+        '🧠 Best for coding, content, analysis & automation',
+        '🧑‍💻 CLI / Dev-friendly environment',
+        '🤖 Agent & workspace support',
+        '🔁 Easy model switching'
       ],
       price: '₹2999',
+      originalPrice: '₹3999',
       plan: 'Claude-Sonnet-4.5-3M-2999',
-      note: '⚠️ NOT official Claude Pro. Access via alternative platforms with Claude models.',
+      note: '⚠️ Not an official Claude or OpenAI subscription. Access provided via alternative method. 3rd party provider: Rovodev (Atlassian).',
       accent: true
     },
     {
@@ -463,8 +464,8 @@ export const plansData = {
         '🧠 Unlimited quick searches',
         '⚠️ Service subject to Perplexity T&Cs'
       ],
-      price: '₹299',
-      plan: 'Perplexity-1M-299'
+      price: '₹499',
+      plan: 'Perplexity-1M-499'
     },
     {
       title: '1 Year Perplexity Pro',

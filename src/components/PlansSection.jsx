@@ -98,7 +98,7 @@ function PlansSection() {
               acc.push({
                 header: plan.sectionHeader || null,
                 note: plan.sectionNote || null,
-                plans: plan.sectionHeader ? [] : [plan]
+                plans: [plan]
               })
             } else {
               acc[acc.length - 1].plans.push(plan)
@@ -145,7 +145,16 @@ function PlansSection() {
                           ))}
                         </ul>
 
-                        <div className="price">{plan.price}</div>
+                        <div className="price">
+                          {plan.originalPrice ? (
+                            <>
+                              <s>{plan.originalPrice}</s>
+                              <span className="now">{plan.price}</span>
+                            </>
+                          ) : (
+                            plan.price
+                          )}
+                        </div>
 
                         <button
                           className="btn-primary"
