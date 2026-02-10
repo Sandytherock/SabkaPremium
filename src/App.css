@@ -76,6 +76,54 @@ code{background:#0e1c19;border:1px solid rgba(20,184,166,.25);padding:2px 6px;bo
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
 /* âœ… logo size tidy */
 .brand img{width:100px;height:100px;object-fit:contain;border-radius:8px}
+
+/* Animated Text Logo */
+.brand-text-only {
+  gap: 0;
+}
+
+.brand-logo-text {
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 900;
+  background: linear-gradient(135deg, #10a37f 0%, #14b8a6 25%, #10a37f 50%, #14b8a6 75%, #10a37f 100%);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientFlow 4s ease infinite;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.brand-logo-text::after {
+  content: '✨';
+  position: absolute;
+  right: -28px;
+  top: -8px;
+  font-size: 18px;
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes gradientFlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
 .main-nav{display:flex;align-items:center;gap:18px}
 .main-nav a{opacity:.9}
 .main-nav a:hover{opacity:1}
@@ -1129,6 +1177,16 @@ input:focus{border-color:var(--e2);box-shadow:0 0 0 6px rgba(20,184,166,.12)}
 @media (max-width:720px){
   /* logo a bit smaller on mobile */
   .brand img{ width:75px; height:75px; }
+  
+  .brand-logo-text {
+    font-size: 20px;
+  }
+  
+  .brand-logo-text::after {
+    right: -22px;
+    top: -6px;
+    font-size: 14px;
+  }
 
   /* tabbar safe horizontal scroll (no page scroll) */
   .tabbar{justify-content:flex-start; overflow-x:auto; overflow-y:hidden; padding-bottom:6px; -webkit-overflow-scrolling:touch; gap:6px;}

@@ -29,9 +29,8 @@ function Header() {
   return (
     <header className="site-header">
       <div className="container nav">
-        <Link to="/" className="brand" onClick={() => window.scrollTo(0, 0)}>
-          <img src="/assets/logo.png" alt="SabkaPremium" loading="eager" />
-          <span>SabkaPremium</span>
+        <Link to="/" className="brand brand-text-only" onClick={() => window.scrollTo(0, 0)}>
+          <span className="brand-logo-text">SabkaPremium</span>
         </Link>
         <CurrencyToggle />
         <button 
