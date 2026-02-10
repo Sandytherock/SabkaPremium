@@ -153,6 +153,10 @@ export const planMap = {
   // Emergent Analytics Plans
   "Emergent-Standard-1Y-3999": { name: "Emergent Standard Plan - 1 Year", amount: "3999", logo: "/assets/emergent-logo.png" },
   
+  // TradingView Plans
+  "TradingView-Premium-1W-499": { name: "TradingView Premium - 1 Week", amount: "499", logo: "/assets/tradingview-logo.png" },
+  "TradingView-Premium-1M-1499": { name: "TradingView Premium - 1 Month", amount: "1499", logo: "/assets/tradingview-logo.png" },
+  
   // Combo Deals
   "Student Pack": { name: "Student Pack (ChatGPT + YouTube)", amount: "249", logo: "/assets/chatgpt-logo.png" },
   "Entertainment Bundle": { name: "Entertainment Bundle (Netflix + Prime + YouTube + Zee5 + Sony LIV)", amount: "449", logo: "/assets/netflix-logo.png" },

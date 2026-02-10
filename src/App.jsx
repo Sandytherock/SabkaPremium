@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { CurrencyProvider } from './context/CurrencyContext'
 import PixelTracker from './components/PixelTracker'
 import GoogleAnalytics from './components/GoogleAnalytics'
 import Home from './pages/Home'
@@ -42,16 +43,18 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <PixelTracker />
-      <GoogleAnalytics measurementId="G-XXXXXXXXXX" />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/order" element={<Order />} />
-        <Route path="/reviews" element={<Reviews />} />
-      </Routes>
-    </Router>
+    <CurrencyProvider>
+      <Router>
+        <ScrollToTop />
+        <PixelTracker />
+        <GoogleAnalytics measurementId="G-XXXXXXXXXX" />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/reviews" element={<Reviews />} />
+        </Routes>
+      </Router>
+    </CurrencyProvider>
   )
 }
 

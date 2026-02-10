@@ -3,11 +3,14 @@ import { useNavigate } from 'react-router-dom'
 import { plansData, tabs } from '../data/plansData'
 import WhatsAppOrderButton from './WhatsAppOrderButton'
 import { trackViewContent, trackCustomEvent } from '../lib/metaPixel'
+import { useCurrency } from '../context/CurrencyContext'
+import { getPrice } from '../utils/currencyDetection'
 import './WhatsAppOrderButton.css'
 
 function PlansSection() {
   const [activeTab, setActiveTab] = useState('chatgpt')
   const navigate = useNavigate()
+  const { currency } = useCurrency()
 
   useEffect(() => {
     // Smooth scroll for anchor links
@@ -148,11 +151,11 @@ function PlansSection() {
                         <div className="price">
                           {plan.originalPrice ? (
                             <>
-                              <s>{plan.originalPrice}</s>
-                              <span className="now">{plan.price}</span>
+                              <s>{getPrice(plan.originalPrice, currency)}</s>
+                              <span className="now">{getPrice(plan.price, currency)}</span>
                             </>
                           ) : (
-                            plan.price
+                            getPrice(plan.price, currency)
                           )}
                         </div>
 
@@ -168,7 +171,7 @@ function PlansSection() {
                         <WhatsAppOrderButton 
                           productName={tabs.find(tab => tab.id === category)?.label || category}
                           plan={plan.title}
-                          price={plan.price}
+                          price={getPrice(plan.price, currency)}
                           discount={plan.discount}
                           disabled={!!plan.disabled}
                         />

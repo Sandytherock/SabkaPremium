@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import CurrencyToggle from './CurrencyToggle'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -32,6 +33,7 @@ function Header() {
           <img src="/assets/logo.png" alt="SabkaPremium" loading="eager" />
           <span>SabkaPremium</span>
         </Link>
+        <CurrencyToggle />
         <button 
           className="hamburger" 
           aria-label="Open menu" 

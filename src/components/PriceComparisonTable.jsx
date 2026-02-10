@@ -1,7 +1,11 @@
 import React from 'react'
+import { useCurrency } from '../context/CurrencyContext'
+import { getPrice } from '../utils/currencyDetection'
 import './PriceComparisonTable.css'
 
 function PriceComparisonTable() {
+  const { currency } = useCurrency()
+  
   const comparisons = [
     {
       service: 'ChatGPT 5 Pro',
@@ -113,15 +117,15 @@ function PriceComparisonTable() {
                     <span>{item.service}</span>
                   </td>
                   <td className="official-price">
-                    <span className="price-strike">{item.official}</span>
+                    <span className="price-strike">{getPrice(item.official, currency)}</span>
                     <span className="per-month">/month</span>
                   </td>
                   <td className="our-price highlight-col">
-                    <span className="price-big">{item.ours}</span>
+                    <span className="price-big">{getPrice(item.ours, currency)}</span>
                     <span className="per-month">/month</span>
                   </td>
                   <td className="savings">
-                    <span className="save-amount">{item.save}</span>
+                    <span className="save-amount">{getPrice(item.save, currency)}</span>
                     <span className="save-percent">{item.savePercent} OFF</span>
                   </td>
                 </tr>
@@ -131,13 +135,13 @@ function PriceComparisonTable() {
               <tr className="total-row">
                 <td><strong>Total Monthly</strong></td>
                 <td className="official-price">
-                  <strong>₹{totalOfficial}</strong>
+                  <strong>{currency === 'INR' ? '₹' : '$'}{currency === 'INR' ? totalOfficial : (totalOfficial / 100).toFixed(2)}</strong>
                 </td>
                 <td className="our-price highlight-col">
-                  <strong>₹{totalOurs}</strong>
+                  <strong>{currency === 'INR' ? '₹' : '$'}{currency === 'INR' ? totalOurs : (totalOurs / 100).toFixed(2)}</strong>
                 </td>
                 <td className="savings">
-                  <strong className="save-amount">₹{totalSave}</strong>
+                  <strong className="save-amount">{currency === 'INR' ? '₹' : '$'}{currency === 'INR' ? totalSave : (totalSave / 100).toFixed(2)}</strong>
                 </td>
               </tr>
             </tfoot>
@@ -150,7 +154,10 @@ function PriceComparisonTable() {
             <div className="savings-icon">🎉</div>
             <div className="savings-content">
               <h3>Your Yearly Savings</h3>
-              <div className="savings-amount">₹{yearlySavings.toLocaleString()}</div>
+              <div className="savings-amount">
+                {currency === 'INR' ? '₹' : '$'}
+                {currency === 'INR' ? yearlySavings.toLocaleString() : (yearlySavings / 100).toFixed(2)}
+              </div>
               <p>That's enough for a vacation! 🏖️</p>
             </div>
           </div>

@@ -1,10 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import WhatsAppOrderButton from './WhatsAppOrderButton'
+import { useCurrency } from '../context/CurrencyContext'
+import { getPrice } from '../utils/currencyDetection'
 import './ComboDeals.css'
 
 function ComboDeals() {
   const navigate = useNavigate()
+  const { currency } = useCurrency()
 
   const combos = [
     {
@@ -196,12 +199,12 @@ function ComboDeals() {
 
               <div className="combo-pricing">
                 <div className="price-comparison">
-                  <span className="original-price">₹{combo.originalPrice}</span>
+                  <span className="original-price">{currency === 'INR' ? '₹' : '$'}{currency === 'INR' ? combo.originalPrice : (combo.originalPrice / 100).toFixed(2)}</span>
                   <span className="arrow">→</span>
-                  <span className="combo-price">₹{combo.comboPrice}</span>
+                  <span className="combo-price">{currency === 'INR' ? '₹' : '$'}{currency === 'INR' ? combo.comboPrice : (combo.comboPrice / 100).toFixed(2)}</span>
                 </div>
                 <div className="savings-badge">
-                  Save ₹{combo.savings}/month
+                  Save {currency === 'INR' ? '₹' : '$'}{currency === 'INR' ? combo.savings : (combo.savings / 100).toFixed(2)}/month
                 </div>
               </div>
 
@@ -221,7 +224,7 @@ function ComboDeals() {
                 <WhatsAppOrderButton
                   productName="Combo Deal"
                   plan={combo.title}
-                  price={`₹${combo.comboPrice}`}
+                  price={`${currency === 'INR' ? '₹' : '$'}${currency === 'INR' ? combo.comboPrice : (combo.comboPrice / 100).toFixed(2)}`}
                 />
               </div>
             </div>
@@ -234,7 +237,7 @@ function ComboDeals() {
             <div className="benefit-box">
               <div className="benefit-icon">💰</div>
               <h4>Maximum Savings</h4>
-              <p>Save up to ₹3,435/month with bundles</p>
+              <p>Save up to {currency === 'INR' ? '₹3,435' : '$34.35'}/month with bundles</p>
             </div>
             <div className="benefit-box">
               <div className="benefit-icon">⚡</div>

@@ -1066,10 +1066,10 @@ export const plansData = {
   ],
   higgsfield: [
     {
-      title: 'Higgsfield AI Ultimate Plan',
-      tag: '❌ Out of Stock',
+      title: 'Higgsfield AI Ultimate KO Plan',
+      tag: '✅ Back in Stock',
       popular: false,
-      outOfStock: true,
+      outOfStock: false,
       logo: '/assets/higgsfield-ai-logo.png',
       features: [
         '🎬 AI Video Generation & Editing',
@@ -1083,7 +1083,7 @@ export const plansData = {
       ],
       price: '₹2299',
       plan: 'Higgsfield-Ultimate-2299',
-      note: '⏳ Ultimate Plan • Best for professional creators 🎥'
+      note: '⚡ Only 2 left • Ultimate Plan • Best for professional creators 🎥'
     },
     {
       title: 'Higgsfield AI Creator Plan',
@@ -1229,6 +1229,82 @@ export const plansData = {
       plan: 'Emergent-Standard-1Y-3999',
       note: '⏳ 1 Year Access • AI Product Analytics (Emergent.sh) • Private Email Activation • Instant Delivery 🚀'
     }
+  ],
+  tradingview: [
+    {
+      title: '1 Week Premium',
+      tag: '📊 Trading Pro',
+      popular: true,
+      logo: '/assets/tradingview-logo.png',
+      features: [
+        '📊 8 Charts per Tab',
+        '📈 25 Indicators per Chart',
+        '📉 20K Historical Bars',
+        '🔗 50 Parallel Chart Connections',
+        '🔔 400 Price Alerts',
+        '⚡ 400 Technical Alerts',
+        '👁️ 2 Watchlist Alerts',
+        '🚫 No Ads',
+        '📊 Volume Profile',
+        '⏰ Custom Timeframes',
+        '📐 Custom Range Bars',
+        '📋 Multiple Watchlists',
+        '⏮️ Bar Replay',
+        '🔄 Indicators on Indicators',
+        '📥 Chart Data Export',
+        '🕐 Intraday Renko, Kagi, Line Break, Point & Figure Charts',
+        '🧮 Charts Based on Custom Formulas',
+        '🎯 Multi-Condition Alerts',
+        '💰 Time Price Opportunity',
+        '👣 Volume Footprint',
+        '🕯️ Volume Candles',
+        '🤖 Auto Chart Patterns',
+        '♾️ Alerts that Don\'t Expire',
+        '📝 Publishing Invite-Only Scripts',
+        '⏱️ Second-Based Intervals'
+      ],
+      price: '₹499',
+      originalPrice: '₹1,150',
+      plan: 'TradingView-Premium-1W-499',
+      note: '⏳ 1 Week Access • Full Premium Features • Instant Delivery 🚀'
+    },
+    {
+      title: '1 Month Premium',
+      tag: '📊 Best Value',
+      accent: true,
+      logo: '/assets/tradingview-logo.png',
+      features: [
+        '📊 8 Charts per Tab',
+        '📈 25 Indicators per Chart',
+        '📉 20K Historical Bars',
+        '🔗 50 Parallel Chart Connections',
+        '🔔 400 Price Alerts',
+        '⚡ 400 Technical Alerts',
+        '👁️ 2 Watchlist Alerts',
+        '🚫 No Ads',
+        '📊 Volume Profile',
+        '⏰ Custom Timeframes',
+        '📐 Custom Range Bars',
+        '📋 Multiple Watchlists',
+        '⏮️ Bar Replay',
+        '🔄 Indicators on Indicators',
+        '📥 Chart Data Export',
+        '🕐 Intraday Renko, Kagi, Line Break, Point & Figure Charts',
+        '🧮 Charts Based on Custom Formulas',
+        '🎯 Multi-Condition Alerts',
+        '💰 Time Price Opportunity',
+        '👣 Volume Footprint',
+        '🕯️ Volume Candles',
+        '🤖 Auto Chart Patterns',
+        '♾️ Alerts that Don\'t Expire',
+        '📝 Publishing Invite-Only Scripts',
+        '⏱️ Second-Based Intervals'
+      ],
+      price: '₹1499',
+      originalPrice: '₹4,995',
+      plan: 'TradingView-Premium-1M-1499',
+      note: '⏳ 1 Month Access • Full Premium Features • Best Value • Instant Delivery 🚀'
+    }
   ]
 }
 
@@ -1242,6 +1318,7 @@ export const tabs = [
   { id: 'bolt', label: 'Bolt.new AI', logo: '/assets/bolt.png' },
   { id: 'notion', label: 'Notion AI', logo: '/assets/notion-logo.png' },
   { id: 'emergent', label: 'Emergent', logo: '/assets/emergent-logo.png' },
+  { id: 'tradingview', label: 'TradingView', logo: '/assets/tradingview-logo.png' },
   { id: 'elevenlabs', label: 'ElevenLabs', logo: '/assets/elevenlabs-logo.png' },
   { id: 'capcut', label: 'CapCut Pro', logo: '/assets/capcut-logo.png' },
   { id: 'descript', label: 'Descript AI', logo: '/assets/Descript-logo.png' },

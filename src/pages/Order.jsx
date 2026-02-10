@@ -6,14 +6,19 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import FloatingButtons from '../components/FloatingButtons'
 import WhatsAppCommunityBanner from '../components/WhatsAppCommunityBanner'
+import InternationalPayment from '../components/InternationalPayment'
+import IndianPayment from '../components/IndianPayment'
 import { planMap, coupons, planSpecificCoupons } from '../data/orderPlansMap'
 import { supabase, isSupabaseConfigured } from '../lib/supabase'
 import { trackViewContent, trackInitiateCheckout, trackLead } from '../lib/metaPixel'
+import { useCurrency } from '../context/CurrencyContext'
+import { getPrice } from '../utils/currencyDetection'
 import '../components/WhatsAppCommunityBanner.css'
 
 function Order() {
   const [searchParams] = useSearchParams()
   const navigate = useNavigate()
+  const { currency } = useCurrency()
   const [selectedPlan, setSelectedPlan] = useState(null)
   const [couponCode, setCouponCode] = useState('')
   const [discount, setDiscount] = useState(0)
@@ -98,6 +103,14 @@ function Order() {
     const baseAmount = parseInt(selectedPlan.amount)
     const discountAmount = (baseAmount * discount) / 100
     return Math.round(baseAmount - discountAmount)
+  }
+
+  const getFinalAmountInCurrency = () => {
+    const amount = calculateFinalAmount()
+    if (currency === 'USD') {
+      return (amount / 100).toFixed(2) // ₹100 = $1
+    }
+    return amount
   }
 
   const handleSubmit = async (e) => {
@@ -244,12 +257,11 @@ function Order() {
             </div>
           )}
 
-          <div className="qr">
-            <img src="/assets/upi-qr.png.jpg" alt="UPI payment QR code - Scan to pay with Google Pay, PhonePe, Paytm" loading="lazy" />
-            <div className="upi-line">
-              <span>UPI ID:</span> <code>somya2208jain2208@okhdfcbank</code>
-            </div>
-          </div>
+          {currency === 'INR' ? (
+            <IndianPayment amount={getFinalAmountInCurrency()} />
+          ) : (
+            <InternationalPayment amount={getFinalAmountInCurrency()} />
+          )}
 
           <form onSubmit={handleSubmit} className="form">
             <div className="two">
@@ -284,7 +296,7 @@ function Order() {
                 <input 
                   type="text" 
                   name="amount" 
-                  value={selectedPlan ? `₹${calculateFinalAmount()}` : ''} 
+                  value={selectedPlan ? `${currency === 'INR' ? '₹' : '$'}${getFinalAmountInCurrency()}` : ''} 
                   readOnly 
                   required 
                 />
@@ -309,7 +321,7 @@ function Order() {
               <p className="warn">❌ {couponError}</p>
             )}
             {discount > 0 && selectedPlan && (
-              <p className="ok">Discount: ₹{Math.round((parseInt(selectedPlan.amount) * discount) / 100)}</p>
+              <p className="ok">Discount: {currency === 'INR' ? '₹' : '$'}{currency === 'INR' ? Math.round((parseInt(selectedPlan.amount) * discount) / 100) : ((parseInt(selectedPlan.amount) * discount) / 100 / 100).toFixed(2)}</p>
             )}
 
             <label>
