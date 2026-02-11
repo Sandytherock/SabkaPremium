@@ -142,7 +142,7 @@ export const plansData = {
         '🛡️ 20 Days Replacement Warranty',
         '🔐 Private account • Best price in market'
       ],
-      price: '₹1999',
+      price: '₹2499',
       originalPrice: '₹19,999',
       plan: 'Gemini-Ultra-1M-999',
       note: '⏰ Limited Offer – Only 9 slots. Special discount price for our community 🔥'

@@ -108,7 +108,7 @@ export const planMap = {
   "ElevenLabs-Creator-1Y-5999": { name: "ElevenLabs Creator - 1 Year", amount: "5999", logo: "/assets/elevenlabs-logo.png" },
   
   // Gemini Plans
-  "Gemini-Ultra-1M-999": { name: "Gemini Ultra (Veo 3) - 25 Days", amount: "1999", logo: "/assets/gemini-logo.png" },
+  "Gemini-Ultra-1M-999": { name: "Gemini Ultra (Veo 3) - 25 Days", amount: "2499", logo: "/assets/gemini-logo.png" },
   "Gemini-1M-199": { name: "Gemini AI Pro + 2TB - 1 Month", amount: "199", logo: "/assets/gemini-logo.png" },
   "Gemini-1Y-1999": { name: "Gemini AI Pro + 2TB - 1 Year", amount: "1999", logo: "/assets/gemini-logo.png" },
   
