@@ -141,6 +141,7 @@ export const planMap = {
   "Higgsfield-Creator-3499": { name: "Higgsfield AI Creator Plan", amount: "3499", logo: "/assets/higgsfield-ai-logo.png" },
   
   // OpenArt AI Plans
+  "OpenArt-Advanced-1M-1499": { name: "OpenArt Advanced - 1 Month", amount: "1499", logo: "/assets/openart-logo.png" },
   "OpenArt-Infinite-1M-1799": { name: "OpenArt Infinite - 1 Month", amount: "1799", logo: "/assets/openart-logo.png" },
   
   // n8n Automation Plans

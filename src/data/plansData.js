@@ -1143,9 +1143,30 @@ export const plansData = {
   ],
   openart: [
     {
+      title: 'OpenArt Advanced - 1 Month',
+      tag: '⭐ Best Value',
+      popular: true,
+      logo: '/assets/openart-logo.png',
+      features: [
+        '🎨 Up to 12,000 Images',
+        '🎬 Up to 150 Videos',
+        '👤 40 Consistent Characters',
+        '✨ 40 Personalized Models',
+        '📖 Up to 17 One-Click Stories',
+        '⚡ 16 Parallel Generations',
+        '🖼️ Access to 100+ Premium Image, Video & Audio Models',
+        '🎯 One-Click Story Creation',
+        '🔐 Private Account Access',
+        '🚀 Perfect for Content Creators'
+      ],
+      price: '₹1499',
+      plan: 'OpenArt-Advanced-1M-1499',
+      note: '⏳ 1 Month Access • Advanced features at great value 🎨'
+    },
+    {
       title: 'OpenArt Infinite - 1 Month',
       tag: '🔥 Unlimited AI Art',
-      popular: true,
+      accent: true,
       logo: '/assets/openart-logo.png',
       features: [
         '💎 24,000 Credits/Month (Add More Anytime)',
