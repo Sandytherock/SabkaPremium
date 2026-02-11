@@ -148,7 +148,7 @@ export const plansData = {
       note: '⏰ Limited Offer – Only 9 slots. Special discount price for our community 🔥'
     },
     {
-      title: 'Gemini AI Pro + 2TB Google Storage',
+      title: 'Gemini AI Pro + 2TB Google Storage – 1 Month',
       tag: '⭐ Best Value',
       popular: true,
       features: [
@@ -167,7 +167,7 @@ export const plansData = {
       note: '⏳ Validity: 1 Month • 1000 Flow credits included • Best deal 🔥'
     },
     {
-      title: 'Gemini AI Pro + 2TB – 1 Year',
+      title: 'Gemini AI Pro + 2TB\n– 1 Year',
       tag: '⭐ Limited-Time Offer',
       features: [
         '🤖 Gemini 2.5 Pro – Smartest AI',
