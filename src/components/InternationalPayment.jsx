@@ -75,7 +75,7 @@ function InternationalPayment({ amount }) {
               </div>
 
               <a 
-                href={`https://www.paypal.com/ncp/payment/ENRGKRBBHULEM`}
+                href={`https://wa.me/917982851113?text=${encodeURIComponent(`Hi! I want to make a PayPal payment of $${paypalAmount} (includes 3% PayPal fee)\n\nOriginal Amount: $${amount}\nPayPal Fee: $${paypalFee}\nTotal to Pay: $${paypalAmount}\n\nPlease send me the PayPal payment link.`)}`}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-payment-large paypal-btn"
