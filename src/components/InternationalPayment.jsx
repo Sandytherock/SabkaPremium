@@ -26,15 +26,10 @@ function InternationalPayment({ amount }) {
     e.preventDefault()
   }
 
-  // Handle Binance payment
+  // Handle Binance payment - Always WhatsApp
   const handleBinancePayment = (e) => {
-    if (isMobile) {
-      // Mobile: Redirect to WhatsApp
-      window.open(`https://wa.me/919511335264?text=${encodeURIComponent(`Hi! I want to make a Binance Pay payment of $${amount}\n\nBinance Pay ID: ${binanceId}\nAmount: $${amount} USDT\n\nPlease send me the payment QR code or link.`)}`, '_blank')
-    } else {
-      // Desktop: Direct Binance link
-      window.open(`https://app.binance.com/en/qr/dplk9a27b9b042cd43408fd6fd5f8de64dc3?amount=${amount}`, '_blank')
-    }
+    // Always redirect to WhatsApp for Binance payments
+    window.open(`https://wa.me/919511335264?text=${encodeURIComponent(`Hi! I want to make a Binance Pay payment of $${amount}\n\nBinance Pay ID: ${binanceId}\nAmount: $${amount} USDT\n\nPlease send me the payment QR code or link.`)}`, '_blank')
     e.preventDefault()
   }
 
