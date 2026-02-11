@@ -1,8 +1,18 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useCurrency } from '../context/CurrencyContext'
 
 function ChatGLMSection() {
   const navigate = useNavigate()
+  const { currency, isINR } = useCurrency()
+
+  // Pricing based on currency
+  const pricing = {
+    INR: { price: '₹999', original: '₹2,999', symbol: '₹' },
+    USD: { price: '11.99 USDT', original: '35.99 USDT', symbol: '' }
+  }
+
+  const currentPricing = isINR ? pricing.INR : pricing.USD
 
   return (
     <section className="combo" id="chatglm">
@@ -26,8 +36,8 @@ function ChatGLMSection() {
             </ul>
 
             <div className="price">
-              <s>₹2,999</s>
-              <span className="now">₹999</span>
+              <s>{currentPricing.original}</s>
+              <span className="now">{currentPricing.price}</span>
               <span className="muted" style={{ fontWeight: 600 }}>/ 3 months</span>
             </div>
             <button 
@@ -39,7 +49,7 @@ function ChatGLMSection() {
                 navigate('/order?plan=ChatGLM-3M-2499')
               }}
             >
-              Get ChatGLM Pro (₹999 / 3M)
+              Get ChatGLM Pro ({currentPricing.price} / 3M)
             </button>
           </div>
         </div>

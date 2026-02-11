@@ -903,6 +903,7 @@ export const plansData = {
     {
       title: 'LinkedIn Career - 1 Year',
       tag: 'Best for Long-Term Job Seekers',
+      popular: true,
       features: [
         '💼 Premium Career Access - 1 Year',
         '👀 See Who Viewed Your Profile',
@@ -913,14 +914,16 @@ export const plansData = {
         '📊 Applicant Insights & Competitor Analysis',
         '🔐 Private Account Activation'
       ],
-      price: '₹3,499',
+      price: '₹2999',
       originalPrice: '₹5,999',
       plan: 'LinkedIn-Career-1Y-3499',
       note: '⏳ Valid for 1 Year • Save more on yearly access'
     },
     {
       title: 'LinkedIn Business - 1 Year',
-      tag: 'Best for Growing Businesses',
+      tag: '❌ Out of Stock',
+      outOfStock: true,
+      disabled: true,
       features: [
         '🚀 Premium Business Access - 1 Year',
         '👀 Unlimited Profile Views',
@@ -934,11 +937,13 @@ export const plansData = {
       price: '₹3,999',
       originalPrice: '₹7,999',
       plan: 'LinkedIn-Business-1Y-3999',
-      note: '⏳ Valid for 1 Year • Ideal for consistent lead generation'
+      note: '❌ Currently Unavailable • Will restock soon'
     },
     {
       title: 'LinkedIn Sales Navigator - 1 Year',
-      tag: 'Best for Sales Teams',
+      tag: '❌ Out of Stock',
+      outOfStock: true,
+      disabled: true,
       features: [
         '🎯 Sales Navigator Core - 1 Year',
         '🔍 Advanced Lead & Company Search',
@@ -952,7 +957,7 @@ export const plansData = {
       price: '₹4,499',
       originalPrice: '₹9,999',
       plan: 'LinkedIn-Sales-Navigator-1Y-4499',
-      note: '⏳ Valid for 1 Year • Best for consistent B2B prospecting'
+      note: '❌ Currently Unavailable • Will restock soon'
     }
   ],
   replit: [
