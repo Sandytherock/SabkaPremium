@@ -11,6 +11,33 @@ function InternationalPayment({ amount }) {
   const paypalAmount = (parseFloat(amount) * (1 + paypalFeePercent / 100)).toFixed(2)
   const paypalFee = (parseFloat(amount) * (paypalFeePercent / 100)).toFixed(2)
 
+  // Detect if device is mobile
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+  
+  // Handle PayPal payment
+  const handlePayPalPayment = (e) => {
+    if (isMobile) {
+      // Mobile: Redirect to WhatsApp
+      window.open(`https://wa.me/919511335264?text=${encodeURIComponent(`Hi! I want to make a PayPal payment of $${paypalAmount} (includes 3% PayPal fee)\n\nOriginal Amount: $${amount}\nPayPal Fee: $${paypalFee}\nTotal to Pay: $${paypalAmount}\n\nPlease send me the PayPal payment link.`)}`, '_blank')
+    } else {
+      // Desktop: Direct PayPal link
+      window.open(`https://www.paypal.com/paypalme/sandyjain2208/${paypalAmount}`, '_blank')
+    }
+    e.preventDefault()
+  }
+
+  // Handle Binance payment
+  const handleBinancePayment = (e) => {
+    if (isMobile) {
+      // Mobile: Redirect to WhatsApp
+      window.open(`https://wa.me/919511335264?text=${encodeURIComponent(`Hi! I want to make a Binance Pay payment of $${amount}\n\nBinance Pay ID: ${binanceId}\nAmount: $${amount} USDT\n\nPlease send me the payment QR code or link.`)}`, '_blank')
+    } else {
+      // Desktop: Direct Binance link
+      window.open(`https://app.binance.com/en/qr/dplk9a27b9b042cd43408fd6fd5f8de64dc3?amount=${amount}`, '_blank')
+    }
+    e.preventDefault()
+  }
+
   return (
     <div className="international-payment">
       <div className="payment-header-section">
@@ -74,10 +101,8 @@ function InternationalPayment({ amount }) {
                 <p>💡 <strong>PayPal Fee:</strong> ${paypalFee} ({paypalFeePercent}% processing fee)</p>
               </div>
 
-              <a 
-                href={`https://wa.me/919511335264?text=${encodeURIComponent(`Hi! I want to make a PayPal payment of $${paypalAmount} (includes 3% PayPal fee)\n\nOriginal Amount: $${amount}\nPayPal Fee: $${paypalFee}\nTotal to Pay: $${paypalAmount}\n\nPlease send me the PayPal payment link.`)}`}
-                target="_blank" 
-                rel="noopener noreferrer"
+              <button 
+                onClick={handlePayPalPayment}
                 className="btn-payment-large paypal-btn"
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -87,7 +112,7 @@ function InternationalPayment({ amount }) {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-              </a>
+              </button>
 
               <div className="payment-info-box">
                 <p>
@@ -148,10 +173,8 @@ function InternationalPayment({ amount }) {
                 <code className="binance-id-display">{binanceId}</code>
               </div>
 
-              <a 
-                href={`https://wa.me/919511335264?text=${encodeURIComponent(`Hi! I want to make a Binance Pay payment of $${amount}\n\nBinance Pay ID: ${binanceId}\nAmount: $${amount} USDT\n\nPlease send me the payment QR code or link.`)}`}
-                target="_blank" 
-                rel="noopener noreferrer"
+              <button 
+                onClick={handleBinancePayment}
                 className="btn-payment-large binance-btn"
               >
                 <svg className="binance" viewBox="0 0 126.61 126.61" width="24" height="24">
@@ -167,7 +190,7 @@ function InternationalPayment({ amount }) {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-              </a>
+              </button>
 
               <div className="payment-info-box">
                 <p><strong>Alternative:</strong> Open Binance app → Pay → Enter ID: <code className="inline-code">{binanceId}</code></p>
