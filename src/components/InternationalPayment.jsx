@@ -75,7 +75,7 @@ function InternationalPayment({ amount }) {
               </div>
 
               <a 
-                href={`https://www.paypal.me/${paypalEmail.split('@')[0]}/${paypalAmount}`}
+                href={`https://www.paypal.com/ncp/payment/ENRGKRBBHULEM`}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-payment-large paypal-btn"
