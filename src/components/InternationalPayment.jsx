@@ -149,7 +149,7 @@ function InternationalPayment({ amount }) {
               </div>
 
               <a 
-                href={`https://app.binance.com/en/qr/dplk9a27b9b042cd43408fd6fd5f8de64dc3?amount=${amount}`}
+                href={`https://wa.me/917982851113?text=${encodeURIComponent(`Hi! I want to make a Binance Pay payment of $${amount}\n\nBinance Pay ID: ${binanceId}\nAmount: $${amount} USDT\n\nPlease send me the payment QR code or link.`)}`}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-payment-large binance-btn"
