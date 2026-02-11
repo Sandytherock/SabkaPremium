@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 const SEO = ({ 
-  title = 'SabkaPremium – AI & OTT at Student-Friendly Prices',
+  title = 'Sabka Premium',
   description = 'Get ChatGPT Plus, Claude Max, Netflix 4K, Canva Pro, YouTube Premium & 20+ AI tools at lowest prices in India. Instant delivery, replacement guarantee, trusted by 5000+ users.',
   keywords = 'ChatGPT Plus cheap, Netflix 4K India, Canva Pro discount, AI tools India, Claude Max, Gemini Ultra, YouTube Premium, Spotify Premium, Adobe Creative Cloud, cheap premium accounts, student discounts India',
   image = '/assets/logo.png',

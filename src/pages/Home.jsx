@@ -31,7 +31,7 @@ function Home() {
   return (
     <>
       <SEO 
-        title="SabkaPremium â€“ AI & OTT at Student-Friendly Prices | ChatGPT, Netflix, Canva Pro"
+        title="Sabka Premium"
         description="Get ChatGPT Plus, Claude Max, Netflix 4K, Canva Pro, YouTube Premium & 20+ AI tools at lowest prices in India. Instant delivery, replacement guarantee, trusted by 5000+ users."
         keywords="ChatGPT Plus India, Netflix 4K cheap, Canva Pro discount, AI tools India, Claude Max, Gemini Ultra, YouTube Premium, Spotify Premium, Adobe Creative Cloud, cheap premium accounts, student discounts India"
       />
