@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './InternationalPayment.css'
 
 function InternationalPayment({ amount }) {
-  const paypalEmail = 'somyajain2208@gmail.com'
+  const paypalEmail = 'sandyjain2208@gmail.com'
   const binanceId = '497235818'
   const [selectedMethod, setSelectedMethod] = useState('paypal')
   
@@ -75,7 +75,7 @@ function InternationalPayment({ amount }) {
               </div>
 
               <a 
-                href={`https://www.paypal.com/paypalme/${paypalEmail.split('@')[0]}/${paypalAmount}`}
+                href={`https://www.paypal.me/${paypalEmail.split('@')[0]}/${paypalAmount}`}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-payment-large paypal-btn"
