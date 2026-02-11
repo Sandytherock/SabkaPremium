@@ -78,7 +78,9 @@ export const planMap = {
   "Call-1On1-99": { name: "1-on-1 Strategy Call (15–20 min)", amount: "99", logo: "/assets/logo.png" },
   "Software-A2Z-999": { name: "Software Dropshipping A to Z", amount: "999", logo: "/assets/logo.png" },
   
-  "ChatGLM-3M-2499": { name: "ChatGLM Pro Suite - 3 Months", amount: "999", logo: "/assets/chatglm-cover.jpg" },
+  "ChatGLM-1M-999": { name: "ChatGLM Pro - 1 Month Shared", amount: "999", logo: "/assets/chatglm-logo.png" },
+  "ChatGLM-1M-1999": { name: "ChatGLM Pro - 1 Month Private", amount: "1999", logo: "/assets/chatglm-logo.png" },
+  "ChatGLM-3M-2499": { name: "ChatGLM Pro - 3 Months Shared", amount: "1999", logo: "/assets/chatglm-logo.png" },
   
   // Claude Plans
   "Claude-Sonnet-4.5-1M-999": { name: "Claude Code 20x MAX - 1 Month Access", amount: "999", logo: "/assets/claude-logo.png" },

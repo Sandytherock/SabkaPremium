@@ -10,7 +10,6 @@ import FOMOSection from '../components/FOMOSection'
 import VideoReviewsSection from '../components/VideoReviewsSection'
 import CoachingSection from '../components/CoachingSection'
 import PlansSection from '../components/PlansSection'
-import ChatGLMSection from '../components/ChatGLMSection'
 import HowToOrderSection from '../components/HowToOrderSection'
 import PaymentProofsSection from '../components/PaymentProofsSection'
 import AboutCoachSection from '../components/AboutCoachSection'
@@ -46,7 +45,6 @@ function Home() {
       <PlansSection />
       <ComboDeals />
       <PriceComparisonTable />
-      <ChatGLMSection />
       {/* How to Order - Simple process */}
       <HowToOrderSection />
       {/* Trust Building - Payment Proofs */}

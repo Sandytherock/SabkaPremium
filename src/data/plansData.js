@@ -246,6 +246,78 @@ export const plansData = {
       tag: 'Best Value'
     }
   ],
+  chatglm: [
+    {
+      title: 'ChatGLM Pro - 1 Month Shared',
+      tag: '🔥 Best Veo 3 Alternative',
+      popular: true,
+      logo: '/assets/chatglm-logo.png',
+      features: [
+        '🎬 Best Alternative to Google Veo 3',
+        '💰 Save ₹1500 vs Gemini Ultra Veo 3',
+        '🎞️ Unlimited video generation up to 4K 60 FPS',
+        '⏱️ Per render length: 10 sec per generation',
+        '🖼️ Unlimited image generation (VIP)',
+        '🚫 No watermark on videos & images',
+        '⚡ Priority queue for faster renders',
+        '📦 Latest model updates included',
+        '🔐 Shared access (mobile + desktop)',
+        '⚠️ Natural sound only - No human voice/dialogues (China-based tool)',
+        '💎 Best for testing & short-term projects'
+      ],
+      price: '₹999',
+      originalPrice: '₹2,999',
+      plan: 'ChatGLM-1M-999',
+      note: '⏳ Best alternative to Veo 3 at 60% lower price • Natural sound only (no human voice) 🎬'
+    },
+    {
+      title: 'ChatGLM Pro - 1 Month Private',
+      tag: '🔥 Best Veo 3 Alternative',
+      accent: true,
+      logo: '/assets/chatglm-logo.png',
+      features: [
+        '🎬 Best Alternative to Google Veo 3',
+        '💰 Save ₹500 vs Gemini Ultra Veo 3',
+        '🎞️ Unlimited video generation up to 4K 60 FPS',
+        '⏱️ Per render length: 10 sec per generation',
+        '🖼️ Unlimited image generation (VIP)',
+        '🚫 No watermark on videos & images',
+        '⚡ Priority queue for faster renders',
+        '📦 Latest model updates included',
+        '🔐 Private account - Only you',
+        '👑 Dedicated access with no sharing',
+        '⚠️ Natural sound only - No human voice/dialogues (China-based tool)',
+        '💎 Best for professional creators'
+      ],
+      price: '₹1999',
+      originalPrice: '₹4,999',
+      plan: 'ChatGLM-1M-1999',
+      note: '⏳ Best alternative to Veo 3 with private access • Natural sound only (no human voice) 👑'
+    },
+    {
+      title: 'ChatGLM Pro - 3 Months Shared',
+      tag: '🔥 Best Veo 3 Alternative',
+      logo: '/assets/chatglm-logo.png',
+      features: [
+        '🎬 Best Alternative to Google Veo 3',
+        '💰 Save ₹500+ vs Gemini Ultra Veo 3',
+        '🎞️ Unlimited video generation up to 4K 60 FPS',
+        '⏱️ Per render length: 10 sec per generation',
+        '🖼️ Unlimited image generation (VIP)',
+        '🚫 No watermark on videos & images',
+        '⚡ Priority queue for faster renders',
+        '📦 Latest model updates included',
+        '🔐 Shared access (mobile + desktop)',
+        '💸 Save ₹1998 vs monthly plans',
+        '⚠️ Natural sound only - No human voice/dialogues (China-based tool)',
+        '💎 Perfect for regular content creators'
+      ],
+      price: '₹1999',
+      originalPrice: '₹8,997',
+      plan: 'ChatGLM-3M-2499',
+      note: '⏳ Best Veo 3 alternative for 3 months • Natural sound only (no human voice) • Best value 🔥'
+    }
+  ],
   cursor: [
     {
       title: 'Cursor AI Pro – 1 Month',
@@ -1276,8 +1348,9 @@ export const plansData = {
 
 export const tabs = [
   { id: 'chatgpt', label: 'ChatGPT 5 Pro', logo: '/assets/chatgpt-logo.png' },
-  { id: 'claude', label: 'Claude Max', logo: '/assets/claude-logo.png' },
   { id: 'gemini', label: 'Gemini Ultra', logo: '/assets/gemini-logo.png' },
+  { id: 'chatglm', label: 'ChatGLM Pro', logo: '/assets/chatglm-logo.png' },
+  { id: 'claude', label: 'Claude Max', logo: '/assets/claude-logo.png' },
   { id: 'perplexity', label: 'Perplexity Pro', logo: '/assets/perplexity-logo.png' },
   { id: 'cursor', label: 'Cursor AI', logo: '/assets/cursor-logo.png' },
   { id: 'lovable', label: 'Lovable AI', logo: '/assets/lovable-logo.jpg' },
