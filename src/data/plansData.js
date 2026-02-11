@@ -321,9 +321,8 @@ export const plansData = {
   cursor: [
     {
       title: 'Cursor AI Pro – 1 Month',
-      tag: '❌ Out of Stock',
-      outOfStock: true,
-      disabled: true,
+      tag: '✅ In Stock',
+      popular: true,
       features: [
         '🧠 GPT-4 / Claude / Latest AI Models',
         '💻 AI-powered code editor (VS Code based)',
@@ -334,9 +333,9 @@ export const plansData = {
         '📱 Windows, Mac & Linux',
         '🚀 Perfect for developers & startups'
       ],
-      price: '₹1499',
-      plan: 'CursorAI-1M-1499',
-      note: '❌ Currently Unavailable • Will restock soon'
+      price: '₹1299',
+      plan: 'CursorAI-1M-999',
+      note: '⏳ 1 Month Access • Instant Activation'
     },
     {
       title: 'Cursor AI Pro Plus – 1 Month',
@@ -462,8 +461,7 @@ export const plansData = {
       title: 'Claude Pro – 1 Month',
       sectionHeader: '🏆 Official Claude Pro Plans',
       popular: true,
-      tag: '❌ Out of Stock',
-      disabled: true,
+      tag: '✅ In Stock',
       features: [
         '🚀 Standard usage limits — Claude Pro access',
         '🏆 Priority access to Claude 4.5 Opus for complex reasoning',
@@ -473,9 +471,9 @@ export const plansData = {
         '🔐 Private account',
         '📱 Web + Mobile apps'
       ],
-      price: '₹1499',
+      price: '₹1399',
       plan: 'Claude-Pro-1M-1499',
-      note: '❌ Currently Unavailable • Will restock soon'
+      note: '⏳ 1 Month Access • Instant Activation'
     },
     {
       title: 'Claude Pro Max 5 – 1 Month',

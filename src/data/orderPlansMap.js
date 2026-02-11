@@ -8,7 +8,7 @@ export const planMap = {
   "ChatGPT-6M-899": { name: "ChatGPT - 6 Months (3–4 Members)", amount: "899", logo: "/assets/chatgpt-logo.png" },
   "ChatGPT-12M-1399": { name: "ChatGPT - 12 Months (8–10 Members)", amount: "1399", logo: "/assets/chatgpt-logo.png" },
   
-  "CursorAI-1M-1499": { name: "Cursor AI Pro – 1 Month", amount: "1499", logo: "/assets/cursor-logo.png" },
+  "CursorAI-1M-999": { name: "Cursor AI Pro – 1 Month", amount: "999", logo: "/assets/cursor-logo.png" },
   "CursorAI-Plus-1M-2999": { name: "Cursor AI Pro Plus – 1 Month", amount: "2999", logo: "/assets/cursor-logo.png" },
   "LovableAI-2M-999": { name: "Lovable AI Pro – 2 Months", amount: "999", logo: "/assets/lovable-logo.jpg" },
   
@@ -85,12 +85,12 @@ export const planMap = {
   // Claude Plans
   "Claude-Sonnet-4.5-1M-999": { name: "Claude Code 20x MAX - 1 Month Access", amount: "999", logo: "/assets/claude-logo.png" },
   "Claude-Sonnet-4.5-3M-2999": { name: "Claude Sonnet 4.5 - 3 Months Unlimited", amount: "2999", logo: "/assets/claude-logo.png" },
-  "Claude-Pro-1M-1499": { name: "Claude Pro - 1 Month", amount: "1499", logo: "/assets/claude-logo.png" },
+  "Claude-Pro-1M-1499": { name: "Claude Pro - 1 Month", amount: "1399", logo: "/assets/claude-logo.png" },
   "Claude-Pro-Max5-1M-6500": { name: "Claude Pro Max 5 - 1 Month", amount: "6500", logo: "/assets/claude-logo.png" },
   "Claude-Pro-Max20-1M-9000": { name: "Claude Pro Max 20 - 1 Month", amount: "9000", logo: "/assets/claude-logo.png" },
   
   // Cursor AI Plans
-  "CursorAI-1M-1499": { name: "Cursor AI Pro - 1 Month", amount: "1499", logo: "/assets/cursor-logo.png" },
+  "CursorAI-1M-999": { name: "Cursor AI Pro - 1 Month", amount: "1299", logo: "/assets/cursor-logo.png" },
   "CursorAI-Plus-1M-2999": { name: "Cursor AI Pro Plus - 1 Month", amount: "2999", logo: "/assets/cursor-logo.png" },
   
   // Lovable AI Plans
