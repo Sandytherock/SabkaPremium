@@ -108,7 +108,24 @@ function Order() {
   const getFinalAmountInCurrency = () => {
     const amount = calculateFinalAmount()
     if (currency === 'USD') {
-      return (amount / 100).toFixed(2) // ₹100 = $1
+      // Convert: ₹100 = $1
+      const usdAmount = amount / 100
+      const basePrice = parseFloat(usdAmount.toFixed(2))
+      
+      // Custom USD price adjustments (same as convertINRtoUSD)
+      const priceAdjustments = {
+        3.99: 4.99,   // $3.99 → $4.99
+        6.49: 7.99,   // $6.49 → $7.99
+        7.99: 9.99,   // $7.99 → $9.99
+        13.99: 14.99  // $13.99 → $14.99
+      }
+      
+      // Check if this price needs adjustment
+      if (priceAdjustments[basePrice]) {
+        return priceAdjustments[basePrice].toFixed(2)
+      }
+      
+      return basePrice.toFixed(2)
     }
     return amount
   }

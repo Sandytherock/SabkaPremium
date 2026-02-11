@@ -107,9 +107,9 @@ export function toggleCurrency(currentCurrency) {
 }
 
 /**
- * Convert INR price to USD (₹100 = $1)
+ * Convert INR price to USD with custom pricing adjustments
  * @param {string} priceString - e.g., "₹299", "₹1,999"
- * @returns {string} - e.g., "$2.99", "$19.99"
+ * @returns {string} - e.g., "$4.99", "$14.99"
  */
 export function convertINRtoUSD(priceString) {
   if (!priceString) return '$0'
@@ -122,9 +122,23 @@ export function convertINRtoUSD(priceString) {
   
   // Convert: ₹100 = $1
   const usdAmount = inrAmount / 100
+  const basePrice = parseFloat(usdAmount.toFixed(2))
   
-  // Format with proper decimals
-  return `$${usdAmount.toFixed(2)}`
+  // Custom USD price adjustments
+  const priceAdjustments = {
+    3.99: 4.99,   // $3.99 → $4.99
+    6.49: 7.99,   // $6.49 → $7.99
+    7.99: 9.99,   // $7.99 → $9.99
+    13.99: 14.99  // $13.99 → $14.99
+  }
+  
+  // Check if this price needs adjustment
+  if (priceAdjustments[basePrice]) {
+    return `$${priceAdjustments[basePrice].toFixed(2)}`
+  }
+  
+  // Return original converted price
+  return `$${basePrice.toFixed(2)}`
 }
 
 /**

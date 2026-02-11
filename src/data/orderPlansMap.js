@@ -102,6 +102,7 @@ export const planMap = {
   // Perplexity Plans
   "Perplexity-1M-499": { name: "Perplexity Pro - 1 Month", amount: "499", logo: "/assets/perplexity-logo.png" },
   "Perplexity-3M-1299": { name: "Perplexity Pro - 3 Months", amount: "1299", logo: "/assets/perplexity-logo.png" },
+  "Perplexity-1Y-1999": { name: "Perplexity Pro - 1 Year", amount: "1999", logo: "/assets/perplexity-logo.png" },
   
   // ElevenLabs Plans
   "ElevenLabs-1M-399": { name: "ElevenLabs Pro - 1 Month", amount: "399", logo: "/assets/elevenlabs-logo.png" },
