@@ -75,7 +75,7 @@ function InternationalPayment({ amount }) {
               </div>
 
               <a 
-                href={`https://wa.me/917982851113?text=${encodeURIComponent(`Hi! I want to make a PayPal payment of $${paypalAmount} (includes 3% PayPal fee)\n\nOriginal Amount: $${amount}\nPayPal Fee: $${paypalFee}\nTotal to Pay: $${paypalAmount}\n\nPlease send me the PayPal payment link.`)}`}
+                href={`https://wa.me/919511335264?text=${encodeURIComponent(`Hi! I want to make a PayPal payment of $${paypalAmount} (includes 3% PayPal fee)\n\nOriginal Amount: $${amount}\nPayPal Fee: $${paypalFee}\nTotal to Pay: $${paypalAmount}\n\nPlease send me the PayPal payment link.`)}`}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-payment-large paypal-btn"
@@ -149,7 +149,7 @@ function InternationalPayment({ amount }) {
               </div>
 
               <a 
-                href={`https://wa.me/917982851113?text=${encodeURIComponent(`Hi! I want to make a Binance Pay payment of $${amount}\n\nBinance Pay ID: ${binanceId}\nAmount: $${amount} USDT\n\nPlease send me the payment QR code or link.`)}`}
+                href={`https://wa.me/919511335264?text=${encodeURIComponent(`Hi! I want to make a Binance Pay payment of $${amount}\n\nBinance Pay ID: ${binanceId}\nAmount: $${amount} USDT\n\nPlease send me the payment QR code or link.`)}`}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-payment-large binance-btn"
