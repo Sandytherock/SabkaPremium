@@ -128,7 +128,7 @@ export const plansData = {
   ],
   gemini: [
     {
-      title: '1 Month Gemini Ultra (Veo 3)',
+      title: 'Gemini Ultra (Veo 3)',
       tag: 'New • Ultra Plan',
       popular: true,
       features: [
@@ -138,29 +138,13 @@ export const plansData = {
         '📚 NotebookLM Max limits unlocked',
         '📄 Gemini in Gmail & Docs integration',
         '☁ 30TB Google Cloud Storage',
+        '⏱️ 25 Days Validity',
+        '🛡️ 20 Days Replacement Warranty',
         '🔐 Private account • Best price in market'
       ],
-      price: '₹2499',
+      price: '₹1999',
       originalPrice: '₹19,999',
       plan: 'Gemini-Ultra-1M-999',
-      note: '⏰ Limited Offer – Only 9 slots. Special discount price for our community 🔥'
-    },
-    {
-      title: '1 Month Gemini Ultra (Veo 3) ON MAIL',
-      tag: 'New • Ultra Plan',
-      features: [
-        '🤖 Gemini 2.5 Pro + Veo 3 access',
-        '🤖 Antigravity will be there',
-        '🎬 Flow with Veo 3 – 1200+ videos/month',
-        '🧠 45,000 monthly AI credits (Veo 3)',
-        '📚 NotebookLM Max limits unlocked',
-        '📄 Gemini in Gmail & Docs integration',
-        '☁ 30TB Google Cloud Storage',
-        '🔐 ON Mail Activation • Best price in market'
-      ],
-      price: '₹1499',
-      originalPrice: '₹19,999',
-      plan: 'Gemini-Ultra-on-mail-1M-1499',
       note: '⏰ Limited Offer – Only 9 slots. Special discount price for our community 🔥'
     },
     {
@@ -267,6 +251,7 @@ export const plansData = {
       title: 'Cursor AI Pro – 1 Month',
       tag: '❌ Out of Stock',
       outOfStock: true,
+      disabled: true,
       features: [
         '🧠 GPT-4 / Claude / Latest AI Models',
         '💻 AI-powered code editor (VS Code based)',
@@ -279,12 +264,13 @@ export const plansData = {
       ],
       price: '₹1499',
       plan: 'CursorAI-1M-1499',
-      note: '⏳ Valid for 30 days • Email activation • Limited slots'
+      note: '❌ Currently Unavailable • Will restock soon'
     },
     {
       title: 'Cursor AI Pro Plus – 1 Month',
       tag: '❌ Out of Stock',
       outOfStock: true,
+      disabled: true,
       features: [
         '🔥 Everything in Pro',
         '🚀 Higher usage limits',
@@ -297,7 +283,7 @@ export const plansData = {
       ],
       price: '₹2999',
       plan: 'CursorAI-Plus-1M-2999',
-      note: '⏳ Valid for 30 days • Priority delivery • Limited availability'
+      note: '❌ Currently Unavailable • Will restock soon'
     }
   ],
   lovable: [
@@ -483,7 +469,9 @@ export const plansData = {
   elevenlabs: [
     {
       title: 'ElevenLabs Creator - 1 Year',
-      tag: '🔥 Best Value',
+      tag: '❌ Out of Stock',
+      outOfStock: true,
+      disabled: true,
       features: [
         '🎤 1,10,000 Credits Per Month',
         '🔊 High-Quality AI Voices (30+ languages)',
@@ -498,11 +486,13 @@ export const plansData = {
       price: '₹5999',
       originalPrice: '₹35,988',
       plan: 'ElevenLabs-Creator-1Y-5999',
-      popular: true,
+      popular: false,
+      note: '❌ Currently Unavailable • Will restock soon'
     },
     {
       title: 'ElevenLabs Creator - 3 Months',
       tag: '❌ Out of Stock',
+      outOfStock: true,
       features: [
         '🎤 1,10,000 Characters Per Month',
         '🔊 High-Quality AI Voices (30+ languages)',
@@ -624,39 +614,6 @@ export const plansData = {
       price: '₹99',
       plan: 'YouTube-Family-1M-99',
       popular: true
-    },
-    {
-      title: 'Family – 3 Months',
-      features: [
-        '👨‍👩‍👧‍👦 Shared Family Access',
-        '📺 Ad-Free YouTube & Music',
-        '📥 Background Play + Downloads',
-        '🔐 Premium Family Account'
-      ],
-      price: '₹199',
-      plan: 'YouTube-Family-3M-199'
-    },
-    {
-      title: 'Family – 6 Months',
-      features: [
-        '👨‍👩‍👧‍👦 Shared Family Access',
-        '📺 Ad-Free YouTube & Music',
-        '📥 Background Play + Downloads',
-        '🔐 Premium Family Account'
-      ],
-      price: '₹369',
-      plan: 'YouTube-Family-6M-369'
-    },
-    {
-      title: 'Family – 12 Months',
-      features: [
-        '👨‍👩‍👧‍👦 Shared Family Access',
-        '📺 Ad-Free YouTube & Music',
-        '📥 Background Play + Downloads',
-        '🔐 Premium Family Account'
-      ],
-      price: '₹669',
-      plan: 'YouTube-Family-12M-669'
     }
   ],
   spotify: [
@@ -1067,9 +1024,10 @@ export const plansData = {
   higgsfield: [
     {
       title: 'Higgsfield AI Ultimate KO Plan',
-      tag: '✅ Back in Stock',
+      tag: '❌ Out of Stock',
       popular: false,
-      outOfStock: false,
+      outOfStock: true,
+      disabled: true,
       logo: '/assets/higgsfield-ai-logo.png',
       features: [
         '🎬 AI Video Generation & Editing',
@@ -1083,13 +1041,14 @@ export const plansData = {
       ],
       price: '₹2299',
       plan: 'Higgsfield-Ultimate-2299',
-      note: '⚡ Only 2 left • Ultimate Plan • Best for professional creators 🎥'
+      note: '❌ Currently Unavailable • Will restock soon'
     },
     {
       title: 'Higgsfield AI Creator Plan',
       tag: '❌ Out of Stock',
       accent: false,
       outOfStock: true,
+      disabled: true,
       logo: '/assets/higgsfield-ai-logo.png',
       features: [
         '🎬 All Ultimate Features',
@@ -1104,7 +1063,7 @@ export const plansData = {
       ],
       price: '₹3499',
       plan: 'Higgsfield-Creator-3499',
-      note: '⏳ Creator Plan • Maximum features & limits 🔥'
+      note: '❌ Currently Unavailable • Will restock soon'
     }
   ],
   openart: [
@@ -1207,8 +1166,10 @@ export const plansData = {
   emergent: [
     {
       title: 'Emergent Standard Plan - 1 Year',
-      tag: '🚀 Analytics Pro',
-      popular: true,
+      tag: '❌ Out of Stock',
+      popular: false,
+      outOfStock: true,
+      disabled: true,
       logo: '/assets/emergent-logo.png',
       features: [
         '🔐 Activated on Your Own Email',
@@ -1227,7 +1188,7 @@ export const plansData = {
       price: '₹3999',
       originalPrice: '₹25,000',
       plan: 'Emergent-Standard-1Y-3999',
-      note: '⏳ 1 Year Access • AI Product Analytics (Emergent.sh) • Private Email Activation • Instant Delivery 🚀'
+      note: '❌ Currently Unavailable • Will restock soon'
     }
   ],
   tradingview: [

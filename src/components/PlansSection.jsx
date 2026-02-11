@@ -125,8 +125,8 @@ function PlansSection() {
                     </div>
                   )}
 
-                  <div className={`grid grid-cols-${Math.min(section.plans.length || 1, 4)}`}>
-                    {section.plans.map((plan, index) => (
+                  <div className={`grid grid-cols-${Math.min(section.plans.filter(p => p.title).length || 1, 4)}`}>
+                    {section.plans.filter(plan => plan.title).map((plan, index) => (
                       <article
                         key={`${sIndex}-${index}`}
                         className={`card ${plan.popular ? 'popular' : ''} ${plan.accent ? 'accent' : ''}`}
