@@ -1364,6 +1364,31 @@ export const plansData = {
       plan: 'TradingView-Premium-1M-1499',
       note: '⏳ 1 Month Access • Full Premium Features • Best Value • Instant Delivery 🚀'
     }
+  ],
+  railway: [
+    {
+      title: 'Railway Pro - 1 Year',
+      tag: '🚀 Cloud Platform',
+      popular: true,
+      logo: '/assets/railway-logo.png',
+      features: [
+        '💰 $20 Monthly Usage Credits Included (Every Month)',
+        '⚡ Up to 1,000 vCPU / 1 TB RAM per service',
+        '🔥 Up to 50 replicas, at 32 vCPU / 32 GB RAM per replica',
+        '💾 Up to 1 TB storage',
+        '🌍 Concurrent global regions',
+        '👥 Unlimited workspace seats included',
+        '🎯 Priority support',
+        '🔐 Granular access control',
+        '🚀 Perfect for professional developers & teams',
+        '📦 Ship production applications',
+        '⚡ Pay only for extra resource usage after credits',
+        '💎 Total $240 credits over 12 months'
+      ],
+      price: '₹3999',
+      plan: 'Railway-Pro-1Y-3999',
+      note: '⏳ 1 Year Access • $20 monthly credits • Best for production apps 🚀'
+    }
   ]
 }
 
@@ -1379,6 +1404,7 @@ export const tabs = [
   { id: 'notion', label: 'Notion AI', logo: '/assets/notion-logo.png' },
   { id: 'emergent', label: 'Emergent', logo: '/assets/emergent-logo.png' },
   { id: 'tradingview', label: 'TradingView', logo: '/assets/tradingview-logo.png' },
+  { id: 'railway', label: 'Railway', logo: '/assets/railway-logo.png' },
   { id: 'elevenlabs', label: 'ElevenLabs', logo: '/assets/elevenlabs-logo.png' },
   { id: 'capcut', label: 'CapCut Pro', logo: '/assets/capcut-logo.png' },
   { id: 'descript', label: 'Descript AI', logo: '/assets/Descript-logo.png' },
