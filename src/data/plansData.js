@@ -129,8 +129,10 @@ export const plansData = {
   gemini: [
     {
       title: 'Gemini Ultra (Veo 3)',
-      tag: 'New • Ultra Plan',
-      popular: true,
+      tag: '❌ Out of Stock',
+      popular: false,
+      outOfStock: true,
+      disabled: true,
       features: [
         '🤖 Gemini 2.5 Pro + Veo 3 access',
         '🎬 Flow with Veo 3 – 1200+ videos/month',
@@ -145,7 +147,7 @@ export const plansData = {
       price: '₹2499',
       originalPrice: '₹19,999',
       plan: 'Gemini-Ultra-1M-999',
-      note: '⏰ Limited Offer – Only 9 slots. Special discount price for our community 🔥'
+      note: '❌ Currently Unavailable • Will restock soon'
     },
     {
       title: 'Gemini AI Pro + 2TB Google Storage – 1 Month',
@@ -419,7 +421,7 @@ export const plansData = {
   ],
   claude: [
     {
-      title: 'Claude Code 20x MAX – 1 Month Access',
+      title: 'Multi-AI Code Access – GPT-5 + Claude Sonnet 4.5 (20x Usage)',
       sectionHeader: '🚀 Multi-AI Access Plans (Not Official Claude)',
       sectionNote: '⚠️ Alternative access methods - we provide API/third-party access to Claude models',
       features: [
