@@ -4,6 +4,9 @@
  * Handles SSR compatibility and ensures fbq exists before calling
  */
 
+const META_PIXEL_ID = '1292427535753114'
+const META_PIXEL_SCRIPT_SRC = 'https://connect.facebook.net/en_US/fbevents.js'
+
 /**
  * Check if Meta Pixel is available
  * @returns {boolean}
@@ -13,11 +16,60 @@ export const isPixelAvailable = () => {
 }
 
 /**
+ * Initialize Meta Pixel in JS as a fallback for pages where static snippet
+ * may not be executed or is removed during template changes.
+ * @returns {boolean}
+ */
+export const initializeMetaPixel = () => {
+  if (typeof window === 'undefined') return false
+
+  if (window.__META_PIXEL_INITIALIZED__) {
+    return true
+  }
+
+  if (typeof window.fbq !== 'function') {
+    // Official Meta bootstrap with queued calls before script loads.
+    const fbq = function () {
+      if (fbq.callMethod) {
+        fbq.callMethod.apply(fbq, arguments)
+      } else {
+        fbq.queue.push(arguments)
+      }
+    }
+    fbq.queue = []
+    fbq.loaded = true
+    fbq.version = '2.0'
+    fbq.push = fbq
+    window.fbq = fbq
+    window._fbq = fbq
+
+    const existingScript = document.querySelector(`script[src="${META_PIXEL_SCRIPT_SRC}"]`)
+    if (!existingScript) {
+      const script = document.createElement('script')
+      script.async = true
+      script.src = META_PIXEL_SCRIPT_SRC
+      document.head.appendChild(script)
+    }
+  }
+
+  try {
+    window.fbq('init', META_PIXEL_ID)
+    window.__META_PIXEL_INITIALIZED__ = true
+    return true
+  } catch (error) {
+    console.error('[Meta Pixel] Initialization error:', error)
+    return false
+  }
+}
+
+/**
  * Track Meta Pixel event
  * @param {string} eventName - Event name (e.g., 'PageView', 'ViewContent', 'Purchase')
  * @param {object} eventData - Optional event parameters
  */
 export const trackPixelEvent = (eventName, eventData = {}) => {
+  initializeMetaPixel()
+
   if (isPixelAvailable()) {
     try {
       window.fbq('track', eventName, eventData)

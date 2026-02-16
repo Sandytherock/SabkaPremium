@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { CurrencyProvider } from './context/CurrencyContext'
 import PixelTracker from './components/PixelTracker'
 import GoogleAnalytics from './components/GoogleAnalytics'
+import { initializeMetaPixel } from './lib/metaPixel'
 import Home from './pages/Home'
 import Order from './pages/Order'
 import Reviews from './pages/Reviews'
@@ -42,6 +43,10 @@ function ScrollToTop() {
 }
 
 function App() {
+  useEffect(() => {
+    initializeMetaPixel()
+  }, [])
+
   return (
     <CurrencyProvider>
       <Router>
