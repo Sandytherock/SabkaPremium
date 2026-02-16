@@ -87,7 +87,7 @@ export const planMap = {
   "Claude-Sonnet-4.5-3M-2999": { name: "Claude Sonnet 4.5 - 3 Months Unlimited", amount: "2999", logo: "/assets/claude-logo.png" },
   "Claude-Pro-1M-1499": { name: "Claude Pro - 1 Month", amount: "1399", logo: "/assets/claude-logo.png" },
   "Claude-Pro-Max5-1M-6500": { name: "Claude Pro Max 5 - 1 Month", amount: "6500", logo: "/assets/claude-logo.png" },
-  "Claude-Pro-Max20-1M-9000": { name: "Claude Pro Max 20 - 1 Month", amount: "9000", logo: "/assets/claude-logo.png" },
+  "Claude-Pro-Max20-1M-10999": { name: "Claude Pro Max 20 - 1 Month", amount: "10999", logo: "/assets/claude-logo.png" },
   
   // Cursor AI Plans
   "CursorAI-1M-999": { name: "Cursor AI Pro - 1 Month", amount: "1299", logo: "/assets/cursor-logo.png" },

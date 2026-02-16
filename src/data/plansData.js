@@ -496,8 +496,7 @@ export const plansData = {
     },
     {
       title: 'Claude Pro Max 20 – 1 Month',
-      tag: '❌ Out of Stock',
-      disabled: true,
+      tag: '20x Power',
       features: [
         '🚀 20x usage limits vs standard Claude Pro',
         '🏆 Priority access to Claude 4.5 Opus for complex reasoning',
@@ -507,9 +506,9 @@ export const plansData = {
         '🔐 Private account',
         '👨‍💼 Enterprise-level capacity'
       ],
-      price: '₹9000',
-      plan: 'Claude-Pro-Max20-1M-9000',
-      note: '❌ Currently Unavailable • Will restock soon'
+      price: '₹10,999',
+      plan: 'Claude-Pro-Max20-1M-10999',
+      note: '⏳ 1 Month Access • Instant Activation'
     }
   ],
   perplexity: [
