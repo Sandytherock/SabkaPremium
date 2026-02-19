@@ -22,7 +22,7 @@ function WhatsAppCommunityBanner() {
           <span className="banner-divider">•</span>
           <span className="banner-item">
             <span className="icon">✅</span>
-            <strong>100% Verified Service</strong> - Replacement Only if Issue, No Refund
+            <strong>100% Verified Service</strong> - 100% Replacement Policy
           </span>
           <span className="banner-divider">•</span>
           {/* Duplicate for seamless loop */}
@@ -43,7 +43,7 @@ function WhatsAppCommunityBanner() {
           <span className="banner-divider">•</span>
           <span className="banner-item">
             <span className="icon">✅</span>
-            <strong>100% Verified Service</strong> - Replacement Only if Issue, No Refund
+            <strong>100% Verified Service</strong> - 100% Replacement Policy
           </span>
         </div>
       </div>

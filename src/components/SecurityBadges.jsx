@@ -25,7 +25,7 @@ function SecurityBadges() {
           <div className="badge-item">
             <div className="badge-icon">✅</div>
             <div className="badge-text">
-              <strong>No Refund</strong>
+              <strong>100% Replacement</strong>
               <span>Policy</span>
             </div>
           </div>
@@ -34,7 +34,7 @@ function SecurityBadges() {
             <div className="badge-icon">🛡️</div>
             <div className="badge-text">
               <strong>Support Help</strong>
-              <span>Replacement Only</span>
+              <span>No Refund Policy</span>
             </div>
           </div>
 

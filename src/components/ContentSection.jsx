@@ -32,11 +32,11 @@ function ContentSection() {
             </div>
             <div>
               <h3 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '10px', color: '#4f46e5' }}>
-                📌 Replacement Only Policy
+                📌 100% Replacement Policy
               </h3>
               <p style={{ color: '#6b7280', lineHeight: '1.6' }}>
                 We provide support for account-access issues during validity. Lifetime support for all purchases.
-                In case of any issues, only replacement will be provided. No refund.
+                In case of any issues, only replacement will be provided. No refund policy applies.
               </p>
             </div>
           </div>

@@ -60,7 +60,7 @@ function Footer() {
           <ul className="ticks">
             <li>✅ 1000+ Happy Customers</li>
             <li>✅ Instant Delivery</li>
-            <li>✅ Replacement Only in Case of Issue</li>
+            <li>✅ 100% Replacement Policy</li>
             <li>✅ No Refund Policy</li>
             <li>🔒 Secure UPI Payments</li>
           </ul>
