@@ -86,7 +86,7 @@ function ExitIntentPopup() {
             ✅ Instant Delivery in 1-6 Hours
           </div>
           <div className="benefit-item">
-            ✅ 100% Working Guarantee
+            ✅ Support Assistance Available
           </div>
           <div className="benefit-item">
             ✅ 24/7 Customer Support
@@ -111,3 +111,4 @@ function ExitIntentPopup() {
 }
 
 export default ExitIntentPopup
+

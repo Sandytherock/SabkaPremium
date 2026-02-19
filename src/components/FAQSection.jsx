@@ -13,9 +13,7 @@ function FAQSection() {
           <details>
             <summary>🔄 What if the account doesn't work?</summary>
             <p>
-              We offer a <strong>100% Replacement Guarantee</strong>. If you face any login issues or service problems, 
-              we'll provide an instant replacement. Simply message us on Instagram, Telegram, or WhatsApp 
-              and we'll resolve the issue within <strong>24-48 hours</strong>.
+              In case of any issues, <strong>only replacement will be provided. No refund</strong>. If you face login issues or service problems, message us on Instagram, Telegram, or WhatsApp and we'll help within <strong>24-48 hours</strong>.
             </p>
           </details>
 
@@ -40,11 +38,9 @@ function FAQSection() {
           </details>
 
           <details>
-            <summary>💰 What is your refund policy?</summary>
+            <summary>💰 What is your refund/return policy?</summary>
             <p>
-              Our policy is: <strong>No Refunds, Only Replacements</strong>. If an account stops working, 
-              we provide a replacement. Refunds are only issued in extreme cases when we cannot deliver 
-              the service. Please carefully select your plan, and if you have doubts, DM us on Instagram first.
+              Our policy is: <strong>In case of any issues, only replacement will be provided. No refund.</strong> Please carefully select your plan, and if you have doubts, DM us on Instagram first.
             </p>
           </details>
 
@@ -74,7 +70,7 @@ function FAQSection() {
             <p>
               The validity matches your selected plan. For example:
               <strong> 1 Month = 30 days</strong>, <strong>3 Months = 90 days</strong>, etc. 
-              If any issues arise during this period, you'll get a replacement, but validity doesn't extend. 
+              If any issues arise during this period, contact support for troubleshooting. Validity does not extend. 
               You'll receive a renewal reminder before expiry.
             </p>
           </details>
@@ -105,7 +101,7 @@ function FAQSection() {
             <p>
               We <strong>resell premium accounts</strong> - this is a <strong>grey market practice</strong> 
               (not illegal, but not officially endorsed by service providers). Thousands of people use such services safely. 
-              We provide responsible service with a replacement guarantee. 
+              We provide responsible service with clear support terms. 
               Your payment is secure via UPI.
             </p>
           </details>
@@ -116,3 +112,4 @@ function FAQSection() {
 }
 
 export default FAQSection
+

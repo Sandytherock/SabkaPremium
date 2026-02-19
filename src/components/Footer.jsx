@@ -59,8 +59,9 @@ function Footer() {
           <h4>We're Trusted!</h4>
           <ul className="ticks">
             <li>✅ 1000+ Happy Customers</li>
-            <li>✅ Instant Delivery Guaranteed</li>
-            <li>✅ 100% Replacement Guarantee</li>
+            <li>✅ Instant Delivery</li>
+            <li>✅ Replacement Only in Case of Issue</li>
+            <li>✅ No Refund Policy</li>
             <li>🔒 Secure UPI Payments</li>
           </ul>
         </div>
@@ -91,3 +92,4 @@ function Footer() {
 }
 
 export default Footer
+

@@ -25,16 +25,16 @@ function SecurityBadges() {
           <div className="badge-item">
             <div className="badge-icon">✅</div>
             <div className="badge-text">
-              <strong>100% Working</strong>
-              <span>Guarantee</span>
+              <strong>No Refund</strong>
+              <span>Policy</span>
             </div>
           </div>
 
           <div className="badge-item">
             <div className="badge-icon">🛡️</div>
             <div className="badge-text">
-              <strong>Free Replace</strong>
-              <span>if Issue</span>
+              <strong>Support Help</strong>
+              <span>Replacement Only</span>
             </div>
           </div>
 
@@ -60,3 +60,4 @@ function SecurityBadges() {
 }
 
 export default SecurityBadges
+

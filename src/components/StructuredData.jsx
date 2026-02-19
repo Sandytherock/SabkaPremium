@@ -160,7 +160,7 @@ const StructuredData = () => {
           name: 'Is it safe to buy from SabkaPremium?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, absolutely! We have 5000+ satisfied customers. We provide replacement guarantee and 24/7 customer support.'
+            text: 'Yes, absolutely! We have 5000+ satisfied customers. In case of any issues, only replacement will be provided. No refund.'
           }
         },
         {
@@ -173,10 +173,10 @@ const StructuredData = () => {
         },
         {
           '@type': 'Question',
-          name: 'Do you provide replacement if account stops working?',
+          name: 'What is your refund policy?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, we provide free replacement for the entire subscription period if your account faces any issues.'
+            text: 'In case of any issues, only replacement will be provided. No refund.'
           }
         }
       ]
@@ -214,3 +214,4 @@ const StructuredData = () => {
 }
 
 export default StructuredData
+

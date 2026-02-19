@@ -32,11 +32,11 @@ function ContentSection() {
             </div>
             <div>
               <h3 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '10px', color: '#4f46e5' }}>
-                🔄 Replacement Guarantee
+                📌 Replacement Only Policy
               </h3>
               <p style={{ color: '#6b7280', lineHeight: '1.6' }}>
-                Free replacement if your account stops working. Lifetime support for all purchases. 
-                100% money-back guarantee if not satisfied.
+                We provide support for account-access issues during validity. Lifetime support for all purchases.
+                In case of any issues, only replacement will be provided. No refund.
               </p>
             </div>
           </div>
@@ -177,8 +177,8 @@ function ContentSection() {
                 What if my account stops working?
               </h3>
               <p style={{ color: '#6b7280', lineHeight: '1.6' }}>
-                We provide free replacement for the entire subscription period. If any issue occurs, contact us 
-                on WhatsApp and we'll replace your account within 24 hours.
+                We provide support for account-access issues during the subscription period. If any issue occurs, contact us 
+                on WhatsApp for troubleshooting support.
               </p>
             </div>
           </div>

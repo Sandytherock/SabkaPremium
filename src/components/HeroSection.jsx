@@ -39,8 +39,8 @@ function HeroSection() {
                 <i className="fa-solid fa-shield-halved"></i>
               </div>
               <div className="trust-badge-text">
-                <div className="trust-badge-number">100%</div>
-                <div className="trust-badge-label">Replacement Guarantee</div>
+                <div className="trust-badge-number">Policy</div>
+                <div className="trust-badge-label">Replacement Only</div>
               </div>
             </div>
             
@@ -57,7 +57,7 @@ function HeroSection() {
         </div>
         <div className="hero-visual">
           <img src="/assets/ChatGPTAppIllustration.png" alt="Premium services illustration" loading="lazy" />
-          <div className="floating-badge" aria-hidden="true">✅ Replacement Guaranteed</div>
+          <div className="floating-badge" aria-hidden="true">✅ Issue? Replacement Only, No Refund</div>
         </div>
       </div>
     </section>

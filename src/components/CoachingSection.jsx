@@ -74,7 +74,7 @@ function CoachingSection() {
                   <li>📲 <strong>Instagram, Reels and DM system</strong> to get consistent leads</li>
                   <li>📋 Ready-made <strong>scripts, replies and templates</strong> for DMs, stories and highlights</li>
                   <li>⚙️ Delivery system – how to deliver accounts fast and safely to clients</li>
-                  <li>🧠 Avoid common mistakes like bans, refunds and angry customers</li>
+                  <li>🧠 Avoid common mistakes like bans, policy disputes and angry customers</li>
                   <li>🤝 <strong>3 months chat support</strong> to implement everything step by step</li>
                 </ul>
 
@@ -178,9 +178,9 @@ function CoachingSection() {
             </details>
 
             <details>
-              <summary>Is there a refund if I can't attend?</summary>
+              <summary>Is there a refund or return if I can't attend?</summary>
               <p>
-                Normally, <strong>no refunds</strong>.
+                In case of any issues, <strong>only replacement will be provided. No refund.</strong>
                 But if you inform me in advance, we will <strong>reschedule your slot</strong>.
               </p>
             </details>
@@ -192,3 +192,4 @@ function CoachingSection() {
 }
 
 export default CoachingSection
+
