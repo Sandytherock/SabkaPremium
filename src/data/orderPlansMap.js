@@ -163,6 +163,9 @@ export const planMap = {
   // Railway Plans
   "Railway-Pro-1Y-3999": { name: "Railway Pro - 1 Year", amount: "3999", logo: "/assets/railway-logo.png" },
   
+  // Grok AI Plans
+  "Grok-1M-399": { name: "SuperGrok - 1 Month", amount: "399", logo: "/assets/grok_logo.png" },
+  
   // Combo Deals
   "Student Pack": { name: "Student Pack (ChatGPT + YouTube)", amount: "249", logo: "/assets/chatgpt-logo.png" },
   "Entertainment Bundle": { name: "Entertainment Bundle (Netflix + Prime + YouTube + Zee5 + Sony LIV)", amount: "449", logo: "/assets/netflix-logo.png" },

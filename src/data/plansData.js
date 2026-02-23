@@ -1,4 +1,4 @@
-// All product plans data
+ï»¿// All product plans data
 export const plansData = {
   chatgpt: [
     {
@@ -7,8 +7,8 @@ export const plansData = {
         '? Valid for 90 Days',
         '?? Private Login',
         '?? All Pro Tools Unlocked',
-        '??? DALL·E, GPT-5 Pro, Sora, Whisper',
-        '?? Shared Access (8–10 members)',
+        '??? DALLï¿½E, GPT-5 Pro, Sora, Whisper',
+        '?? Shared Access (8ï¿½10 members)',
         '?? You Will get Some Limitations And Downtime',
         '?? Phone + Desktop Access'
       ],
@@ -20,8 +20,8 @@ export const plansData = {
       features: [
         '?? 365 Days Premium Access',
         '?? Private & Secure Login',
-        '??? DALL·E, GPT-5 Pro, Sora, Whisper',
-        '?? Shared Access (8–10 members)',
+        '??? DALLï¿½E, GPT-5 Pro, Sora, Whisper',
+        '?? Shared Access (8ï¿½10 members)',
         '?? You Will get Some Limitations And Downtime',
         '?? Phone + Desktop Access'
       ],
@@ -29,12 +29,12 @@ export const plansData = {
       plan: 'ChatGPT-12M-1399'
     },
     {
-      title: '3 Month (3–4 Members)',
+      title: '3 Month (3ï¿½4 Members)',
       features: [
         '? Valid for 90 Days',
         '?? Private Login',
-        '??? DALL·E, GPT-5 Pro, Sora',
-        '?? Shared Access (3–4 members)',
+        '??? DALLï¿½E, GPT-5 Pro, Sora',
+        '?? Shared Access (3ï¿½4 members)',
         '?? No Limitations And NO Downtime',
         '?? Phone + Desktop Access'
       ],
@@ -43,12 +43,12 @@ export const plansData = {
       popular: true
     },
     {
-      title: '12 Month (3–4 Members)',
+      title: '12 Month (3ï¿½4 Members)',
       features: [
         '?? 365 Days Premium Access',
         '?? Private & Secure Login',
-        '??? DALL·E, GPT-5 Pro, Sora',
-        '?? Shared Access (3–4 members)',
+        '??? DALLï¿½E, GPT-5 Pro, Sora',
+        '?? Shared Access (3ï¿½4 members)',
         '?? No Limitations And NO Downtime',
         '?? Phone + Desktop Access'
       ],
@@ -58,9 +58,9 @@ export const plansData = {
     {
       title: '1 Month Private Access',
       features: [
-        '? Unlimited GPT-5 Pro – Business Teams',
+        '? Unlimited GPT-5 Pro ï¿½ Business Teams',
         '?? Activation on Your Email',
-        '??? DALL·E, Sora, Whisper',
+        '??? DALLï¿½E, Sora, Whisper',
         '?? No Limitations And NO Downtime',
         '?? No Device Limit'
       ],
@@ -135,30 +135,30 @@ export const plansData = {
       disabled: true,
       features: [
         '?? Gemini 2.5 Pro + Veo 3 access',
-        '?? Flow with Veo 3 – 1200+ videos/month',
+        '?? Flow with Veo 3 ï¿½ 1200+ videos/month',
         '?? 45,000 monthly AI credits (Veo 3)',
         '?? NotebookLM Max limits unlocked',
         '?? Gemini in Gmail & Docs integration',
         '? 30TB Google Cloud Storage',
         '?? 25 Days Validity',
         '??? Support Assistance During Validity',
-        '?? Private account • Best price in market'
+        '?? Private account ï¿½ Best price in market'
       ],
       price: '?2499',
       originalPrice: '?19,999',
       plan: 'Gemini-Ultra-1M-999',
-      note: '? Currently Unavailable • Will restock soon'
+      note: '? Currently Unavailable ï¿½ Will restock soon'
     },
     {
-      title: 'Gemini AI Pro + 2TB Google Storage – 1 Month',
+      title: 'Gemini AI Pro + 2TB Google Storage ï¿½ 1 Month',
       tag: '? Best Value',
       popular: true,
       features: [
-        '?? Gemini 2.5 Pro – Smartest AI',
-        '?? Veo 3 – AI Video Generator',
-        '?? Flow – Cinematic AI Filmmaker (1000 Flow Credits)',
-        '??? Whisk – Image-to-Video AI',
-        '?? NotebookLM – Research Assistant',
+        '?? Gemini 2.5 Pro ï¿½ Smartest AI',
+        '?? Veo 3 ï¿½ AI Video Generator',
+        '?? Flow ï¿½ Cinematic AI Filmmaker (1000 Flow Credits)',
+        '??? Whisk ï¿½ Image-to-Video AI',
+        '?? NotebookLM ï¿½ Research Assistant',
         '?? Gemini in Gmail, Docs & More',
         '?? 2TB Google Storage',
         '?? Activation on Your Email'
@@ -166,17 +166,17 @@ export const plansData = {
       price: '?199',
       originalPrice: '?1,199',
       plan: 'Gemini-1M-199',
-      note: '? Validity: 1 Month • 1000 Flow credits included • Best deal ??'
+      note: '? Validity: 1 Month ï¿½ 1000 Flow credits included ï¿½ Best deal ??'
     },
     {
-      title: 'Gemini AI Pro + 2TB\n– 1 Year',
+      title: 'Gemini AI Pro + 2TB\nï¿½ 1 Year',
       tag: '? Limited-Time Offer',
       features: [
-        '?? Gemini 2.5 Pro – Smartest AI',
-        '?? Veo 3 – AI Video Generator',
-        '?? Flow – Cinematic AI Filmmaker (1000 Flow Credits Per Month)',
-        '??? Whisk – Image-to-Video AI',
-        '?? NotebookLM – Research Assistant',
+        '?? Gemini 2.5 Pro ï¿½ Smartest AI',
+        '?? Veo 3 ï¿½ AI Video Generator',
+        '?? Flow ï¿½ Cinematic AI Filmmaker (1000 Flow Credits Per Month)',
+        '??? Whisk ï¿½ Image-to-Video AI',
+        '?? NotebookLM ï¿½ Research Assistant',
         '?? Gemini in Gmail, Docs & More',
         '?? 2TB Google Storage',
         '?? Activation on Your Email'
@@ -184,7 +184,7 @@ export const plansData = {
       price: '?1999',
       originalPrice: '?19,500',
       plan: 'Gemini-1Y-1999',
-      note: '? Validity: 12 Months • 1000 Flow credits/month • Limited slots ??'
+      note: '? Validity: 12 Months ï¿½ 1000 Flow credits/month ï¿½ Limited slots ??'
     }
   ],
   capcut: [
@@ -270,7 +270,7 @@ export const plansData = {
       price: '?999',
       originalPrice: '?2,999',
       plan: 'ChatGLM-1M-999',
-      note: '? Best alternative to Veo 3 at 60% lower price • Natural sound only (no human voice) ??'
+      note: '? Best alternative to Veo 3 at 60% lower price ï¿½ Natural sound only (no human voice) ??'
     },
     {
       title: 'ChatGLM Pro - 1 Month Private',
@@ -294,7 +294,7 @@ export const plansData = {
       price: '?1999',
       originalPrice: '?4,999',
       plan: 'ChatGLM-1M-1999',
-      note: '? Best alternative to Veo 3 with private access • Natural sound only (no human voice) ??'
+      note: '? Best alternative to Veo 3 with private access ï¿½ Natural sound only (no human voice) ??'
     },
     {
       title: 'ChatGLM Pro - 3 Months Shared',
@@ -317,12 +317,12 @@ export const plansData = {
       price: '?1999',
       originalPrice: '?8,997',
       plan: 'ChatGLM-3M-2499',
-      note: '? Best Veo 3 alternative for 3 months • Natural sound only (no human voice) • Best value ??'
+      note: '? Best Veo 3 alternative for 3 months ï¿½ Natural sound only (no human voice) ï¿½ Best value ??'
     }
   ],
   cursor: [
     {
-      title: 'Cursor AI Pro – 1 Month',
+      title: 'Cursor AI Pro ï¿½ 1 Month',
       tag: '? In Stock',
       popular: true,
       features: [
@@ -337,10 +337,10 @@ export const plansData = {
       ],
       price: '?1299',
       plan: 'CursorAI-1M-999',
-      note: '? 1 Month Access • Instant Activation'
+      note: '? 1 Month Access ï¿½ Instant Activation'
     },
     {
-      title: 'Cursor AI Pro Plus – 1 Month',
+      title: 'Cursor AI Pro Plus ï¿½ 1 Month',
       tag: '? Out of Stock',
       outOfStock: true,
       disabled: true,
@@ -356,12 +356,12 @@ export const plansData = {
       ],
       price: '?2999',
       plan: 'CursorAI-Plus-1M-2999',
-      note: '? Currently Unavailable • Will restock soon'
+      note: '? Currently Unavailable ï¿½ Will restock soon'
     }
   ],
   lovable: [
     {
-      title: 'Lovable AI Pro – 1 Month',
+      title: 'Lovable AI Pro ï¿½ 1 Month',
       tag: 'Quick Start',
       popular: true,
       logo: '/assets/lovable-logo.jpg',
@@ -378,10 +378,10 @@ export const plansData = {
       ],
       price: '?499',
       plan: 'LovableAI-1M-499',
-      note: '? Valid for 1 month • Email activation • Try before committing long-term'
+      note: '? Valid for 1 month ï¿½ Email activation ï¿½ Try before committing long-term'
     },
     {
-      title: 'Lovable AI Pro – 2 Months',
+      title: 'Lovable AI Pro ï¿½ 2 Months',
       tag: 'Best for UI Builders',
       logo: '/assets/lovable-logo.jpg',
       features: [
@@ -396,10 +396,10 @@ export const plansData = {
       ],
       price: '?799',
       plan: 'LovableAI-2M-799',
-      note: '? Valid for 2 months • Email activation • Limited slots'
+      note: '? Valid for 2 months ï¿½ Email activation ï¿½ Limited slots'
     },
     {
-      title: 'Lovable AI Pro – 1 Year',
+      title: 'Lovable AI Pro ï¿½ 1 Year',
       tag: '? Best Value',
       logo: '/assets/lovable-logo.jpg',
       features: [
@@ -416,18 +416,18 @@ export const plansData = {
       ],
       price: '?3499',
       plan: 'LovableAI-12M-3499',
-      note: '? Valid for 12 months • Email activation • Best deal for long-term projects'
+      note: '? Valid for 12 months ï¿½ Email activation ï¿½ Best deal for long-term projects'
     }
   ],
   claude: [
     {
-      title: 'Multi-AI Code Access – GPT-5 + Claude Sonnet 4.5 (20x Usage)',
+      title: 'Multi-AI Code Access ï¿½ GPT-5 + Claude Sonnet 4.5 (20x Usage)',
       sectionHeader: '?? Multi-AI Access Plans (Not Official Claude)',
       sectionNote: '?? Alternative access methods - we provide API/third-party access to Claude models',
       features: [
         '?? 20x more usage for 30 days',
         '?? Available Models: Claude Sonnet 4.5, Sonnet 4, Haiku 4.5, GPT-5, GPT-5.2, GPT-5.1',
-        '?? Auto Model (Recommended – Smart Switching)',
+        '?? Auto Model (Recommended ï¿½ Smart Switching)',
         '? Fast & stable performance',
         '?? Best for coding, content, analysis & automation',
         '????? CLI / Dev-friendly environment',
@@ -442,11 +442,11 @@ export const plansData = {
       accent: true
     },
     {
-      title: 'Claude Sonnet 4.5 – 3 Months Unlimited',
+      title: 'Claude Sonnet 4.5 ï¿½ 3 Months Unlimited',
       features: [
         '?? 20x more usage for 30 days',
         '?? Available Models: Claude Sonnet 4.5, Sonnet 4, Haiku 4.5, GPT-5, GPT-5.2, GPT-5.1',
-        '?? Auto Model (Recommended – Smart Switching)',
+        '?? Auto Model (Recommended ï¿½ Smart Switching)',
         '? Fast & stable performance',
         '?? Best for coding, content, analysis & automation',
         '????? CLI / Dev-friendly environment',
@@ -460,14 +460,14 @@ export const plansData = {
       accent: true
     },
     {
-      title: 'Claude Pro – 1 Month',
+      title: 'Claude Pro ï¿½ 1 Month',
       sectionHeader: '?? Official Claude Pro Plans',
       popular: true,
       tag: '? In Stock',
       features: [
-        '?? Standard usage limits — Claude Pro access',
+        '?? Standard usage limits ï¿½ Claude Pro access',
         '?? Priority access to Claude 4.5 Opus for complex reasoning',
-        '????? Claude Code Integration — agentic coding tools + CLI',
+        '????? Claude Code Integration ï¿½ agentic coding tools + CLI',
         '?? Larger context windows',
         '? Faster response times',
         '?? Private account',
@@ -475,16 +475,16 @@ export const plansData = {
       ],
       price: '?1399',
       plan: 'Claude-Pro-1M-1499',
-      note: '? 1 Month Access • Instant Activation'
+      note: '? 1 Month Access ï¿½ Instant Activation'
     },
     {
-      title: 'Claude Pro Max 5 – 1 Month',
+      title: 'Claude Pro Max 5 ï¿½ 1 Month',
       tag: '? Out of Stock',
       disabled: true,
       features: [
         '?? 5x usage limits vs standard Claude Pro',
         '?? Priority access to Claude 4.5 Opus for complex reasoning',
-        '????? Claude Code Integration — agentic coding tools + CLI',
+        '????? Claude Code Integration ï¿½ agentic coding tools + CLI',
         '?? Largest context windows',
         '? Fastest response times',
         '?? Private account',
@@ -492,15 +492,15 @@ export const plansData = {
       ],
       price: '?6500',
       plan: 'Claude-Pro-Max5-1M-6500',
-      note: '? Currently Unavailable • Will restock soon'
+      note: '? Currently Unavailable ï¿½ Will restock soon'
     },
     {
-      title: 'Claude Pro Max 20 – 1 Month',
+      title: 'Claude Pro Max 20 ï¿½ 1 Month',
       tag: '20x Power',
       features: [
         '?? 20x usage limits vs standard Claude Pro',
         '?? Priority access to Claude 4.5 Opus for complex reasoning',
-        '????? Claude Code Integration — agentic coding tools + CLI',
+        '????? Claude Code Integration ï¿½ agentic coding tools + CLI',
         '?? Largest context windows',
         '? Fastest response times',
         '?? Private account',
@@ -508,7 +508,7 @@ export const plansData = {
       ],
       price: '?10,999',
       plan: 'Claude-Pro-Max20-1M-10999',
-      note: '? 1 Month Access • Instant Activation'
+      note: '? 1 Month Access ï¿½ Instant Activation'
     }
   ],
   perplexity: [
@@ -558,7 +558,7 @@ export const plansData = {
       originalPrice: '?35,988',
       plan: 'ElevenLabs-Creator-1Y-5999',
       popular: false,
-      note: '? Currently Unavailable • Will restock soon'
+      note: '? Currently Unavailable ï¿½ Will restock soon'
     },
     {
       title: 'ElevenLabs Creator - 3 Months',
@@ -579,7 +579,7 @@ export const plansData = {
       plan: 'ElevenLabs-Creator-3M-2999',
       popular: false,
       disabled: true,
-      note: '? Currently Unavailable • Will restock soon'
+      note: '? Currently Unavailable ï¿½ Will restock soon'
     }
   ],
   prime: [
@@ -628,7 +628,7 @@ export const plansData = {
   ],
   youtube: [
     {
-      title: 'Individual – 1 Month',
+      title: 'Individual ï¿½ 1 Month',
       features: [
         '?? Ad-Free YouTube & Music',
         '?? Background Play + Downloads',
@@ -641,7 +641,7 @@ export const plansData = {
       tag: 'Best Value'
     },
     {
-      title: 'Individual – 3 Months',
+      title: 'Individual ï¿½ 3 Months',
       features: [
         '?? Ad-Free YouTube & Music',
         '?? Background Play + Downloads',
@@ -652,7 +652,7 @@ export const plansData = {
       plan: 'YouTube-Individual-3M-179'
     },
     {
-      title: 'Individual – 6 Months',
+      title: 'Individual ï¿½ 6 Months',
       features: [
         '?? Ad-Free YouTube & Music',
         '?? Background Play + Downloads',
@@ -663,7 +663,7 @@ export const plansData = {
       plan: 'YouTube-Individual-6M-349'
     },
     {
-      title: 'Individual – 12 Months',
+      title: 'Individual ï¿½ 12 Months',
       features: [
         '?? Ad-Free YouTube & Music',
         '?? Background Play + Downloads',
@@ -674,7 +674,7 @@ export const plansData = {
       plan: 'YouTube-Individual-12M-629'
     },
     {
-      title: 'Family – 1 Month',
+      title: 'Family ï¿½ 1 Month',
       sectionHeader: '??????????? YouTube Family Plans',
       features: [
         '??????????? Shared Family Access',
@@ -689,7 +689,7 @@ export const plansData = {
   ],
   spotify: [
     {
-      title: 'Spotify Premium – 2 Months',
+      title: 'Spotify Premium ï¿½ 2 Months',
       features: [
         '?? Ad-Free Music Streaming',
         '?? Offline Downloads',
@@ -703,7 +703,7 @@ export const plansData = {
       popular: true
     },
     {
-      title: 'Spotify Premium – 3 Months',
+      title: 'Spotify Premium ï¿½ 3 Months',
       tag: 'Best Value',
       features: [
         '?? Ad-Free Music Streaming',
@@ -737,7 +737,7 @@ export const plansData = {
       ],
       price: '?399',
       plan: 'SonyLIV-Premium-1Y-399',
-      note: '? 1 Year Access • Live Sports + Premium Content • Best Value ??'
+      note: '? 1 Year Access ï¿½ Live Sports + Premium Content ï¿½ Best Value ??'
     }
   ],
   hotstar: [
@@ -758,7 +758,7 @@ export const plansData = {
       ],
       price: '?69',
       plan: 'Hotstar-Super-1M-69',
-      note: '? 1 Month Access • Sports + Entertainment • Budget Friendly ??'
+      note: '? 1 Month Access ï¿½ Sports + Entertainment ï¿½ Budget Friendly ??'
     }
   ],
   zee5: [
@@ -779,7 +779,7 @@ export const plansData = {
       ],
       price: '?89',
       plan: 'ZEE5-Premium-1M-89',
-      note: '? 1 Month Access • 4K Ultra HD • Ad-Free Experience ??'
+      note: '? 1 Month Access ï¿½ 4K Ultra HD ï¿½ Ad-Free Experience ??'
     },
     {
       title: 'ZEE5 Premium - 3 Months',
@@ -796,7 +796,7 @@ export const plansData = {
       ],
       price: '?249',
       plan: 'ZEE5-Premium-3M-249',
-      note: '? 3 Months Access • 4K Ultra HD • Save More ??'
+      note: '? 3 Months Access ï¿½ 4K Ultra HD ï¿½ Save More ??'
     },
     {
       title: 'ZEE5 Premium - 6 Months',
@@ -813,7 +813,7 @@ export const plansData = {
       ],
       price: '?499',
       plan: 'ZEE5-Premium-6M-499',
-      note: '? 6 Months Access • 4K Ultra HD • Great Value ??'
+      note: '? 6 Months Access ï¿½ 4K Ultra HD ï¿½ Great Value ??'
     },
     {
       title: 'ZEE5 Premium - 12 Months',
@@ -832,7 +832,7 @@ export const plansData = {
       ],
       price: '?999',
       plan: 'ZEE5-Premium-12M-999',
-      note: '? 12 Months Access • 4K Ultra HD • Best Value for Money ??'
+      note: '? 12 Months Access ï¿½ 4K Ultra HD ï¿½ Best Value for Money ??'
     }
   ],
   descript: [
@@ -846,7 +846,7 @@ export const plansData = {
         '??? AI Eye Contact & Remove Filler Words',
         '?? 20+ Smart AI Features',
         '?? 30 Transcription Hours/Month',
-        '?? 4K Exports — No Watermark',
+        '?? 4K Exports ï¿½ No Watermark',
         '??? 2 Hours/Month AI Speech Generation',
         '?? 30 Mins/Month AI Dubbing (20+ Languages)',
         '?? 10 Mins/Month AI Avatars',
@@ -857,7 +857,7 @@ export const plansData = {
       ],
       price: '?1999',
       plan: 'Descript-Creator-1Y-1999',
-      note: '? 1 Year Access • All-in-One Video/Audio/Podcast Editor • Instant Activation ??'
+      note: '? 1 Year Access ï¿½ All-in-One Video/Audio/Podcast Editor ï¿½ Instant Activation ??'
     }
   ],
   adobe: [
@@ -881,7 +881,7 @@ export const plansData = {
       ],
       price: '?499',
       plan: 'Adobe-Creative-Cloud-1M-499',
-      note: '? 1 Month Access • All 20+ Adobe Apps • AI Tools Included • Professional Grade ??'
+      note: '? 1 Month Access ï¿½ All 20+ Adobe Apps ï¿½ AI Tools Included ï¿½ Professional Grade ??'
     },
     {
       title: 'Adobe Creative Cloud All Apps - 1 Year',
@@ -904,7 +904,7 @@ export const plansData = {
       ],
       price: '?2999',
       plan: 'Adobe-Creative-Cloud-1Y-2999',
-      note: '? 1 Year Access • All 20+ Adobe Apps • AI Tools Included • Professional Grade ??'
+      note: '? 1 Year Access ï¿½ All 20+ Adobe Apps ï¿½ AI Tools Included ï¿½ Professional Grade ??'
     }
   ],
   linkedin: [
@@ -929,7 +929,7 @@ export const plansData = {
       price: '?499',
       originalPrice: '?1,499',
       plan: 'LinkedIn-Career-3M-499',
-      note: '? Valid for 3 Months • Best for job hunting & networking'
+      note: '? Valid for 3 Months ï¿½ Best for job hunting & networking'
     },
     {
       title: 'LinkedIn Business - 3 Months',
@@ -947,7 +947,7 @@ export const plansData = {
       price: '?799',
       originalPrice: '?2,499',
       plan: 'LinkedIn-Business-3M-799',
-      note: '? Valid for 3 Months • Perfect for business growth & leads'
+      note: '? Valid for 3 Months ï¿½ Perfect for business growth & leads'
     },
     {
       title: 'LinkedIn Sales Navigator - 2 Months',
@@ -965,7 +965,7 @@ export const plansData = {
       price: '?799',
       originalPrice: '?3,999',
       plan: 'LinkedIn-Sales-Navigator-2M-799',
-      note: '? Valid for 2 Months • Best for B2B sales & prospecting'
+      note: '? Valid for 2 Months ï¿½ Best for B2B sales & prospecting'
     },
     {
       sectionHeader: 'Yearly Plans',
@@ -988,7 +988,7 @@ export const plansData = {
       price: '?2999',
       originalPrice: '?5,999',
       plan: 'LinkedIn-Career-1Y-3499',
-      note: '? Valid for 1 Year • Save more on yearly access'
+      note: '? Valid for 1 Year ï¿½ Save more on yearly access'
     },
     {
       title: 'LinkedIn Business - 1 Year',
@@ -1008,7 +1008,7 @@ export const plansData = {
       price: '?3,999',
       originalPrice: '?7,999',
       plan: 'LinkedIn-Business-1Y-3999',
-      note: '? Currently Unavailable • Will restock soon'
+      note: '? Currently Unavailable ï¿½ Will restock soon'
     },
     {
       title: 'LinkedIn Sales Navigator - 1 Year',
@@ -1028,7 +1028,7 @@ export const plansData = {
       price: '?4,499',
       originalPrice: '?9,999',
       plan: 'LinkedIn-Sales-Navigator-1Y-4499',
-      note: '? Currently Unavailable • Will restock soon'
+      note: '? Currently Unavailable ï¿½ Will restock soon'
     }
   ],
   replit: [
@@ -1050,7 +1050,7 @@ export const plansData = {
       price: '?499',
       originalPrice: '?999',
       plan: 'Replit-Core-1M-499',
-      note: '? Valid for 1 Month • Perfect for coding & development ??'
+      note: '? Valid for 1 Month ï¿½ Perfect for coding & development ??'
     },
     {
       title: 'Replit Core - 1 Year',
@@ -1069,12 +1069,12 @@ export const plansData = {
       price: '?3499',
       originalPrice: '?5,999',
       plan: 'Replit-Core-12M-3499',
-      note: '? Valid for 12 Months • Only ?291/month • Best deal for developers ??'
+      note: '? Valid for 12 Months ï¿½ Only ?291/month ï¿½ Best deal for developers ??'
     }
   ],
   heygen: [
     {
-      title: 'HeyGen AI Creator Plan – 1 Month',
+      title: 'HeyGen AI Creator Plan ï¿½ 1 Month',
       sectionHeader: '?? HeyGen AI Plans',
       tag: '? Available',
       popular: true,
@@ -1088,13 +1088,13 @@ export const plansData = {
         '? Generate Looks',
         '?? Look Packs',
         '',
-        '? Best for: Video Avatars • Lip-Syncing • Content Creation • AI Projects',
+        '? Best for: Video Avatars ï¿½ Lip-Syncing ï¿½ Content Creation ï¿½ AI Projects',
         '? Instant Activation',
         '?? Verified Access'
       ],
       price: '?1250',
       plan: 'HeyGen-Creator-1M-1250',
-      note: 'Unlimited Stock • Instant activation • Verified access'
+      note: 'Unlimited Stock ï¿½ Instant activation ï¿½ Verified access'
     }
   ],
   higgsfield: [
@@ -1117,7 +1117,7 @@ export const plansData = {
       ],
       price: '?2299',
       plan: 'Higgsfield-Ultimate-2299',
-      note: '? Currently Unavailable • Will restock soon'
+      note: '? Currently Unavailable ï¿½ Will restock soon'
     },
     {
       title: 'Higgsfield AI Creator Plan',
@@ -1139,7 +1139,7 @@ export const plansData = {
       ],
       price: '?3499',
       plan: 'Higgsfield-Creator-3499',
-      note: '? Currently Unavailable • Will restock soon'
+      note: '? Currently Unavailable ï¿½ Will restock soon'
     }
   ],
   openart: [
@@ -1162,7 +1162,7 @@ export const plansData = {
       ],
       price: '?1499',
       plan: 'OpenArt-Advanced-1M-1499',
-      note: '? 1 Month Access • Advanced features at great value ??'
+      note: '? 1 Month Access ï¿½ Advanced features at great value ??'
     },
     {
       title: 'OpenArt Infinite - 1 Month',
@@ -1184,7 +1184,7 @@ export const plansData = {
       ],
       price: '?1799',
       plan: 'OpenArt-Infinite-1M-1799',
-      note: '? 1 Month Access • 24K credits with premium features ??'
+      note: '? 1 Month Access ï¿½ 24K credits with premium features ??'
     }
   ],
   n8n: [
@@ -1208,7 +1208,7 @@ export const plansData = {
       ],
       price: '?2999',
       plan: 'n8n-Starter-1Y-2999',
-      note: '? 1 Year Access • 2.5K executions/month with 400+ integrations ??'
+      note: '? 1 Year Access ï¿½ 2.5K executions/month with 400+ integrations ??'
     }
   ],
   bolt: [
@@ -1232,7 +1232,7 @@ export const plansData = {
       ],
       price: '?2499',
       plan: 'Bolt-Pro-1Y-2499',
-      note: '? 1 Year Access • Build full-stack apps with AI assistance ??'
+      note: '? 1 Year Access ï¿½ Build full-stack apps with AI assistance ??'
     }
   ],
   notion: [
@@ -1257,7 +1257,7 @@ export const plansData = {
       ],
       price: '?2999',
       plan: 'Notion-Business-AI-6M-2999',
-      note: '? 6 Months Access • Full Business Plan + AI • 100 Seats • Fast Delivery ??'
+      note: '? 6 Months Access ï¿½ Full Business Plan + AI ï¿½ 100 Seats ï¿½ Fast Delivery ??'
     }
   ],
   emergent: [
@@ -1285,7 +1285,7 @@ export const plansData = {
       price: '?3999',
       originalPrice: '?25,000',
       plan: 'Emergent-Standard-1Y-3999',
-      note: '? Currently Unavailable • Will restock soon'
+      note: '? Currently Unavailable ï¿½ Will restock soon'
     }
   ],
   tradingview: [
@@ -1324,7 +1324,7 @@ export const plansData = {
       price: '?499',
       originalPrice: '?1,150',
       plan: 'TradingView-Premium-1W-499',
-      note: '? 1 Week Access • Full Premium Features • Instant Delivery ??'
+      note: '? 1 Week Access ï¿½ Full Premium Features ï¿½ Instant Delivery ??'
     },
     {
       title: '1 Month Premium',
@@ -1361,7 +1361,7 @@ export const plansData = {
       price: '?1499',
       originalPrice: '?4,995',
       plan: 'TradingView-Premium-1M-1499',
-      note: '? 1 Month Access • Full Premium Features • Best Value • Instant Delivery ??'
+      note: '? 1 Month Access ï¿½ Full Premium Features ï¿½ Best Value ï¿½ Instant Delivery ??'
     }
   ],
   railway: [
@@ -1386,7 +1386,34 @@ export const plansData = {
       ],
       price: '?3999',
       plan: 'Railway-Pro-1Y-3999',
-      note: '? 1 Year Access • $20 monthly credits • Best for production apps ??'
+      note: '? 1 Year Access ï¿½ $20 monthly credits ï¿½ Best for production apps ??'
+    }
+  ]
+,
+  grok: [
+    {
+      title: 'SuperGrok - 1 Month',
+      tag: 'ðŸ¤– AI Assistant',
+      popular: true,
+      logo: '/assets/grok_logo.png',
+      features: [
+        'ðŸ’¬ Longer conversations in Chat',
+        'ðŸš€ Grok 4.1 - Fast & Expert mode',
+        'ðŸŽ¨ Unlimited Image Generation',
+        'ðŸŽ¥ Unlimited Video Generation',
+        'ðŸ“¹ Imagine 1.0 - longer, 720p videos',
+        'ðŸŽ¤ Longer Voice Mode & Companion chats',
+        'âš¡ Priority access during peak times',
+        'ðŸ†• Early access to new features',
+        'âœ… Official SuperGrok Plan',
+        'ðŸ’° Original Price: â‚¹700/month',
+        'ðŸŽ¯ Your Price: Only â‚¹399/month',
+        'ðŸ”¥ Best Value AI Tool'
+      ],
+      price: 'â‚¹399',
+      originalPrice: 'â‚¹700',
+      plan: 'Grok-1M-399',
+      note: 'âœ… 1 Month Access â€¢ Unlimited Image & Video â€¢ Best Price ðŸ”¥'
     }
   ]
 }
@@ -1397,6 +1424,7 @@ export const tabs = [
   { id: 'chatglm', label: 'ChatGLM Pro', logo: '/assets/chatglm-logo.png' },
   { id: 'claude', label: 'Claude Max', logo: '/assets/claude-logo.png' },
   { id: 'perplexity', label: 'Perplexity Pro', logo: '/assets/perplexity-logo.png' },
+  { id: 'grok', label: 'SuperGrok', logo: '/assets/grok_logo.png' },
   { id: 'cursor', label: 'Cursor AI', logo: '/assets/cursor-logo.png' },
   { id: 'lovable', label: 'Lovable AI', logo: '/assets/lovable-logo.jpg' },
   { id: 'bolt', label: 'Bolt.new AI', logo: '/assets/bolt.png' },
