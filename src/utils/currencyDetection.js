@@ -19,11 +19,11 @@ export async function detectIsIndia() {
     const response = await fetch('https://ipapi.co/json/', {
       signal: AbortSignal.timeout(3000) // 3 second timeout
     })
-    
+
     if (response.ok) {
       const data = await response.json()
       const isIndia = data.country_code === 'IN'
-      
+
       // Save to localStorage to avoid repeated API calls
       localStorage.setItem('userCountry', isIndia ? 'IN' : 'OTHER')
       localStorage.setItem('userCountryData', JSON.stringify({
@@ -31,7 +31,7 @@ export async function detectIsIndia() {
         countryCode: data.country_code,
         detectedAt: new Date().toISOString()
       }))
-      
+
       return isIndia
     }
   } catch (error) {
@@ -42,7 +42,7 @@ export async function detectIsIndia() {
   try {
     const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
     const isIndia = INDIAN_TIMEZONES.includes(timezone)
-    
+
     if (isIndia) {
       localStorage.setItem('userCountry', 'IN')
       localStorage.setItem('userCountryData', JSON.stringify({
@@ -54,7 +54,7 @@ export async function detectIsIndia() {
     } else {
       localStorage.setItem('userCountry', 'OTHER')
     }
-    
+
     return isIndia
   } catch (error) {
     console.log('Timezone detection failed:', error.message)
@@ -72,7 +72,7 @@ export async function detectIsIndia() {
  */
 export async function getCurrency() {
   const savedCurrency = localStorage.getItem('preferredCurrency')
-  
+
   if (savedCurrency) {
     return savedCurrency
   }
@@ -80,24 +80,24 @@ export async function getCurrency() {
   const isIndia = await detectIsIndia()
   const currency = isIndia ? 'INR' : 'USD'
   localStorage.setItem('preferredCurrency', currency)
-  
+
   return currency
 }
 
 /**
  * Set currency preference
- * @param {'INR' | 'USD'} currency 
+ * @param {'INR' | 'USD'} currency
  */
 export function setCurrency(currency) {
   localStorage.setItem('preferredCurrency', currency)
-  
+
   // Also update country for consistency
   localStorage.setItem('userCountry', currency === 'INR' ? 'IN' : 'OTHER')
 }
 
 /**
  * Toggle between INR and USD
- * @param {string} currentCurrency 
+ * @param {string} currentCurrency
  * @returns {'INR' | 'USD'}
  */
 export function toggleCurrency(currentCurrency) {
@@ -113,38 +113,38 @@ export function toggleCurrency(currentCurrency) {
  */
 export function convertINRtoUSD(priceString) {
   if (!priceString) return '$0'
-  
-  // Remove ₹ symbol and commas
-  const numericValue = priceString.replace(/[₹,]/g, '').trim()
+
+  // Keep only digits and decimal separator so both "₹" and legacy mojibake prices parse.
+  const numericValue = String(priceString).replace(/[^0-9.]/g, '').trim()
   const inrAmount = parseFloat(numericValue)
-  
+
   if (isNaN(inrAmount)) return '$0'
-  
+
   // Convert: ₹100 = $1
   const usdAmount = inrAmount / 100
   const basePrice = parseFloat(usdAmount.toFixed(2))
-  
+
   // Custom USD price adjustments
   const priceAdjustments = {
-    3.99: 4.99,   // $3.99 → $4.99
-    6.49: 7.99,   // $6.49 → $7.99
-    7.99: 9.99,   // $7.99 → $9.99
-    13.99: 14.99  // $13.99 → $14.99
+    3.99: 4.99,
+    6.49: 7.99,
+    7.99: 9.99,
+    13.99: 14.99
   }
-  
+
   // Check if this price needs adjustment
   if (priceAdjustments[basePrice]) {
     return `$${priceAdjustments[basePrice].toFixed(2)}`
   }
-  
+
   // Return original converted price
   return `$${basePrice.toFixed(2)}`
 }
 
 /**
  * Get price in selected currency
- * @param {string} inrPrice 
- * @param {string} currency 
+ * @param {string} inrPrice
+ * @param {string} currency
  * @returns {string}
  */
 export function getPrice(inrPrice, currency) {

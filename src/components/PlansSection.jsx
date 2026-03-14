@@ -12,6 +12,12 @@ function PlansSection() {
   const navigate = useNavigate()
   const { currency } = useCurrency()
 
+  const cleanFeatureText = (feature = '') =>
+    feature
+      .replace(/^[^\p{L}\p{N}$₹]+/u, '')
+      .replace(/�/g, '-')
+      .trim()
+
   useEffect(() => {
     // Smooth scroll for anchor links
     const handleAnchorClick = (e) => {
@@ -144,7 +150,7 @@ function PlansSection() {
 
                         <ul>
                           {plan.features && plan.features.map((feature, fIndex) => (
-                            <li key={fIndex}>{feature}</li>
+                            <li key={fIndex}>{cleanFeatureText(feature)}</li>
                           ))}
                         </ul>
 

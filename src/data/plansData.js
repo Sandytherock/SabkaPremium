@@ -4,16 +4,16 @@ export const plansData = {
     {
       title: '3 Month (8-10 Members)',
       features: [
-        '? Valid for 90 Days',
-        '?? Private Login',
-        '?? All Pro Tools Unlocked',
-        '??? DALL�E, GPT-5 Pro, Sora, Whisper',
-        '?? Shared Access (8�10 members)',
-        '?? You Will get Some Limitations And Downtime',
-        '?? Phone + Desktop Access'
+        'Valid for 90 Days',
+        'Private Login',
+        'All Pro Tools Unlocked',
+        'DALLE, GPT-5 Pro, Sora, Whisper',
+        'Shared Access (8-10 members)',
+        'You Will get Some Limitations And Downtime',
+        'Phone + Desktop Access'
       ],
-      price: '?399',
-      plan: 'ChatGPT-3M-399'
+      price: '₹649',
+      plan: 'ChatGPT-3M-649'
     },
     {
       title: '12 Month (8-10 Members)',
@@ -38,8 +38,8 @@ export const plansData = {
         '?? No Limitations And NO Downtime',
         '?? Phone + Desktop Access'
       ],
-      price: '?649',
-      plan: 'ChatGPT-3M-649',
+      price: '₹999',
+      plan: 'ChatGPT-3M-999',
       popular: true
     },
     {
