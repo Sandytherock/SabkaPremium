@@ -128,31 +128,32 @@ export const plansData = {
   ],
   gemini: [
     {
-      title: 'Gemini Ultra (Veo 3)',
-      tag: '? Out of Stock',
+      title: 'Gemini Ultra (Veo 3.1)',
+      tag: '? In Stock',
       popular: false,
-      outOfStock: true,
-      disabled: true,
       features: [
-        '?? Gemini 2.5 Pro + Veo 3 access',
-        '?? Flow with Veo 3 � 1200+ videos/month',
-        '?? 45,000 monthly AI credits (Veo 3)',
-        '?? NotebookLM Max limits unlocked',
-        '?? Gemini in Gmail & Docs integration',
-        '? 30TB Google Cloud Storage',
-        '?? 25 Days Validity',
-        '??? Support Assistance During Validity',
-        '?? Private account � Best price in market'
+        'Veo 3.1 Fast access - latest Google Labs model',
+        'High quality AI video generation',
+        'Advanced scene creation',
+        'Unlimited image generation',
+        'Unlimited video generation',
+        '45,000 credits included for video generation',
+        'Nano generation mode supported',
+        'Activation on your email',
+        'API key based activation',
+        'Support assistance during validity'
       ],
       price: '?2499',
       originalPrice: '?19,999',
       plan: 'Gemini-Ultra-1M-999',
-      note: '? Currently Unavailable � Will restock soon'
+      note: '? Veo 3.1 now available - API key based activation with 45,000 credits included'
     },
     {
       title: 'Gemini AI Pro + 2TB Google Storage � 1 Month',
-      tag: '? Best Value',
+      tag: '? Out of Stock',
       popular: true,
+      outOfStock: true,
+      disabled: true,
       features: [
         '?? Gemini 2.5 Pro � Smartest AI',
         '?? Veo 3 � AI Video Generator',
@@ -166,7 +167,7 @@ export const plansData = {
       price: '?199',
       originalPrice: '?1,199',
       plan: 'Gemini-1M-199',
-      note: '? Validity: 1 Month � 1000 Flow credits included � Best deal ??'
+      note: '? Currently Unavailable � Will restock soon'
     },
     {
       title: 'Gemini AI Pro + 2TB\n� 1 Year',
