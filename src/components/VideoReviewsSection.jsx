@@ -6,8 +6,14 @@ function VideoReviewsSection() {
       src: '/assets/video-reviews/review1.mp4',
       name: 'Verified Buyer',
       product: 'ChatGPT Plus'
+    },
+    {
+      src: '/assets/video-reviews/review2.mp4',
+      name: 'Verified Buyer',
+      product: 'ChatGPT 5 Pro with Unlimited Codex'
     }
   ]
+
   const placeholderCards = [
     { title: 'More Video Reviews Coming Soon', subtitle: 'New customer clips are being uploaded.' },
     { title: 'Want to be featured?', subtitle: 'Send your short review on WhatsApp.' },
@@ -41,6 +47,7 @@ function VideoReviewsSection() {
               </div>
             </div>
           ))}
+
           {placeholderCards.map((card, index) => (
             <div
               key={`placeholder-${index}`}
@@ -58,6 +65,7 @@ function VideoReviewsSection() {
         <p className="video-reviews-hint">
           Swipe to see more reviews. Send your review to get featured.
         </p>
+
         <div className="video-reviews-cta">
           <a
             className="btn-ghost"
