@@ -76,7 +76,8 @@ export const planMap = {
   "ZEE5-Premium-12M-999": { name: "ZEE5 Premium - 12 Months", amount: "999", logo: "/assets/zee5-logo.png" },
   
   "Call-1On1-99": { name: "1-on-1 Strategy Call (15–20 min)", amount: "99", logo: "/assets/logo.png" },
-  "Software-A2Z-999": { name: "Software Dropshipping A to Z", amount: "999", logo: "/assets/logo.png" },
+  "Software-A2Z-4999": { name: "Software Dropshipping A to Z", amount: "4999", logo: "/assets/logo.png" },
+  "Software-A2Z-4,999": { name: "Software Dropshipping A to Z", amount: "4999", logo: "/assets/logo.png" },
   
   "ChatGLM-1M-999": { name: "ChatGLM Pro - 1 Month Shared", amount: "999", logo: "/assets/chatglm-logo.png" },
   "ChatGLM-1M-1999": { name: "ChatGLM Pro - 1 Month Private", amount: "1999", logo: "/assets/chatglm-logo.png" },

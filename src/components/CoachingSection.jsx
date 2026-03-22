@@ -65,9 +65,9 @@ function CoachingSection() {
                 </div>
               </div>
 
-              {/* 🔥 NEW: ₹999 Full A–Z Plan */}
+              {/* 🔥 NEW: ₹4999 Full A–Z Plan */}
               <div className="coach-card">
-                <h3>₹999 – Learn Software Dropshipping A to Z (Complete System)</h3>
+                <h3>₹4999 – Learn Software Dropshipping A to Z (Complete System)</h3>
                 <ul>
                   <li>📚 <strong>Complete step-by-step training</strong> – from idea to first sales</li>
                   <li>🧩 Exactly which <strong>software tools to resell</strong> and proven Indian pricing</li>
@@ -87,12 +87,12 @@ function CoachingSection() {
 
                 <div className="coach-cta">
                   <div className="coach-price">
-                    <span className="old">₹4,999</span>
-                    <span className="new">₹999</span>
+                    <span className="old">₹9,999</span>
+                    <span className="new">₹4,999</span>
                     <span className="tagline">Launch offer – limited seats per month</span>
                   </div>
-                  <button className="btn-primary" onClick={() => handleOrderClick('Software-A2Z-999')}>
-                    Enrol in A–Z Software Dropshipping (₹999)
+                  <button className="btn-primary" onClick={() => handleOrderClick('Software-A2Z-4999')}>
+                    Enrol in A–Z Software Dropshipping (₹4,999)
                   </button>
                   <p className="muted tiny-text">
                     After payment, you will receive detailed onboarding: where to access content,
@@ -118,7 +118,7 @@ function CoachingSection() {
                 <h4>Why Is It Paid?</h4>
                 <p className="muted">
                   Free calls attract people who are not serious.
-                  A small fee like <strong>₹99 / ₹999</strong> ensures that only
+                  A small fee like <strong>₹99 / ₹4,999</strong> ensures that only
                   <strong> serious learners</strong> join.
                   If you are serious, I will give you <strong>full value</strong> during the call and program. 🔥
                 </p>
