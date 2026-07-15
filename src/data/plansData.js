@@ -1065,12 +1065,12 @@ export const plansData = {
         '?? Private Repls (Unlimited)',
         '?? Real-time Collaboration',
         '?? Private Account on Your Email',
-        '?? Save ?2,500+ compared to monthly'
+        '?? Save ?1,000+ compared to monthly'
       ],
-      price: '?3499',
-      originalPrice: '?5,999',
-      plan: 'Replit-Core-12M-3499',
-      note: '? Valid for 12 Months � Only ?291/month � Best deal for developers ??'
+      price: '?10000',
+      originalPrice: '?19,999',
+      plan: 'Replit-Core-12M-10000',
+      // note: '? Valid for 12 Months � Only ?291/month � Best deal for developers ??'
     }
   ],
   heygen: [
