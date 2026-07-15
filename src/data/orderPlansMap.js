@@ -133,7 +133,7 @@ export const planMap = {
   // Replit Plans
   "Replit-Core-1M-499": { name: "Replit Core - 1 Month", amount: "499", logo: "/assets/replit-logo.png" },
   "Replit-Core-12M-10000": { name: "Replit Core - 1 Year", amount: "10000", logo: "/assets/replit-logo.png" },
-  // 0
+  // 
   // HeyGen AI Plans
   "HeyGen-Creator-1M-1250": { name: "HeyGen AI Creator Plan - 1 Month", amount: "1250", logo: "/assets/heygen-logo.png" },
 
