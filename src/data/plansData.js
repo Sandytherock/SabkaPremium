@@ -1065,7 +1065,7 @@ export const plansData = {
         '?? Private Repls (Unlimited)',
         '?? Real-time Collaboration',
         '?? Private Account on Your Email',
-        '?? Save ?1,000+ compared to monthly'
+        '?? Save ?1000+ compared to monthly'
       ],
       price: '?10000',
       originalPrice: '?19,999',
